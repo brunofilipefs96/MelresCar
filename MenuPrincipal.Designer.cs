@@ -42,11 +42,11 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.BackColor = System.Drawing.Color.Transparent;
-            this.labelTitle.Font = new System.Drawing.Font("AniMe Matrix - MB_EN", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelTitle.Location = new System.Drawing.Point(12, 9);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(532, 57);
+            this.labelTitle.Size = new System.Drawing.Size(341, 55);
             this.labelTitle.TabIndex = 2;
             this.labelTitle.Text = "Menu Principal";
             // 
@@ -80,6 +80,7 @@
             this.buttonClientes.TabIndex = 5;
             this.buttonClientes.Text = "Clientes";
             this.buttonClientes.UseVisualStyleBackColor = true;
+            this.buttonClientes.Click += new System.EventHandler(this.buttonClientes_Click);
             // 
             // buttonFuncionarios
             // 
@@ -89,6 +90,7 @@
             this.buttonFuncionarios.TabIndex = 6;
             this.buttonFuncionarios.Text = "Funcionários";
             this.buttonFuncionarios.UseVisualStyleBackColor = true;
+            this.buttonFuncionarios.Click += new System.EventHandler(this.buttonFuncionarios_Click);
             // 
             // buttonLogout
             // 
@@ -108,6 +110,7 @@
             this.buttonReservas.TabIndex = 8;
             this.buttonReservas.Text = "Reservas";
             this.buttonReservas.UseVisualStyleBackColor = true;
+            this.buttonReservas.Click += new System.EventHandler(this.buttonReservas_Click);
             // 
             // MenuPrincipal
             // 

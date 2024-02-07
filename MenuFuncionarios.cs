@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Automobile
 {
-    public partial class MenuVeiculos : Form
+    public partial class MenuFuncionarios : Form
     {
-        public MenuVeiculos()
+        public MenuFuncionarios()
         {
             InitializeComponent();
             this.ControlBox = false;
