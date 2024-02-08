@@ -33,8 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ReaLTaiizor, Version=3.7.9.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ReaLTaiizor.3.7.9.9\lib\net48\ReaLTaiizor.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,24 +56,18 @@
     <Compile Include="Carro.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Empresa.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Funcionario.cs" />
-    <Compile Include="MenuClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuClientes.Designer.cs">
-      <DependentUpon>MenuClientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="MenuFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuFuncionarios.Designer.cs">
       <DependentUpon>MenuFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuLogin.Designer.cs">
+      <DependentUpon>MenuLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -76,41 +75,50 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuReservas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuReservas.Designer.cs">
-      <DependentUpon>MenuReservas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuVeiculos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuVeiculos.Designer.cs">
-      <DependentUpon>MenuVeiculos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Mota.cs" />
     <Compile Include="Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reserva.cs" />
+    <Compile Include="UC_Clientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Clientes.Designer.cs">
+      <DependentUpon>UC_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Funcionarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Funcionarios.Designer.cs">
+      <DependentUpon>UC_Funcionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_MenuPrincipal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_MenuPrincipal.Designer.cs">
+      <DependentUpon>UC_MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Reservas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Reservas.Designer.cs">
+      <DependentUpon>UC_Reservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Veiculos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Veiculos.Designer.cs">
+      <DependentUpon>UC_Veiculos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Veiculo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuClientes.resx">
-      <DependentUpon>MenuClientes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MenuFuncionarios.resx">
       <DependentUpon>MenuFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuLogin.resx">
+      <DependentUpon>MenuLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuReservas.resx">
-      <DependentUpon>MenuReservas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuVeiculos.resx">
-      <DependentUpon>MenuVeiculos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -122,6 +130,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC_Clientes.resx">
+      <DependentUpon>UC_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Funcionarios.resx">
+      <DependentUpon>UC_Funcionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_MenuPrincipal.resx">
+      <DependentUpon>UC_MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Reservas.resx">
+      <DependentUpon>UC_Reservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Veiculos.resx">
+      <DependentUpon>UC_Veiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -137,6 +161,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MelresCar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_ham_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reservas_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funcionarios_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clients_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaisUmDia_48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,62 +12,71 @@ namespace Automobile
 {
     public partial class MenuPrincipal : Form
     {
-
-        MenuVeiculos menuVeiculos = new MenuVeiculos();
-        MenuClientes menuClientes = new MenuClientes();
-        MenuFuncionarios menuFuncionarios = new MenuFuncionarios();
-        MenuReservas menuReservas = new MenuReservas();
         public MenuPrincipal()
         {
             InitializeComponent();
             this.ControlBox = false;
+            UC_MenuPrincipal ucMenuPrincipal = new UC_MenuPrincipal();
+            addUserControl(ucMenuPrincipal, buttonMenuPrincipal);
+            labelDataHoje.Text = "Data: " + DateTime.Now.ToString("dd/MM/yyyy");
         }
-
         
-
-        private void buttonLogout_Click(object sender, EventArgs e)
-        {           
-            foreach (Form form in Application.OpenForms)
-            {
-                if (form.Visible)
-                {
-                    form.Hide();
-                }
-            }
-            Form1 form1 = new Form1();
-            form1.Show();
-        }
-
-        private void buttonVeiculos_Click(object sender, EventArgs e)
+        private void addUserControl(UserControl userControl, Button botaoSelecionado)
         {
-            if (!menuVeiculos.Visible)
-            {               
-                menuVeiculos.Show();
-            }
+            userControl.Dock = DockStyle.Fill;
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(userControl);
+            userControl.BringToFront();
+            buttonMenuPrincipal.Size = new Size(216, 95);
+            buttonClientes.Size = new Size(216, 95);
+            buttonFuncionarios.Size = new Size(216, 95);
+            buttonVeiculos.Size = new Size(216, 95);
+            buttonReservas.Size = new Size(216, 95);
+            botaoSelecionado.Size = new Size(207, 95);
+        }
+        private void buttonMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            UC_MenuPrincipal ucMenuPrincipal = new UC_MenuPrincipal();
+            addUserControl(ucMenuPrincipal, buttonMenuPrincipal);
         }
 
         private void buttonClientes_Click(object sender, EventArgs e)
         {
-            if (!menuClientes.Visible)
-            {               
-                menuClientes.Show();
-            }
+            UC_Clientes ucClientes = new UC_Clientes();
+            addUserControl(ucClientes, buttonClientes);
         }
 
         private void buttonFuncionarios_Click(object sender, EventArgs e)
         {
-            if (!menuFuncionarios.Visible)
-            {               
-                menuFuncionarios.Show();
-            }
+            UC_Funcionarios ucFuncionario = new UC_Funcionarios();
+            addUserControl(ucFuncionario, buttonFuncionarios);
+        }
+
+        private void buttonVeiculos_Click(object sender, EventArgs e)
+        {
+            UC_Veiculos ucVeiculo = new UC_Veiculos();
+            addUserControl(ucVeiculo, buttonVeiculos);
         }
 
         private void buttonReservas_Click(object sender, EventArgs e)
         {
-            if (!menuReservas.Visible)
-            {   
-                menuReservas.Show();
-            }
+            UC_Reservas ucReservas = new UC_Reservas();
+            addUserControl(ucReservas, buttonReservas);
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            MenuLogin logginScreen = new MenuLogin();
+            logginScreen.Show();
+            this.Close();
+        }
+
+        private void buttonAddDay_Click(object sender, EventArgs e)
+        {
+            labelDataHoje.Text = "Data: " + DateTime.Now.AddDays(1).ToString("dd/MM/yyyy") + " (+1)";
+            buttonAddDay.Visible = false;
+            panelAddDay.Visible = false;
+
         }
     }
 }

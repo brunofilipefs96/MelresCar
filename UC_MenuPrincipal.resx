@@ -117,32 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="menu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="funcionarios_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\funcionarios_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clients_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clients_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MelresCar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MelresCar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reservas_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reservas_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logout_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="car_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\car_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="black_ham_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\black_ham_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MaisUmDia_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MaisUmDia_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
