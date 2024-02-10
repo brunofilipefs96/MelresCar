@@ -34,33 +34,36 @@ namespace Automobile
             buttonReservas.Size = new Size(216, 95);
             botaoSelecionado.Size = new Size(207, 95);
         }
+        UC_MenuPrincipal ucMenuPrincipal = new UC_MenuPrincipal();
+        UC_Clientes ucClientes = new UC_Clientes();
+        UC_Funcionarios ucFuncionario = new UC_Funcionarios();
+        UC_Veiculos ucVeiculo = new UC_Veiculos();
+        UC_Reservas ucReservas = new UC_Reservas();
+
+
+
         private void buttonMenuPrincipal_Click(object sender, EventArgs e)
         {
-            UC_MenuPrincipal ucMenuPrincipal = new UC_MenuPrincipal();
             addUserControl(ucMenuPrincipal, buttonMenuPrincipal);
         }
 
         private void buttonClientes_Click(object sender, EventArgs e)
         {
-            UC_Clientes ucClientes = new UC_Clientes();
             addUserControl(ucClientes, buttonClientes);
         }
 
         private void buttonFuncionarios_Click(object sender, EventArgs e)
         {
-            UC_Funcionarios ucFuncionario = new UC_Funcionarios();
             addUserControl(ucFuncionario, buttonFuncionarios);
         }
 
         private void buttonVeiculos_Click(object sender, EventArgs e)
         {
-            UC_Veiculos ucVeiculo = new UC_Veiculos();
             addUserControl(ucVeiculo, buttonVeiculos);
         }
 
         private void buttonReservas_Click(object sender, EventArgs e)
         {
-            UC_Reservas ucReservas = new UC_Reservas();
             addUserControl(ucReservas, buttonReservas);
         }
 

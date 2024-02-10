@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Automobile
 {
-    public partial class UC_Veiculos : UserControl
+    public partial class UC_ListarVeiculo : UserControl
     {
-        public UC_Veiculos()
+        public UC_ListarVeiculo()
         {
             InitializeComponent();
         }
-
-        private void buttonListaVeiculo_Click(object sender, EventArgs e)
-        {
-            ListaVeiculo listaVeiculo = new ListaVeiculo();
-            listaVeiculo.Show();
-        }
-
     }
 }
