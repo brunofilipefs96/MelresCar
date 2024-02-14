@@ -204,5 +204,14 @@
   <ItemGroup>
     <None Include="Resources\MaisUmDia_48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motorcycle-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck-2-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus-2-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

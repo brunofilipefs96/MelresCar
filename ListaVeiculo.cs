@@ -12,44 +12,45 @@ namespace Automobile
 {
     public partial class ListaVeiculo : Form
     {
+        UC_ListarVeiculo ucListarVeiculo = new UC_ListarVeiculo();
         public ListaVeiculo()
         {
             InitializeComponent();
-            addUserControl(ucListarVeiculo, buttonCarros);
+            ucListarVeiculo.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(ucListarVeiculo);
+            ucListarVeiculo.BringToFront();
+            atualizarBotao(buttonCarros);
         }
 
-        private void addUserControl(UserControl userControl, Button botaoSelecionado)
+        private void atualizarBotao(Button botaoSelecionado)
         {
-            userControl.Dock = DockStyle.Fill;
-            panel1.Controls.Clear();
-            panel1.Controls.Add(userControl);
-            userControl.BringToFront();
+           
             buttonCarros.Size = new Size(216, 95);
             buttonMotas.Size = new Size(216, 95);
             buttonCamioes.Size = new Size(216, 95);
             buttonCamionetas.Size = new Size(216, 95);
             botaoSelecionado.Size = new Size(207, 95);
         }
-        UC_ListarVeiculo ucListarVeiculo = new UC_ListarVeiculo();
 
         private void buttonCarros_Click(object sender, EventArgs e)
         {
-            addUserControl(ucListarVeiculo, buttonCarros);
+            atualizarBotao(buttonCarros);
         }
 
         private void buttonMotas_Click(object sender, EventArgs e)
         {
-            addUserControl(ucListarVeiculo, buttonMotas);
+            atualizarBotao(buttonMotas);
         }
 
         private void buttonCamioes_Click(object sender, EventArgs e)
         {
-            addUserControl(ucListarVeiculo, buttonCamioes);
+            atualizarBotao(buttonCamioes);
         }
 
         private void buttonCamionetas_Click(object sender, EventArgs e)
         {
-            addUserControl(ucListarVeiculo, buttonCamionetas);
+            atualizarBotao(buttonCamionetas);
         }
     }
 }

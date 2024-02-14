@@ -124,6 +124,9 @@
   <data name="funcionarios_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\funcionarios_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MaisUmDia_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaisUmDia_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clients_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clients_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,10 +142,16 @@
   <data name="car_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\car_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="motorcycle-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\motorcycle-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="black_ham_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\black_ham_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MaisUmDia_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MaisUmDia_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="truck-2-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\truck-2-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bus-2-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bus-2-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
