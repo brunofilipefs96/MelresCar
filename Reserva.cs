@@ -75,7 +75,7 @@ namespace Automobile
 
         public override string ToString()
         {
-            return "ID da Reserva: " + IdReserva + "\nData da Reserva: " + DataReserva + "\nData de Início: " + DataInicio + "\nData de Fim: " + DataFim + "\nID do Veículo: " + IdVeiculo + "\nNúmero de Cliente: " + NumCliente + "\n";
+            return $"{IdReserva},{DataReserva},{DataInicio},{DataFim},{IdVeiculo},{NumCliente},{PrecoTotal}";
         }
     }
 }

@@ -46,6 +46,8 @@ namespace Automobile
             Funcionarios = new List<Funcionario>();
             Reservas = new List<Reserva>();
         }
+
+
         public void carregarFicheiroCSV(string nomeFicheiro)
         {
             if (!File.Exists(nomeFicheiro + ".csv"))
@@ -63,19 +65,81 @@ namespace Automobile
                     foreach (string line in lines)
                     {
                         string[] fields = line.Split(',');
-                        Veiculo veiculoAux = new Veiculo();
-                        veiculoAux.IdVeiculo = Convert.ToInt32(fields[0]);
-                        veiculoAux.TipoVeiculo = fields[1];
-                        veiculoAux.ClasseVeiculo = fields[2];
-                        veiculoAux.Marca = fields[3];
-                        veiculoAux.Modelo = fields[4];
-                        veiculoAux.Matricula = fields[5];
-                        veiculoAux.Combustivel = fields[6];
-                        veiculoAux.Ano = Convert.ToInt32(fields[7]);
-                        veiculoAux.Estado = fields[8];
-                        veiculoAux.PrecoDiario = Convert.ToDecimal(fields[9]);
-                        veiculoAux.DataPrevistaDisponibilidade = Convert.ToDateTime(fields[10]);
-                        Veiculos.Add(veiculoAux);
+                        if (fields[1] == "carro"){
+                            Carro carroAux = new Carro();
+                            carroAux.IdVeiculo = Convert.ToInt32(fields[0]);
+                            carroAux.TipoVeiculo = fields[1];
+                            carroAux.ClasseVeiculo = fields[2];
+                            carroAux.Marca = fields[3];
+                            carroAux.Modelo = fields[4];
+                            carroAux.Matricula = fields[5];
+                            carroAux.Combustivel = fields[6];
+                            carroAux.Ano = Convert.ToInt32(fields[7]);
+                            carroAux.Estado = fields[8];
+                            carroAux.PrecoDiario = Convert.ToDecimal(fields[9]);
+                            carroAux.DataPrevistaDisponibilidade = Convert.ToDateTime(fields[10]);
+                            //Campos Extra do Carro
+                            carroAux.NumPortas = Convert.ToInt32(fields[11]);
+                            carroAux.TipoCaixa = fields[12];
+                            Veiculos.Add(carroAux);
+                        }
+                        else if (fields[1] == "mota")
+                        {
+                            Mota motaAux = new Mota();
+                            motaAux.IdVeiculo = Convert.ToInt32(fields[0]);
+                            motaAux.TipoVeiculo = fields[1];
+                            motaAux.ClasseVeiculo = fields[2];
+                            motaAux.Marca = fields[3];
+                            motaAux.Modelo = fields[4];
+                            motaAux.Matricula = fields[5];
+                            motaAux.Combustivel = fields[6];
+                            motaAux.Ano = Convert.ToInt32(fields[7]);
+                            motaAux.Estado = fields[8];
+                            motaAux.PrecoDiario = Convert.ToDecimal(fields[9]);
+                            motaAux.DataPrevistaDisponibilidade = Convert.ToDateTime(fields[10]);
+                            //Campos Extra da Mota
+                            motaAux.Cilindrada = Convert.ToInt32(fields[11]);
+                            Veiculos.Add(motaAux);
+                        }
+                        else if (fields[1] == "camiao")
+                        {
+                            Camiao camiaoAux = new Camiao();
+                            camiaoAux.IdVeiculo = Convert.ToInt32(fields[0]);
+                            camiaoAux.TipoVeiculo = fields[1];
+                            camiaoAux.ClasseVeiculo = fields[2];
+                            camiaoAux.Marca = fields[3];
+                            camiaoAux.Modelo = fields[4];
+                            camiaoAux.Matricula = fields[5];
+                            camiaoAux.Combustivel = fields[6];
+                            camiaoAux.Ano = Convert.ToInt32(fields[7]);
+                            camiaoAux.Estado = fields[8];
+                            camiaoAux.PrecoDiario = Convert.ToDecimal(fields[9]);
+                            camiaoAux.DataPrevistaDisponibilidade = Convert.ToDateTime(fields[10]);
+                            //Campos Extra do Camiao
+                            camiaoAux.PesoMaximo = Convert.ToDouble(fields[11]);
+                            Veiculos.Add(camiaoAux);
+                        }
+                        else if (fields[1] == "camioneta")
+                        {
+                            Camioneta camionetaAux = new Camioneta();
+                            camionetaAux.IdVeiculo = Convert.ToInt32(fields[0]);
+                            camionetaAux.TipoVeiculo = fields[1];
+                            camionetaAux.ClasseVeiculo = fields[2];
+                            camionetaAux.Marca = fields[3];
+                            camionetaAux.Modelo = fields[4];
+                            camionetaAux.Matricula = fields[5];
+                            camionetaAux.Combustivel = fields[6];
+                            camionetaAux.Ano = Convert.ToInt32(fields[7]);
+                            camionetaAux.Estado = fields[8];
+                            camionetaAux.PrecoDiario = Convert.ToDecimal(fields[9]);
+                            camionetaAux.DataPrevistaDisponibilidade = Convert.ToDateTime(fields[10]);
+                            //Campos Extra da Camioneta
+                            camionetaAux.NumEixos = Convert.ToInt32(fields[11]);
+                            camionetaAux.NumPassageiros = Convert.ToInt32(fields[12]);
+                            Veiculos.Add(camionetaAux);
+                        }
+                        
+                        
                     }
                 }
                 else if (nomeFicheiro == "reservas.csv")
@@ -104,8 +168,13 @@ namespace Automobile
                     {
                         string[] fields = line.Split(',');
                         Cliente clienteAux = new Cliente();
-                        
-                        //Falta criar o construtor Cliente com dados Default e atribuir os fields aqui
+                        clienteAux.Nome = fields[0];
+                        clienteAux.Nif = fields[1];
+                        clienteAux.Morada = fields[2];
+                        clienteAux.Email = fields[3];
+                        clienteAux.Telemovel = fields[4];
+                        //Campo Extra do Cliente
+                        clienteAux.NumCliente = Convert.ToInt32(fields[5]);
 
                         Clientes.Add(clienteAux);
 
@@ -118,14 +187,21 @@ namespace Automobile
                     {
                         string[] fields = line.Split(',');
                         Funcionario funcionarioAux = new Funcionario();
-
-                        //Falta criar o construtor Funcionario com dados Default e atribuir os fields aqui
+                        funcionarioAux.Nome = fields[0];
+                        funcionarioAux.Nif = fields[1];
+                        funcionarioAux.Morada = fields[2];
+                        funcionarioAux.Email = fields[3];
+                        funcionarioAux.Telemovel = fields[4];
+                        //Campo Extras do Funcionário
+                        funcionarioAux.IdFuncionario = Convert.ToInt32(fields[5]);
+                        funcionarioAux.Username = fields[6];
+                        funcionarioAux.Password = fields[7];
+                        funcionarioAux.Salario = Convert.ToDecimal(fields[8]);
 
                         Funcionarios.Add(funcionarioAux);
 
                     }
                 }
-                escreverFicheiroCSV("avioes");
             }
             catch (Exception ex)
             {

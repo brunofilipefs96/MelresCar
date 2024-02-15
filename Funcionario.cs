@@ -33,6 +33,13 @@ namespace Automobile
             get { return _salario; }
             set { _salario = value; }
         }
+        public Funcionario() : base()
+        {
+            IdFuncionario = -1;
+            Username = "n/d";
+            Password = "n/d";
+            Salario = -1;
+        }
 
         public Funcionario(string nome, string nif, string morada, string email, string telemovel, int idFuncionario, string username, string password, decimal salario) : base(nome, nif, morada, email, telemovel)
         {
@@ -44,9 +51,8 @@ namespace Automobile
 
         public override string ToString()
         {
-            return base.ToString() + "ID de Funcionário: " + IdFuncionario + "\nUsername: " + Username + "\nSalário: " + Salario + "\n";
+            return $"{base.ToString()},{IdFuncionario},{Username},{Password},{Salario}";
         }
-
 
 
     }

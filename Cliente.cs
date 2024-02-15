@@ -16,6 +16,11 @@ namespace Automobile
             set { _numCliente = value; }
         }
 
+        public Cliente() : base()
+        {
+            NumCliente = -1;
+        }
+
         public Cliente(string nome, string nif, string morada, string email, string telemovel, int numCliente) : base (nome, nif, morada, email, telemovel)
         {
             NumCliente = numCliente;
@@ -23,7 +28,7 @@ namespace Automobile
 
         public override string ToString()
         {
-            return base.ToString() + "Número de Cliente: " + NumCliente + "\n";
+            return $"{base.ToString()},{NumCliente}";
         }
     }
 }

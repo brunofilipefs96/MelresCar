@@ -16,6 +16,11 @@ namespace Automobile
             set { _pesoMaximo = value; }
         }
 
+        public Camiao() : base()
+        {
+            PesoMaximo = -1;
+        }
+
         public Camiao(int idVeiculo, string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade, double pesoMaximo) : base(idVeiculo, tipoVeiculo, classeVeiculo, marca, modelo, matricula, combustivel, ano, estado, precoDiario, dataPrevistaDisponibilidade)
         {
             PesoMaximo = pesoMaximo;
@@ -23,7 +28,7 @@ namespace Automobile
 
         public override string ToString()
         {
-            return base.ToString() + "Peso Máximo: " + PesoMaximo + "\n";
+            return $"{base.ToString()},{PesoMaximo}"; 
         }
     }
 }

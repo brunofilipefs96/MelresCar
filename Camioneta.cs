@@ -21,6 +21,11 @@ namespace Automobile
             get { return _numPassageiros; }
             set { _numPassageiros = value; }
         }
+        public Camioneta() : base()
+        {
+            NumEixos = -1;
+            NumPassageiros = -1;
+        }
         public Camioneta(int idVeiculo, string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade, int numEixos, int numPassageiros) : base(idVeiculo, tipoVeiculo, classeVeiculo, marca, modelo, matricula, combustivel, ano, estado, precoDiario, dataPrevistaDisponibilidade)
         {
             NumEixos = numEixos;
@@ -29,7 +34,7 @@ namespace Automobile
 
         public override string ToString()
         {
-            return base.ToString() + "Número de Eixos: " + NumEixos + "\nNúmero de Passageiros: " + NumPassageiros + "\n";
+            return $"{base.ToString()},{NumEixos},{NumPassageiros}";
         }
     }
 }

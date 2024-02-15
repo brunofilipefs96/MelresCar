@@ -15,6 +15,10 @@ namespace Automobile
             get { return _cilindrada; }
             set { _cilindrada = value; }
         }
+        public Mota() : base()
+        {
+            Cilindrada = -1;
+        }
 
         public Mota(int idVeiculo, string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade, int cilindrada) : base(idVeiculo, tipoVeiculo, classeVeiculo, marca, modelo, matricula, combustivel, ano, estado, precoDiario, dataPrevistaDisponibilidade)
         {
@@ -24,7 +28,7 @@ namespace Automobile
 
         public override string ToString()
         {
-            return base.ToString() + "Cilindrada: " + Cilindrada + "\n";
+            return $"{base.ToString()},{Cilindrada}";
         }
     }
 }

@@ -40,6 +40,14 @@ namespace Automobile
             set { _telemovel = value; }
         }
 
+        public Pessoa()
+        {
+            Nome = "n/d";
+            Nif = "n/d";
+            Morada = "n/d";
+            Email = "n/d";
+            Telemovel = "n/d";
+        }
         public Pessoa(string nome, string nif, string morada, string email, string telemovel)
         {
             Nome = nome;
@@ -51,7 +59,7 @@ namespace Automobile
 
         public override string ToString()
         {
-            return "Nome: " + Nome + "\nNIF: " + Nif + "\nMorada: " + Morada + "\nEmail: " + Email + "\nTelemóvel: " + Telemovel + "\n";
+            return $"{Nome},{Nif},{Morada},{Email},{Telemovel}";
         }
 
     }

@@ -107,9 +107,8 @@ namespace Automobile
 
         public override string ToString()
         {
-            return "ID: " + IdVeiculo + "\nTipo de Veículo: " + TipoVeiculo + "\nClasse de Veículo: " + ClasseVeiculo + "\nMarca: " + Marca + "\nModelo: " + Modelo + "\nMatrícula: " + Matricula + "\nCombustível: " + Combustivel + "\nAno: " + Ano + "\nEstado: " + Estado + "\nPreço Diário: " + PrecoDiario + "\nData Prevista de Disponibilidade: " + DataPrevistaDisponibilidade + "\n";
+            return $"{IdVeiculo},{TipoVeiculo},{ClasseVeiculo},{Marca},{Modelo},{Matricula},{Combustivel},{Ano},{Estado},{PrecoDiario},{DataPrevistaDisponibilidade}";
         }
-
 
     }
 }
