@@ -75,6 +75,18 @@
     </Compile>
     <Compile Include="Empresa.cs" />
     <Compile Include="Funcionario.cs" />
+    <Compile Include="ListarCarro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListarCarro.Designer.cs">
+      <DependentUpon>ListarCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarMota.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListarMota.Designer.cs">
+      <DependentUpon>ListarMota.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListaVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,12 +140,6 @@
     <Compile Include="UC_Funcionarios.Designer.cs">
       <DependentUpon>UC_Funcionarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ListarVeiculo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_ListarVeiculo.Designer.cs">
-      <DependentUpon>UC_ListarVeiculo.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_MenuPrincipal.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +167,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditarCliente.resx">
       <DependentUpon>EditarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarCarro.resx">
+      <DependentUpon>ListarCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarMota.resx">
+      <DependentUpon>ListarMota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaVeiculo.resx">
       <DependentUpon>ListaVeiculo.cs</DependentUpon>
@@ -195,9 +207,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Funcionarios.resx">
       <DependentUpon>UC_Funcionarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_ListarVeiculo.resx">
-      <DependentUpon>UC_ListarVeiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_MenuPrincipal.resx">
       <DependentUpon>UC_MenuPrincipal.cs</DependentUpon>

@@ -51,6 +51,16 @@ namespace Automobile
             get { return _precoTotal; }
             set { _precoTotal = value; }
         }
+        public Reserva()
+        {
+            IdReserva = -1;
+            DataReserva = new DateTime();
+            DataInicio = new DateTime();
+            DataFim = new DateTime();
+            IdVeiculo = -1;
+            NumCliente = -1;
+            PrecoTotal = 0;
+        }
 
         public Reserva(int idReserva, DateTime dataReserva, DateTime dataInicio, DateTime dataFim, int idVeiculo, int numCliente)
         {

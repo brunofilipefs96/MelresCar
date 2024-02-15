@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Automobile
 {
-    public partial class UC_ListarVeiculo : UserControl
+    public partial class ListarCarro : UserControl
     {
-        public UC_ListarVeiculo()
+        public ListarCarro()
         {
             InitializeComponent();
         }
-
-    
     }
 }

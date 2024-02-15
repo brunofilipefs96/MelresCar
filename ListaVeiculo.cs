@@ -12,20 +12,20 @@ namespace Automobile
 {
     public partial class ListaVeiculo : Form
     {
-        UC_ListarVeiculo ucListarVeiculo = new UC_ListarVeiculo();
+        ListarCarro ucListarCarro = new ListarCarro();
+        ListarMota ucListarMota = new ListarMota();
         public ListaVeiculo()
         {
             InitializeComponent();
-            ucListarVeiculo.Dock = DockStyle.Fill;
+            ucListarCarro.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
-            panel1.Controls.Add(ucListarVeiculo);
-            ucListarVeiculo.BringToFront();
+            panel1.Controls.Add(ucListarCarro);
+            ucListarCarro.BringToFront();
             atualizarBotao(buttonCarros);
         }
 
         private void atualizarBotao(Button botaoSelecionado)
-        {
-           
+        {  
             buttonCarros.Size = new Size(216, 95);
             buttonMotas.Size = new Size(216, 95);
             buttonCamioes.Size = new Size(216, 95);
@@ -36,6 +36,8 @@ namespace Automobile
         private void buttonCarros_Click(object sender, EventArgs e)
         {
             atualizarBotao(buttonCarros);
+            UC_Clientes ucClientes = new UC_Clientes();
+
         }
 
         private void buttonMotas_Click(object sender, EventArgs e)

@@ -106,3 +106,10 @@ C:\Users\t0126205\Downloads\MelresCar-master\obj\Debug\Automobile.AdicionarVeicu
 C:\Users\t0126205\Downloads\MelresCar-master\obj\Debug\Automobile.EditarCliente.resources
 C:\Users\t0126205\Downloads\MelresCar-master\obj\Debug\Automobile.RemoverCliente.resources
 C:\Users\t0126205\Downloads\MelresCar-master\obj\Debug\Automobile.RemoverVeiculo.resources
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.AdicionarCliente.resources
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.AdicionarVeiculo.resources
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.EditarCliente.resources
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.RemoverCliente.resources
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.RemoverVeiculo.resources
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.ListarCarro.resources
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.ListarMota.resources

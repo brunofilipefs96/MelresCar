@@ -75,6 +75,20 @@ namespace Automobile
             get { return _dataPrevistaDisponibilidade; }
             set { _dataPrevistaDisponibilidade = value; }
         }
+        public Veiculo()
+        {
+            IdVeiculo = -1;
+            TipoVeiculo = "n/d";
+            ClasseVeiculo = "n/d";
+            Marca = "n/d";
+            Modelo = "n/d";
+            Matricula = "n/d";
+            Combustivel = "n/d";
+            Ano = -1;
+            Estado = "n/d";
+            PrecoDiario = -1;
+            DataPrevistaDisponibilidade = new DateTime();
+        }
 
         public Veiculo(int idVeiculo, string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade)
         {
