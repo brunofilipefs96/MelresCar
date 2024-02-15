@@ -44,6 +44,7 @@
             this.buttonAddCliente.TabIndex = 4;
             this.buttonAddCliente.Text = "Adicionar Cliente";
             this.buttonAddCliente.UseVisualStyleBackColor = false;
+            this.buttonAddCliente.Click += new System.EventHandler(this.buttonAddCliente_Click);
             // 
             // buttonRemCliente
             // 
@@ -56,6 +57,7 @@
             this.buttonRemCliente.TabIndex = 5;
             this.buttonRemCliente.Text = "Remover Cliente";
             this.buttonRemCliente.UseVisualStyleBackColor = false;
+            this.buttonRemCliente.Click += new System.EventHandler(this.buttonRemCliente_Click);
             // 
             // buttonEditCliente
             // 
@@ -68,6 +70,7 @@
             this.buttonEditCliente.TabIndex = 6;
             this.buttonEditCliente.Text = "Editar Cliente";
             this.buttonEditCliente.UseVisualStyleBackColor = false;
+            this.buttonEditCliente.Click += new System.EventHandler(this.buttonEditCliente_Click);
             // 
             // UC_Clientes
             // 

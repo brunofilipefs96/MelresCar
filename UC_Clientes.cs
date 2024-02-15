@@ -16,5 +16,23 @@ namespace Automobile
         {
             InitializeComponent();
         }
+
+        private void buttonAddCliente_Click(object sender, EventArgs e)
+        {
+            AdicionarCliente adicionarCliente = new AdicionarCliente();
+            adicionarCliente.Show();
+        }
+
+        private void buttonEditCliente_Click(object sender, EventArgs e)
+        {
+            EditarCliente editarCliente = new EditarCliente();
+            editarCliente.Show();
+        }
+
+        private void buttonRemCliente_Click(object sender, EventArgs e)
+        {
+            RemoverCliente removerCliente = new RemoverCliente();
+            removerCliente.Show();
+        }
     }
 }

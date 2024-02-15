@@ -57,6 +57,7 @@
             this.buttonRemVeiculo.TabIndex = 11;
             this.buttonRemVeiculo.Text = "Remover Veículo";
             this.buttonRemVeiculo.UseVisualStyleBackColor = false;
+            this.buttonRemVeiculo.Click += new System.EventHandler(this.buttonRemVeiculo_Click);
             // 
             // buttonAddVeiculo
             // 
@@ -69,6 +70,7 @@
             this.buttonAddVeiculo.TabIndex = 10;
             this.buttonAddVeiculo.Text = "Adicionar Veículo";
             this.buttonAddVeiculo.UseVisualStyleBackColor = false;
+            this.buttonAddVeiculo.Click += new System.EventHandler(this.buttonAddVeiculo_Click);
             // 
             // buttonListaVeiculo
             // 
