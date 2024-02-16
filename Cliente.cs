@@ -21,9 +21,22 @@ namespace Automobile
             NumCliente = -1;
         }
 
-        public Cliente(string nome, string nif, string morada, string email, string telemovel, int numCliente) : base (nome, nif, morada, email, telemovel)
+        public Cliente(string nome, string nif, string morada, string email, string telemovel) : base (nome, nif, morada, email, telemovel)
         {
-            NumCliente = numCliente;
+            NumCliente = gerarIdCliente();
+        }
+
+        private int gerarIdCliente()
+        {
+            int id = 0;
+            foreach (var cliente in Program.melresCar.Clientes)
+            {
+                if (cliente.NumCliente > id)
+                {
+                    id = cliente.NumCliente;
+                }
+            }
+            return id + 1;
         }
 
         public override string ToString()

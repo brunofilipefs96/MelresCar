@@ -18,20 +18,24 @@ namespace Automobile
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
             Carro carro = new Carro();
             Mota mota = new Mota();
-
-            Funcionario manuel = new Funcionario("Manuel","132132132","Rua da Quinta", "manuel@manual.pt","911111111",1,"manuel","qwerty",1000);
-
             melresCar.InserirVeiculo(carro);
             melresCar.InserirVeiculo(mota);
 
-            melresCar.escreverFicheiroCSV("veiculos");
+            Funcionario manuel = new Funcionario("Manuel", "132132132", "Rua da Quinta", "manuel@manual.pt", "911111111", 1, "manuel", "qwerty", 1000);
+            melresCar.InserirFuncionario(manuel);
+
+            Cliente cliente = new Cliente("Bruno","111111111","Rua do Bruno","bruno@bruno.pt","911111111");
+            melresCar.InserirCliente(cliente);
+
+            melresCar.EscreverFicheiroCSV("veiculos");
+            melresCar.EscreverFicheiroCSV("funcionarios");
+            melresCar.EscreverFicheiroCSV("clientes");
+            melresCar.EscreverFicheiroCSV("reservas");
 
             Application.Run(new MenuLogin());
-
-            
-
 
         }
     }

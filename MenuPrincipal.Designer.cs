@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.labelLoggedInAs = new System.Windows.Forms.Label();
             this.labelDataHoje = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonMenuPrincipal = new System.Windows.Forms.Button();
@@ -51,6 +52,7 @@
             this.panelLogout = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -65,6 +67,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.flowLayoutPanel1.Controls.Add(this.labelLoggedInAs);
             this.flowLayoutPanel1.Controls.Add(this.labelDataHoje);
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panelClientes);
@@ -73,6 +76,7 @@
             this.flowLayoutPanel1.Controls.Add(this.panelReservas);
             this.flowLayoutPanel1.Controls.Add(this.panelAddDay);
             this.flowLayoutPanel1.Controls.Add(this.panelLogout);
+            this.flowLayoutPanel1.Controls.Add(this.label1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -80,16 +84,25 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(207, 478);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
+            // labelLoggedInAs
+            // 
+            this.labelLoggedInAs.AutoSize = true;
+            this.labelLoggedInAs.ForeColor = System.Drawing.Color.White;
+            this.labelLoggedInAs.Location = new System.Drawing.Point(3, 15);
+            this.labelLoggedInAs.Name = "labelLoggedInAs";
+            this.labelLoggedInAs.Size = new System.Drawing.Size(41, 13);
+            this.labelLoggedInAs.TabIndex = 7;
+            this.labelLoggedInAs.Text = "Conta: ";
+            // 
             // labelDataHoje
             // 
             this.labelDataHoje.AutoSize = true;
             this.labelDataHoje.ForeColor = System.Drawing.Color.White;
-            this.labelDataHoje.Location = new System.Drawing.Point(3, 15);
+            this.labelDataHoje.Location = new System.Drawing.Point(50, 15);
             this.labelDataHoje.Name = "labelDataHoje";
-            this.labelDataHoje.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.labelDataHoje.Size = new System.Drawing.Size(106, 13);
+            this.labelDataHoje.Size = new System.Drawing.Size(36, 13);
             this.labelDataHoje.TabIndex = 0;
-            this.labelDataHoje.Text = "Data Hoje: ";
+            this.labelDataHoje.Text = "Data: ";
             // 
             // panel1
             // 
@@ -371,6 +384,17 @@
             this.button7.Text = "Clientes";
             this.button7.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 476);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(106, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Data Hoje: ";
+            // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -427,5 +451,7 @@
         private System.Windows.Forms.Button buttonAddDay;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label labelDataHoje;
+        private System.Windows.Forms.Label labelLoggedInAs;
+        private System.Windows.Forms.Label label1;
     }
 }

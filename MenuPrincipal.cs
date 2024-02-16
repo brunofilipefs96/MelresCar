@@ -19,6 +19,7 @@ namespace Automobile
             UC_MenuPrincipal ucMenuPrincipal = new UC_MenuPrincipal();
             addUserControl(ucMenuPrincipal, buttonMenuPrincipal);
             labelDataHoje.Text = "Data: " + DateTime.Now.ToString("dd/MM/yyyy");
+            labelLoggedInAs.Text = "Conta: " + Program.melresCar.LoggedAccount;
         }
         
         private void addUserControl(UserControl userControl, Button botaoSelecionado)
@@ -76,10 +77,8 @@ namespace Automobile
 
         private void buttonAddDay_Click(object sender, EventArgs e)
         {
-            labelDataHoje.Text = "Data: " + DateTime.Now.AddDays(1).ToString("dd/MM/yyyy") + " (+1)";
-            buttonAddDay.Visible = false;
-            panelAddDay.Visible = false;
-
+            Program.melresCar.DaysAdded++;
+            labelDataHoje.Text = "Data: " + DateTime.Now.AddDays(Program.melresCar.DaysAdded).ToString("dd/MM/yyyy") + " (+" + Program.melresCar.DaysAdded + ")";
         }
     }
 }

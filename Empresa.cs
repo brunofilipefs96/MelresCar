@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace Automobile
 {
@@ -17,7 +18,8 @@ namespace Automobile
         private int _contaReservas;
         private int _contaClientes;
         private int _contaFuncionarios;
-
+        private string _loggedAccount;
+        private int _daysAdded;
 
         public List<Veiculo> Veiculos
         {
@@ -39,16 +41,66 @@ namespace Automobile
             get { return _reservas; }
             set { _reservas = value; }
         }
+        public int ContaVeiculos
+        {
+            get { return _contaVeiculos; }
+            set { _contaVeiculos = value; }
+        }
+        public int ContaReservas
+        {
+            get { return _contaReservas; }
+            set { _contaReservas = value; }
+        }
+        public int ContaClientes
+        {
+            get { return _contaClientes; }
+            set { _contaClientes = value; }
+        }
+        public int ContaFuncionarios
+        {
+            get { return _contaFuncionarios; }
+            set { _contaFuncionarios = value; }
+        }
+        public string LoggedAccount
+        {
+            get { return _loggedAccount; }
+            set { _loggedAccount = value; }
+        }
+        public int DaysAdded
+        {
+            get { return _daysAdded; }
+            set { _daysAdded = value; }
+        }
         public Empresa()
         {
             Veiculos = new List<Veiculo>();
             Clientes = new List<Cliente>();
             Funcionarios = new List<Funcionario>();
             Reservas = new List<Reserva>();
+            ContaVeiculos = 0;
+            ContaReservas = 0;
+            ContaClientes = 0;
+            ContaFuncionarios = 0;
+            LoggedAccount = "";
+            DaysAdded = 0;
+        }
+        public bool VerificaInteiro(string numero)
+        {
+            if (int.TryParse(numero, out int result) && result > 0)
+            {
+                return true;
+            }
+            return false;
         }
 
+        public bool VerificaEmail(string email)
+        {
+            string regex = @"^[^@\s]+@[^@\s]+\.(pt|com|net|org|gov)$";
 
-        public void carregarFicheiroCSV(string nomeFicheiro)
+            return Regex.IsMatch(email, regex, RegexOptions.IgnoreCase);
+        }
+
+        public void CarregarFicheiroCSV(string nomeFicheiro)
         {
             if (!File.Exists(nomeFicheiro + ".csv"))
             {
@@ -209,7 +261,7 @@ namespace Automobile
             }
         }
 
-        public void escreverFicheiroCSV(string nomeFicheiro)
+        public void EscreverFicheiroCSV(string nomeFicheiro)
         {
             try
             {
@@ -277,17 +329,30 @@ namespace Automobile
         {
             Funcionarios.Add(funcionario);
         }
+        public void InserirReserva(Reserva reserva)
+        {
+            Reservas.Add(reserva);
+        }
+        
+        public void AlterarCliente(Cliente cliente, int indexCliente)
+        {
+            Clientes[indexCliente] = cliente;
+        }
         public void RemoverVeiculo(Veiculo veiculo)
         {
             Veiculos.Remove(veiculo);
         }
-        public void RemoverCliente(Cliente cliente)
+        public void RemoverCliente(int indexCliente)
         {
-            Clientes.Remove(cliente);
+            Clientes.RemoveAt(indexCliente);
         }
         public void RemoverFuncionario(Funcionario funcionario)
         {
             Funcionarios.Remove(funcionario);
+        }
+        public void RemoverReserva(Reserva reserva)
+        {
+            Reservas.Remove(reserva);
         }
         public void AlterarEstadoVeiculo(Veiculo veiculo, string estado)
         {

@@ -12,7 +12,7 @@ namespace Automobile
 {
     public partial class MenuLogin : Form
     {
-        MenuPrincipal menuPrincipal = new MenuPrincipal();
+        bool loggedIn = false;
 
         public MenuLogin()
         {
@@ -23,22 +23,30 @@ namespace Automobile
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            
-            foreach (var fields in Program.melresCar.Funcionarios)
+            if (textBoxUsername.Text == "admin" && textBoxPassword.Text == "admin") {
+                loggedIn = true;
+                Program.melresCar.LoggedAccount = "admin";
+                MenuPrincipal menuPrincipal = new MenuPrincipal();
+                menuPrincipal.Show();
+                this.Hide();
+            }
+            else
             {
-                if (textBoxUsername.Text == fields.Username && textBoxPassword.Text == fields.Password)
+                foreach (var fields in Program.melresCar.Funcionarios)
                 {
-                    menuPrincipal.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Username ou Password incorretos!");
+                    if (textBoxUsername.Text == fields.Username && textBoxPassword.Text == fields.Password)
+                    {
+                        loggedIn = true;
+                        Program.melresCar.LoggedAccount = fields.Username;
+                        MenuPrincipal menuPrincipal = new MenuPrincipal();
+                        menuPrincipal.Show();
+                        this.Hide();
+                    }
                 }
             }
-
-
-            
+            if (!loggedIn){
+                MessageBox.Show("Username ou password incorretos");
+            }
         }
     }
 }
