@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Automobile
 {
-    public partial class ListarCarro : UserControl
+    public partial class UC_ListarCamioneta : UserControl
     {
-        public ListarCarro()
+        public UC_ListarCamioneta()
         {
             InitializeComponent();
         }

@@ -316,7 +316,6 @@ namespace Automobile
                 Console.WriteLine($"Erro ao escrever no ficheiro CSV: {ex.Message}");
             }
         }
-
         public void InserirVeiculo(Veiculo veiculo)
         {
             Veiculos.Add(veiculo);

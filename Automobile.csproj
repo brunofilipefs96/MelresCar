@@ -75,17 +75,29 @@
     </Compile>
     <Compile Include="Empresa.cs" />
     <Compile Include="Funcionario.cs" />
-    <Compile Include="ListarCarro.cs">
+    <Compile Include="UC_ListarCamiao.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ListarCarro.Designer.cs">
-      <DependentUpon>ListarCarro.cs</DependentUpon>
+    <Compile Include="UC_ListarCamiao.Designer.cs">
+      <DependentUpon>UC_ListarCamiao.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListarMota.cs">
+    <Compile Include="UC_ListarCamioneta.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ListarMota.Designer.cs">
-      <DependentUpon>ListarMota.cs</DependentUpon>
+    <Compile Include="UC_ListarCamioneta.Designer.cs">
+      <DependentUpon>UC_ListarCamioneta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ListarCarro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ListarCarro.Designer.cs">
+      <DependentUpon>UC_ListarCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ListarMota.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ListarMota.Designer.cs">
+      <DependentUpon>UC_ListarMota.cs</DependentUpon>
     </Compile>
     <Compile Include="ListaVeiculo.cs">
       <SubType>Form</SubType>
@@ -168,11 +180,17 @@
     <EmbeddedResource Include="EditarCliente.resx">
       <DependentUpon>EditarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListarCarro.resx">
-      <DependentUpon>ListarCarro.cs</DependentUpon>
+    <EmbeddedResource Include="UC_ListarCamiao.resx">
+      <DependentUpon>UC_ListarCamiao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListarMota.resx">
-      <DependentUpon>ListarMota.cs</DependentUpon>
+    <EmbeddedResource Include="UC_ListarCamioneta.resx">
+      <DependentUpon>UC_ListarCamioneta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ListarCarro.resx">
+      <DependentUpon>UC_ListarCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ListarMota.resx">
+      <DependentUpon>UC_ListarMota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaVeiculo.resx">
       <DependentUpon>ListaVeiculo.cs</DependentUpon>
