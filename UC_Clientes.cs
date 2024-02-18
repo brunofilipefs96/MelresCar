@@ -12,51 +12,60 @@ namespace Automobile
 {
     public partial class UC_Clientes : UserControl
     {
+        private Timer timer;
         public UC_Clientes()
         {
             InitializeComponent();
+            timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += Timer_Tick;
+            timer.Start();
             Dock = DockStyle.Fill;
-            dataGridView1.ColumnCount = 6;
-            dataGridView1.Columns[0].Name = "Nome";
-            dataGridView1.Columns[1].Name = "NIF";
-            dataGridView1.Columns[2].Name = "Morada";
-            dataGridView1.Columns[3].Name = "Email";
-            dataGridView1.Columns[4].Name = "Telemovel";
-            dataGridView1.Columns[5].Name = "NumCliente";
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.AllowUserToOrderColumns = false;
-            dataGridView1.AllowUserToResizeColumns = false;
-            dataGridView1.AllowUserToResizeRows = false;
-            dataGridView1.ReadOnly = true;
-            dataGridView1.MultiSelect = false;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            UC_Clientes_Load(this, new EventArgs());
+            dataGridViewClientes.Columns.Add("Nome", "Nome");
+            dataGridViewClientes.Columns.Add("Nif", "NIF");
+            dataGridViewClientes.Columns.Add("Morada", "Morada");
+            dataGridViewClientes.Columns.Add("Email", "Email");
+            dataGridViewClientes.Columns.Add("Telemovel", "Telemovel");
+            dataGridViewClientes.Columns.Add("NumCliente", "NumCliente");
+
+            //configurações do datagridview
+            dataGridViewClientes.EnableHeadersVisualStyles = false;
+            dataGridViewClientes.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            dataGridViewClientes.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridViewClientes.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
+            dataGridViewClientes.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            dataGridViewClientes.RowHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridViewClientes.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            dataGridViewClientes.RowsDefaultCellStyle.ForeColor = Color.White;
         }
 
         private void buttonAddCliente_Click(object sender, EventArgs e)
         {
-            AdicionarCliente adicionarCliente = new AdicionarCliente();
+            MenuAdicionarCliente adicionarCliente = new MenuAdicionarCliente();
             adicionarCliente.Show();
         }
 
         private void buttonEditCliente_Click(object sender, EventArgs e)
         {
-            EditarCliente editarCliente = new EditarCliente();
+            MenuEditarCliente editarCliente = new MenuEditarCliente();
             editarCliente.Show();
         }
 
         private void buttonRemCliente_Click(object sender, EventArgs e)
         {
-            RemoverCliente removerCliente = new RemoverCliente();
+            MenuRemoverCliente removerCliente = new MenuRemoverCliente();
             removerCliente.Show();
         }
 
-        private void UC_Clientes_Load(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
-            foreach (var cliente in Program.melresCar.Clientes)
+            if (!IsDisposed && !Disposing)  //controla se o datagridview foi eliminado se sim não faz nada(problemas no logout)
             {
-                dataGridView1.Rows.Add(cliente.Nome, cliente.Nif, cliente.Morada, cliente.Email, cliente.Telemovel, cliente.NumCliente);
+                dataGridViewClientes.Rows.Clear();
+                foreach (var cliente in Program.melresCar.Clientes)
+                {
+                    dataGridViewClientes.Rows.Add(cliente.Nome, cliente.Nif, cliente.Morada, cliente.Email, cliente.Telemovel, cliente.NumCliente);
+                }
             }
         }
     }

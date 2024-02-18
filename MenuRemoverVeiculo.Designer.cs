@@ -1,6 +1,6 @@
 ﻿namespace Automobile
 {
-    partial class RemoverVeiculo
+    partial class MenuRemoverVeiculo
     {
         /// <summary>
         /// Required designer variable.
@@ -64,10 +64,10 @@
             // 
             // buttonAdicionarVeiculo
             // 
-            this.buttonAdicionarVeiculo.Location = new System.Drawing.Point(698, 416);
+            this.buttonAdicionarVeiculo.Location = new System.Drawing.Point(599, 368);
             this.buttonAdicionarVeiculo.Name = "buttonAdicionarVeiculo";
             this.buttonAdicionarVeiculo.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonAdicionarVeiculo.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdicionarVeiculo.Size = new System.Drawing.Size(117, 52);
             this.buttonAdicionarVeiculo.TabIndex = 58;
             this.buttonAdicionarVeiculo.Text = "Remover";
             // 
@@ -109,108 +109,96 @@
             this.labelPesoMaxCheck.AutoSize = true;
             this.labelPesoMaxCheck.Location = new System.Drawing.Point(460, 200);
             this.labelPesoMaxCheck.Name = "labelPesoMaxCheck";
-            this.labelPesoMaxCheck.Size = new System.Drawing.Size(41, 13);
+            this.labelPesoMaxCheck.Size = new System.Drawing.Size(0, 13);
             this.labelPesoMaxCheck.TabIndex = 37;
-            this.labelPesoMaxCheck.Text = "label12";
             // 
             // labelNpassageirosCheck
             // 
             this.labelNpassageirosCheck.AutoSize = true;
             this.labelNpassageirosCheck.Location = new System.Drawing.Point(460, 177);
             this.labelNpassageirosCheck.Name = "labelNpassageirosCheck";
-            this.labelNpassageirosCheck.Size = new System.Drawing.Size(41, 13);
+            this.labelNpassageirosCheck.Size = new System.Drawing.Size(0, 13);
             this.labelNpassageirosCheck.TabIndex = 36;
-            this.labelNpassageirosCheck.Text = "label11";
             // 
             // labelNeixoCheck
             // 
             this.labelNeixoCheck.AutoSize = true;
             this.labelNeixoCheck.Location = new System.Drawing.Point(460, 150);
             this.labelNeixoCheck.Name = "labelNeixoCheck";
-            this.labelNeixoCheck.Size = new System.Drawing.Size(41, 13);
+            this.labelNeixoCheck.Size = new System.Drawing.Size(0, 13);
             this.labelNeixoCheck.TabIndex = 35;
-            this.labelNeixoCheck.Text = "label10";
             // 
             // labelNportasCheck
             // 
             this.labelNportasCheck.AutoSize = true;
             this.labelNportasCheck.Location = new System.Drawing.Point(460, 122);
             this.labelNportasCheck.Name = "labelNportasCheck";
-            this.labelNportasCheck.Size = new System.Drawing.Size(35, 13);
+            this.labelNportasCheck.Size = new System.Drawing.Size(0, 13);
             this.labelNportasCheck.TabIndex = 34;
-            this.labelNportasCheck.Text = "label9";
             // 
             // labelCaixaCheck
             // 
             this.labelCaixaCheck.AutoSize = true;
             this.labelCaixaCheck.Location = new System.Drawing.Point(457, 96);
             this.labelCaixaCheck.Name = "labelCaixaCheck";
-            this.labelCaixaCheck.Size = new System.Drawing.Size(35, 13);
+            this.labelCaixaCheck.Size = new System.Drawing.Size(0, 13);
             this.labelCaixaCheck.TabIndex = 33;
-            this.labelCaixaCheck.Text = "label8";
             // 
             // labelCilindradaCheck
             // 
             this.labelCilindradaCheck.AutoSize = true;
             this.labelCilindradaCheck.Location = new System.Drawing.Point(460, 70);
             this.labelCilindradaCheck.Name = "labelCilindradaCheck";
-            this.labelCilindradaCheck.Size = new System.Drawing.Size(35, 13);
+            this.labelCilindradaCheck.Size = new System.Drawing.Size(0, 13);
             this.labelCilindradaCheck.TabIndex = 32;
-            this.labelCilindradaCheck.Text = "label7";
             // 
             // labelPrecoCheck
             // 
             this.labelPrecoCheck.AutoSize = true;
             this.labelPrecoCheck.Location = new System.Drawing.Point(128, 202);
             this.labelPrecoCheck.Name = "labelPrecoCheck";
-            this.labelPrecoCheck.Size = new System.Drawing.Size(35, 13);
+            this.labelPrecoCheck.Size = new System.Drawing.Size(0, 13);
             this.labelPrecoCheck.TabIndex = 31;
-            this.labelPrecoCheck.Text = "label6";
             // 
             // labelAnoCheck
             // 
             this.labelAnoCheck.AutoSize = true;
             this.labelAnoCheck.Location = new System.Drawing.Point(128, 177);
             this.labelAnoCheck.Name = "labelAnoCheck";
-            this.labelAnoCheck.Size = new System.Drawing.Size(35, 13);
+            this.labelAnoCheck.Size = new System.Drawing.Size(0, 13);
             this.labelAnoCheck.TabIndex = 30;
-            this.labelAnoCheck.Text = "label5";
             // 
             // labelCombustivelCheck
             // 
             this.labelCombustivelCheck.AutoSize = true;
             this.labelCombustivelCheck.Location = new System.Drawing.Point(128, 150);
             this.labelCombustivelCheck.Name = "labelCombustivelCheck";
-            this.labelCombustivelCheck.Size = new System.Drawing.Size(35, 13);
+            this.labelCombustivelCheck.Size = new System.Drawing.Size(0, 13);
             this.labelCombustivelCheck.TabIndex = 29;
-            this.labelCombustivelCheck.Text = "label4";
             // 
             // labelMatriculaCheck
             // 
             this.labelMatriculaCheck.AutoSize = true;
             this.labelMatriculaCheck.Location = new System.Drawing.Point(128, 122);
             this.labelMatriculaCheck.Name = "labelMatriculaCheck";
-            this.labelMatriculaCheck.Size = new System.Drawing.Size(35, 13);
+            this.labelMatriculaCheck.Size = new System.Drawing.Size(0, 13);
             this.labelMatriculaCheck.TabIndex = 28;
-            this.labelMatriculaCheck.Text = "label3";
             // 
             // labelModeloCheck
             // 
             this.labelModeloCheck.AutoSize = true;
             this.labelModeloCheck.Location = new System.Drawing.Point(128, 96);
             this.labelModeloCheck.Name = "labelModeloCheck";
-            this.labelModeloCheck.Size = new System.Drawing.Size(35, 13);
+            this.labelModeloCheck.Size = new System.Drawing.Size(0, 13);
             this.labelModeloCheck.TabIndex = 27;
-            this.labelModeloCheck.Text = "label2";
             // 
             // labelMarcaCheck
             // 
             this.labelMarcaCheck.AutoSize = true;
             this.labelMarcaCheck.Location = new System.Drawing.Point(128, 70);
             this.labelMarcaCheck.Name = "labelMarcaCheck";
-            this.labelMarcaCheck.Size = new System.Drawing.Size(35, 13);
+            this.labelMarcaCheck.Size = new System.Drawing.Size(0, 13);
             this.labelMarcaCheck.TabIndex = 26;
-            this.labelMarcaCheck.Text = "label1";
             // 
             // labelPesoMax
             // 
@@ -422,7 +410,7 @@
             this.buttonEscolherTipo.TabIndex = 56;
             this.buttonEscolherTipo.Text = "Procurar";
             // 
-            // RemoverVeiculo
+            // MenuRemoverVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -435,7 +423,7 @@
             this.Controls.Add(this.labelEscolheTipo);
             this.Controls.Add(this.comboBoxEscolherVeiculo);
             this.Controls.Add(this.buttonEscolherTipo);
-            this.Name = "RemoverVeiculo";
+            this.Name = "MenuRemoverVeiculo";
             this.Text = "RemoverVeiculo";
             this.groupboxAdiciopnarCliente.ResumeLayout(false);
             this.groupboxAdiciopnarCliente.PerformLayout();

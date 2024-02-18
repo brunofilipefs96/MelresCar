@@ -1,6 +1,6 @@
 ﻿namespace Automobile
 {
-    partial class AdicionarCliente
+    partial class MenuAdicionarCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonAdicionar = new ReaLTaiizor.Controls.CrownButton();
             this.textBoxTelemovel = new ReaLTaiizor.Controls.CrownTextBox();
             this.labelNtelemovel = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.textBoxNif = new ReaLTaiizor.Controls.CrownTextBox();
@@ -40,24 +39,16 @@
             this.labelEmail = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelName = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            this.buttonAdicionar = new ReaLTaiizor.Controls.CrownButton();
+            this.crownButton1 = new ReaLTaiizor.Controls.CrownButton();
             this.SuspendLayout();
-            // 
-            // buttonAdicionar
-            // 
-            this.buttonAdicionar.Location = new System.Drawing.Point(583, 180);
-            this.buttonAdicionar.Name = "buttonAdicionar";
-            this.buttonAdicionar.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonAdicionar.Size = new System.Drawing.Size(75, 23);
-            this.buttonAdicionar.TabIndex = 21;
-            this.buttonAdicionar.Text = "Adicionar";
-            this.buttonAdicionar.Click += new System.EventHandler(this.buttonAdicionar_Click);
             // 
             // textBoxTelemovel
             // 
             this.textBoxTelemovel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.textBoxTelemovel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxTelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxTelemovel.Location = new System.Drawing.Point(470, 129);
+            this.textBoxTelemovel.Location = new System.Drawing.Point(130, 158);
             this.textBoxTelemovel.MaxLength = 9;
             this.textBoxTelemovel.Name = "textBoxTelemovel";
             this.textBoxTelemovel.Size = new System.Drawing.Size(150, 20);
@@ -69,7 +60,7 @@
             this.labelNtelemovel.BackColor = System.Drawing.Color.Transparent;
             this.labelNtelemovel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelNtelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNtelemovel.Location = new System.Drawing.Point(362, 129);
+            this.labelNtelemovel.Location = new System.Drawing.Point(13, 158);
             this.labelNtelemovel.Name = "labelNtelemovel";
             this.labelNtelemovel.Size = new System.Drawing.Size(111, 20);
             this.labelNtelemovel.TabIndex = 19;
@@ -80,7 +71,7 @@
             this.textBoxNif.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.textBoxNif.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxNif.Location = new System.Drawing.Point(471, 77);
+            this.textBoxNif.Location = new System.Drawing.Point(131, 129);
             this.textBoxNif.MaxLength = 9;
             this.textBoxNif.Name = "textBoxNif";
             this.textBoxNif.Size = new System.Drawing.Size(149, 20);
@@ -92,7 +83,7 @@
             this.labelNif.BackColor = System.Drawing.Color.Transparent;
             this.labelNif.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNif.Location = new System.Drawing.Point(434, 77);
+            this.labelNif.Location = new System.Drawing.Point(84, 129);
             this.labelNif.Name = "labelNif";
             this.labelNif.Size = new System.Drawing.Size(40, 20);
             this.labelNif.TabIndex = 17;
@@ -103,7 +94,7 @@
             this.textBoxMorada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.textBoxMorada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMorada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxMorada.Location = new System.Drawing.Point(137, 103);
+            this.textBoxMorada.Location = new System.Drawing.Point(131, 103);
             this.textBoxMorada.Name = "textBoxMorada";
             this.textBoxMorada.Size = new System.Drawing.Size(483, 20);
             this.textBoxMorada.TabIndex = 16;
@@ -114,7 +105,7 @@
             this.labelMorada.BackColor = System.Drawing.Color.Transparent;
             this.labelMorada.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelMorada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelMorada.Location = new System.Drawing.Point(69, 103);
+            this.labelMorada.Location = new System.Drawing.Point(53, 103);
             this.labelMorada.Name = "labelMorada";
             this.labelMorada.Size = new System.Drawing.Size(71, 20);
             this.labelMorada.TabIndex = 15;
@@ -125,7 +116,7 @@
             this.textBoxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxName.Location = new System.Drawing.Point(137, 77);
+            this.textBoxName.Location = new System.Drawing.Point(130, 77);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(288, 20);
             this.textBoxName.TabIndex = 14;
@@ -135,7 +126,7 @@
             this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxEmail.Location = new System.Drawing.Point(137, 129);
+            this.textBoxEmail.Location = new System.Drawing.Point(130, 186);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(224, 20);
             this.textBoxEmail.TabIndex = 11;
@@ -146,7 +137,7 @@
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
             this.labelEmail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelEmail.Location = new System.Drawing.Point(85, 129);
+            this.labelEmail.Location = new System.Drawing.Point(69, 186);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(55, 20);
             this.labelEmail.TabIndex = 13;
@@ -158,7 +149,7 @@
             this.labelName.BackColor = System.Drawing.Color.Transparent;
             this.labelName.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelName.Location = new System.Drawing.Point(80, 77);
+            this.labelName.Location = new System.Drawing.Point(64, 77);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(60, 20);
             this.labelName.TabIndex = 12;
@@ -166,24 +157,45 @@
             // 
             // bigLabel1
             // 
-            this.bigLabel1.AutoSize = true;
             this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel1.Location = new System.Drawing.Point(12, 9);
+            this.bigLabel1.Location = new System.Drawing.Point(0, 0);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(275, 46);
+            this.bigLabel1.Size = new System.Drawing.Size(770, 46);
             this.bigLabel1.TabIndex = 22;
             this.bigLabel1.Text = "Adicionar Cliente";
+            this.bigLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // AdicionarCliente
+            // buttonAdicionar
+            // 
+            this.buttonAdicionar.Location = new System.Drawing.Point(163, 263);
+            this.buttonAdicionar.Name = "buttonAdicionar";
+            this.buttonAdicionar.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonAdicionar.Size = new System.Drawing.Size(117, 52);
+            this.buttonAdicionar.TabIndex = 58;
+            this.buttonAdicionar.Text = "Adicionar";
+            this.buttonAdicionar.Click += new System.EventHandler(this.buttonAdicionar_Click_2);
+            // 
+            // crownButton1
+            // 
+            this.crownButton1.Location = new System.Drawing.Point(452, 263);
+            this.crownButton1.Name = "crownButton1";
+            this.crownButton1.Padding = new System.Windows.Forms.Padding(5);
+            this.crownButton1.Size = new System.Drawing.Size(117, 52);
+            this.crownButton1.TabIndex = 59;
+            this.crownButton1.Text = "Cancelar";
+            // 
+            // MenuAdicionarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(689, 223);
-            this.Controls.Add(this.bigLabel1);
+            this.ClientSize = new System.Drawing.Size(770, 397);
+            this.Controls.Add(this.crownButton1);
             this.Controls.Add(this.buttonAdicionar);
+            this.Controls.Add(this.bigLabel1);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.textBoxTelemovel);
@@ -194,7 +206,7 @@
             this.Controls.Add(this.labelNif);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxNif);
-            this.Name = "AdicionarCliente";
+            this.Name = "MenuAdicionarCliente";
             this.Text = "AdicionarCliente";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -202,8 +214,6 @@
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.CrownButton buttonAdicionar;
         private ReaLTaiizor.Controls.CrownTextBox textBoxTelemovel;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelNtelemovel;
         private ReaLTaiizor.Controls.CrownTextBox textBoxNif;
@@ -215,5 +225,7 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelEmail;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelName;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private ReaLTaiizor.Controls.CrownButton buttonAdicionar;
+        private ReaLTaiizor.Controls.CrownButton crownButton1;
     }
 }

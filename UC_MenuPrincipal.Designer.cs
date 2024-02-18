@@ -48,7 +48,7 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Controls.Add(this.label1);
             this.Name = "UC_MenuPrincipal";
-            this.Size = new System.Drawing.Size(802, 478);
+            this.Size = new System.Drawing.Size(1026, 478);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,6 +1,6 @@
 ﻿namespace Automobile
 {
-    partial class RemoverCliente
+    partial class MenuEditarCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBoxRemoverCliente = new System.Windows.Forms.GroupBox();
+            this.groupBoxEditarCliente = new System.Windows.Forms.GroupBox();
             this.labelName = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.textBoxName = new ReaLTaiizor.Controls.CrownTextBox();
             this.textBoxTelemovel = new ReaLTaiizor.Controls.CrownTextBox();
@@ -39,32 +39,32 @@
             this.labelNif = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.textBoxEmail = new ReaLTaiizor.Controls.CrownTextBox();
             this.textBoxNif = new ReaLTaiizor.Controls.CrownTextBox();
-            this.buttonRemover = new ReaLTaiizor.Controls.CrownButton();
+            this.buttonAlterar = new ReaLTaiizor.Controls.CrownButton();
             this.buttonProcurar = new ReaLTaiizor.Controls.CrownButton();
             this.textBoxCheckNif = new ReaLTaiizor.Controls.CrownTextBox();
             this.labelCheckNif = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.groupBoxRemoverCliente.SuspendLayout();
+            this.groupBoxEditarCliente.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBoxRemoverCliente
+            // groupBoxEditarCliente
             // 
-            this.groupBoxRemoverCliente.Controls.Add(this.labelName);
-            this.groupBoxRemoverCliente.Controls.Add(this.textBoxName);
-            this.groupBoxRemoverCliente.Controls.Add(this.textBoxTelemovel);
-            this.groupBoxRemoverCliente.Controls.Add(this.textBoxMorada);
-            this.groupBoxRemoverCliente.Controls.Add(this.labelEmail);
-            this.groupBoxRemoverCliente.Controls.Add(this.labelMorada);
-            this.groupBoxRemoverCliente.Controls.Add(this.labelNtelemovel);
-            this.groupBoxRemoverCliente.Controls.Add(this.labelNif);
-            this.groupBoxRemoverCliente.Controls.Add(this.textBoxEmail);
-            this.groupBoxRemoverCliente.Controls.Add(this.textBoxNif);
-            this.groupBoxRemoverCliente.Controls.Add(this.buttonRemover);
-            this.groupBoxRemoverCliente.Location = new System.Drawing.Point(22, 73);
-            this.groupBoxRemoverCliente.Name = "groupBoxRemoverCliente";
-            this.groupBoxRemoverCliente.Size = new System.Drawing.Size(637, 173);
-            this.groupBoxRemoverCliente.TabIndex = 32;
-            this.groupBoxRemoverCliente.TabStop = false;
-            this.groupBoxRemoverCliente.Text = "Remover Cliente";
+            this.groupBoxEditarCliente.Controls.Add(this.labelName);
+            this.groupBoxEditarCliente.Controls.Add(this.textBoxName);
+            this.groupBoxEditarCliente.Controls.Add(this.textBoxTelemovel);
+            this.groupBoxEditarCliente.Controls.Add(this.textBoxMorada);
+            this.groupBoxEditarCliente.Controls.Add(this.labelEmail);
+            this.groupBoxEditarCliente.Controls.Add(this.labelMorada);
+            this.groupBoxEditarCliente.Controls.Add(this.labelNtelemovel);
+            this.groupBoxEditarCliente.Controls.Add(this.labelNif);
+            this.groupBoxEditarCliente.Controls.Add(this.textBoxEmail);
+            this.groupBoxEditarCliente.Controls.Add(this.textBoxNif);
+            this.groupBoxEditarCliente.Controls.Add(this.buttonAlterar);
+            this.groupBoxEditarCliente.Location = new System.Drawing.Point(22, 73);
+            this.groupBoxEditarCliente.Name = "groupBoxEditarCliente";
+            this.groupBoxEditarCliente.Size = new System.Drawing.Size(637, 173);
+            this.groupBoxEditarCliente.TabIndex = 28;
+            this.groupBoxEditarCliente.TabStop = false;
+            this.groupBoxEditarCliente.Text = "Editar Cliente";
             // 
             // labelName
             // 
@@ -178,15 +178,15 @@
             this.textBoxNif.Size = new System.Drawing.Size(149, 20);
             this.textBoxNif.TabIndex = 32;
             // 
-            // buttonRemover
+            // buttonAlterar
             // 
-            this.buttonRemover.Location = new System.Drawing.Point(543, 125);
-            this.buttonRemover.Name = "buttonRemover";
-            this.buttonRemover.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonRemover.Size = new System.Drawing.Size(75, 23);
-            this.buttonRemover.TabIndex = 24;
-            this.buttonRemover.Text = "Remover";
-            this.buttonRemover.Click += new System.EventHandler(this.buttonRemover_Click);
+            this.buttonAlterar.Location = new System.Drawing.Point(543, 125);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonAlterar.Size = new System.Drawing.Size(75, 23);
+            this.buttonAlterar.TabIndex = 24;
+            this.buttonAlterar.Text = "Alterar";
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // buttonProcurar
             // 
@@ -194,7 +194,7 @@
             this.buttonProcurar.Name = "buttonProcurar";
             this.buttonProcurar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonProcurar.Size = new System.Drawing.Size(75, 23);
-            this.buttonProcurar.TabIndex = 31;
+            this.buttonProcurar.TabIndex = 27;
             this.buttonProcurar.Text = "Procurar";
             this.buttonProcurar.Click += new System.EventHandler(this.buttonProcurar_Click);
             // 
@@ -207,7 +207,7 @@
             this.textBoxCheckNif.MaxLength = 9;
             this.textBoxCheckNif.Name = "textBoxCheckNif";
             this.textBoxCheckNif.Size = new System.Drawing.Size(183, 20);
-            this.textBoxCheckNif.TabIndex = 30;
+            this.textBoxCheckNif.TabIndex = 26;
             // 
             // labelCheckNif
             // 
@@ -218,23 +218,23 @@
             this.labelCheckNif.Location = new System.Drawing.Point(41, 30);
             this.labelCheckNif.Name = "labelCheckNif";
             this.labelCheckNif.Size = new System.Drawing.Size(92, 20);
-            this.labelCheckNif.TabIndex = 29;
+            this.labelCheckNif.TabIndex = 25;
             this.labelCheckNif.Text = "Insira o Nif:";
             // 
-            // RemoverCliente
+            // MenuEditarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(695, 273);
-            this.Controls.Add(this.groupBoxRemoverCliente);
+            this.Controls.Add(this.groupBoxEditarCliente);
             this.Controls.Add(this.buttonProcurar);
             this.Controls.Add(this.textBoxCheckNif);
             this.Controls.Add(this.labelCheckNif);
-            this.Name = "RemoverCliente";
-            this.Text = "RemoverCliente";
-            this.groupBoxRemoverCliente.ResumeLayout(false);
-            this.groupBoxRemoverCliente.PerformLayout();
+            this.Name = "MenuEditarCliente";
+            this.Text = "EditarCliente";
+            this.groupBoxEditarCliente.ResumeLayout(false);
+            this.groupBoxEditarCliente.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,7 +242,11 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBoxRemoverCliente;
+        private System.Windows.Forms.GroupBox groupBoxEditarCliente;
+        private ReaLTaiizor.Controls.CrownButton buttonProcurar;
+        private ReaLTaiizor.Controls.CrownTextBox textBoxCheckNif;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelCheckNif;
+        private ReaLTaiizor.Controls.CrownButton buttonAlterar;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelName;
         private ReaLTaiizor.Controls.CrownTextBox textBoxName;
         private ReaLTaiizor.Controls.CrownTextBox textBoxTelemovel;
@@ -253,9 +257,5 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelNif;
         private ReaLTaiizor.Controls.CrownTextBox textBoxEmail;
         private ReaLTaiizor.Controls.CrownTextBox textBoxNif;
-        private ReaLTaiizor.Controls.CrownButton buttonRemover;
-        private ReaLTaiizor.Controls.CrownButton buttonProcurar;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxCheckNif;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelCheckNif;
     }
 }

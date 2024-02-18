@@ -400,14 +400,14 @@
             this.panelMain.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panelMain.Location = new System.Drawing.Point(204, 0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(802, 478);
+            this.panelMain.Size = new System.Drawing.Size(891, 478);
             this.panelMain.TabIndex = 2;
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 478);
+            this.ClientSize = new System.Drawing.Size(1093, 478);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

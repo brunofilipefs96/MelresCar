@@ -45,6 +45,7 @@
             this.buttonEditVeiculo.TabIndex = 12;
             this.buttonEditVeiculo.Text = "Editar Veículo";
             this.buttonEditVeiculo.UseVisualStyleBackColor = false;
+            this.buttonEditVeiculo.Click += new System.EventHandler(this.buttonEditVeiculo_Click);
             // 
             // buttonRemVeiculo
             // 

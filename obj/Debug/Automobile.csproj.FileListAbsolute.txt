@@ -55,7 +55,6 @@ C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.csproj.CopyComple
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.exe
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.pdb
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.ListaVeiculo.resources
-C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_ListarVeiculo.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\bin\Debug\Automobile.exe.config
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\bin\Debug\Automobile.exe
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\bin\Debug\Automobile.pdb
@@ -171,3 +170,16 @@ C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.UC
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.UC_ListarMota.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.UC_ListarCamiao.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.UC_ListarCamioneta.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_ListarCamiao.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_ListarCamioneta.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_ListarCarro.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_ListarMota.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuAdicionarFuncionario.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuAdicionarCliente.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuEditarCliente.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuRemoverCliente.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuRemoverVeiculo.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuAdicionarVeiculo.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuEditarFuncionario.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuEditarVeiculo.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuRemoverFuncionario.resources

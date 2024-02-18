@@ -10,16 +10,24 @@ using System.Windows.Forms;
 
 namespace Automobile
 {
-    public partial class RemoverCliente : Form
+    public partial class MenuRemoverCliente : Form
     {
         private int _indexCliente;
-        public RemoverCliente()
+        public MenuRemoverCliente()
         {
             InitializeComponent();
             groupBoxRemoverCliente.Enabled = false;
         }
 
-        private void buttonProcurar_Click(object sender, EventArgs e)
+        private void buttonRemover_Click_1(object sender, EventArgs e)
+        {
+            Program.melresCar.RemoverCliente(_indexCliente);
+            Program.melresCar.EscreverFicheiroCSV("clientes");
+            MessageBox.Show("Cliente removido com sucesso");
+            this.Close();
+        }
+
+        private void buttonProcurar_Click_1(object sender, EventArgs e)
         {
             if (textBoxCheckNif.Text == "")
             {
@@ -37,31 +45,16 @@ namespace Automobile
                     if (cliente.Nif == textBoxCheckNif.Text)
                     {
                         _indexCliente = Program.melresCar.Clientes.IndexOf(cliente);
-                        textBoxName.Text = cliente.Nome;
-                        textBoxNif.Text = cliente.Nif;
-                        textBoxMorada.Text = cliente.Morada;
-                        textBoxEmail.Text = cliente.Email;
-                        textBoxTelemovel.Text = cliente.Telemovel;
-                        groupBoxRemoverCliente.Enabled = true;
-                        buttonRemover.Enabled = true;
-                        textBoxName.Enabled = false;
-                        textBoxNif.Enabled = false;
-                        textBoxMorada.Enabled = false;
-                        textBoxEmail.Enabled = false;
-                        textBoxTelemovel.Enabled = false;
+                        labelNomeCheck.Text = cliente.Nome;
+                        labelNifCheck.Text = cliente.Nif;
+                        labelMoradaCheck.Text = cliente.Morada;
+                        labelEmailCheck.Text = cliente.Email;
+                        labelNtelemovelCheck.Text = cliente.Telemovel;
                         return;
                     }
                 }
                 MessageBox.Show("Cliente não encontrado");
             }
-        }
-
-        private void buttonRemover_Click(object sender, EventArgs e)
-        {
-            Program.melresCar.RemoverCliente(_indexCliente);
-            Program.melresCar.EscreverFicheiroCSV("clientes");
-            MessageBox.Show("Cliente removido com sucesso");
-            this.Close();
         }
     }
 }

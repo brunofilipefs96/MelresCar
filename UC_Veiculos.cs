@@ -26,14 +26,20 @@ namespace Automobile
 
         private void buttonAddVeiculo_Click(object sender, EventArgs e)
         {
-            AdicionarVeiculo adicionarVeiculo = new AdicionarVeiculo();
+            MenuAdicionarVeiculo adicionarVeiculo = new MenuAdicionarVeiculo();
             adicionarVeiculo.Show();
         }
 
         private void buttonRemVeiculo_Click(object sender, EventArgs e)
         {
-            RemoverVeiculo removerVeiculo = new RemoverVeiculo();
+            MenuRemoverVeiculo removerVeiculo = new MenuRemoverVeiculo();
             removerVeiculo.Show();
+        }
+
+        private void buttonEditVeiculo_Click(object sender, EventArgs e)
+        {
+            MenuEditarVeiculo editarVeiculo = new MenuEditarVeiculo();
+            editarVeiculo.Show();
         }
     }
 }

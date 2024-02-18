@@ -1,6 +1,6 @@
 ﻿namespace Automobile
 {
-    partial class AdicionarVeiculo
+    partial class MenuAdicionarVeiculo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.buttonCancelar = new ReaLTaiizor.Controls.CrownButton();
             this.buttonAdicionarVeiculo = new ReaLTaiizor.Controls.CrownButton();
             this.labelEscolheTipo = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.groupboxAdiciopnarCliente = new System.Windows.Forms.GroupBox();
@@ -60,13 +61,22 @@
             this.groupboxAdiciopnarCliente.SuspendLayout();
             this.SuspendLayout();
             // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Location = new System.Drawing.Point(88, 371);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
+            this.buttonCancelar.TabIndex = 47;
+            this.buttonCancelar.Text = "Cancelar";
+            // 
             // buttonAdicionarVeiculo
             // 
-            this.buttonAdicionarVeiculo.Location = new System.Drawing.Point(713, 414);
+            this.buttonAdicionarVeiculo.Location = new System.Drawing.Point(614, 371);
             this.buttonAdicionarVeiculo.Name = "buttonAdicionarVeiculo";
             this.buttonAdicionarVeiculo.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonAdicionarVeiculo.Size = new System.Drawing.Size(75, 23);
-            this.buttonAdicionarVeiculo.TabIndex = 45;
+            this.buttonAdicionarVeiculo.Size = new System.Drawing.Size(117, 52);
+            this.buttonAdicionarVeiculo.TabIndex = 46;
             this.buttonAdicionarVeiculo.Text = "Adicionar";
             // 
             // labelEscolheTipo
@@ -78,7 +88,7 @@
             this.labelEscolheTipo.Location = new System.Drawing.Point(13, 17);
             this.labelEscolheTipo.Name = "labelEscolheTipo";
             this.labelEscolheTipo.Size = new System.Drawing.Size(132, 20);
-            this.labelEscolheTipo.TabIndex = 43;
+            this.labelEscolheTipo.TabIndex = 44;
             this.labelEscolheTipo.Text = "Escolha o Veiculo:";
             // 
             // groupboxAdiciopnarCliente
@@ -110,7 +120,7 @@
             this.groupboxAdiciopnarCliente.Location = new System.Drawing.Point(88, 54);
             this.groupboxAdiciopnarCliente.Name = "groupboxAdiciopnarCliente";
             this.groupboxAdiciopnarCliente.Size = new System.Drawing.Size(643, 306);
-            this.groupboxAdiciopnarCliente.TabIndex = 42;
+            this.groupboxAdiciopnarCliente.TabIndex = 43;
             this.groupboxAdiciopnarCliente.TabStop = false;
             this.groupboxAdiciopnarCliente.Text = "Adicionar Veiculo";
             // 
@@ -399,7 +409,7 @@
             this.comboBoxEscolherVeiculo.Location = new System.Drawing.Point(151, 13);
             this.comboBoxEscolherVeiculo.Name = "comboBoxEscolherVeiculo";
             this.comboBoxEscolherVeiculo.Size = new System.Drawing.Size(121, 24);
-            this.comboBoxEscolherVeiculo.TabIndex = 41;
+            this.comboBoxEscolherVeiculo.TabIndex = 42;
             // 
             // buttonEscolherTipo
             // 
@@ -407,22 +417,23 @@
             this.buttonEscolherTipo.Name = "buttonEscolherTipo";
             this.buttonEscolherTipo.Padding = new System.Windows.Forms.Padding(5);
             this.buttonEscolherTipo.Size = new System.Drawing.Size(75, 23);
-            this.buttonEscolherTipo.TabIndex = 44;
+            this.buttonEscolherTipo.TabIndex = 45;
             this.buttonEscolherTipo.Text = "Selecionar";
             // 
-            // AdicionarVeiculo
+            // MenuAdicionarVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonAdicionarVeiculo);
             this.Controls.Add(this.labelEscolheTipo);
             this.Controls.Add(this.groupboxAdiciopnarCliente);
             this.Controls.Add(this.comboBoxEscolherVeiculo);
             this.Controls.Add(this.buttonEscolherTipo);
-            this.Name = "AdicionarVeiculo";
-            this.Text = "AdicionarVeiculo";
+            this.Name = "MenuAdicionarVeiculo";
+            this.Text = "MenuAdicionarVeiculo";
             this.groupboxAdiciopnarCliente.ResumeLayout(false);
             this.groupboxAdiciopnarCliente.PerformLayout();
             this.ResumeLayout(false);
@@ -432,6 +443,7 @@
 
         #endregion
 
+        private ReaLTaiizor.Controls.CrownButton buttonCancelar;
         private ReaLTaiizor.Controls.CrownButton buttonAdicionarVeiculo;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelEscolheTipo;
         private System.Windows.Forms.GroupBox groupboxAdiciopnarCliente;
