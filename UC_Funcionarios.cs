@@ -27,6 +27,7 @@ namespace Automobile
             dataGridViewFuncionario.Columns.Add("Morada", "Morada");
             dataGridViewFuncionario.Columns.Add("Email", "Email");
             dataGridViewFuncionario.Columns.Add("Telemovel", "Telemovel");
+            dataGridViewFuncionario.Columns.Add("IdFuncionario", "ID");
 
             //configurações do datagridview
             dataGridViewFuncionario.EnableHeadersVisualStyles = false;
@@ -48,7 +49,7 @@ namespace Automobile
                 dataGridViewFuncionario.Rows.Clear();
                 foreach (var funcionario in Program.melresCar.Funcionarios)
                 {
-                    dataGridViewFuncionario.Rows.Add(funcionario.Nome, funcionario.Nif, funcionario.Morada, funcionario.Email, funcionario.Telemovel);
+                    dataGridViewFuncionario.Rows.Add(funcionario.Nome, funcionario.Nif, funcionario.Morada, funcionario.Email, funcionario.Telemovel, funcionario.IdFuncionario);
                 }
             }
         }
@@ -56,12 +57,14 @@ namespace Automobile
 
         private void buttonEditFuncionario_Click(object sender, EventArgs e)
         {
-
+            MenuEditarFuncionario menuEditarFuncionario = new MenuEditarFuncionario();
+            menuEditarFuncionario.Show();
         }
 
         private void buttonRemFuncionario_Click(object sender, EventArgs e)
         {
-
+            MenuRemoverFuncionario menuRemoverFuncionario = new MenuRemoverFuncionario();
+            menuRemoverFuncionario.Show();
         }
 
         private void buttonAddFuncionario_Click(object sender, EventArgs e)
@@ -69,5 +72,7 @@ namespace Automobile
             MenuAdicionarFuncionario adicionarFuncionario = new MenuAdicionarFuncionario();
             adicionarFuncionario.Show();
         }
+
+      
     }
 }

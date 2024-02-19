@@ -28,13 +28,13 @@ namespace Automobile
             TipoCaixa = "n/d";
         }
 
-        public Carro(int idVeiculo, string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade, int numPortas, string tipoCaixa) : base(idVeiculo, tipoVeiculo, classeVeiculo, marca, modelo, matricula, combustivel, ano, estado, precoDiario, dataPrevistaDisponibilidade)
+        public Carro(string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade, int numPortas, string tipoCaixa) : base(idVeiculo, tipoVeiculo, classeVeiculo, marca, modelo, matricula, combustivel, ano, estado, precoDiario, dataPrevistaDisponibilidade)
         {
             NumPortas = numPortas;
             TipoCaixa = tipoCaixa;
         }
         
-
+        
         public override string ToString()
         {
             return $"{base.ToString()},{NumPortas},{TipoCaixa}";

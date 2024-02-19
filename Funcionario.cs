@@ -41,12 +41,13 @@ namespace Automobile
             Salario = -1;
         }
 
-        public Funcionario(string nome, string nif, string morada, string email, string telemovel, int idFuncionario, string username, string password, decimal salario) : base(nome, nif, morada, email, telemovel)
+        public Funcionario(string nome, string nif, string morada, string email, string telemovel, string username, string password, decimal salario) : base(nome, nif, morada, email, telemovel)
         {
-            IdFuncionario = idFuncionario;
+            IdFuncionario = Program.melresCar.gerarId("funcionario");
             Username = username;
             Password = password;
             Salario = salario;
+
         }
 
         public override string ToString()

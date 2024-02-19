@@ -75,6 +75,7 @@
             this.textBoxLoginPassword.Name = "textBoxLoginPassword";
             this.textBoxLoginPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxLoginPassword.TabIndex = 38;
+            this.textBoxLoginPassword.UseSystemPasswordChar = true;
             // 
             // labelLoginPassword
             // 
@@ -134,6 +135,7 @@
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxConfirmPassword.TabIndex = 36;
+            this.textBoxConfirmPassword.UseSystemPasswordChar = true;
             // 
             // textBoxFirstPassword
             // 
@@ -144,6 +146,7 @@
             this.textBoxFirstPassword.Name = "textBoxFirstPassword";
             this.textBoxFirstPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxFirstPassword.TabIndex = 35;
+            this.textBoxFirstPassword.UseSystemPasswordChar = true;
             // 
             // textBoxUtilizador
             // 

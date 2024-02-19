@@ -83,6 +83,7 @@
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxConfirmPassword.TabIndex = 51;
+            this.textBoxConfirmPassword.UseSystemPasswordChar = true;
             // 
             // textBoxFirstPassword
             // 
@@ -93,6 +94,7 @@
             this.textBoxFirstPassword.Name = "textBoxFirstPassword";
             this.textBoxFirstPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxFirstPassword.TabIndex = 50;
+            this.textBoxFirstPassword.UseSystemPasswordChar = true;
             // 
             // textBoxUsername
             // 
@@ -272,6 +274,7 @@
             this.buttonAdicionar.Size = new System.Drawing.Size(117, 52);
             this.buttonAdicionar.TabIndex = 53;
             this.buttonAdicionar.Text = "Adicionar";
+            this.buttonAdicionar.Click += new System.EventHandler(this.buttonAdicionar_Click);
             // 
             // buttonCancelar
             // 
@@ -281,6 +284,7 @@
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
             this.buttonCancelar.TabIndex = 54;
             this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // MenuAdicionarFuncionario
             // 

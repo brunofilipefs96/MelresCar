@@ -35,7 +35,7 @@
             this.textBoxSalario = new ReaLTaiizor.Controls.CrownTextBox();
             this.textBoxConfirmPassword = new ReaLTaiizor.Controls.CrownTextBox();
             this.textBoxFirstPassword = new ReaLTaiizor.Controls.CrownTextBox();
-            this.textBoxUtilizador = new ReaLTaiizor.Controls.CrownTextBox();
+            this.textBoxUsername = new ReaLTaiizor.Controls.CrownTextBox();
             this.labelSalario = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelConfirmarPassword = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelPassword = new ReaLTaiizor.Controls.DungeonHeaderLabel();
@@ -51,7 +51,7 @@
             this.textBoxNif = new ReaLTaiizor.Controls.CrownTextBox();
             this.labelNif = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.buttonProcurar = new ReaLTaiizor.Controls.CrownButton();
-            this.textBoxLoginUtilizador = new ReaLTaiizor.Controls.CrownTextBox();
+            this.textBoxLoginUsername = new ReaLTaiizor.Controls.CrownTextBox();
             this.labelLoginUtilizador = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.buttonAlterar = new ReaLTaiizor.Controls.CrownButton();
             this.groupBoxEditarFuncionario.SuspendLayout();
@@ -65,6 +65,7 @@
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
             this.buttonCancelar.TabIndex = 39;
             this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // textBoxLoginPassword
             // 
@@ -75,6 +76,7 @@
             this.textBoxLoginPassword.Name = "textBoxLoginPassword";
             this.textBoxLoginPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxLoginPassword.TabIndex = 38;
+            this.textBoxLoginPassword.UseSystemPasswordChar = true;
             // 
             // labelLoginPassword
             // 
@@ -93,7 +95,7 @@
             this.groupBoxEditarFuncionario.Controls.Add(this.textBoxSalario);
             this.groupBoxEditarFuncionario.Controls.Add(this.textBoxConfirmPassword);
             this.groupBoxEditarFuncionario.Controls.Add(this.textBoxFirstPassword);
-            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxUtilizador);
+            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxUsername);
             this.groupBoxEditarFuncionario.Controls.Add(this.labelSalario);
             this.groupBoxEditarFuncionario.Controls.Add(this.labelConfirmarPassword);
             this.groupBoxEditarFuncionario.Controls.Add(this.labelPassword);
@@ -134,6 +136,7 @@
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxConfirmPassword.TabIndex = 36;
+            this.textBoxConfirmPassword.UseSystemPasswordChar = true;
             // 
             // textBoxFirstPassword
             // 
@@ -144,16 +147,17 @@
             this.textBoxFirstPassword.Name = "textBoxFirstPassword";
             this.textBoxFirstPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxFirstPassword.TabIndex = 35;
+            this.textBoxFirstPassword.UseSystemPasswordChar = true;
             // 
-            // textBoxUtilizador
+            // textBoxUsername
             // 
-            this.textBoxUtilizador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxUtilizador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxUtilizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxUtilizador.Location = new System.Drawing.Point(231, 187);
-            this.textBoxUtilizador.Name = "textBoxUtilizador";
-            this.textBoxUtilizador.Size = new System.Drawing.Size(183, 20);
-            this.textBoxUtilizador.TabIndex = 34;
+            this.textBoxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxUsername.Location = new System.Drawing.Point(231, 187);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(183, 20);
+            this.textBoxUsername.TabIndex = 34;
             // 
             // labelSalario
             // 
@@ -321,16 +325,17 @@
             this.buttonProcurar.Size = new System.Drawing.Size(75, 23);
             this.buttonProcurar.TabIndex = 35;
             this.buttonProcurar.Text = "Login";
+            this.buttonProcurar.Click += new System.EventHandler(this.buttonProcurar_Click);
             // 
-            // textBoxLoginUtilizador
+            // textBoxLoginUsername
             // 
-            this.textBoxLoginUtilizador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxLoginUtilizador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxLoginUtilizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxLoginUtilizador.Location = new System.Drawing.Point(115, 23);
-            this.textBoxLoginUtilizador.Name = "textBoxLoginUtilizador";
-            this.textBoxLoginUtilizador.Size = new System.Drawing.Size(183, 20);
-            this.textBoxLoginUtilizador.TabIndex = 34;
+            this.textBoxLoginUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxLoginUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLoginUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxLoginUsername.Location = new System.Drawing.Point(115, 23);
+            this.textBoxLoginUsername.Name = "textBoxLoginUsername";
+            this.textBoxLoginUsername.Size = new System.Drawing.Size(183, 20);
+            this.textBoxLoginUsername.TabIndex = 34;
             // 
             // labelLoginUtilizador
             // 
@@ -352,6 +357,7 @@
             this.buttonAlterar.Size = new System.Drawing.Size(117, 52);
             this.buttonAlterar.TabIndex = 32;
             this.buttonAlterar.Text = "Alterar";
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // MenuEditarFuncionario
             // 
@@ -364,7 +370,7 @@
             this.Controls.Add(this.labelLoginPassword);
             this.Controls.Add(this.groupBoxEditarFuncionario);
             this.Controls.Add(this.buttonProcurar);
-            this.Controls.Add(this.textBoxLoginUtilizador);
+            this.Controls.Add(this.textBoxLoginUsername);
             this.Controls.Add(this.labelLoginUtilizador);
             this.Controls.Add(this.buttonAlterar);
             this.Name = "MenuEditarFuncionario";
@@ -385,7 +391,7 @@
         private ReaLTaiizor.Controls.CrownTextBox textBoxSalario;
         private ReaLTaiizor.Controls.CrownTextBox textBoxConfirmPassword;
         private ReaLTaiizor.Controls.CrownTextBox textBoxFirstPassword;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxUtilizador;
+        private ReaLTaiizor.Controls.CrownTextBox textBoxUsername;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelSalario;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelConfirmarPassword;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelPassword;
@@ -401,7 +407,7 @@
         private ReaLTaiizor.Controls.CrownTextBox textBoxNif;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelNif;
         private ReaLTaiizor.Controls.CrownButton buttonProcurar;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxLoginUtilizador;
+        private ReaLTaiizor.Controls.CrownTextBox textBoxLoginUsername;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelLoginUtilizador;
         private ReaLTaiizor.Controls.CrownButton buttonAlterar;
     }

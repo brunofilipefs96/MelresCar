@@ -57,7 +57,6 @@
             this.textBoxPrecoDiario = new ReaLTaiizor.Controls.CrownTextBox();
             this.labelPrecoDiario = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.comboBoxEscolherVeiculo = new ReaLTaiizor.Controls.ForeverComboBox();
-            this.buttonEscolherTipo = new ReaLTaiizor.Controls.CrownButton();
             this.groupboxAdiciopnarCliente.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,6 +77,7 @@
             this.buttonAdicionarVeiculo.Size = new System.Drawing.Size(117, 52);
             this.buttonAdicionarVeiculo.TabIndex = 46;
             this.buttonAdicionarVeiculo.Text = "Adicionar";
+            this.buttonAdicionarVeiculo.Click += new System.EventHandler(this.buttonAdicionarVeiculo_Click);
             // 
             // labelEscolheTipo
             // 
@@ -85,11 +85,11 @@
             this.labelEscolheTipo.BackColor = System.Drawing.Color.Transparent;
             this.labelEscolheTipo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelEscolheTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelEscolheTipo.Location = new System.Drawing.Point(13, 17);
+            this.labelEscolheTipo.Location = new System.Drawing.Point(28, 13);
             this.labelEscolheTipo.Name = "labelEscolheTipo";
-            this.labelEscolheTipo.Size = new System.Drawing.Size(132, 20);
+            this.labelEscolheTipo.Size = new System.Drawing.Size(119, 20);
             this.labelEscolheTipo.TabIndex = 44;
-            this.labelEscolheTipo.Text = "Escolha o Veiculo:";
+            this.labelEscolheTipo.Text = "Tipo de Veiculo:";
             // 
             // groupboxAdiciopnarCliente
             // 
@@ -404,22 +404,14 @@
             this.comboBoxEscolherVeiculo.ItemHeight = 18;
             this.comboBoxEscolherVeiculo.Items.AddRange(new object[] {
             "Carro",
-            "Camiao",
             "Mota",
-            "Camioneta"});
-            this.comboBoxEscolherVeiculo.Location = new System.Drawing.Point(151, 13);
+            "Camioneta",
+            "Camiao"});
+            this.comboBoxEscolherVeiculo.Location = new System.Drawing.Point(153, 13);
             this.comboBoxEscolherVeiculo.Name = "comboBoxEscolherVeiculo";
-            this.comboBoxEscolherVeiculo.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxEscolherVeiculo.Size = new System.Drawing.Size(173, 24);
             this.comboBoxEscolherVeiculo.TabIndex = 42;
-            // 
-            // buttonEscolherTipo
-            // 
-            this.buttonEscolherTipo.Location = new System.Drawing.Point(285, 14);
-            this.buttonEscolherTipo.Name = "buttonEscolherTipo";
-            this.buttonEscolherTipo.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonEscolherTipo.Size = new System.Drawing.Size(75, 23);
-            this.buttonEscolherTipo.TabIndex = 45;
-            this.buttonEscolherTipo.Text = "Selecionar";
+            this.comboBoxEscolherVeiculo.SelectedIndexChanged += new System.EventHandler(this.comboBoxEscolherVeiculo_SelectedIndexChanged);
             // 
             // MenuAdicionarVeiculo
             // 
@@ -432,7 +424,6 @@
             this.Controls.Add(this.labelEscolheTipo);
             this.Controls.Add(this.groupboxAdiciopnarCliente);
             this.Controls.Add(this.comboBoxEscolherVeiculo);
-            this.Controls.Add(this.buttonEscolherTipo);
             this.Name = "MenuAdicionarVeiculo";
             this.Text = "MenuAdicionarVeiculo";
             this.groupboxAdiciopnarCliente.ResumeLayout(false);
@@ -473,6 +464,5 @@
         private ReaLTaiizor.Controls.CrownTextBox textBoxPrecoDiario;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelPrecoDiario;
         private ReaLTaiizor.Controls.ForeverComboBox comboBoxEscolherVeiculo;
-        private ReaLTaiizor.Controls.CrownButton buttonEscolherTipo;
     }
 }

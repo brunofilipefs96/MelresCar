@@ -90,9 +90,9 @@ namespace Automobile
             DataPrevistaDisponibilidade = new DateTime();
         }
 
-        public Veiculo(int idVeiculo, string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade)
+        public Veiculo( string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade)
         {
-            IdVeiculo = idVeiculo;
+            IdVeiculo = Program.melresCar.gerarId("veiculo");
             TipoVeiculo = tipoVeiculo;
             ClasseVeiculo = classeVeiculo;
             Marca = marca;

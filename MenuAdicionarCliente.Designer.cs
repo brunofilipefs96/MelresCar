@@ -170,7 +170,7 @@
             // 
             // buttonAdicionar
             // 
-            this.buttonAdicionar.Location = new System.Drawing.Point(163, 263);
+            this.buttonAdicionar.Location = new System.Drawing.Point(497, 275);
             this.buttonAdicionar.Name = "buttonAdicionar";
             this.buttonAdicionar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonAdicionar.Size = new System.Drawing.Size(117, 52);
@@ -180,7 +180,7 @@
             // 
             // crownButton1
             // 
-            this.crownButton1.Location = new System.Drawing.Point(452, 263);
+            this.crownButton1.Location = new System.Drawing.Point(130, 275);
             this.crownButton1.Name = "crownButton1";
             this.crownButton1.Padding = new System.Windows.Forms.Padding(5);
             this.crownButton1.Size = new System.Drawing.Size(117, 52);

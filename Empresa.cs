@@ -93,6 +93,15 @@ namespace Automobile
             return false;
         }
 
+        public bool VerificaDecimal(string numero)
+        {
+            if (decimal.TryParse(numero, out decimal result) && result > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public bool VerificaEmail(string email)
         {
             string regex = @"^[^@\s]+@[^@\s]+\.(pt|com|net|org|gov)$";
@@ -334,10 +343,6 @@ namespace Automobile
             Reservas.Add(reserva);
         }
         
-        public void AlterarCliente(Cliente cliente, int indexCliente)
-        {
-            Clientes[indexCliente] = cliente;
-        }
         public void RemoverVeiculo(Veiculo veiculo)
         {
             Veiculos.Remove(veiculo);
@@ -346,9 +351,9 @@ namespace Automobile
         {
             Clientes.RemoveAt(indexCliente);
         }
-        public void RemoverFuncionario(Funcionario funcionario)
+        public void RemoverFuncionario(int indexFuncionario)
         {
-            Funcionarios.Remove(funcionario);
+            Funcionarios.RemoveAt(indexFuncionario);
         }
         public void RemoverReserva(Reserva reserva)
         {
@@ -380,10 +385,51 @@ namespace Automobile
                 }
             }
         }
-        
-        public void AvancarDia()
+        public int gerarId(string tipo)
         {
+            int id = 0;
+            if (tipo == "veiculo")
+            {
+                foreach (var veiculo in Program.melresCar.Veiculos)
+                {
+                    if (veiculo.IdVeiculo > id)
+                    {
+                        id = veiculo.IdVeiculo;
+                    }
+                }
+            }
+            else if (tipo == "reserva")
+            {
+                foreach (var reserva in Program.melresCar.Reservas)
+                {
+                    if (reserva.IdReserva > id)
+                    {
+                        id = reserva.IdReserva;
+                    }
+                }
+            }
+            else if (tipo == "cliente")
+            {
+                foreach (var cliente in Program.melresCar.Clientes)
+                {
+                    if (cliente.NumCliente > id)
+                    {
+                        id = cliente.NumCliente;
+                    }
+                }
+            }
+            else if (tipo == "funcionario")
+            {
+                foreach (var funcionario in Program.melresCar.Funcionarios)
+                {
+                    if (funcionario.IdFuncionario > id)
+                    {
+                        id = funcionario.IdFuncionario;
+                    }
+                }
+            }
             
+            return id + 1;
         }
 
     }

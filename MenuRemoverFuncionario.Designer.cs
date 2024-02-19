@@ -35,7 +35,7 @@
             this.labelSalarioCheck = new System.Windows.Forms.Label();
             this.labelConfirmarPasswordCheck = new System.Windows.Forms.Label();
             this.labelPasswordCheck = new System.Windows.Forms.Label();
-            this.labelUtilizadorCheck = new System.Windows.Forms.Label();
+            this.labelUsernameCheck = new System.Windows.Forms.Label();
             this.labelNtelemovelCheck = new System.Windows.Forms.Label();
             this.labelEmailCheck = new System.Windows.Forms.Label();
             this.labelMoradaCheck = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.labelMorada = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelNif = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.buttonProcurar = new ReaLTaiizor.Controls.CrownButton();
-            this.textBoxLoginUtilizador = new ReaLTaiizor.Controls.CrownTextBox();
+            this.textBoxLoginUsername = new ReaLTaiizor.Controls.CrownTextBox();
             this.labelLoginUtilizador = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.buttonRemover = new ReaLTaiizor.Controls.CrownButton();
             this.groupBoxRemoverFuncionario.SuspendLayout();
@@ -75,6 +75,7 @@
             this.textBoxLoginPassword.Name = "textBoxLoginPassword";
             this.textBoxLoginPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxLoginPassword.TabIndex = 45;
+            this.textBoxLoginPassword.UseSystemPasswordChar = true;
             // 
             // labelLoginPassword
             // 
@@ -93,7 +94,7 @@
             this.groupBoxRemoverFuncionario.Controls.Add(this.labelSalarioCheck);
             this.groupBoxRemoverFuncionario.Controls.Add(this.labelConfirmarPasswordCheck);
             this.groupBoxRemoverFuncionario.Controls.Add(this.labelPasswordCheck);
-            this.groupBoxRemoverFuncionario.Controls.Add(this.labelUtilizadorCheck);
+            this.groupBoxRemoverFuncionario.Controls.Add(this.labelUsernameCheck);
             this.groupBoxRemoverFuncionario.Controls.Add(this.labelNtelemovelCheck);
             this.groupBoxRemoverFuncionario.Controls.Add(this.labelEmailCheck);
             this.groupBoxRemoverFuncionario.Controls.Add(this.labelMoradaCheck);
@@ -139,13 +140,13 @@
             this.labelPasswordCheck.Size = new System.Drawing.Size(0, 13);
             this.labelPasswordCheck.TabIndex = 40;
             // 
-            // labelUtilizadorCheck
+            // labelUsernameCheck
             // 
-            this.labelUtilizadorCheck.AutoSize = true;
-            this.labelUtilizadorCheck.Location = new System.Drawing.Point(266, 189);
-            this.labelUtilizadorCheck.Name = "labelUtilizadorCheck";
-            this.labelUtilizadorCheck.Size = new System.Drawing.Size(0, 13);
-            this.labelUtilizadorCheck.TabIndex = 39;
+            this.labelUsernameCheck.AutoSize = true;
+            this.labelUsernameCheck.Location = new System.Drawing.Point(266, 189);
+            this.labelUsernameCheck.Name = "labelUsernameCheck";
+            this.labelUsernameCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelUsernameCheck.TabIndex = 39;
             // 
             // labelNtelemovelCheck
             // 
@@ -303,16 +304,17 @@
             this.buttonProcurar.Size = new System.Drawing.Size(75, 23);
             this.buttonProcurar.TabIndex = 42;
             this.buttonProcurar.Text = "Login";
+            this.buttonProcurar.Click += new System.EventHandler(this.buttonProcurar_Click);
             // 
-            // textBoxLoginUtilizador
+            // textBoxLoginUsername
             // 
-            this.textBoxLoginUtilizador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxLoginUtilizador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxLoginUtilizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxLoginUtilizador.Location = new System.Drawing.Point(108, 23);
-            this.textBoxLoginUtilizador.Name = "textBoxLoginUtilizador";
-            this.textBoxLoginUtilizador.Size = new System.Drawing.Size(183, 20);
-            this.textBoxLoginUtilizador.TabIndex = 41;
+            this.textBoxLoginUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxLoginUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLoginUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxLoginUsername.Location = new System.Drawing.Point(108, 23);
+            this.textBoxLoginUsername.Name = "textBoxLoginUsername";
+            this.textBoxLoginUsername.Size = new System.Drawing.Size(183, 20);
+            this.textBoxLoginUsername.TabIndex = 41;
             // 
             // labelLoginUtilizador
             // 
@@ -334,6 +336,7 @@
             this.buttonRemover.Size = new System.Drawing.Size(117, 52);
             this.buttonRemover.TabIndex = 39;
             this.buttonRemover.Text = "Remover";
+            this.buttonRemover.Click += new System.EventHandler(this.buttonRemover_Click);
             // 
             // MenuRemoverFuncionario
             // 
@@ -346,7 +349,7 @@
             this.Controls.Add(this.labelLoginPassword);
             this.Controls.Add(this.groupBoxRemoverFuncionario);
             this.Controls.Add(this.buttonProcurar);
-            this.Controls.Add(this.textBoxLoginUtilizador);
+            this.Controls.Add(this.textBoxLoginUsername);
             this.Controls.Add(this.labelLoginUtilizador);
             this.Controls.Add(this.buttonRemover);
             this.Name = "MenuRemoverFuncionario";
@@ -367,7 +370,7 @@
         private System.Windows.Forms.Label labelSalarioCheck;
         private System.Windows.Forms.Label labelConfirmarPasswordCheck;
         private System.Windows.Forms.Label labelPasswordCheck;
-        private System.Windows.Forms.Label labelUtilizadorCheck;
+        private System.Windows.Forms.Label labelUsernameCheck;
         private System.Windows.Forms.Label labelNtelemovelCheck;
         private System.Windows.Forms.Label labelEmailCheck;
         private System.Windows.Forms.Label labelMoradaCheck;
@@ -383,7 +386,7 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelMorada;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelNif;
         private ReaLTaiizor.Controls.CrownButton buttonProcurar;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxLoginUtilizador;
+        private ReaLTaiizor.Controls.CrownTextBox textBoxLoginUsername;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelLoginUtilizador;
         private ReaLTaiizor.Controls.CrownButton buttonRemover;
     }

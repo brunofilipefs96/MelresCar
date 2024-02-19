@@ -59,6 +59,7 @@
             this.labelEscolheTipo = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.comboBoxEscolherVeiculo = new ReaLTaiizor.Controls.ForeverComboBox();
             this.buttonEscolherTipo = new ReaLTaiizor.Controls.CrownButton();
+            this.buttonCancelar = new ReaLTaiizor.Controls.CrownButton();
             this.groupboxAdiciopnarCliente.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -410,12 +411,22 @@
             this.buttonEscolherTipo.TabIndex = 56;
             this.buttonEscolherTipo.Text = "Procurar";
             // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Location = new System.Drawing.Point(73, 368);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
+            this.buttonCancelar.TabIndex = 59;
+            this.buttonCancelar.Text = "Cancelar";
+            // 
             // MenuRemoverVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonAdicionarVeiculo);
             this.Controls.Add(this.groupboxAdiciopnarCliente);
             this.Controls.Add(this.textBoxIdentificacao);
@@ -465,5 +476,6 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelEscolheTipo;
         private ReaLTaiizor.Controls.ForeverComboBox comboBoxEscolherVeiculo;
         private ReaLTaiizor.Controls.CrownButton buttonEscolherTipo;
+        private ReaLTaiizor.Controls.CrownButton buttonCancelar;
     }
 }

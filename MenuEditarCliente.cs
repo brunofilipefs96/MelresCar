@@ -72,8 +72,11 @@ namespace Automobile
                     {
                         if (Program.melresCar.VerificaEmail(textBoxEmail.Text))
                         {
-                            Cliente cliente = new Cliente(textBoxName.Text, textBoxNif.Text, textBoxMorada.Text, textBoxEmail.Text, textBoxTelemovel.Text);
-                            Program.melresCar.AlterarCliente(cliente, _indexCliente);
+                            Program.melresCar.Clientes[_indexCliente].Nome = textBoxName.Text;
+                            Program.melresCar.Clientes[_indexCliente].Nif = textBoxNif.Text;
+                            Program.melresCar.Clientes[_indexCliente].Morada = textBoxMorada.Text;
+                            Program.melresCar.Clientes[_indexCliente].Email = textBoxEmail.Text;
+                            Program.melresCar.Clientes[_indexCliente].Telemovel = textBoxTelemovel.Text;
                             Program.melresCar.EscreverFicheiroCSV("clientes");
                             MessageBox.Show("Cliente alterado com sucesso");
                             this.Close();

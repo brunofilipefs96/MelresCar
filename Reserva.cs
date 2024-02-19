@@ -62,9 +62,9 @@ namespace Automobile
             PrecoTotal = 0;
         }
 
-        public Reserva(int idReserva, DateTime dataReserva, DateTime dataInicio, DateTime dataFim, int idVeiculo, int numCliente)
+        public Reserva( DateTime dataReserva, DateTime dataInicio, DateTime dataFim, int idVeiculo, int numCliente)
         {
-            IdReserva = idReserva;
+            IdReserva = Program.melresCar.gerarId("reserva");
             DataReserva = dataReserva;
             DataInicio = dataInicio;
             DataFim = dataFim;

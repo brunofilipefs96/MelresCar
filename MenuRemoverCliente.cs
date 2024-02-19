@@ -58,5 +58,10 @@ namespace Automobile
                 MessageBox.Show("Cliente não encontrado");
             }
         }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

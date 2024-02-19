@@ -129,12 +129,6 @@
     <Compile Include="ListaVeiculo.Designer.cs">
       <DependentUpon>ListaVeiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuFuncionarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuFuncionarios.Designer.cs">
-      <DependentUpon>MenuFuncionarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="MenuLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,9 +224,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListaVeiculo.resx">
       <DependentUpon>ListaVeiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuFuncionarios.resx">
-      <DependentUpon>MenuFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuLogin.resx">
       <DependentUpon>MenuLogin.cs</DependentUpon>
