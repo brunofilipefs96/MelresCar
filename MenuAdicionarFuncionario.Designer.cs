@@ -158,6 +158,7 @@
             this.textBoxTelemovel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxTelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.textBoxTelemovel.Location = new System.Drawing.Point(208, 217);
+            this.textBoxTelemovel.MaxLength = 9;
             this.textBoxTelemovel.Name = "textBoxTelemovel";
             this.textBoxTelemovel.Size = new System.Drawing.Size(183, 20);
             this.textBoxTelemovel.TabIndex = 44;
@@ -180,6 +181,7 @@
             this.textBoxNif.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.textBoxNif.Location = new System.Drawing.Point(208, 123);
+            this.textBoxNif.MaxLength = 9;
             this.textBoxNif.Name = "textBoxNif";
             this.textBoxNif.Size = new System.Drawing.Size(183, 20);
             this.textBoxNif.TabIndex = 42;

@@ -201,6 +201,7 @@
             this.textBoxCheckNif.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxCheckNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.textBoxCheckNif.Location = new System.Drawing.Point(128, 43);
+            this.textBoxCheckNif.MaxLength = 9;
             this.textBoxCheckNif.Name = "textBoxCheckNif";
             this.textBoxCheckNif.Size = new System.Drawing.Size(183, 20);
             this.textBoxCheckNif.TabIndex = 41;

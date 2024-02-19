@@ -352,6 +352,7 @@
             this.textBoxAno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxAno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.textBoxAno.Location = new System.Drawing.Point(109, 169);
+            this.textBoxAno.MaxLength = 4;
             this.textBoxAno.Name = "textBoxAno";
             this.textBoxAno.Size = new System.Drawing.Size(163, 20);
             this.textBoxAno.TabIndex = 12;

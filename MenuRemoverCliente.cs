@@ -17,6 +17,7 @@ namespace Automobile
         {
             InitializeComponent();
             groupBoxRemoverCliente.Enabled = false;
+            buttonRemover.Enabled = false;
         }
 
         private void buttonRemover_Click_1(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace Automobile
                 {
                     if (cliente.Nif == textBoxCheckNif.Text)
                     {
+                        buttonRemover.Enabled = true;
                         _indexCliente = Program.melresCar.Clientes.IndexOf(cliente);
                         labelNomeCheck.Text = cliente.Nome;
                         labelNifCheck.Text = cliente.Nif;
