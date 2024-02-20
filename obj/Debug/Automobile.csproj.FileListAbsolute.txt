@@ -40,7 +40,6 @@ C:\Users\hugoc\Documents\GitHub\MelresCar\bin\Debug\Automobile.pdb
 C:\Users\hugoc\Documents\GitHub\MelresCar\bin\Debug\ReaLTaiizor.dll
 C:\Users\hugoc\Documents\GitHub\MelresCar\bin\Debug\ReaLTaiizor.xml
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.csproj.AssemblyReference.cache
-C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuFuncionarios.resources
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuLogin.resources
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuPrincipal.resources
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.Properties.Resources.resources

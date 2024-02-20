@@ -28,333 +28,501 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.boxMatricula = new ReaLTaiizor.Controls.CrownTextBox();
+            this.matricula = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.buttonCancelar = new ReaLTaiizor.Controls.CrownButton();
-            this.textBoxLoginPassword = new ReaLTaiizor.Controls.CrownTextBox();
-            this.labelLoginPassword = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.groupBoxEditarFuncionario = new System.Windows.Forms.GroupBox();
-            this.textBoxSalario = new ReaLTaiizor.Controls.CrownTextBox();
-            this.textBoxConfirmPassword = new ReaLTaiizor.Controls.CrownTextBox();
-            this.textBoxFirstPassword = new ReaLTaiizor.Controls.CrownTextBox();
-            this.textBoxUtilizador = new ReaLTaiizor.Controls.CrownTextBox();
-            this.labelSalario = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.labelConfirmarPassword = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.labelPassword = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.labelUtilizador = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.textBoxMorada = new ReaLTaiizor.Controls.CrownTextBox();
-            this.labelNome = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.labelEmail = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.textBoxEmail = new ReaLTaiizor.Controls.CrownTextBox();
-            this.textBoxTelemovel = new ReaLTaiizor.Controls.CrownTextBox();
-            this.textBoxName = new ReaLTaiizor.Controls.CrownTextBox();
-            this.labelNtelemovel = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.labelMorada = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.textBoxNif = new ReaLTaiizor.Controls.CrownTextBox();
-            this.labelNif = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.buttonEditarVeiculo = new ReaLTaiizor.Controls.CrownButton();
+            this.labelEscolheTipo = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.label = new System.Windows.Forms.GroupBox();
+            this.boxPassageiros = new ReaLTaiizor.Controls.CrownTextBox();
+            this.boxEixos = new ReaLTaiizor.Controls.CrownComboBox();
+            this.boxNPortas = new ReaLTaiizor.Controls.CrownComboBox();
+            this.boxCaixa = new ReaLTaiizor.Controls.CrownComboBox();
+            this.boxCilindrada = new ReaLTaiizor.Controls.CrownComboBox();
+            this.boxCombustivel = new ReaLTaiizor.Controls.CrownComboBox();
+            this.boxEstado = new ReaLTaiizor.Controls.CrownComboBox();
+            this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.labelClasse = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.boxClasse = new ReaLTaiizor.Controls.CrownComboBox();
+            this.textBoxPesoMax = new ReaLTaiizor.Controls.CrownTextBox();
+            this.textBoxModelo = new ReaLTaiizor.Controls.CrownTextBox();
+            this.labelPesoMax = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.labelMarca = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.labelModelo = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.labelNeixos = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.textBoxMarca = new ReaLTaiizor.Controls.CrownTextBox();
+            this.textBoxMatricula = new ReaLTaiizor.Controls.CrownTextBox();
+            this.labelNportas = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.labelMatricula = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.labelCaixa = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.labelCombustivel = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.labelCilindrada = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.labelAno = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.labelNpassageiros = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.textBoxAno = new ReaLTaiizor.Controls.CrownTextBox();
+            this.textBoxPrecoDiario = new ReaLTaiizor.Controls.CrownTextBox();
+            this.labelPrecoDiario = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.comboBoxEscolherVeiculo = new ReaLTaiizor.Controls.ForeverComboBox();
             this.buttonProcurar = new ReaLTaiizor.Controls.CrownButton();
-            this.textBoxLoginUtilizador = new ReaLTaiizor.Controls.CrownTextBox();
-            this.labelLoginUtilizador = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.buttonAlterar = new ReaLTaiizor.Controls.CrownButton();
-            this.groupBoxEditarFuncionario.SuspendLayout();
+            this.label.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // boxMatricula
+            // 
+            this.boxMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.boxMatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.boxMatricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.boxMatricula.Location = new System.Drawing.Point(429, 13);
+            this.boxMatricula.Name = "boxMatricula";
+            this.boxMatricula.Size = new System.Drawing.Size(183, 20);
+            this.boxMatricula.TabIndex = 34;
+            // 
+            // matricula
+            // 
+            this.matricula.AutoSize = true;
+            this.matricula.BackColor = System.Drawing.Color.Transparent;
+            this.matricula.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.matricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.matricula.Location = new System.Drawing.Point(344, 14);
+            this.matricula.Name = "matricula";
+            this.matricula.Size = new System.Drawing.Size(79, 20);
+            this.matricula.TabIndex = 33;
+            this.matricula.Text = "Matricula:";
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(115, 393);
+            this.buttonCancelar.Location = new System.Drawing.Point(109, 378);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
-            this.buttonCancelar.TabIndex = 39;
+            this.buttonCancelar.TabIndex = 52;
             this.buttonCancelar.Text = "Cancelar";
             // 
-            // textBoxLoginPassword
+            // buttonEditarVeiculo
             // 
-            this.textBoxLoginPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxLoginPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxLoginPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxLoginPassword.Location = new System.Drawing.Point(429, 23);
-            this.textBoxLoginPassword.Name = "textBoxLoginPassword";
-            this.textBoxLoginPassword.Size = new System.Drawing.Size(183, 20);
-            this.textBoxLoginPassword.TabIndex = 38;
-            this.textBoxLoginPassword.UseSystemPasswordChar = true;
+            this.buttonEditarVeiculo.Location = new System.Drawing.Point(635, 378);
+            this.buttonEditarVeiculo.Name = "buttonEditarVeiculo";
+            this.buttonEditarVeiculo.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonEditarVeiculo.Size = new System.Drawing.Size(117, 52);
+            this.buttonEditarVeiculo.TabIndex = 51;
+            this.buttonEditarVeiculo.Text = "Editar";
+            this.buttonEditarVeiculo.Click += new System.EventHandler(this.buttonEditarVeiculo_Click);
             // 
-            // labelLoginPassword
+            // labelEscolheTipo
             // 
-            this.labelLoginPassword.AutoSize = true;
-            this.labelLoginPassword.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoginPassword.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelLoginPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelLoginPassword.Location = new System.Drawing.Point(323, 23);
-            this.labelLoginPassword.Name = "labelLoginPassword";
-            this.labelLoginPassword.Size = new System.Drawing.Size(109, 20);
-            this.labelLoginPassword.TabIndex = 37;
-            this.labelLoginPassword.Text = "Palavra-Passe:";
+            this.labelEscolheTipo.AutoSize = true;
+            this.labelEscolheTipo.BackColor = System.Drawing.Color.Transparent;
+            this.labelEscolheTipo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelEscolheTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelEscolheTipo.Location = new System.Drawing.Point(28, 13);
+            this.labelEscolheTipo.Name = "labelEscolheTipo";
+            this.labelEscolheTipo.Size = new System.Drawing.Size(119, 20);
+            this.labelEscolheTipo.TabIndex = 50;
+            this.labelEscolheTipo.Text = "Tipo de Veiculo:";
             // 
-            // groupBoxEditarFuncionario
+            // label
             // 
-            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxSalario);
-            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxConfirmPassword);
-            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxFirstPassword);
-            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxUtilizador);
-            this.groupBoxEditarFuncionario.Controls.Add(this.labelSalario);
-            this.groupBoxEditarFuncionario.Controls.Add(this.labelConfirmarPassword);
-            this.groupBoxEditarFuncionario.Controls.Add(this.labelPassword);
-            this.groupBoxEditarFuncionario.Controls.Add(this.labelUtilizador);
-            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxMorada);
-            this.groupBoxEditarFuncionario.Controls.Add(this.labelNome);
-            this.groupBoxEditarFuncionario.Controls.Add(this.labelEmail);
-            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxEmail);
-            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxTelemovel);
-            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxName);
-            this.groupBoxEditarFuncionario.Controls.Add(this.labelNtelemovel);
-            this.groupBoxEditarFuncionario.Controls.Add(this.labelMorada);
-            this.groupBoxEditarFuncionario.Controls.Add(this.textBoxNif);
-            this.groupBoxEditarFuncionario.Controls.Add(this.labelNif);
-            this.groupBoxEditarFuncionario.Location = new System.Drawing.Point(115, 68);
-            this.groupBoxEditarFuncionario.Name = "groupBoxEditarFuncionario";
-            this.groupBoxEditarFuncionario.Size = new System.Drawing.Size(576, 323);
-            this.groupBoxEditarFuncionario.TabIndex = 36;
-            this.groupBoxEditarFuncionario.TabStop = false;
-            this.groupBoxEditarFuncionario.Text = "Editar Funcionario";
+            this.label.Controls.Add(this.boxPassageiros);
+            this.label.Controls.Add(this.boxEixos);
+            this.label.Controls.Add(this.boxNPortas);
+            this.label.Controls.Add(this.boxCaixa);
+            this.label.Controls.Add(this.boxCilindrada);
+            this.label.Controls.Add(this.boxCombustivel);
+            this.label.Controls.Add(this.boxEstado);
+            this.label.Controls.Add(this.dungeonHeaderLabel1);
+            this.label.Controls.Add(this.labelClasse);
+            this.label.Controls.Add(this.boxClasse);
+            this.label.Controls.Add(this.textBoxPesoMax);
+            this.label.Controls.Add(this.textBoxModelo);
+            this.label.Controls.Add(this.labelPesoMax);
+            this.label.Controls.Add(this.labelMarca);
+            this.label.Controls.Add(this.labelModelo);
+            this.label.Controls.Add(this.labelNeixos);
+            this.label.Controls.Add(this.textBoxMarca);
+            this.label.Controls.Add(this.textBoxMatricula);
+            this.label.Controls.Add(this.labelNportas);
+            this.label.Controls.Add(this.labelMatricula);
+            this.label.Controls.Add(this.labelCaixa);
+            this.label.Controls.Add(this.labelCombustivel);
+            this.label.Controls.Add(this.labelCilindrada);
+            this.label.Controls.Add(this.labelAno);
+            this.label.Controls.Add(this.labelNpassageiros);
+            this.label.Controls.Add(this.textBoxAno);
+            this.label.Controls.Add(this.textBoxPrecoDiario);
+            this.label.Controls.Add(this.labelPrecoDiario);
+            this.label.Location = new System.Drawing.Point(109, 61);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(643, 306);
+            this.label.TabIndex = 49;
+            this.label.TabStop = false;
+            this.label.Text = "Adicionar Veiculo";
             // 
-            // textBoxSalario
+            // boxPassageiros
             // 
-            this.textBoxSalario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxSalario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxSalario.Location = new System.Drawing.Point(231, 279);
-            this.textBoxSalario.Name = "textBoxSalario";
-            this.textBoxSalario.Size = new System.Drawing.Size(183, 20);
-            this.textBoxSalario.TabIndex = 37;
+            this.boxPassageiros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.boxPassageiros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.boxPassageiros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.boxPassageiros.Location = new System.Drawing.Point(459, 172);
+            this.boxPassageiros.Name = "boxPassageiros";
+            this.boxPassageiros.Size = new System.Drawing.Size(163, 20);
+            this.boxPassageiros.TabIndex = 57;
             // 
-            // textBoxConfirmPassword
+            // boxEixos
             // 
-            this.textBoxConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxConfirmPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxConfirmPassword.Location = new System.Drawing.Point(231, 247);
-            this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
-            this.textBoxConfirmPassword.Size = new System.Drawing.Size(183, 20);
-            this.textBoxConfirmPassword.TabIndex = 36;
-            this.textBoxConfirmPassword.UseSystemPasswordChar = true;
+            this.boxEixos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.boxEixos.FormattingEnabled = true;
+            this.boxEixos.Items.AddRange(new object[] {
+            "2",
+            "3"});
+            this.boxEixos.Location = new System.Drawing.Point(459, 143);
+            this.boxEixos.Name = "boxEixos";
+            this.boxEixos.Size = new System.Drawing.Size(163, 21);
+            this.boxEixos.TabIndex = 56;
             // 
-            // textBoxFirstPassword
+            // boxNPortas
             // 
-            this.textBoxFirstPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxFirstPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxFirstPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxFirstPassword.Location = new System.Drawing.Point(231, 217);
-            this.textBoxFirstPassword.Name = "textBoxFirstPassword";
-            this.textBoxFirstPassword.Size = new System.Drawing.Size(183, 20);
-            this.textBoxFirstPassword.TabIndex = 35;
-            this.textBoxFirstPassword.UseSystemPasswordChar = true;
+            this.boxNPortas.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.boxNPortas.FormattingEnabled = true;
+            this.boxNPortas.Items.AddRange(new object[] {
+            "3",
+            "5"});
+            this.boxNPortas.Location = new System.Drawing.Point(459, 117);
+            this.boxNPortas.Name = "boxNPortas";
+            this.boxNPortas.Size = new System.Drawing.Size(163, 21);
+            this.boxNPortas.TabIndex = 55;
             // 
-            // textBoxUtilizador
+            // boxCaixa
             // 
-            this.textBoxUtilizador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxUtilizador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxUtilizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxUtilizador.Location = new System.Drawing.Point(231, 187);
-            this.textBoxUtilizador.Name = "textBoxUtilizador";
-            this.textBoxUtilizador.Size = new System.Drawing.Size(183, 20);
-            this.textBoxUtilizador.TabIndex = 34;
+            this.boxCaixa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.boxCaixa.FormattingEnabled = true;
+            this.boxCaixa.Items.AddRange(new object[] {
+            "manual",
+            "automatica"});
+            this.boxCaixa.Location = new System.Drawing.Point(459, 91);
+            this.boxCaixa.Name = "boxCaixa";
+            this.boxCaixa.Size = new System.Drawing.Size(163, 21);
+            this.boxCaixa.TabIndex = 54;
             // 
-            // labelSalario
+            // boxCilindrada
             // 
-            this.labelSalario.AutoSize = true;
-            this.labelSalario.BackColor = System.Drawing.Color.Transparent;
-            this.labelSalario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelSalario.Location = new System.Drawing.Point(146, 276);
-            this.labelSalario.Name = "labelSalario";
-            this.labelSalario.Size = new System.Drawing.Size(78, 20);
-            this.labelSalario.TabIndex = 33;
-            this.labelSalario.Text = "Salario/H:";
+            this.boxCilindrada.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.boxCilindrada.FormattingEnabled = true;
+            this.boxCilindrada.Items.AddRange(new object[] {
+            "50",
+            "125",
+            "300"});
+            this.boxCilindrada.Location = new System.Drawing.Point(459, 64);
+            this.boxCilindrada.Name = "boxCilindrada";
+            this.boxCilindrada.Size = new System.Drawing.Size(163, 21);
+            this.boxCilindrada.TabIndex = 53;
             // 
-            // labelConfirmarPassword
+            // boxCombustivel
             // 
-            this.labelConfirmarPassword.AutoSize = true;
-            this.labelConfirmarPassword.BackColor = System.Drawing.Color.Transparent;
-            this.labelConfirmarPassword.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelConfirmarPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelConfirmarPassword.Location = new System.Drawing.Point(46, 244);
-            this.labelConfirmarPassword.Name = "labelConfirmarPassword";
-            this.labelConfirmarPassword.Size = new System.Drawing.Size(184, 20);
-            this.labelConfirmarPassword.TabIndex = 32;
-            this.labelConfirmarPassword.Text = "Confirmar Palavra-Passe:";
+            this.boxCombustivel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.boxCombustivel.FormattingEnabled = true;
+            this.boxCombustivel.Items.AddRange(new object[] {
+            "Gasolina",
+            "Diesel",
+            "Hibrido",
+            "Eletrico"});
+            this.boxCombustivel.Location = new System.Drawing.Point(109, 142);
+            this.boxCombustivel.Name = "boxCombustivel";
+            this.boxCombustivel.Size = new System.Drawing.Size(163, 21);
+            this.boxCombustivel.TabIndex = 52;
             // 
-            // labelPassword
+            // boxEstado
             // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.BackColor = System.Drawing.Color.Transparent;
-            this.labelPassword.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelPassword.Location = new System.Drawing.Point(117, 214);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(113, 20);
-            this.labelPassword.TabIndex = 31;
-            this.labelPassword.Text = "Palavra-Passe: ";
+            this.boxEstado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.boxEstado.FormattingEnabled = true;
+            this.boxEstado.Items.AddRange(new object[] {
+            "disponivel",
+            "manutencao",
+            "reservado",
+            "alugado"});
+            this.boxEstado.Location = new System.Drawing.Point(109, 252);
+            this.boxEstado.Name = "boxEstado";
+            this.boxEstado.Size = new System.Drawing.Size(163, 21);
+            this.boxEstado.TabIndex = 51;
             // 
-            // labelUtilizador
+            // dungeonHeaderLabel1
             // 
-            this.labelUtilizador.AutoSize = true;
-            this.labelUtilizador.BackColor = System.Drawing.Color.Transparent;
-            this.labelUtilizador.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelUtilizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelUtilizador.Location = new System.Drawing.Point(142, 184);
-            this.labelUtilizador.Name = "labelUtilizador";
-            this.labelUtilizador.Size = new System.Drawing.Size(86, 20);
-            this.labelUtilizador.TabIndex = 30;
-            this.labelUtilizador.Text = "Utilizador: ";
+            this.dungeonHeaderLabel1.AutoSize = true;
+            this.dungeonHeaderLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.dungeonHeaderLabel1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.dungeonHeaderLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.dungeonHeaderLabel1.Location = new System.Drawing.Point(43, 252);
+            this.dungeonHeaderLabel1.Name = "dungeonHeaderLabel1";
+            this.dungeonHeaderLabel1.Size = new System.Drawing.Size(60, 20);
+            this.dungeonHeaderLabel1.TabIndex = 50;
+            this.dungeonHeaderLabel1.Text = "Estado:";
             // 
-            // textBoxMorada
+            // labelClasse
             // 
-            this.textBoxMorada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxMorada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMorada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxMorada.Location = new System.Drawing.Point(231, 84);
-            this.textBoxMorada.Name = "textBoxMorada";
-            this.textBoxMorada.Size = new System.Drawing.Size(183, 20);
-            this.textBoxMorada.TabIndex = 15;
+            this.labelClasse.AutoSize = true;
+            this.labelClasse.BackColor = System.Drawing.Color.Transparent;
+            this.labelClasse.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelClasse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelClasse.Location = new System.Drawing.Point(41, 226);
+            this.labelClasse.Name = "labelClasse";
+            this.labelClasse.Size = new System.Drawing.Size(56, 20);
+            this.labelClasse.TabIndex = 49;
+            this.labelClasse.Text = "Classe:";
             // 
-            // labelNome
+            // boxClasse
             // 
-            this.labelNome.AutoSize = true;
-            this.labelNome.BackColor = System.Drawing.Color.Transparent;
-            this.labelNome.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNome.Location = new System.Drawing.Point(143, 25);
-            this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(60, 20);
-            this.labelNome.TabIndex = 11;
-            this.labelNome.Text = "Nome: ";
+            this.boxClasse.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.boxClasse.FormattingEnabled = true;
+            this.boxClasse.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"});
+            this.boxClasse.Location = new System.Drawing.Point(109, 225);
+            this.boxClasse.Name = "boxClasse";
+            this.boxClasse.Size = new System.Drawing.Size(163, 21);
+            this.boxClasse.TabIndex = 48;
             // 
-            // labelEmail
+            // textBoxPesoMax
             // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.BackColor = System.Drawing.Color.Transparent;
-            this.labelEmail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelEmail.Location = new System.Drawing.Point(148, 117);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(55, 20);
-            this.labelEmail.TabIndex = 12;
-            this.labelEmail.Text = "Email: ";
+            this.textBoxPesoMax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxPesoMax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPesoMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxPesoMax.Location = new System.Drawing.Point(459, 196);
+            this.textBoxPesoMax.Name = "textBoxPesoMax";
+            this.textBoxPesoMax.Size = new System.Drawing.Size(163, 20);
+            this.textBoxPesoMax.TabIndex = 26;
             // 
-            // textBoxEmail
+            // textBoxModelo
             // 
-            this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxEmail.Location = new System.Drawing.Point(231, 117);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(183, 20);
-            this.textBoxEmail.TabIndex = 10;
+            this.textBoxModelo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxModelo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxModelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxModelo.Location = new System.Drawing.Point(109, 91);
+            this.textBoxModelo.Name = "textBoxModelo";
+            this.textBoxModelo.Size = new System.Drawing.Size(163, 20);
+            this.textBoxModelo.TabIndex = 5;
             // 
-            // textBoxTelemovel
+            // labelPesoMax
             // 
-            this.textBoxTelemovel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxTelemovel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxTelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxTelemovel.Location = new System.Drawing.Point(231, 152);
-            this.textBoxTelemovel.Name = "textBoxTelemovel";
-            this.textBoxTelemovel.Size = new System.Drawing.Size(183, 20);
-            this.textBoxTelemovel.TabIndex = 19;
+            this.labelPesoMax.AutoSize = true;
+            this.labelPesoMax.BackColor = System.Drawing.Color.Transparent;
+            this.labelPesoMax.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelPesoMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelPesoMax.Location = new System.Drawing.Point(367, 193);
+            this.labelPesoMax.Name = "labelPesoMax";
+            this.labelPesoMax.Size = new System.Drawing.Size(83, 20);
+            this.labelPesoMax.TabIndex = 25;
+            this.labelPesoMax.Text = "Peso/Max:";
             // 
-            // textBoxName
+            // labelMarca
             // 
-            this.textBoxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxName.Location = new System.Drawing.Point(231, 25);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(183, 20);
-            this.textBoxName.TabIndex = 13;
+            this.labelMarca.AutoSize = true;
+            this.labelMarca.BackColor = System.Drawing.Color.Transparent;
+            this.labelMarca.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelMarca.Location = new System.Drawing.Point(47, 65);
+            this.labelMarca.Name = "labelMarca";
+            this.labelMarca.Size = new System.Drawing.Size(60, 20);
+            this.labelMarca.TabIndex = 3;
+            this.labelMarca.Text = "Marca: ";
             // 
-            // labelNtelemovel
+            // labelModelo
             // 
-            this.labelNtelemovel.AutoSize = true;
-            this.labelNtelemovel.BackColor = System.Drawing.Color.Transparent;
-            this.labelNtelemovel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelNtelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNtelemovel.Location = new System.Drawing.Point(92, 149);
-            this.labelNtelemovel.Name = "labelNtelemovel";
-            this.labelNtelemovel.Size = new System.Drawing.Size(111, 20);
-            this.labelNtelemovel.TabIndex = 18;
-            this.labelNtelemovel.Text = "Nº Telemovel: ";
+            this.labelModelo.AutoSize = true;
+            this.labelModelo.BackColor = System.Drawing.Color.Transparent;
+            this.labelModelo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelModelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelModelo.Location = new System.Drawing.Point(41, 91);
+            this.labelModelo.Name = "labelModelo";
+            this.labelModelo.Size = new System.Drawing.Size(66, 20);
+            this.labelModelo.TabIndex = 4;
+            this.labelModelo.Text = "Modelo:";
             // 
-            // labelMorada
+            // labelNeixos
             // 
-            this.labelMorada.AutoSize = true;
-            this.labelMorada.BackColor = System.Drawing.Color.Transparent;
-            this.labelMorada.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelMorada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelMorada.Location = new System.Drawing.Point(132, 84);
-            this.labelMorada.Name = "labelMorada";
-            this.labelMorada.Size = new System.Drawing.Size(71, 20);
-            this.labelMorada.TabIndex = 14;
-            this.labelMorada.Text = "Morada: ";
+            this.labelNeixos.AutoSize = true;
+            this.labelNeixos.BackColor = System.Drawing.Color.Transparent;
+            this.labelNeixos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelNeixos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelNeixos.Location = new System.Drawing.Point(378, 143);
+            this.labelNeixos.Name = "labelNeixos";
+            this.labelNeixos.Size = new System.Drawing.Size(72, 20);
+            this.labelNeixos.TabIndex = 23;
+            this.labelNeixos.Text = "Nº Eixos:";
             // 
-            // textBoxNif
+            // textBoxMarca
             // 
-            this.textBoxNif.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxNif.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxNif.Location = new System.Drawing.Point(231, 58);
-            this.textBoxNif.Name = "textBoxNif";
-            this.textBoxNif.Size = new System.Drawing.Size(183, 20);
-            this.textBoxNif.TabIndex = 17;
+            this.textBoxMarca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxMarca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxMarca.Location = new System.Drawing.Point(109, 65);
+            this.textBoxMarca.Name = "textBoxMarca";
+            this.textBoxMarca.Size = new System.Drawing.Size(163, 20);
+            this.textBoxMarca.TabIndex = 6;
             // 
-            // labelNif
+            // textBoxMatricula
             // 
-            this.labelNif.AutoSize = true;
-            this.labelNif.BackColor = System.Drawing.Color.Transparent;
-            this.labelNif.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNif.Location = new System.Drawing.Point(163, 58);
-            this.labelNif.Name = "labelNif";
-            this.labelNif.Size = new System.Drawing.Size(40, 20);
-            this.labelNif.TabIndex = 16;
-            this.labelNif.Text = "Nif: ";
+            this.textBoxMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxMatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxMatricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxMatricula.Location = new System.Drawing.Point(109, 117);
+            this.textBoxMatricula.Name = "textBoxMatricula";
+            this.textBoxMatricula.Size = new System.Drawing.Size(163, 20);
+            this.textBoxMatricula.TabIndex = 7;
+            // 
+            // labelNportas
+            // 
+            this.labelNportas.AutoSize = true;
+            this.labelNportas.BackColor = System.Drawing.Color.Transparent;
+            this.labelNportas.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelNportas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelNportas.Location = new System.Drawing.Point(372, 117);
+            this.labelNportas.Name = "labelNportas";
+            this.labelNportas.Size = new System.Drawing.Size(81, 20);
+            this.labelNportas.TabIndex = 21;
+            this.labelNportas.Text = "Nº Portas:";
+            // 
+            // labelMatricula
+            // 
+            this.labelMatricula.AutoSize = true;
+            this.labelMatricula.BackColor = System.Drawing.Color.Transparent;
+            this.labelMatricula.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelMatricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelMatricula.Location = new System.Drawing.Point(28, 117);
+            this.labelMatricula.Name = "labelMatricula";
+            this.labelMatricula.Size = new System.Drawing.Size(79, 20);
+            this.labelMatricula.TabIndex = 8;
+            this.labelMatricula.Text = "Matricula:";
+            // 
+            // labelCaixa
+            // 
+            this.labelCaixa.AutoSize = true;
+            this.labelCaixa.BackColor = System.Drawing.Color.Transparent;
+            this.labelCaixa.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelCaixa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelCaixa.Location = new System.Drawing.Point(401, 91);
+            this.labelCaixa.Name = "labelCaixa";
+            this.labelCaixa.Size = new System.Drawing.Size(50, 20);
+            this.labelCaixa.TabIndex = 19;
+            this.labelCaixa.Text = "Caixa:";
+            // 
+            // labelCombustivel
+            // 
+            this.labelCombustivel.AutoSize = true;
+            this.labelCombustivel.BackColor = System.Drawing.Color.Transparent;
+            this.labelCombustivel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelCombustivel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelCombustivel.Location = new System.Drawing.Point(7, 143);
+            this.labelCombustivel.Name = "labelCombustivel";
+            this.labelCombustivel.Size = new System.Drawing.Size(100, 20);
+            this.labelCombustivel.TabIndex = 10;
+            this.labelCombustivel.Text = "Combustivel:";
+            // 
+            // labelCilindrada
+            // 
+            this.labelCilindrada.AutoSize = true;
+            this.labelCilindrada.BackColor = System.Drawing.Color.Transparent;
+            this.labelCilindrada.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelCilindrada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelCilindrada.Location = new System.Drawing.Point(371, 65);
+            this.labelCilindrada.Name = "labelCilindrada";
+            this.labelCilindrada.Size = new System.Drawing.Size(83, 20);
+            this.labelCilindrada.TabIndex = 17;
+            this.labelCilindrada.Text = "Cilindrada:";
+            // 
+            // labelAno
+            // 
+            this.labelAno.AutoSize = true;
+            this.labelAno.BackColor = System.Drawing.Color.Transparent;
+            this.labelAno.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelAno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelAno.Location = new System.Drawing.Point(61, 169);
+            this.labelAno.Name = "labelAno";
+            this.labelAno.Size = new System.Drawing.Size(42, 20);
+            this.labelAno.TabIndex = 11;
+            this.labelAno.Text = "Ano:";
+            // 
+            // labelNpassageiros
+            // 
+            this.labelNpassageiros.AutoSize = true;
+            this.labelNpassageiros.BackColor = System.Drawing.Color.Transparent;
+            this.labelNpassageiros.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelNpassageiros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelNpassageiros.Location = new System.Drawing.Point(336, 169);
+            this.labelNpassageiros.Name = "labelNpassageiros";
+            this.labelNpassageiros.Size = new System.Drawing.Size(118, 20);
+            this.labelNpassageiros.TabIndex = 16;
+            this.labelNpassageiros.Text = "Nº Passageiros:";
+            // 
+            // textBoxAno
+            // 
+            this.textBoxAno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxAno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxAno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxAno.Location = new System.Drawing.Point(109, 169);
+            this.textBoxAno.MaxLength = 4;
+            this.textBoxAno.Name = "textBoxAno";
+            this.textBoxAno.Size = new System.Drawing.Size(163, 20);
+            this.textBoxAno.TabIndex = 12;
+            // 
+            // textBoxPrecoDiario
+            // 
+            this.textBoxPrecoDiario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxPrecoDiario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPrecoDiario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxPrecoDiario.Location = new System.Drawing.Point(109, 199);
+            this.textBoxPrecoDiario.Name = "textBoxPrecoDiario";
+            this.textBoxPrecoDiario.Size = new System.Drawing.Size(163, 20);
+            this.textBoxPrecoDiario.TabIndex = 13;
+            // 
+            // labelPrecoDiario
+            // 
+            this.labelPrecoDiario.AutoSize = true;
+            this.labelPrecoDiario.BackColor = System.Drawing.Color.Transparent;
+            this.labelPrecoDiario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelPrecoDiario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelPrecoDiario.Location = new System.Drawing.Point(21, 196);
+            this.labelPrecoDiario.Name = "labelPrecoDiario";
+            this.labelPrecoDiario.Size = new System.Drawing.Size(82, 20);
+            this.labelPrecoDiario.TabIndex = 14;
+            this.labelPrecoDiario.Text = "Preço/Dia:";
+            // 
+            // comboBoxEscolherVeiculo
+            // 
+            this.comboBoxEscolherVeiculo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(27)))), ((int)(((byte)(29)))));
+            this.comboBoxEscolherVeiculo.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.comboBoxEscolherVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxEscolherVeiculo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxEscolherVeiculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEscolherVeiculo.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.comboBoxEscolherVeiculo.ForeColor = System.Drawing.Color.White;
+            this.comboBoxEscolherVeiculo.FormattingEnabled = true;
+            this.comboBoxEscolherVeiculo.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.comboBoxEscolherVeiculo.HoverFontColor = System.Drawing.Color.White;
+            this.comboBoxEscolherVeiculo.ItemHeight = 18;
+            this.comboBoxEscolherVeiculo.Items.AddRange(new object[] {
+            "Carro",
+            "Mota",
+            "Camioneta",
+            "Camiao"});
+            this.comboBoxEscolherVeiculo.Location = new System.Drawing.Point(153, 13);
+            this.comboBoxEscolherVeiculo.Name = "comboBoxEscolherVeiculo";
+            this.comboBoxEscolherVeiculo.Size = new System.Drawing.Size(173, 24);
+            this.comboBoxEscolherVeiculo.TabIndex = 48;
             // 
             // buttonProcurar
             // 
-            this.buttonProcurar.Location = new System.Drawing.Point(679, 20);
+            this.buttonProcurar.Location = new System.Drawing.Point(677, 14);
             this.buttonProcurar.Name = "buttonProcurar";
             this.buttonProcurar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonProcurar.Size = new System.Drawing.Size(75, 23);
-            this.buttonProcurar.TabIndex = 35;
-            this.buttonProcurar.Text = "Login";
-            // 
-            // textBoxLoginUtilizador
-            // 
-            this.textBoxLoginUtilizador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxLoginUtilizador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxLoginUtilizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxLoginUtilizador.Location = new System.Drawing.Point(115, 23);
-            this.textBoxLoginUtilizador.Name = "textBoxLoginUtilizador";
-            this.textBoxLoginUtilizador.Size = new System.Drawing.Size(183, 20);
-            this.textBoxLoginUtilizador.TabIndex = 34;
-            // 
-            // labelLoginUtilizador
-            // 
-            this.labelLoginUtilizador.AutoSize = true;
-            this.labelLoginUtilizador.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoginUtilizador.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelLoginUtilizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelLoginUtilizador.Location = new System.Drawing.Point(36, 23);
-            this.labelLoginUtilizador.Name = "labelLoginUtilizador";
-            this.labelLoginUtilizador.Size = new System.Drawing.Size(82, 20);
-            this.labelLoginUtilizador.TabIndex = 33;
-            this.labelLoginUtilizador.Text = "Utilizador:";
-            // 
-            // buttonAlterar
-            // 
-            this.buttonAlterar.Location = new System.Drawing.Point(574, 397);
-            this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonAlterar.Size = new System.Drawing.Size(117, 52);
-            this.buttonAlterar.TabIndex = 32;
-            this.buttonAlterar.Text = "Alterar";
+            this.buttonProcurar.TabIndex = 53;
+            this.buttonProcurar.Text = "Procurar";
+            this.buttonProcurar.Click += new System.EventHandler(this.buttonProcurar_Click);
             // 
             // MenuEditarVeiculo
             // 
@@ -362,50 +530,59 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.textBoxLoginPassword);
-            this.Controls.Add(this.labelLoginPassword);
-            this.Controls.Add(this.groupBoxEditarFuncionario);
             this.Controls.Add(this.buttonProcurar);
-            this.Controls.Add(this.textBoxLoginUtilizador);
-            this.Controls.Add(this.labelLoginUtilizador);
-            this.Controls.Add(this.buttonAlterar);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.buttonEditarVeiculo);
+            this.Controls.Add(this.labelEscolheTipo);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.comboBoxEscolherVeiculo);
+            this.Controls.Add(this.boxMatricula);
+            this.Controls.Add(this.matricula);
             this.Name = "MenuEditarVeiculo";
             this.Text = "MenuEditarVeiculo";
-            this.groupBoxEditarFuncionario.ResumeLayout(false);
-            this.groupBoxEditarFuncionario.PerformLayout();
+            this.label.ResumeLayout(false);
+            this.label.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
+        private ReaLTaiizor.Controls.CrownTextBox boxMatricula;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel matricula;
         private ReaLTaiizor.Controls.CrownButton buttonCancelar;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxLoginPassword;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelLoginPassword;
-        private System.Windows.Forms.GroupBox groupBoxEditarFuncionario;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxSalario;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxConfirmPassword;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxFirstPassword;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxUtilizador;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelSalario;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelConfirmarPassword;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelPassword;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelUtilizador;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxMorada;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelNome;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelEmail;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxEmail;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxTelemovel;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxName;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelNtelemovel;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelMorada;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxNif;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelNif;
+        private ReaLTaiizor.Controls.CrownButton buttonEditarVeiculo;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelEscolheTipo;
+        private System.Windows.Forms.GroupBox label;
+        private ReaLTaiizor.Controls.CrownTextBox boxPassageiros;
+        private ReaLTaiizor.Controls.CrownComboBox boxEixos;
+        private ReaLTaiizor.Controls.CrownComboBox boxNPortas;
+        private ReaLTaiizor.Controls.CrownComboBox boxCaixa;
+        private ReaLTaiizor.Controls.CrownComboBox boxCilindrada;
+        private ReaLTaiizor.Controls.CrownComboBox boxCombustivel;
+        private ReaLTaiizor.Controls.CrownComboBox boxEstado;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel dungeonHeaderLabel1;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelClasse;
+        private ReaLTaiizor.Controls.CrownComboBox boxClasse;
+        private ReaLTaiizor.Controls.CrownTextBox textBoxPesoMax;
+        private ReaLTaiizor.Controls.CrownTextBox textBoxModelo;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelPesoMax;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelMarca;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelModelo;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelNeixos;
+        private ReaLTaiizor.Controls.CrownTextBox textBoxMarca;
+        private ReaLTaiizor.Controls.CrownTextBox textBoxMatricula;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelNportas;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelMatricula;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelCaixa;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelCombustivel;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelCilindrada;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelAno;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelNpassageiros;
+        private ReaLTaiizor.Controls.CrownTextBox textBoxAno;
+        private ReaLTaiizor.Controls.CrownTextBox textBoxPrecoDiario;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelPrecoDiario;
+        private ReaLTaiizor.Controls.ForeverComboBox comboBoxEscolherVeiculo;
         private ReaLTaiizor.Controls.CrownButton buttonProcurar;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxLoginUtilizador;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelLoginUtilizador;
-        private ReaLTaiizor.Controls.CrownButton buttonAlterar;
     }
 }
