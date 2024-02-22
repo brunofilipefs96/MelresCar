@@ -17,5 +17,9 @@ namespace Automobile
             InitializeComponent();
         }
 
+        private void buttonEscolherTipo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

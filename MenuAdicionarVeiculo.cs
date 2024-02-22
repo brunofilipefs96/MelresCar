@@ -83,7 +83,7 @@ namespace Automobile
                                 }
                                 else
                                 {
-                                    Carro carro = new Carro("Carro", boxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, boxCombustivel.Text, Convert.ToInt32(textBoxAno.Text), boxEstado.Text, Convert.ToDecimal(textBoxPrecoDiario.Text), DateTime.Today, Convert.ToInt32(boxNPortas.Text), boxCaixa.Text);
+                                    Carro carro = new Carro("carro", boxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, boxCombustivel.Text, Convert.ToInt32(textBoxAno.Text), boxEstado.Text, Convert.ToDecimal(textBoxPrecoDiario.Text), DateTime.Today, Convert.ToInt32(boxNPortas.Text), boxCaixa.Text);
                                     Program.melresCar.InserirVeiculo(carro);
                                     Program.melresCar.EscreverFicheiroCSV("veiculos");
                                     MessageBox.Show("Veículo adicionado com sucesso");
@@ -118,7 +118,7 @@ namespace Automobile
                                 }
                                 else
                                 {
-                                    Mota mota = new Mota("Mota", boxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, boxCombustivel.Text, Convert.ToInt32(textBoxAno.Text), boxEstado.Text, Convert.ToDecimal(textBoxPrecoDiario.Text), DateTime.Today, Convert.ToInt32(boxCilindrada.Text));
+                                    Mota mota = new Mota("mota", boxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, boxCombustivel.Text, Convert.ToInt32(textBoxAno.Text), boxEstado.Text, Convert.ToDecimal(textBoxPrecoDiario.Text), DateTime.Today, Convert.ToInt32(boxCilindrada.Text));
                                     Program.melresCar.InserirVeiculo(mota);
                                     Program.melresCar.EscreverFicheiroCSV("veiculos");
                                     MessageBox.Show("Veículo adicionado com sucesso");

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonAdicionarVeiculo = new ReaLTaiizor.Controls.CrownButton();
-            this.groupboxAdiciopnarCliente = new System.Windows.Forms.GroupBox();
+            this.buttonRemoverVeiculo = new ReaLTaiizor.Controls.CrownButton();
+            this.groupboxRemoverVeiculo = new System.Windows.Forms.GroupBox();
             this.labelPesoMaxCheck = new System.Windows.Forms.Label();
             this.labelNpassageirosCheck = new System.Windows.Forms.Label();
             this.labelNeixoCheck = new System.Windows.Forms.Label();
@@ -54,151 +54,167 @@
             this.labelAno = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelNpassageiros = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelPrecoDiario = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.textBoxIdentificacao = new ReaLTaiizor.Controls.CrownTextBox();
+            this.boxMatricula = new ReaLTaiizor.Controls.CrownTextBox();
             this.labelIdentificacao = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelEscolheTipo = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.comboBoxEscolherVeiculo = new ReaLTaiizor.Controls.ForeverComboBox();
             this.buttonEscolherTipo = new ReaLTaiizor.Controls.CrownButton();
             this.buttonCancelar = new ReaLTaiizor.Controls.CrownButton();
-            this.groupboxAdiciopnarCliente.SuspendLayout();
+            this.groupboxRemoverVeiculo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // buttonAdicionarVeiculo
+            // buttonRemoverVeiculo
             // 
-            this.buttonAdicionarVeiculo.Location = new System.Drawing.Point(599, 368);
-            this.buttonAdicionarVeiculo.Name = "buttonAdicionarVeiculo";
-            this.buttonAdicionarVeiculo.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonAdicionarVeiculo.Size = new System.Drawing.Size(117, 52);
-            this.buttonAdicionarVeiculo.TabIndex = 58;
-            this.buttonAdicionarVeiculo.Text = "Remover";
+            this.buttonRemoverVeiculo.Location = new System.Drawing.Point(799, 453);
+            this.buttonRemoverVeiculo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRemoverVeiculo.Name = "buttonRemoverVeiculo";
+            this.buttonRemoverVeiculo.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.buttonRemoverVeiculo.Size = new System.Drawing.Size(156, 64);
+            this.buttonRemoverVeiculo.TabIndex = 58;
+            this.buttonRemoverVeiculo.Text = "Remover";
             // 
-            // groupboxAdiciopnarCliente
+            // groupboxRemoverVeiculo
             // 
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelPesoMaxCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelNpassageirosCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelNeixoCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelNportasCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelCaixaCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelCilindradaCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelPrecoCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelAnoCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelCombustivelCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelMatriculaCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelModeloCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelMarcaCheck);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelPesoMax);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelMarca);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelModelo);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelNeixos);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelNportas);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelMatricula);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelCaixa);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelCombustivel);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelCilindrada);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelAno);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelNpassageiros);
-            this.groupboxAdiciopnarCliente.Controls.Add(this.labelPrecoDiario);
-            this.groupboxAdiciopnarCliente.Location = new System.Drawing.Point(73, 56);
-            this.groupboxAdiciopnarCliente.Name = "groupboxAdiciopnarCliente";
-            this.groupboxAdiciopnarCliente.Size = new System.Drawing.Size(643, 306);
-            this.groupboxAdiciopnarCliente.TabIndex = 57;
-            this.groupboxAdiciopnarCliente.TabStop = false;
-            this.groupboxAdiciopnarCliente.Text = "Alterar Veiculo";
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelPesoMaxCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelNpassageirosCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelNeixoCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelNportasCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelCaixaCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelCilindradaCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelPrecoCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelAnoCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelCombustivelCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelMatriculaCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelModeloCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelMarcaCheck);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelPesoMax);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelMarca);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelModelo);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelNeixos);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelNportas);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelMatricula);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelCaixa);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelCombustivel);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelCilindrada);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelAno);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelNpassageiros);
+            this.groupboxRemoverVeiculo.Controls.Add(this.labelPrecoDiario);
+            this.groupboxRemoverVeiculo.Enabled = false;
+            this.groupboxRemoverVeiculo.Location = new System.Drawing.Point(97, 69);
+            this.groupboxRemoverVeiculo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupboxRemoverVeiculo.Name = "groupboxRemoverVeiculo";
+            this.groupboxRemoverVeiculo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupboxRemoverVeiculo.Size = new System.Drawing.Size(857, 377);
+            this.groupboxRemoverVeiculo.TabIndex = 57;
+            this.groupboxRemoverVeiculo.TabStop = false;
+            this.groupboxRemoverVeiculo.Text = "Remover Veiculo";
             // 
             // labelPesoMaxCheck
             // 
             this.labelPesoMaxCheck.AutoSize = true;
-            this.labelPesoMaxCheck.Location = new System.Drawing.Point(460, 200);
+            this.labelPesoMaxCheck.Location = new System.Drawing.Point(613, 246);
+            this.labelPesoMaxCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPesoMaxCheck.Name = "labelPesoMaxCheck";
-            this.labelPesoMaxCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelPesoMaxCheck.Size = new System.Drawing.Size(0, 16);
             this.labelPesoMaxCheck.TabIndex = 37;
             // 
             // labelNpassageirosCheck
             // 
             this.labelNpassageirosCheck.AutoSize = true;
-            this.labelNpassageirosCheck.Location = new System.Drawing.Point(460, 177);
+            this.labelNpassageirosCheck.Location = new System.Drawing.Point(613, 218);
+            this.labelNpassageirosCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNpassageirosCheck.Name = "labelNpassageirosCheck";
-            this.labelNpassageirosCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelNpassageirosCheck.Size = new System.Drawing.Size(0, 16);
             this.labelNpassageirosCheck.TabIndex = 36;
             // 
             // labelNeixoCheck
             // 
             this.labelNeixoCheck.AutoSize = true;
-            this.labelNeixoCheck.Location = new System.Drawing.Point(460, 150);
+            this.labelNeixoCheck.Location = new System.Drawing.Point(613, 185);
+            this.labelNeixoCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNeixoCheck.Name = "labelNeixoCheck";
-            this.labelNeixoCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelNeixoCheck.Size = new System.Drawing.Size(0, 16);
             this.labelNeixoCheck.TabIndex = 35;
             // 
             // labelNportasCheck
             // 
             this.labelNportasCheck.AutoSize = true;
-            this.labelNportasCheck.Location = new System.Drawing.Point(460, 122);
+            this.labelNportasCheck.Location = new System.Drawing.Point(613, 150);
+            this.labelNportasCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNportasCheck.Name = "labelNportasCheck";
-            this.labelNportasCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelNportasCheck.Size = new System.Drawing.Size(0, 16);
             this.labelNportasCheck.TabIndex = 34;
             // 
             // labelCaixaCheck
             // 
             this.labelCaixaCheck.AutoSize = true;
-            this.labelCaixaCheck.Location = new System.Drawing.Point(457, 96);
+            this.labelCaixaCheck.Location = new System.Drawing.Point(609, 118);
+            this.labelCaixaCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCaixaCheck.Name = "labelCaixaCheck";
-            this.labelCaixaCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelCaixaCheck.Size = new System.Drawing.Size(0, 16);
             this.labelCaixaCheck.TabIndex = 33;
             // 
             // labelCilindradaCheck
             // 
             this.labelCilindradaCheck.AutoSize = true;
-            this.labelCilindradaCheck.Location = new System.Drawing.Point(460, 70);
+            this.labelCilindradaCheck.Location = new System.Drawing.Point(613, 86);
+            this.labelCilindradaCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCilindradaCheck.Name = "labelCilindradaCheck";
-            this.labelCilindradaCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelCilindradaCheck.Size = new System.Drawing.Size(0, 16);
             this.labelCilindradaCheck.TabIndex = 32;
             // 
             // labelPrecoCheck
             // 
             this.labelPrecoCheck.AutoSize = true;
-            this.labelPrecoCheck.Location = new System.Drawing.Point(128, 202);
+            this.labelPrecoCheck.Location = new System.Drawing.Point(171, 249);
+            this.labelPrecoCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPrecoCheck.Name = "labelPrecoCheck";
-            this.labelPrecoCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelPrecoCheck.Size = new System.Drawing.Size(0, 16);
             this.labelPrecoCheck.TabIndex = 31;
             // 
             // labelAnoCheck
             // 
             this.labelAnoCheck.AutoSize = true;
-            this.labelAnoCheck.Location = new System.Drawing.Point(128, 177);
+            this.labelAnoCheck.Location = new System.Drawing.Point(171, 218);
+            this.labelAnoCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAnoCheck.Name = "labelAnoCheck";
-            this.labelAnoCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelAnoCheck.Size = new System.Drawing.Size(0, 16);
             this.labelAnoCheck.TabIndex = 30;
             // 
             // labelCombustivelCheck
             // 
             this.labelCombustivelCheck.AutoSize = true;
-            this.labelCombustivelCheck.Location = new System.Drawing.Point(128, 150);
+            this.labelCombustivelCheck.Location = new System.Drawing.Point(171, 185);
+            this.labelCombustivelCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCombustivelCheck.Name = "labelCombustivelCheck";
-            this.labelCombustivelCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelCombustivelCheck.Size = new System.Drawing.Size(0, 16);
             this.labelCombustivelCheck.TabIndex = 29;
             // 
             // labelMatriculaCheck
             // 
             this.labelMatriculaCheck.AutoSize = true;
-            this.labelMatriculaCheck.Location = new System.Drawing.Point(128, 122);
+            this.labelMatriculaCheck.Location = new System.Drawing.Point(171, 150);
+            this.labelMatriculaCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMatriculaCheck.Name = "labelMatriculaCheck";
-            this.labelMatriculaCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelMatriculaCheck.Size = new System.Drawing.Size(0, 16);
             this.labelMatriculaCheck.TabIndex = 28;
             // 
             // labelModeloCheck
             // 
             this.labelModeloCheck.AutoSize = true;
-            this.labelModeloCheck.Location = new System.Drawing.Point(128, 96);
+            this.labelModeloCheck.Location = new System.Drawing.Point(171, 118);
+            this.labelModeloCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelModeloCheck.Name = "labelModeloCheck";
-            this.labelModeloCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelModeloCheck.Size = new System.Drawing.Size(0, 16);
             this.labelModeloCheck.TabIndex = 27;
             // 
             // labelMarcaCheck
             // 
             this.labelMarcaCheck.AutoSize = true;
-            this.labelMarcaCheck.Location = new System.Drawing.Point(128, 70);
+            this.labelMarcaCheck.Location = new System.Drawing.Point(171, 86);
+            this.labelMarcaCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMarcaCheck.Name = "labelMarcaCheck";
-            this.labelMarcaCheck.Size = new System.Drawing.Size(0, 13);
+            this.labelMarcaCheck.Size = new System.Drawing.Size(0, 16);
             this.labelMarcaCheck.TabIndex = 26;
             // 
             // labelPesoMax
@@ -207,9 +223,10 @@
             this.labelPesoMax.BackColor = System.Drawing.Color.Transparent;
             this.labelPesoMax.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelPesoMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelPesoMax.Location = new System.Drawing.Point(367, 193);
+            this.labelPesoMax.Location = new System.Drawing.Point(489, 238);
+            this.labelPesoMax.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPesoMax.Name = "labelPesoMax";
-            this.labelPesoMax.Size = new System.Drawing.Size(83, 20);
+            this.labelPesoMax.Size = new System.Drawing.Size(105, 25);
             this.labelPesoMax.TabIndex = 25;
             this.labelPesoMax.Text = "Peso/Max:";
             // 
@@ -219,9 +236,10 @@
             this.labelMarca.BackColor = System.Drawing.Color.Transparent;
             this.labelMarca.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelMarca.Location = new System.Drawing.Point(47, 65);
+            this.labelMarca.Location = new System.Drawing.Point(63, 80);
+            this.labelMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMarca.Name = "labelMarca";
-            this.labelMarca.Size = new System.Drawing.Size(56, 20);
+            this.labelMarca.Size = new System.Drawing.Size(72, 25);
             this.labelMarca.TabIndex = 3;
             this.labelMarca.Text = "Marca:";
             // 
@@ -231,9 +249,10 @@
             this.labelModelo.BackColor = System.Drawing.Color.Transparent;
             this.labelModelo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelModelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelModelo.Location = new System.Drawing.Point(41, 91);
+            this.labelModelo.Location = new System.Drawing.Point(55, 112);
+            this.labelModelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelModelo.Name = "labelModelo";
-            this.labelModelo.Size = new System.Drawing.Size(66, 20);
+            this.labelModelo.Size = new System.Drawing.Size(86, 25);
             this.labelModelo.TabIndex = 4;
             this.labelModelo.Text = "Modelo:";
             // 
@@ -243,9 +262,10 @@
             this.labelNeixos.BackColor = System.Drawing.Color.Transparent;
             this.labelNeixos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelNeixos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNeixos.Location = new System.Drawing.Point(378, 141);
+            this.labelNeixos.Location = new System.Drawing.Point(504, 174);
+            this.labelNeixos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNeixos.Name = "labelNeixos";
-            this.labelNeixos.Size = new System.Drawing.Size(72, 20);
+            this.labelNeixos.Size = new System.Drawing.Size(92, 25);
             this.labelNeixos.TabIndex = 23;
             this.labelNeixos.Text = "Nº Eixos:";
             // 
@@ -255,9 +275,10 @@
             this.labelNportas.BackColor = System.Drawing.Color.Transparent;
             this.labelNportas.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelNportas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNportas.Location = new System.Drawing.Point(372, 115);
+            this.labelNportas.Location = new System.Drawing.Point(496, 142);
+            this.labelNportas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNportas.Name = "labelNportas";
-            this.labelNportas.Size = new System.Drawing.Size(81, 20);
+            this.labelNportas.Size = new System.Drawing.Size(103, 25);
             this.labelNportas.TabIndex = 21;
             this.labelNportas.Text = "Nº Portas:";
             // 
@@ -267,9 +288,10 @@
             this.labelMatricula.BackColor = System.Drawing.Color.Transparent;
             this.labelMatricula.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelMatricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelMatricula.Location = new System.Drawing.Point(28, 117);
+            this.labelMatricula.Location = new System.Drawing.Point(37, 144);
+            this.labelMatricula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMatricula.Name = "labelMatricula";
-            this.labelMatricula.Size = new System.Drawing.Size(79, 20);
+            this.labelMatricula.Size = new System.Drawing.Size(101, 25);
             this.labelMatricula.TabIndex = 8;
             this.labelMatricula.Text = "Matricula:";
             // 
@@ -279,9 +301,10 @@
             this.labelCaixa.BackColor = System.Drawing.Color.Transparent;
             this.labelCaixa.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelCaixa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelCaixa.Location = new System.Drawing.Point(401, 91);
+            this.labelCaixa.Location = new System.Drawing.Point(535, 112);
+            this.labelCaixa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCaixa.Name = "labelCaixa";
-            this.labelCaixa.Size = new System.Drawing.Size(50, 20);
+            this.labelCaixa.Size = new System.Drawing.Size(65, 25);
             this.labelCaixa.TabIndex = 19;
             this.labelCaixa.Text = "Caixa:";
             // 
@@ -291,9 +314,10 @@
             this.labelCombustivel.BackColor = System.Drawing.Color.Transparent;
             this.labelCombustivel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelCombustivel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelCombustivel.Location = new System.Drawing.Point(7, 143);
+            this.labelCombustivel.Location = new System.Drawing.Point(9, 176);
+            this.labelCombustivel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCombustivel.Name = "labelCombustivel";
-            this.labelCombustivel.Size = new System.Drawing.Size(100, 20);
+            this.labelCombustivel.Size = new System.Drawing.Size(127, 25);
             this.labelCombustivel.TabIndex = 10;
             this.labelCombustivel.Text = "Combustivel:";
             // 
@@ -303,9 +327,10 @@
             this.labelCilindrada.BackColor = System.Drawing.Color.Transparent;
             this.labelCilindrada.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelCilindrada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelCilindrada.Location = new System.Drawing.Point(371, 65);
+            this.labelCilindrada.Location = new System.Drawing.Point(495, 80);
+            this.labelCilindrada.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCilindrada.Name = "labelCilindrada";
-            this.labelCilindrada.Size = new System.Drawing.Size(83, 20);
+            this.labelCilindrada.Size = new System.Drawing.Size(108, 25);
             this.labelCilindrada.TabIndex = 17;
             this.labelCilindrada.Text = "Cilindrada:";
             // 
@@ -315,9 +340,10 @@
             this.labelAno.BackColor = System.Drawing.Color.Transparent;
             this.labelAno.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelAno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelAno.Location = new System.Drawing.Point(61, 169);
+            this.labelAno.Location = new System.Drawing.Point(81, 208);
+            this.labelAno.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAno.Name = "labelAno";
-            this.labelAno.Size = new System.Drawing.Size(42, 20);
+            this.labelAno.Size = new System.Drawing.Size(54, 25);
             this.labelAno.TabIndex = 11;
             this.labelAno.Text = "Ano:";
             // 
@@ -327,9 +353,10 @@
             this.labelNpassageiros.BackColor = System.Drawing.Color.Transparent;
             this.labelNpassageiros.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelNpassageiros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNpassageiros.Location = new System.Drawing.Point(332, 170);
+            this.labelNpassageiros.Location = new System.Drawing.Point(443, 209);
+            this.labelNpassageiros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNpassageiros.Name = "labelNpassageiros";
-            this.labelNpassageiros.Size = new System.Drawing.Size(118, 20);
+            this.labelNpassageiros.Size = new System.Drawing.Size(149, 25);
             this.labelNpassageiros.TabIndex = 16;
             this.labelNpassageiros.Text = "Nº Passageiros:";
             // 
@@ -339,21 +366,23 @@
             this.labelPrecoDiario.BackColor = System.Drawing.Color.Transparent;
             this.labelPrecoDiario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelPrecoDiario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelPrecoDiario.Location = new System.Drawing.Point(21, 195);
+            this.labelPrecoDiario.Location = new System.Drawing.Point(28, 240);
+            this.labelPrecoDiario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPrecoDiario.Name = "labelPrecoDiario";
-            this.labelPrecoDiario.Size = new System.Drawing.Size(82, 20);
+            this.labelPrecoDiario.Size = new System.Drawing.Size(105, 25);
             this.labelPrecoDiario.TabIndex = 14;
             this.labelPrecoDiario.Text = "Preço/Dia:";
             // 
-            // textBoxIdentificacao
+            // boxMatricula
             // 
-            this.textBoxIdentificacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.textBoxIdentificacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxIdentificacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxIdentificacao.Location = new System.Drawing.Point(381, 15);
-            this.textBoxIdentificacao.Name = "textBoxIdentificacao";
-            this.textBoxIdentificacao.Size = new System.Drawing.Size(163, 20);
-            this.textBoxIdentificacao.TabIndex = 52;
+            this.boxMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.boxMatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.boxMatricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.boxMatricula.Location = new System.Drawing.Point(508, 18);
+            this.boxMatricula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.boxMatricula.Name = "boxMatricula";
+            this.boxMatricula.Size = new System.Drawing.Size(217, 22);
+            this.boxMatricula.TabIndex = 52;
             // 
             // labelIdentificacao
             // 
@@ -361,9 +390,10 @@
             this.labelIdentificacao.BackColor = System.Drawing.Color.Transparent;
             this.labelIdentificacao.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelIdentificacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelIdentificacao.Location = new System.Drawing.Point(305, 15);
+            this.labelIdentificacao.Location = new System.Drawing.Point(407, 18);
+            this.labelIdentificacao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIdentificacao.Name = "labelIdentificacao";
-            this.labelIdentificacao.Size = new System.Drawing.Size(79, 20);
+            this.labelIdentificacao.Size = new System.Drawing.Size(101, 25);
             this.labelIdentificacao.TabIndex = 53;
             this.labelIdentificacao.Text = "Matricula:";
             // 
@@ -373,9 +403,10 @@
             this.labelEscolheTipo.BackColor = System.Drawing.Color.Transparent;
             this.labelEscolheTipo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelEscolheTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelEscolheTipo.Location = new System.Drawing.Point(28, 15);
+            this.labelEscolheTipo.Location = new System.Drawing.Point(37, 18);
+            this.labelEscolheTipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEscolheTipo.Name = "labelEscolheTipo";
-            this.labelEscolheTipo.Size = new System.Drawing.Size(132, 20);
+            this.labelEscolheTipo.Size = new System.Drawing.Size(169, 25);
             this.labelEscolheTipo.TabIndex = 55;
             this.labelEscolheTipo.Text = "Escolha o Veiculo:";
             // 
@@ -386,6 +417,7 @@
             this.comboBoxEscolherVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBoxEscolherVeiculo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxEscolherVeiculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEscolherVeiculo.Enabled = false;
             this.comboBoxEscolherVeiculo.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.comboBoxEscolherVeiculo.ForeColor = System.Drawing.Color.White;
             this.comboBoxEscolherVeiculo.FormattingEnabled = true;
@@ -397,47 +429,52 @@
             "Camiao",
             "Mota",
             "Camioneta"});
-            this.comboBoxEscolherVeiculo.Location = new System.Drawing.Point(166, 11);
+            this.comboBoxEscolherVeiculo.Location = new System.Drawing.Point(221, 14);
+            this.comboBoxEscolherVeiculo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxEscolherVeiculo.Name = "comboBoxEscolherVeiculo";
-            this.comboBoxEscolherVeiculo.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxEscolherVeiculo.Size = new System.Drawing.Size(160, 24);
             this.comboBoxEscolherVeiculo.TabIndex = 54;
             // 
             // buttonEscolherTipo
             // 
-            this.buttonEscolherTipo.Location = new System.Drawing.Point(562, 15);
+            this.buttonEscolherTipo.Location = new System.Drawing.Point(749, 18);
+            this.buttonEscolherTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEscolherTipo.Name = "buttonEscolherTipo";
-            this.buttonEscolherTipo.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonEscolherTipo.Size = new System.Drawing.Size(75, 23);
+            this.buttonEscolherTipo.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.buttonEscolherTipo.Size = new System.Drawing.Size(100, 28);
             this.buttonEscolherTipo.TabIndex = 56;
             this.buttonEscolherTipo.Text = "Procurar";
+            this.buttonEscolherTipo.Click += new System.EventHandler(this.buttonEscolherTipo_Click);
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(73, 368);
+            this.buttonCancelar.Location = new System.Drawing.Point(97, 453);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
+            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.buttonCancelar.Size = new System.Drawing.Size(156, 64);
             this.buttonCancelar.TabIndex = 59;
             this.buttonCancelar.Text = "Cancelar";
             // 
             // MenuRemoverVeiculo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.buttonAdicionarVeiculo);
-            this.Controls.Add(this.groupboxAdiciopnarCliente);
-            this.Controls.Add(this.textBoxIdentificacao);
+            this.Controls.Add(this.buttonRemoverVeiculo);
+            this.Controls.Add(this.groupboxRemoverVeiculo);
+            this.Controls.Add(this.boxMatricula);
             this.Controls.Add(this.labelIdentificacao);
             this.Controls.Add(this.labelEscolheTipo);
             this.Controls.Add(this.comboBoxEscolherVeiculo);
             this.Controls.Add(this.buttonEscolherTipo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MenuRemoverVeiculo";
             this.Text = "RemoverVeiculo";
-            this.groupboxAdiciopnarCliente.ResumeLayout(false);
-            this.groupboxAdiciopnarCliente.PerformLayout();
+            this.groupboxRemoverVeiculo.ResumeLayout(false);
+            this.groupboxRemoverVeiculo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -445,8 +482,8 @@
 
         #endregion
 
-        private ReaLTaiizor.Controls.CrownButton buttonAdicionarVeiculo;
-        private System.Windows.Forms.GroupBox groupboxAdiciopnarCliente;
+        private ReaLTaiizor.Controls.CrownButton buttonRemoverVeiculo;
+        private System.Windows.Forms.GroupBox groupboxRemoverVeiculo;
         private System.Windows.Forms.Label labelPesoMaxCheck;
         private System.Windows.Forms.Label labelNpassageirosCheck;
         private System.Windows.Forms.Label labelNeixoCheck;
@@ -471,7 +508,7 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelAno;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelNpassageiros;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelPrecoDiario;
-        private ReaLTaiizor.Controls.CrownTextBox textBoxIdentificacao;
+        private ReaLTaiizor.Controls.CrownTextBox boxMatricula;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelIdentificacao;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelEscolheTipo;
         private ReaLTaiizor.Controls.ForeverComboBox comboBoxEscolherVeiculo;
