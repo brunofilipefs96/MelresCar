@@ -19,21 +19,21 @@ namespace Automobile
 
         private void buttonAdicionar_Click(object sender, EventArgs e)
         {
-            if (textBoxName.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "" || textBoxUsername.Text == "" || textBoxFirstPassword.Text == "" || textBoxConfirmPassword.Text == "" || textBoxSalario.Text == "")
+            if (textBoxNome.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "" || textBoxUsername.Text == "" || textBoxFirstPassword.Text == "" || textBoxConfirmPassword.Text == "" || numericSalario.Text == "")
             {
-                MessageBox.Show("Por favor preencha todos os campos");
+                MessageBox.Show("Por favor preencha todos os campos", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 if (textBoxNif.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxNif.Text))
                 {
-                    MessageBox.Show("NIF inválido");
+                    MessageBox.Show("NIF inválido", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
                     if (textBoxTelemovel.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxTelemovel.Text))
                     {
-                        MessageBox.Show("Telemóvel inválido");
+                        MessageBox.Show("Telemóvel inválido", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
@@ -41,23 +41,23 @@ namespace Automobile
                         {
                             if (textBoxFirstPassword.Text != textBoxConfirmPassword.Text)
                             {
-                                MessageBox.Show("As passwords não coincidem");
+                                MessageBox.Show("As passwords não coincidem", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             }
                             else
                             {
                                 if (textBoxFirstPassword.Text.Length < 8)
                                 {
-                                    MessageBox.Show("A password tem de ter no mínimo 8 caracteres");
+                                    MessageBox.Show("A password tem de ter no mínimo 8 caracteres", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 }
                                 else
                                 {
-                                    if (!Program.melresCar.VerificaDecimal(textBoxSalario.Text))
+                                    if (!Program.melresCar.VerificaDecimal(numericSalario.Text))
                                     {
-                                        MessageBox.Show("Salário inválido");
+                                        MessageBox.Show("Salário inválido", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     }
                                     else
                                     {
-                                        Funcionario funcionario = new Funcionario(textBoxName.Text, textBoxNif.Text, textBoxMorada.Text, textBoxEmail.Text, textBoxTelemovel.Text, textBoxUsername.Text, textBoxFirstPassword.Text, Convert.ToDecimal(textBoxSalario.Text));
+                                        Funcionario funcionario = new Funcionario(textBoxNome.Text, textBoxNif.Text, textBoxMorada.Text, textBoxEmail.Text, textBoxTelemovel.Text, textBoxUsername.Text, textBoxFirstPassword.Text, Convert.ToDecimal(numericSalario.Text));
                                         Program.melresCar.InserirFuncionario(funcionario);
                                         Program.melresCar.EscreverFicheiroCSV("funcionarios");
                                         MessageBox.Show("Funcionário adicionado com sucesso");
@@ -68,7 +68,7 @@ namespace Automobile
                         }
                         else
                         {
-                            MessageBox.Show("Email inválido");
+                            MessageBox.Show("Email inválido", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                 }

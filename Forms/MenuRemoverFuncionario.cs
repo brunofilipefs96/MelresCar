@@ -23,7 +23,7 @@ namespace Automobile
         {
             if (textBoxLoginUsername.Text == "" || textBoxLoginPassword.Text == "")
             {
-                MessageBox.Show("Preencha os dois campos.");
+                MessageBox.Show("Preencha os dois campos.", "Remover Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -43,9 +43,9 @@ namespace Automobile
                         groupBoxRemoverFuncionario.Enabled = true;
                         buttonRemover.Enabled = true;
                         return;
-                        
-                        
                     }
+                    groupBoxRemoverFuncionario.Enabled = false;
+                    buttonRemover.Enabled = false;
                 }
             }
         }
@@ -55,6 +55,11 @@ namespace Automobile
             Program.melresCar.RemoverFuncionario(_indexFuncionario);
             Program.melresCar.EscreverFicheiroCSV("funcionarios");
             MessageBox.Show("Funcionario removido com sucesso");
+            this.Close();
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

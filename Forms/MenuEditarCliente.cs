@@ -54,19 +54,19 @@ namespace Automobile
         {
             if (textBoxName.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "")
             {
-                MessageBox.Show("Por favor preencha todos os campos");
+                MessageBox.Show("Por favor preencha todos os campos", "Editar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 if (textBoxNif.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxNif.Text))
                 {
-                    MessageBox.Show("NIF inválido");
+                    MessageBox.Show("NIF inválido", "Editar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
                     if (textBoxTelemovel.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxTelemovel.Text))
                     {
-                        MessageBox.Show("Telemóvel inválido");
+                        MessageBox.Show("Telemóvel inválido", "Editar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
@@ -78,12 +78,12 @@ namespace Automobile
                             Program.melresCar.Clientes[_indexCliente].Email = textBoxEmail.Text;
                             Program.melresCar.Clientes[_indexCliente].Telemovel = textBoxTelemovel.Text;
                             Program.melresCar.EscreverFicheiroCSV("clientes");
-                            MessageBox.Show("Cliente alterado com sucesso");
+                            MessageBox.Show("Cliente alterado com sucesso.");
                             this.Close();
                         }
                         else
                         {
-                            MessageBox.Show("Email inválido");
+                            MessageBox.Show("Email inválido", "Editar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                 }

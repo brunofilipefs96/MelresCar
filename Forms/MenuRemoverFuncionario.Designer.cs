@@ -59,19 +59,20 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(108, 393);
+            this.buttonCancelar.Location = new System.Drawing.Point(539, 386);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
             this.buttonCancelar.TabIndex = 46;
             this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // textBoxLoginPassword
             // 
             this.textBoxLoginPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.textBoxLoginPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxLoginPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxLoginPassword.Location = new System.Drawing.Point(422, 23);
+            this.textBoxLoginPassword.Location = new System.Drawing.Point(431, 23);
             this.textBoxLoginPassword.Name = "textBoxLoginPassword";
             this.textBoxLoginPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxLoginPassword.TabIndex = 45;
@@ -109,9 +110,9 @@
             this.groupBoxRemoverFuncionario.Controls.Add(this.labelNtelemovel);
             this.groupBoxRemoverFuncionario.Controls.Add(this.labelMorada);
             this.groupBoxRemoverFuncionario.Controls.Add(this.labelNif);
-            this.groupBoxRemoverFuncionario.Location = new System.Drawing.Point(108, 68);
+            this.groupBoxRemoverFuncionario.Location = new System.Drawing.Point(91, 61);
             this.groupBoxRemoverFuncionario.Name = "groupBoxRemoverFuncionario";
-            this.groupBoxRemoverFuncionario.Size = new System.Drawing.Size(576, 323);
+            this.groupBoxRemoverFuncionario.Size = new System.Drawing.Size(608, 310);
             this.groupBoxRemoverFuncionario.TabIndex = 43;
             this.groupBoxRemoverFuncionario.TabStop = false;
             this.groupBoxRemoverFuncionario.Text = "Remover Funcionario";
@@ -298,7 +299,7 @@
             // 
             // buttonProcurar
             // 
-            this.buttonProcurar.Location = new System.Drawing.Point(672, 20);
+            this.buttonProcurar.Location = new System.Drawing.Point(624, 20);
             this.buttonProcurar.Name = "buttonProcurar";
             this.buttonProcurar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonProcurar.Size = new System.Drawing.Size(75, 23);
@@ -311,7 +312,7 @@
             this.textBoxLoginUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.textBoxLoginUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxLoginUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxLoginUsername.Location = new System.Drawing.Point(108, 23);
+            this.textBoxLoginUsername.Location = new System.Drawing.Point(117, 23);
             this.textBoxLoginUsername.Name = "textBoxLoginUsername";
             this.textBoxLoginUsername.Size = new System.Drawing.Size(183, 20);
             this.textBoxLoginUsername.TabIndex = 41;
@@ -330,7 +331,7 @@
             // 
             // buttonRemover
             // 
-            this.buttonRemover.Location = new System.Drawing.Point(567, 393);
+            this.buttonRemover.Location = new System.Drawing.Point(671, 386);
             this.buttonRemover.Name = "buttonRemover";
             this.buttonRemover.Padding = new System.Windows.Forms.Padding(5);
             this.buttonRemover.Size = new System.Drawing.Size(117, 52);

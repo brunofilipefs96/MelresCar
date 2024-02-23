@@ -32,11 +32,11 @@ namespace Automobile
         {
             if (textBoxCheckNif.Text == "")
             {
-                MessageBox.Show("Por favor preencha o campo NIF");
+                MessageBox.Show("Por favor preencha o campo NIF", "Remover Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (textBoxCheckNif.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxCheckNif.Text))
             {
-                MessageBox.Show("NIF inválido");
+                MessageBox.Show("NIF inválido", "Remover Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -55,7 +55,7 @@ namespace Automobile
                         return;
                     }
                 }
-                MessageBox.Show("Cliente não encontrado");
+                MessageBox.Show("Cliente não encontrado", "Remover Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

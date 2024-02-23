@@ -49,7 +49,7 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(54, 355);
+            this.buttonCancelar.Location = new System.Drawing.Point(539, 386);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
@@ -188,7 +188,7 @@
             // 
             // buttonRemover
             // 
-            this.buttonRemover.Location = new System.Drawing.Point(552, 355);
+            this.buttonRemover.Location = new System.Drawing.Point(671, 386);
             this.buttonRemover.Name = "buttonRemover";
             this.buttonRemover.Padding = new System.Windows.Forms.Padding(5);
             this.buttonRemover.Size = new System.Drawing.Size(117, 52);

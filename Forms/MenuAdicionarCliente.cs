@@ -17,29 +17,35 @@ namespace Automobile
             InitializeComponent();
         }
 
-        private void buttonAdicionar_Click_2(object sender, EventArgs e)
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            if (textBoxName.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "")
+            this.Close();
+        }
+
+        private void buttonAdicionar_Click(object sender, EventArgs e)
+        {
+            if (textBoxNome.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "")
             {
-                MessageBox.Show("Por favor preencha todos os campos");
+                MessageBox.Show("Por favor preencha todos os campos", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 if (textBoxNif.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxNif.Text))
                 {
-                    MessageBox.Show("NIF inválido");
+                    MessageBox.Show("NIF inválido", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
                     if (textBoxTelemovel.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxTelemovel.Text))
                     {
-                        MessageBox.Show("Telemóvel inválido");
+                        MessageBox.Show("Telemóvel inválido", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
                         if (Program.melresCar.VerificaEmail(textBoxEmail.Text))
                         {
-                            Cliente cliente = new Cliente(textBoxName.Text, textBoxNif.Text, textBoxMorada.Text, textBoxEmail.Text, textBoxTelemovel.Text);
+                            Cliente cliente = new Cliente(textBoxNome.Text, textBoxNif.Text, textBoxMorada.Text, textBoxEmail.Text, textBoxTelemovel.Text);
                             Program.melresCar.InserirCliente(cliente);
                             Program.melresCar.EscreverFicheiroCSV("clientes");
                             MessageBox.Show("Cliente adicionado com sucesso");
@@ -47,7 +53,7 @@ namespace Automobile
                         }
                         else
                         {
-                            MessageBox.Show("Email inválido");
+                            MessageBox.Show("Email inválido", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                 }

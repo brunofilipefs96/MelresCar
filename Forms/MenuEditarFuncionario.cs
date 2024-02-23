@@ -53,19 +53,19 @@ namespace Automobile
         {
             if (textBoxName.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "" || textBoxUsername.Text == "" || textBoxFirstPassword.Text == "" || textBoxConfirmPassword.Text == "" || textBoxSalario.Text == "")
             {
-                MessageBox.Show("Por favor preencha todos os campos");
+                MessageBox.Show("Por favor preencha todos os campos", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 if (textBoxNif.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxNif.Text))
                 {
-                    MessageBox.Show("NIF inválido");
+                    MessageBox.Show("NIF inválido", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
                     if (textBoxTelemovel.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxTelemovel.Text))
                     {
-                        MessageBox.Show("Telemóvel inválido");
+                        MessageBox.Show("Telemóvel inválido", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
@@ -73,19 +73,19 @@ namespace Automobile
                         {
                             if (textBoxFirstPassword.Text != textBoxConfirmPassword.Text)
                             {
-                                MessageBox.Show("As passwords não coincidem");
+                                MessageBox.Show("As passwords não coincidem", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             }
                             else
                             {
                                 if (textBoxFirstPassword.Text.Length < 8)
                                 {
-                                    MessageBox.Show("A password tem de ter no mínimo 8 caracteres");
+                                    MessageBox.Show("A password tem de ter no mínimo 8 caracteres", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 }
                                 else
                                 {
                                     if (!Program.melresCar.VerificaDecimal(textBoxSalario.Text))
                                     {
-                                        MessageBox.Show("Salário inválido");
+                                        MessageBox.Show("Salário inválido", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     }
                                     else
                                     {
@@ -106,7 +106,7 @@ namespace Automobile
                         }
                         else
                         {
-                            MessageBox.Show("Email inválido");
+                            MessageBox.Show("Email inválido", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                 }

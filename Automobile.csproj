@@ -51,184 +51,184 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuAdicionarCliente.cs">
+    <Compile Include="Forms\MenuAdicionarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuAdicionarCliente.Designer.cs">
+    <Compile Include="Forms\MenuAdicionarCliente.Designer.cs">
       <DependentUpon>MenuAdicionarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuAdicionarFuncionario.cs">
+    <Compile Include="Forms\MenuAdicionarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuAdicionarFuncionario.Designer.cs">
+    <Compile Include="Forms\MenuAdicionarFuncionario.Designer.cs">
       <DependentUpon>MenuAdicionarFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Camiao.cs" />
     <Compile Include="Camioneta.cs" />
     <Compile Include="Carro.cs" />
     <Compile Include="Cliente.cs" />
-    <Compile Include="MenuAdicionarVeiculo.cs">
+    <Compile Include="Forms\MenuAdicionarVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuAdicionarVeiculo.Designer.cs">
+    <Compile Include="Forms\MenuAdicionarVeiculo.Designer.cs">
       <DependentUpon>MenuAdicionarVeiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuEditarCliente.cs">
+    <Compile Include="Forms\MenuEditarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuEditarCliente.Designer.cs">
+    <Compile Include="Forms\MenuEditarCliente.Designer.cs">
       <DependentUpon>MenuEditarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Empresa.cs" />
     <Compile Include="Funcionario.cs" />
-    <Compile Include="MenuEditarFuncionario.cs">
+    <Compile Include="Forms\MenuEditarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuEditarFuncionario.Designer.cs">
+    <Compile Include="Forms\MenuEditarFuncionario.Designer.cs">
       <DependentUpon>MenuEditarFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuEditarVeiculo.cs">
+    <Compile Include="Forms\MenuEditarVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuEditarVeiculo.Designer.cs">
+    <Compile Include="Forms\MenuEditarVeiculo.Designer.cs">
       <DependentUpon>MenuEditarVeiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuRemoverFuncionario.cs">
+    <Compile Include="Forms\MenuRemoverFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuRemoverFuncionario.Designer.cs">
+    <Compile Include="Forms\MenuRemoverFuncionario.Designer.cs">
       <DependentUpon>MenuRemoverFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ListarCamiao.cs">
+    <Compile Include="UCs\UC_ListarCamiao.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_ListarCamiao.Designer.cs">
+    <Compile Include="UCs\UC_ListarCamiao.Designer.cs">
       <DependentUpon>UC_ListarCamiao.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ListarCamioneta.cs">
+    <Compile Include="UCs\UC_ListarCamioneta.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_ListarCamioneta.Designer.cs">
+    <Compile Include="UCs\UC_ListarCamioneta.Designer.cs">
       <DependentUpon>UC_ListarCamioneta.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ListarCarro.cs">
+    <Compile Include="UCs\UC_ListarCarro.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_ListarCarro.Designer.cs">
+    <Compile Include="UCs\UC_ListarCarro.Designer.cs">
       <DependentUpon>UC_ListarCarro.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ListarMota.cs">
+    <Compile Include="UCs\UC_ListarMota.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_ListarMota.Designer.cs">
+    <Compile Include="UCs\UC_ListarMota.Designer.cs">
       <DependentUpon>UC_ListarMota.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaVeiculo.cs">
+    <Compile Include="Forms\ListaVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListaVeiculo.Designer.cs">
+    <Compile Include="Forms\ListaVeiculo.Designer.cs">
       <DependentUpon>ListaVeiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuLogin.cs">
+    <Compile Include="Forms\MenuLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuLogin.Designer.cs">
+    <Compile Include="Forms\MenuLogin.Designer.cs">
       <DependentUpon>MenuLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.cs">
+    <Compile Include="Forms\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
+    <Compile Include="Forms\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Mota.cs" />
     <Compile Include="Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MenuRemoverCliente.cs">
+    <Compile Include="Forms\MenuRemoverCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuRemoverCliente.Designer.cs">
+    <Compile Include="Forms\MenuRemoverCliente.Designer.cs">
       <DependentUpon>MenuRemoverCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuRemoverVeiculo.cs">
+    <Compile Include="Forms\MenuRemoverVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuRemoverVeiculo.Designer.cs">
+    <Compile Include="Forms\MenuRemoverVeiculo.Designer.cs">
       <DependentUpon>MenuRemoverVeiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Reserva.cs" />
-    <Compile Include="UC_Clientes.cs">
+    <Compile Include="UCs\UC_Clientes.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Clientes.Designer.cs">
+    <Compile Include="UCs\UC_Clientes.Designer.cs">
       <DependentUpon>UC_Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Funcionarios.cs">
+    <Compile Include="UCs\UC_Funcionarios.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Funcionarios.Designer.cs">
+    <Compile Include="UCs\UC_Funcionarios.Designer.cs">
       <DependentUpon>UC_Funcionarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_MenuPrincipal.cs">
+    <Compile Include="UCs\UC_MenuPrincipal.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_MenuPrincipal.Designer.cs">
+    <Compile Include="UCs\UC_MenuPrincipal.Designer.cs">
       <DependentUpon>UC_MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Reservas.cs">
+    <Compile Include="UCs\UC_Reservas.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Reservas.Designer.cs">
+    <Compile Include="UCs\UC_Reservas.Designer.cs">
       <DependentUpon>UC_Reservas.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Veiculos.cs">
+    <Compile Include="UCs\UC_Veiculos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Veiculos.Designer.cs">
+    <Compile Include="UCs\UC_Veiculos.Designer.cs">
       <DependentUpon>UC_Veiculos.cs</DependentUpon>
     </Compile>
     <Compile Include="Veiculo.cs" />
-    <EmbeddedResource Include="MenuAdicionarCliente.resx">
+    <EmbeddedResource Include="Forms\MenuAdicionarCliente.resx">
       <DependentUpon>MenuAdicionarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuAdicionarFuncionario.resx">
+    <EmbeddedResource Include="Forms\MenuAdicionarFuncionario.resx">
       <DependentUpon>MenuAdicionarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuAdicionarVeiculo.resx">
+    <EmbeddedResource Include="Forms\MenuAdicionarVeiculo.resx">
       <DependentUpon>MenuAdicionarVeiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuEditarCliente.resx">
+    <EmbeddedResource Include="Forms\MenuEditarCliente.resx">
       <DependentUpon>MenuEditarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuEditarFuncionario.resx">
+    <EmbeddedResource Include="Forms\MenuEditarFuncionario.resx">
       <DependentUpon>MenuEditarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuEditarVeiculo.resx">
+    <EmbeddedResource Include="Forms\MenuEditarVeiculo.resx">
       <DependentUpon>MenuEditarVeiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuRemoverFuncionario.resx">
+    <EmbeddedResource Include="Forms\MenuRemoverFuncionario.resx">
       <DependentUpon>MenuRemoverFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_ListarCamiao.resx">
+    <EmbeddedResource Include="UCs\UC_ListarCamiao.resx">
       <DependentUpon>UC_ListarCamiao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_ListarCamioneta.resx">
+    <EmbeddedResource Include="UCs\UC_ListarCamioneta.resx">
       <DependentUpon>UC_ListarCamioneta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_ListarCarro.resx">
+    <EmbeddedResource Include="UCs\UC_ListarCarro.resx">
       <DependentUpon>UC_ListarCarro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_ListarMota.resx">
+    <EmbeddedResource Include="UCs\UC_ListarMota.resx">
       <DependentUpon>UC_ListarMota.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaVeiculo.resx">
+    <EmbeddedResource Include="Forms\ListaVeiculo.resx">
       <DependentUpon>ListaVeiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuLogin.resx">
+    <EmbeddedResource Include="Forms\MenuLogin.resx">
       <DependentUpon>MenuLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
+    <EmbeddedResource Include="Forms\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -241,25 +241,25 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="MenuRemoverCliente.resx">
+    <EmbeddedResource Include="Forms\MenuRemoverCliente.resx">
       <DependentUpon>MenuRemoverCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuRemoverVeiculo.resx">
+    <EmbeddedResource Include="Forms\MenuRemoverVeiculo.resx">
       <DependentUpon>MenuRemoverVeiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Clientes.resx">
+    <EmbeddedResource Include="UCs\UC_Clientes.resx">
       <DependentUpon>UC_Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Funcionarios.resx">
+    <EmbeddedResource Include="UCs\UC_Funcionarios.resx">
       <DependentUpon>UC_Funcionarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_MenuPrincipal.resx">
+    <EmbeddedResource Include="UCs\UC_MenuPrincipal.resx">
       <DependentUpon>UC_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Reservas.resx">
+    <EmbeddedResource Include="UCs\UC_Reservas.resx">
       <DependentUpon>UC_Reservas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Veiculos.resx">
+    <EmbeddedResource Include="UCs\UC_Veiculos.resx">
       <DependentUpon>UC_Veiculos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -312,5 +312,6 @@
   <ItemGroup>
     <None Include="Resources\bus-2-48.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

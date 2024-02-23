@@ -45,7 +45,7 @@ namespace Automobile
                 }
             }
             if (!loggedIn){
-                MessageBox.Show("Username ou password incorretos");
+                MessageBox.Show("Username ou password incorretos", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

@@ -329,41 +329,44 @@ namespace Automobile
         public void InserirVeiculo(Veiculo veiculo)
         {
             Veiculos.Add(veiculo);
+            ContaVeiculos++;
         }
         public void InserirCliente(Cliente cliente)
         {
             Clientes.Add(cliente);
+            ContaClientes++;
         }
         public void InserirFuncionario(Funcionario funcionario)
         {
             Funcionarios.Add(funcionario);
+            ContaFuncionarios++;
         }
         public void InserirReserva(Reserva reserva)
         {
             Reservas.Add(reserva);
+            ContaReservas++;
         }
         
         public void RemoverVeiculo(Veiculo veiculo)
         {
             Veiculos.Remove(veiculo);
+            ContaVeiculos--;
         }
         public void RemoverCliente(int indexCliente)
         {
             Clientes.RemoveAt(indexCliente);
+            ContaClientes--;
         }
         public void RemoverFuncionario(int indexFuncionario)
         {
             Funcionarios.RemoveAt(indexFuncionario);
+            ContaFuncionarios--;
         }
         public void RemoverReserva(Reserva reserva)
         {
             Reservas.Remove(reserva);
+            ContaReservas--;
         }
-        public void AlterarEstadoVeiculo(Veiculo veiculo, string estado)
-        {
-            veiculo.Estado = estado;
-        }
-
 
         public void ListarVeiculosDisponiveis()
         {
