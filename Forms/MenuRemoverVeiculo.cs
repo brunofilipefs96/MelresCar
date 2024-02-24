@@ -38,7 +38,17 @@ namespace Automobile
 
         private void buttonRemoverVeiculo_Click(object sender, EventArgs e)
         {
-
+            foreach (var veiculo in Program.melresCar.Veiculos)
+            {
+                if (veiculo.Matricula == textBoxProcurarMatricula.Text)
+                {
+                    Program.melresCar.Veiculos.Remove(veiculo);
+                    Program.melresCar.EscreverFicheiroCSV("veiculos");
+                    MessageBox.Show("Veículo removido com sucesso", "Remover Veículo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                    return;
+                }
+            }
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)

@@ -99,6 +99,12 @@
     <Compile Include="Forms\MenuRemoverFuncionario.Designer.cs">
       <DependentUpon>MenuRemoverFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ListaClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListaClasses.Designer.cs">
+      <DependentUpon>ListaClasses.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCs\UC_ListarCamiao.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -209,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuRemoverFuncionario.resx">
       <DependentUpon>MenuRemoverFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListaClasses.resx">
+      <DependentUpon>ListaClasses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\UC_ListarCamiao.resx">
       <DependentUpon>UC_ListarCamiao.cs</DependentUpon>

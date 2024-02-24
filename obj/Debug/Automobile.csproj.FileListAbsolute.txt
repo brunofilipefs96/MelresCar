@@ -257,3 +257,4 @@ C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.cspr
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.csproj.CopyComplete
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.exe
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.pdb
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.ListaClasses.resources
