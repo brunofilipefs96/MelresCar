@@ -257,4 +257,13 @@ C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.cspr
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.csproj.CopyComplete
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.exe
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.pdb
-C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.ListaClasses.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormACarro.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormBCarro.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormCCarro.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormDCarro.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormFCarro.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormGCarro.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormHCarro.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormICarro.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormJCarro.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormLCarro.resources

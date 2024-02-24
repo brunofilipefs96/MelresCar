@@ -16,5 +16,39 @@ namespace Automobile
         {
             InitializeComponent();
         }
+
+        public void showClass(string selectedButton)
+        {
+            switch (selectedButton)
+            {
+                case "ACamioneta":
+                    FormACamioneta formACamioneta = new FormACamioneta();
+                    formACamioneta.Show();
+                    break;
+                case "BCamioneta":
+                    FormBCamioneta formBCamioneta = new FormBCamioneta();
+                    formBCamioneta.Show();
+                    break;
+                case "CCamioneta":
+                    FormCCamioneta formCCamioneta = new FormCCamioneta();
+                    formCCamioneta.Show();
+                    break;
+            }
+        }
+
+        private void ACamioneta_Click(object sender, EventArgs e)
+        {
+            showClass("ACamioneta");
+        }
+
+        private void BCamioneta_Click(object sender, EventArgs e)
+        {
+            showClass("BCamioneta");
+        }
+
+        private void CCamioneta_Click(object sender, EventArgs e)
+        {
+            showClass("CCamioneta");
+        }
     }
 }

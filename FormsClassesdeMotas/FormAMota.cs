@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Automobile
 {
-    public partial class ListaClasses : Form
+    public partial class FormAMota : Form
     {
-        public ListaClasses()
+        public FormAMota()
         {
             InitializeComponent();
         }
-
     }
 }

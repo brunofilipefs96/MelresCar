@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace Automobile
 {
@@ -388,6 +389,7 @@ namespace Automobile
                 }
             }
         }
+
         public int gerarId(string tipo)
         {
             int id = 0;

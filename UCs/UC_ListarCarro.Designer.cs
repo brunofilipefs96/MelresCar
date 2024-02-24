@@ -60,7 +60,7 @@
             this.LabelCarroL.Name = "LabelCarroL";
             this.LabelCarroL.Size = new System.Drawing.Size(100, 151);
             this.LabelCarroL.TabIndex = 81;
-            this.LabelCarroL.Text = "Executivo Grande Premium 5 Portas Automático Diesel/ gasolina";
+            this.LabelCarroL.Text = "Executivo /Desportivo Premium 5 Portas Automático Diesel/ gasolina";
             this.LabelCarroL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelCarroJ
@@ -86,6 +86,7 @@
             this.LCarros.TabIndex = 79;
             this.LCarros.Text = "L";
             this.LCarros.UseVisualStyleBackColor = false;
+            this.LCarros.Click += new System.EventHandler(this.LCarros_Click);
             // 
             // JCarros
             // 
@@ -98,6 +99,7 @@
             this.JCarros.TabIndex = 78;
             this.JCarros.Text = "J";
             this.JCarros.UseVisualStyleBackColor = false;
+            this.JCarros.Click += new System.EventHandler(this.JCarros_Click);
             // 
             // LabelCarroI
             // 
@@ -108,7 +110,7 @@
             this.LabelCarroI.Name = "LabelCarroI";
             this.LabelCarroI.Size = new System.Drawing.Size(96, 87);
             this.LabelCarroI.TabIndex = 77;
-            this.LabelCarroI.Text = "Médio Premium 5 Portas a Gasolina";
+            this.LabelCarroI.Text = "Médio Elétrico 5 Portas";
             this.LabelCarroI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ICarros
@@ -122,6 +124,7 @@
             this.ICarros.TabIndex = 76;
             this.ICarros.Text = "I";
             this.ICarros.UseVisualStyleBackColor = false;
+            this.ICarros.Click += new System.EventHandler(this.ICarros_Click);
             // 
             // LabelCarroH
             // 
@@ -146,6 +149,7 @@
             this.HCarros.TabIndex = 74;
             this.HCarros.Text = "H";
             this.HCarros.UseVisualStyleBackColor = false;
+            this.HCarros.Click += new System.EventHandler(this.HCarros_Click);
             // 
             // LabelCarroG
             // 
@@ -170,6 +174,7 @@
             this.GCarros.TabIndex = 72;
             this.GCarros.Text = "G";
             this.GCarros.UseVisualStyleBackColor = false;
+            this.GCarros.Click += new System.EventHandler(this.GCarros_Click);
             // 
             // LabelCarroF
             // 
@@ -242,6 +247,7 @@
             this.FCarros.TabIndex = 66;
             this.FCarros.Text = "F";
             this.FCarros.UseVisualStyleBackColor = false;
+            this.FCarros.Click += new System.EventHandler(this.FCarros_Click);
             // 
             // DCarros
             // 
@@ -254,6 +260,7 @@
             this.DCarros.TabIndex = 65;
             this.DCarros.Text = "D";
             this.DCarros.UseVisualStyleBackColor = false;
+            this.DCarros.Click += new System.EventHandler(this.DCarros_Click);
             // 
             // CCarros
             // 
@@ -266,6 +273,7 @@
             this.CCarros.TabIndex = 64;
             this.CCarros.Text = "C";
             this.CCarros.UseVisualStyleBackColor = false;
+            this.CCarros.Click += new System.EventHandler(this.CCarros_Click);
             // 
             // label1
             // 

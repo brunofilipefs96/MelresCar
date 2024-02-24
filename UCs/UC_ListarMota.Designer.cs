@@ -88,6 +88,7 @@
             this.CMota.TabIndex = 84;
             this.CMota.Text = "C";
             this.CMota.UseVisualStyleBackColor = false;
+            this.CMota.Click += new System.EventHandler(this.CMota_Click);
             // 
             // BMota
             // 
@@ -101,6 +102,7 @@
             this.BMota.TabIndex = 83;
             this.BMota.Text = "B";
             this.BMota.UseVisualStyleBackColor = false;
+            this.BMota.Click += new System.EventHandler(this.BMota_Click);
             // 
             // AMota
             // 
@@ -114,6 +116,7 @@
             this.AMota.TabIndex = 82;
             this.AMota.Text = "A";
             this.AMota.UseVisualStyleBackColor = false;
+            this.AMota.Click += new System.EventHandler(this.AMota_Click);
             // 
             // label1
             // 

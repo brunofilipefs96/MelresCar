@@ -51,6 +51,120 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormsClassesdeCamionetas\FormACamioneta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCamionetas\FormACamioneta.Designer.cs">
+      <DependentUpon>FormACamioneta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCamionetas\FormBCamioneta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCamionetas\FormBCamioneta.Designer.cs">
+      <DependentUpon>FormBCamioneta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCamionetas\FormCCamioneta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCamionetas\FormCCamioneta.Designer.cs">
+      <DependentUpon>FormCCamioneta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCamioes\FormACamiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCamioes\FormACamiao.Designer.cs">
+      <DependentUpon>FormACamiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCamioes\FormBCamiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCamioes\FormBCamiao.Designer.cs">
+      <DependentUpon>FormBCamiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCamioes\FormCCamiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCamioes\FormCCamiao.Designer.cs">
+      <DependentUpon>FormCCamiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormICarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormICarro.Designer.cs">
+      <DependentUpon>FormICarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormGCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormGCarro.Designer.cs">
+      <DependentUpon>FormGCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeMotas\FormAMota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeMotas\FormAMota.Designer.cs">
+      <DependentUpon>FormAMota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeMotas\FormBMota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeMotas\FormBMota.Designer.cs">
+      <DependentUpon>FormBMota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeMotas\FormCMota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeMotas\FormCMota.Designer.cs">
+      <DependentUpon>FormCMota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormJCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormJCarro.Designer.cs">
+      <DependentUpon>FormJCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormLCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormLCarro.Designer.cs">
+      <DependentUpon>FormLCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormHCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormHCarro.Designer.cs">
+      <DependentUpon>FormHCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormBCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormBCarro.Designer.cs">
+      <DependentUpon>FormBCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormCCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormCCarro.Designer.cs">
+      <DependentUpon>FormCCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormDCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormDCarro.Designer.cs">
+      <DependentUpon>FormDCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormFCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormFCarro.Designer.cs">
+      <DependentUpon>FormFCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormACarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsClassesdeCarros\FormACarro.Designer.cs">
+      <DependentUpon>FormACarro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MenuAdicionarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,12 +212,6 @@
     </Compile>
     <Compile Include="Forms\MenuRemoverFuncionario.Designer.cs">
       <DependentUpon>MenuRemoverFuncionario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\ListaClasses.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ListaClasses.Designer.cs">
-      <DependentUpon>ListaClasses.cs</DependentUpon>
     </Compile>
     <Compile Include="UCs\UC_ListarCamiao.cs">
       <SubType>UserControl</SubType>
@@ -195,6 +303,36 @@
       <DependentUpon>UC_Veiculos.cs</DependentUpon>
     </Compile>
     <Compile Include="Veiculo.cs" />
+    <EmbeddedResource Include="FormsClassesdeCarros\FormACarro.resx">
+      <DependentUpon>FormACarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCarros\FormBCarro.resx">
+      <DependentUpon>FormBCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCarros\FormCCarro.resx">
+      <DependentUpon>FormCCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCarros\FormDCarro.resx">
+      <DependentUpon>FormDCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCarros\FormFCarro.resx">
+      <DependentUpon>FormFCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCarros\FormGCarro.resx">
+      <DependentUpon>FormGCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCarros\FormHCarro.resx">
+      <DependentUpon>FormHCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCarros\FormICarro.resx">
+      <DependentUpon>FormICarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCarros\FormJCarro.resx">
+      <DependentUpon>FormJCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCarros\FormLCarro.resx">
+      <DependentUpon>FormLCarro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuAdicionarCliente.resx">
       <DependentUpon>MenuAdicionarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,9 +353,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuRemoverFuncionario.resx">
       <DependentUpon>MenuRemoverFuncionario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ListaClasses.resx">
-      <DependentUpon>ListaClasses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\UC_ListarCamiao.resx">
       <DependentUpon>UC_ListarCamiao.cs</DependentUpon>

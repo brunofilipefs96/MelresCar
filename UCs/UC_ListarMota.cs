@@ -16,5 +16,38 @@ namespace Automobile
         {
             InitializeComponent();
         }
+        public void showClass(string selectedButton)
+        {
+            switch(selectedButton)
+            {
+                case "AMota":
+                    FormAMota formAMota = new FormAMota();
+                    formAMota.Show();
+                    break;
+                case "BMota":
+                    FormBMota formBMota = new FormBMota();
+                    formBMota.Show();
+                    break;
+                case "CMota":
+                    FormCMota formCMota = new FormCMota();
+                    formCMota.Show();
+                    break;
+            }
+        }
+
+        private void AMota_Click(object sender, EventArgs e)
+        {
+            showClass("AMota");
+        }
+
+        private void BMota_Click(object sender, EventArgs e)
+        {
+            showClass("BMota");
+        }
+
+        private void CMota_Click(object sender, EventArgs e)
+        {
+            showClass("CMota");
+        }
     }
 }
