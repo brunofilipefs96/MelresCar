@@ -17,6 +17,7 @@ namespace Automobile
         {
             InitializeComponent();
             comboBoxEscolherVeiculo.SelectedIndex = 0;
+            comboBoxClasse.SelectedIndex = 0;
             numericPrecoDia.ThousandsSeparator = false;
             numericPesoMax.ThousandsSeparator = false;
         }
@@ -40,17 +41,29 @@ namespace Automobile
         private void comboBoxEscolherVeiculo_SelectedIndexChanged(object sender, EventArgs e)
         {
             desativarBoxes();
+            comboBoxClasse.Items.Clear();
             if (comboBoxEscolherVeiculo.SelectedIndex == 0)
             {
                 labelNumPortas.Show();
                 comboBoxNumPortas.Show();
                 labelCaixa.Show();
                 comboBoxCaixa.Show();
+                comboBoxClasse.Items.Add("A");
+                comboBoxClasse.Items.Add("B");
+                comboBoxClasse.Items.Add("C");
+                comboBoxClasse.Items.Add("D");
+                comboBoxClasse.Items.Add("E");
+                comboBoxClasse.Items.Add("F");
+                comboBoxClasse.Items.Add("G");
+                comboBoxClasse.Items.Add("H");
             }
             else if (comboBoxEscolherVeiculo.SelectedIndex == 1)
             {
                 labelCilindrada.Show();
                 comboBoxCilindrada.Show();
+                comboBoxClasse.Items.Add("A");
+                comboBoxClasse.Items.Add("B");
+                comboBoxClasse.Items.Add("C");
             }
             else if (comboBoxEscolherVeiculo.SelectedIndex == 2)
             {
@@ -58,12 +71,21 @@ namespace Automobile
                 comboBoxEixos.Show();
                 labelPassageiros.Show();
                 numericNumPassageiros.Show();
+                comboBoxClasse.Items.Add("A");
+                comboBoxClasse.Items.Add("B");
+                comboBoxClasse.Items.Add("C");
             }
             else if (comboBoxEscolherVeiculo.SelectedIndex == 3)
             {
                 labelPesoMax.Show();
                 numericPesoMax.Show();
+                comboBoxClasse.Items.Add("A");
+                comboBoxClasse.Items.Add("B");
+                comboBoxClasse.Items.Add("C");
             }
+
+            comboBoxClasse.SelectedIndex = 0;
+
         }
 
         private void buttonAdicionarVeiculo_Click(object sender, EventArgs e)
@@ -78,6 +100,10 @@ namespace Automobile
                 if (textBoxMatricula.Text.Length != 8)
                 {
                     MessageBox.Show("Matrícula inválida", "Adicionar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (Program.melresCar.VerificaMatriculaExistente(textBoxMatricula.Text))
+                {
+                    MessageBox.Show("A Matrícula que inseriu já se encontra na base de dados!", "Adicionar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {

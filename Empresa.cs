@@ -110,6 +110,18 @@ namespace Automobile
             return Regex.IsMatch(email, regex, RegexOptions.IgnoreCase);
         }
 
+        public bool VerificaMatriculaExistente(string matricula)
+        {
+            foreach (Veiculo veiculo in Veiculos)
+            {
+                if (veiculo.Matricula == matricula)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public void CarregarFicheiroCSV(string nomeFicheiro)
         {
             if (!File.Exists(nomeFicheiro + ".csv"))
@@ -270,6 +282,9 @@ namespace Automobile
                 Console.WriteLine($"Erro ao carregar ficheiro CSV: {ex.Message}");
             }
         }
+        
+
+
 
         public void EscreverFicheiroCSV(string nomeFicheiro)
         {
@@ -327,6 +342,7 @@ namespace Automobile
             }
 
         }
+
         public void InserirVeiculo(Veiculo veiculo)
         {
             Veiculos.Add(veiculo);
