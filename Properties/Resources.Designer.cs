@@ -63,6 +63,36 @@ namespace Automobile.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aCamioneta {
+            get {
+                object obj = ResourceManager.GetObject("aCamioneta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bCamioneta {
+            get {
+                object obj = ResourceManager.GetObject("bCamioneta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bCamioneta_1 {
+            get {
+                object obj = ResourceManager.GetObject("bCamioneta 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap black_ham_32 {
             get {
                 object obj = ResourceManager.GetObject("black_ham_32", resourceCulture);
@@ -146,6 +176,16 @@ namespace Automobile.Properties {
         internal static System.Drawing.Bitmap car_48 {
             get {
                 object obj = ResourceManager.GetObject("car_48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cCamioneta {
+            get {
+                object obj = ResourceManager.GetObject("cCamioneta", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

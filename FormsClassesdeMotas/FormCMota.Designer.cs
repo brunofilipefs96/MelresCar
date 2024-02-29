@@ -35,6 +35,7 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.buttonCancelar = new ReaLTaiizor.Controls.CrownButton();
             this.fotoMotaC = new System.Windows.Forms.PictureBox();
+            this.buttonReservar = new ReaLTaiizor.Controls.CrownButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridMotaC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoMotaC)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +75,7 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(8, 565);
+            this.buttonCancelar.Location = new System.Drawing.Point(543, 375);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
@@ -92,19 +93,29 @@
             this.fotoMotaC.TabIndex = 68;
             this.fotoMotaC.TabStop = false;
             // 
+            // buttonReservar
+            // 
+            this.buttonReservar.Location = new System.Drawing.Point(1265, 375);
+            this.buttonReservar.Name = "buttonReservar";
+            this.buttonReservar.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonReservar.Size = new System.Drawing.Size(117, 52);
+            this.buttonReservar.TabIndex = 70;
+            this.buttonReservar.Text = "Reservar";
+            // 
             // FormCMota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1357, 881);
+            this.Controls.Add(this.buttonReservar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.fotoMotaC);
             this.Controls.Add(this.gridMotaC);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bigLabel1);
             this.Name = "FormCMota";
-            this.Text = "FormCMota";
+            this.Text = "MelresCar | Classe C";
             ((System.ComponentModel.ISupportInitialize)(this.gridMotaC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoMotaC)).EndInit();
             this.ResumeLayout(false);
@@ -120,5 +131,6 @@
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private System.Windows.Forms.Timer timer;
         private ReaLTaiizor.Controls.CrownButton buttonCancelar;
+        private ReaLTaiizor.Controls.CrownButton buttonReservar;
     }
 }

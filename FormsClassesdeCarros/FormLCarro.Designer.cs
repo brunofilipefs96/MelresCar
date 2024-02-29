@@ -35,6 +35,7 @@
             this.gridCarroL = new System.Windows.Forms.DataGridView();
             this.buttonCancelar = new ReaLTaiizor.Controls.CrownButton();
             this.fotoCarroL = new System.Windows.Forms.PictureBox();
+            this.buttonReservar = new ReaLTaiizor.Controls.CrownButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridCarroL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoCarroL)).BeginInit();
             this.SuspendLayout();
@@ -69,12 +70,12 @@
             this.gridCarroL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCarroL.Location = new System.Drawing.Point(543, 12);
             this.gridCarroL.Name = "gridCarroL";
-            this.gridCarroL.Size = new System.Drawing.Size(846, 329);
+            this.gridCarroL.Size = new System.Drawing.Size(839, 357);
             this.gridCarroL.TabIndex = 9;
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(8, 565);
+            this.buttonCancelar.Location = new System.Drawing.Point(543, 375);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
@@ -92,19 +93,30 @@
             this.fotoCarroL.TabIndex = 7;
             this.fotoCarroL.TabStop = false;
             // 
+            // buttonReservar
+            // 
+            this.buttonReservar.Location = new System.Drawing.Point(1265, 375);
+            this.buttonReservar.Name = "buttonReservar";
+            this.buttonReservar.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonReservar.Size = new System.Drawing.Size(117, 52);
+            this.buttonReservar.TabIndex = 62;
+            this.buttonReservar.Text = "Reservar";
+            // 
             // FormLCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1150, 657);
+            this.Controls.Add(this.buttonReservar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.gridCarroL);
             this.Controls.Add(this.fotoCarroL);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bigLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormLCarro";
-            this.Text = "FormLCarro";
+            this.Text = "MelresCar | Classe L";
             ((System.ComponentModel.ISupportInitialize)(this.gridCarroL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoCarroL)).EndInit();
             this.ResumeLayout(false);
@@ -120,5 +132,6 @@
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.DataGridView gridCarroL;
         private ReaLTaiizor.Controls.CrownButton buttonCancelar;
+        private ReaLTaiizor.Controls.CrownButton buttonReservar;
     }
 }

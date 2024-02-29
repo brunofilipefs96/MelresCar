@@ -41,6 +41,8 @@ namespace Automobile
             gridCarroD.RowHeadersDefaultCellStyle.ForeColor = Color.White;
             gridCarroD.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridCarroD.RowsDefaultCellStyle.ForeColor = Color.White;
+            gridCarroD.ScrollBars = ScrollBars.Vertical;
+
 
         }
 
@@ -67,6 +69,11 @@ namespace Automobile
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormDCarro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

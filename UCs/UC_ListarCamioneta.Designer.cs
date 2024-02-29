@@ -42,11 +42,11 @@
             this.LabelMotaC.BackColor = System.Drawing.Color.Transparent;
             this.LabelMotaC.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelMotaC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelMotaC.Location = new System.Drawing.Point(611, 208);
+            this.LabelMotaC.Location = new System.Drawing.Point(600, 208);
             this.LabelMotaC.Name = "LabelMotaC";
-            this.LabelMotaC.Size = new System.Drawing.Size(96, 46);
+            this.LabelMotaC.Size = new System.Drawing.Size(118, 60);
             this.LabelMotaC.TabIndex = 94;
-            this.LabelMotaC.Text = "Classe de Camionetas";
+            this.LabelMotaC.Text = "Classe C Cap.Max 64 Passageiros";
             this.LabelMotaC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelMotaB
@@ -54,11 +54,11 @@
             this.LabelMotaB.BackColor = System.Drawing.Color.Transparent;
             this.LabelMotaB.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelMotaB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelMotaB.Location = new System.Drawing.Point(350, 208);
+            this.LabelMotaB.Location = new System.Drawing.Point(338, 208);
             this.LabelMotaB.Name = "LabelMotaB";
-            this.LabelMotaB.Size = new System.Drawing.Size(96, 46);
+            this.LabelMotaB.Size = new System.Drawing.Size(118, 60);
             this.LabelMotaB.TabIndex = 93;
-            this.LabelMotaB.Text = "Classe de Camionetas";
+            this.LabelMotaB.Text = "Classe B Cap.Max 16 Passageiros";
             this.LabelMotaB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelMotaA
@@ -66,11 +66,11 @@
             this.LabelMotaA.BackColor = System.Drawing.Color.Transparent;
             this.LabelMotaA.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelMotaA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelMotaA.Location = new System.Drawing.Point(94, 208);
+            this.LabelMotaA.Location = new System.Drawing.Point(75, 208);
             this.LabelMotaA.Name = "LabelMotaA";
-            this.LabelMotaA.Size = new System.Drawing.Size(80, 43);
+            this.LabelMotaA.Size = new System.Drawing.Size(118, 60);
             this.LabelMotaA.TabIndex = 92;
-            this.LabelMotaA.Text = "Classe de Camionetas";
+            this.LabelMotaA.Text = "Classe A Cap.Max 8 Passageiros";
             this.LabelMotaA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CCamioneta
@@ -136,7 +136,7 @@
             this.Controls.Add(this.BCamioneta);
             this.Controls.Add(this.ACamioneta);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_ListarCamioneta";
             this.Size = new System.Drawing.Size(1044, 654);
             this.ResumeLayout(false);

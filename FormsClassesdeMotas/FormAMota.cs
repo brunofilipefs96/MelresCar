@@ -40,6 +40,8 @@ namespace Automobile
             gridMotaA.RowHeadersDefaultCellStyle.ForeColor = Color.White;
             gridMotaA.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridMotaA.RowsDefaultCellStyle.ForeColor = Color.White;
+            gridMotaA.ScrollBars = ScrollBars.Vertical;
+
 
         }
 

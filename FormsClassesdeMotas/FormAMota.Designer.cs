@@ -36,6 +36,7 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.crownButton1 = new ReaLTaiizor.Controls.CrownButton();
             this.fotoMotaA = new System.Windows.Forms.PictureBox();
+            this.buttonReservar = new ReaLTaiizor.Controls.CrownButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridMotaA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoMotaA)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             this.gridMotaA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridMotaA.Location = new System.Drawing.Point(543, 12);
             this.gridMotaA.Name = "gridMotaA";
-            this.gridMotaA.Size = new System.Drawing.Size(846, 329);
+            this.gridMotaA.Size = new System.Drawing.Size(839, 357);
             this.gridMotaA.TabIndex = 63;
             // 
             // label1
@@ -84,7 +85,7 @@
             // 
             // crownButton1
             // 
-            this.crownButton1.Location = new System.Drawing.Point(8, 565);
+            this.crownButton1.Location = new System.Drawing.Point(543, 375);
             this.crownButton1.Name = "crownButton1";
             this.crownButton1.Padding = new System.Windows.Forms.Padding(5);
             this.crownButton1.Size = new System.Drawing.Size(117, 52);
@@ -102,20 +103,31 @@
             this.fotoMotaA.TabIndex = 64;
             this.fotoMotaA.TabStop = false;
             // 
+            // buttonReservar
+            // 
+            this.buttonReservar.Location = new System.Drawing.Point(1265, 375);
+            this.buttonReservar.Name = "buttonReservar";
+            this.buttonReservar.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonReservar.Size = new System.Drawing.Size(117, 52);
+            this.buttonReservar.TabIndex = 67;
+            this.buttonReservar.Text = "Reservar";
+            // 
             // FormAMota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1451, 803);
+            this.Controls.Add(this.buttonReservar);
             this.Controls.Add(this.crownButton1);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.fotoMotaA);
             this.Controls.Add(this.gridMotaA);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bigLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormAMota";
-            this.Text = "FormAMota";
+            this.Text = "MelresCar | Classe A";
             ((System.ComponentModel.ISupportInitialize)(this.gridMotaA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoMotaA)).EndInit();
             this.ResumeLayout(false);
@@ -132,5 +144,6 @@
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private System.Windows.Forms.Timer timer;
         private ReaLTaiizor.Controls.CrownButton crownButton1;
+        private ReaLTaiizor.Controls.CrownButton buttonReservar;
     }
 }

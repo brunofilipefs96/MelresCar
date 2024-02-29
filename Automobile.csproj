@@ -330,6 +330,15 @@
     <EmbeddedResource Include="FormsClassesdeCamioes\FormCCamiao.resx">
       <DependentUpon>FormCCamiao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCamionetas\FormACamioneta.resx">
+      <DependentUpon>FormACamioneta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCamionetas\FormBCamioneta.resx">
+      <DependentUpon>FormBCamioneta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCamionetas\FormCCamioneta.resx">
+      <DependentUpon>FormCCamioneta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsClassesdeCarros\FormACarro.resx">
       <DependentUpon>FormACarro.cs</DependentUpon>
     </EmbeddedResource>
@@ -554,6 +563,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\camiaoC 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aCamioneta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bCamioneta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cCamioneta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bCamioneta 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

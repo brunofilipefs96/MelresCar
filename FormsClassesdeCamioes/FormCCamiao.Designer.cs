@@ -35,13 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.fotoCamiaoC = new System.Windows.Forms.PictureBox();
+            this.buttonReservar = new ReaLTaiizor.Controls.CrownButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridCamiaoC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoCamiaoC)).BeginInit();
             this.SuspendLayout();
             // 
             // crownButton1
             // 
-            this.crownButton1.Location = new System.Drawing.Point(8, 565);
+            this.crownButton1.Location = new System.Drawing.Point(543, 375);
             this.crownButton1.Name = "crownButton1";
             this.crownButton1.Padding = new System.Windows.Forms.Padding(5);
             this.crownButton1.Size = new System.Drawing.Size(117, 52);
@@ -54,7 +55,7 @@
             this.gridCamiaoC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCamiaoC.Location = new System.Drawing.Point(543, 12);
             this.gridCamiaoC.Name = "gridCamiaoC";
-            this.gridCamiaoC.Size = new System.Drawing.Size(846, 329);
+            this.gridCamiaoC.Size = new System.Drawing.Size(839, 357);
             this.gridCamiaoC.TabIndex = 74;
             // 
             // label1
@@ -65,9 +66,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.label1.Location = new System.Drawing.Point(0, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 17);
+            this.label1.Size = new System.Drawing.Size(306, 17);
             this.label1.TabIndex = 73;
-            this.label1.Text = "Camiao de carga até (xxxxxx)";
+            this.label1.Text = "Camiao com Peso Bruto Total de 24 Toneladas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bigLabel1
@@ -92,19 +93,30 @@
             this.fotoCamiaoC.TabIndex = 77;
             this.fotoCamiaoC.TabStop = false;
             // 
+            // buttonReservar
+            // 
+            this.buttonReservar.Location = new System.Drawing.Point(1265, 375);
+            this.buttonReservar.Name = "buttonReservar";
+            this.buttonReservar.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonReservar.Size = new System.Drawing.Size(117, 52);
+            this.buttonReservar.TabIndex = 78;
+            this.buttonReservar.Text = "Reservar";
+            // 
             // FormCCamiao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1557, 908);
+            this.Controls.Add(this.buttonReservar);
             this.Controls.Add(this.fotoCamiaoC);
             this.Controls.Add(this.crownButton1);
             this.Controls.Add(this.gridCamiaoC);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bigLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormCCamiao";
-            this.Text = "FormCCamiao";
+            this.Text = "MelresCar | Classe C";
             ((System.ComponentModel.ISupportInitialize)(this.gridCamiaoC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoCamiaoC)).EndInit();
             this.ResumeLayout(false);
@@ -120,5 +132,6 @@
         private System.Windows.Forms.Label label1;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private System.Windows.Forms.PictureBox fotoCamiaoC;
+        private ReaLTaiizor.Controls.CrownButton buttonReservar;
     }
 }

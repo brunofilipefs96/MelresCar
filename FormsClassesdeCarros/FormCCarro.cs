@@ -14,6 +14,7 @@ namespace Automobile
     {
         public FormCCarro()
         {
+            InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -40,6 +41,8 @@ namespace Automobile
             gridCarroC.RowHeadersDefaultCellStyle.ForeColor = Color.White;
             gridCarroC.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridCarroC.RowsDefaultCellStyle.ForeColor = Color.White;
+            gridCarroC.ScrollBars = ScrollBars.Vertical;
+
 
         }
 
@@ -67,5 +70,6 @@ namespace Automobile
         {
             this.Close();
         }
+
     }
 }

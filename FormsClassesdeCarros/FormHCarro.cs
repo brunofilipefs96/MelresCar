@@ -41,6 +41,8 @@ namespace Automobile
             gridCarroH.RowHeadersDefaultCellStyle.ForeColor = Color.White;
             gridCarroH.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridCarroH.RowsDefaultCellStyle.ForeColor = Color.White;
+            gridCarroH.ScrollBars = ScrollBars.Vertical;
+
 
         }
 

@@ -46,7 +46,7 @@
             this.LabelMotaC.Name = "LabelMotaC";
             this.LabelMotaC.Size = new System.Drawing.Size(96, 72);
             this.LabelMotaC.TabIndex = 94;
-            this.LabelMotaC.Text = "Classes de Camiões";
+            this.LabelMotaC.Text = "Classes C PBT: 24 Toneladas";
             this.LabelMotaC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelMotaB
@@ -54,11 +54,11 @@
             this.LabelMotaB.BackColor = System.Drawing.Color.Transparent;
             this.LabelMotaB.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelMotaB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelMotaB.Location = new System.Drawing.Point(350, 208);
+            this.LabelMotaB.Location = new System.Drawing.Point(354, 208);
             this.LabelMotaB.Name = "LabelMotaB";
-            this.LabelMotaB.Size = new System.Drawing.Size(96, 72);
+            this.LabelMotaB.Size = new System.Drawing.Size(90, 72);
             this.LabelMotaB.TabIndex = 93;
-            this.LabelMotaB.Text = "Classes de Camiões";
+            this.LabelMotaB.Text = "Classes B PBT: 8 Toneladas";
             this.LabelMotaB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelMotaA
@@ -68,9 +68,9 @@
             this.LabelMotaA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
             this.LabelMotaA.Location = new System.Drawing.Point(92, 208);
             this.LabelMotaA.Name = "LabelMotaA";
-            this.LabelMotaA.Size = new System.Drawing.Size(80, 50);
+            this.LabelMotaA.Size = new System.Drawing.Size(80, 72);
             this.LabelMotaA.TabIndex = 92;
-            this.LabelMotaA.Text = "Classes de Camiões";
+            this.LabelMotaA.Text = "Classes A PBT: 3.5 Toneladas";
             this.LabelMotaA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CCamiao

@@ -41,6 +41,8 @@ namespace Automobile
             gridCarroB.RowHeadersDefaultCellStyle.ForeColor = Color.White;
             gridCarroB.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridCarroB.RowsDefaultCellStyle.ForeColor = Color.White;
+            gridCarroB.ScrollBars = ScrollBars.Vertical;
+
 
         }
 
@@ -68,5 +70,6 @@ namespace Automobile
         {
             this.Close();
         }
+
     }
 }

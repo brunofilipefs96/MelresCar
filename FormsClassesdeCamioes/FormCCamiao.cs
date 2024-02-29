@@ -40,6 +40,7 @@ namespace Automobile
             gridCamiaoC.RowHeadersDefaultCellStyle.ForeColor = Color.White;
             gridCamiaoC.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridCamiaoC.RowsDefaultCellStyle.ForeColor = Color.White;
+            gridCamiaoC.ScrollBars = ScrollBars.Vertical;
 
         }
 

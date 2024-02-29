@@ -294,3 +294,6 @@ C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormCCa
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormAMota.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormBMota.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormCMota.resources
+C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormACamioneta.resources
+C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormBCamioneta.resources
+C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormCCamioneta.resources
