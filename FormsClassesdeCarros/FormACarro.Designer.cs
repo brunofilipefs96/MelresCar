@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.gridCarroA = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.buttonCancelar = new ReaLTaiizor.Controls.CrownButton();
             this.fotoCarroA = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridCarroA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoCarroA)).BeginInit();
@@ -47,7 +49,7 @@
             this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.bigLabel1.Location = new System.Drawing.Point(0, 0);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(1263, 46);
+            this.bigLabel1.Size = new System.Drawing.Size(1532, 46);
             this.bigLabel1.TabIndex = 0;
             this.bigLabel1.Text = "Classe A";
             // 
@@ -59,17 +61,17 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.label1.Location = new System.Drawing.Point(0, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 17);
+            this.label1.Size = new System.Drawing.Size(172, 17);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Carro 3 portas a gasolina";
+            this.label1.Text = "Carro 3 Portas a Gasolina";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gridCarroA
             // 
             this.gridCarroA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridCarroA.Location = new System.Drawing.Point(715, 24);
+            this.gridCarroA.Location = new System.Drawing.Point(543, 12);
             this.gridCarroA.Name = "gridCarroA";
-            this.gridCarroA.Size = new System.Drawing.Size(240, 150);
+            this.gridCarroA.Size = new System.Drawing.Size(846, 329);
             this.gridCarroA.TabIndex = 2;
             // 
             // imageList1
@@ -77,6 +79,16 @@
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Location = new System.Drawing.Point(8, 565);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
+            this.buttonCancelar.TabIndex = 60;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // fotoCarroA
             // 
@@ -93,11 +105,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1263, 629);
+            this.ClientSize = new System.Drawing.Size(1532, 629);
+            this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.fotoCarroA);
             this.Controls.Add(this.gridCarroA);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bigLabel1);
+            this.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Name = "FormACarro";
             this.Text = "FormACarro";
             ((System.ComponentModel.ISupportInitialize)(this.gridCarroA)).EndInit();
@@ -114,5 +128,7 @@
         private System.Windows.Forms.DataGridView gridCarroA;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox fotoCarroA;
+        private System.Windows.Forms.Timer timer;
+        private ReaLTaiizor.Controls.CrownButton buttonCancelar;
     }
 }

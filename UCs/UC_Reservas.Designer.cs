@@ -44,6 +44,7 @@
             this.buttonVerReserva.TabIndex = 15;
             this.buttonVerReserva.Text = "Ver Reserva";
             this.buttonVerReserva.UseVisualStyleBackColor = false;
+            this.buttonVerReserva.Click += new System.EventHandler(this.buttonVerReserva_Click);
             // 
             // buttonLucroDatas
             // 
@@ -56,6 +57,7 @@
             this.buttonLucroDatas.TabIndex = 14;
             this.buttonLucroDatas.Text = "Calcular Lucro Entre Datas";
             this.buttonLucroDatas.UseVisualStyleBackColor = false;
+            this.buttonLucroDatas.Click += new System.EventHandler(this.buttonLucroDatas_Click);
             // 
             // buttonCriarReserva
             // 
@@ -68,6 +70,7 @@
             this.buttonCriarReserva.TabIndex = 13;
             this.buttonCriarReserva.Text = "Criar Reserva";
             this.buttonCriarReserva.UseVisualStyleBackColor = false;
+            this.buttonCriarReserva.Click += new System.EventHandler(this.buttonCriarReserva_Click);
             // 
             // UC_Reservas
             // 

@@ -181,6 +181,12 @@
     <Compile Include="Camioneta.cs" />
     <Compile Include="Carro.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Forms\MenuAdicionarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuAdicionarReserva.Designer.cs">
+      <DependentUpon>MenuAdicionarReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MenuAdicionarVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,18 @@
       <DependentUpon>MenuEditarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Empresa.cs" />
+    <Compile Include="Forms\MenuMostrarLucro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuMostrarLucro.Designer.cs">
+      <DependentUpon>MenuMostrarLucro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuMostrarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuMostrarReserva.Designer.cs">
+      <DependentUpon>MenuMostrarReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="Funcionario.cs" />
     <Compile Include="Forms\MenuEditarFuncionario.cs">
       <SubType>Form</SubType>
@@ -303,6 +321,15 @@
       <DependentUpon>UC_Veiculos.cs</DependentUpon>
     </Compile>
     <Compile Include="Veiculo.cs" />
+    <EmbeddedResource Include="FormsClassesdeCamioes\FormACamiao.resx">
+      <DependentUpon>FormACamiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCamioes\FormBCamiao.resx">
+      <DependentUpon>FormBCamiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeCamioes\FormCCamiao.resx">
+      <DependentUpon>FormCCamiao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsClassesdeCarros\FormACarro.resx">
       <DependentUpon>FormACarro.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,11 +360,23 @@
     <EmbeddedResource Include="FormsClassesdeCarros\FormLCarro.resx">
       <DependentUpon>FormLCarro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeMotas\FormAMota.resx">
+      <DependentUpon>FormAMota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeMotas\FormBMota.resx">
+      <DependentUpon>FormBMota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsClassesdeMotas\FormCMota.resx">
+      <DependentUpon>FormCMota.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuAdicionarCliente.resx">
       <DependentUpon>MenuAdicionarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuAdicionarFuncionario.resx">
       <DependentUpon>MenuAdicionarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuAdicionarReserva.resx">
+      <DependentUpon>MenuAdicionarReserva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuAdicionarVeiculo.resx">
       <DependentUpon>MenuAdicionarVeiculo.cs</DependentUpon>
@@ -456,6 +495,65 @@
   <ItemGroup>
     <None Include="Resources\bus-2-48.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\YarisB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotaA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotaB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotaC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camiaoA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camiaoB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camiaoC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camiaoC %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camiaoC 1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

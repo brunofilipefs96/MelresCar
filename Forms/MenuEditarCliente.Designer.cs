@@ -232,7 +232,7 @@
             this.Controls.Add(this.textBoxCheckNif);
             this.Controls.Add(this.labelCheckNif);
             this.Name = "MenuEditarCliente";
-            this.Text = "EditarCliente";
+            this.Text = "MelresCar | EditarCliente";
             this.groupBoxEditarCliente.ResumeLayout(false);
             this.groupBoxEditarCliente.PerformLayout();
             this.ResumeLayout(false);

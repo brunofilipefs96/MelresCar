@@ -15,6 +15,57 @@ namespace Automobile
         public FormCMota()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.AutoSize = true;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += Timer_Tick;
+            timer.Start();
+            Dock = DockStyle.Fill;
+            gridMotaC.Columns.Add("Matrícula", "Matrícula");
+            gridMotaC.Columns.Add("Marca", "Marca");
+            gridMotaC.Columns.Add("Modelo", "Modelo");
+            gridMotaC.Columns.Add("Estado", "Estado");
+            gridMotaC.Columns.Add("Combustível", "Combustível");
+            gridMotaC.Columns.Add("Cilindrada", "Cilindrada");
+            gridMotaC.Columns.Add("PreçoDiário", "PreçoDiário");
+
+            //configurações do datagridview
+            gridMotaC.EnableHeadersVisualStyles = false;
+            gridMotaC.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            gridMotaC.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            gridMotaC.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
+            gridMotaC.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            gridMotaC.RowHeadersDefaultCellStyle.ForeColor = Color.White;
+            gridMotaC.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            gridMotaC.RowsDefaultCellStyle.ForeColor = Color.White;
+
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (!IsDisposed && !Disposing)  //controla se o datagridview foi eliminado se sim não faz nada(problemas no logout)
+            {
+                gridMotaC.Rows.Clear();
+                foreach (var veiculo in Program.melresCar.Veiculos)
+                {
+                    if (veiculo is Mota)
+                    {
+                        Mota mota = (Mota)veiculo;
+
+                        if (mota.ClasseVeiculo == "C")
+                        {
+                            gridMotaC.Rows.Add(mota.Matricula, mota.Marca, mota.Modelo, mota.Estado, mota.Combustivel, mota.Cilindrada, mota.PrecoDiario);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
