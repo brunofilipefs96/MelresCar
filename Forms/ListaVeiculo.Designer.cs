@@ -30,18 +30,18 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelClientes = new System.Windows.Forms.Panel();
-            this.panelFuncionarios = new System.Windows.Forms.Panel();
-            this.panelVeiculos = new System.Windows.Forms.Panel();
-            this.panelReservas = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.buttonCarros = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panelFuncionarios = new System.Windows.Forms.Panel();
             this.buttonMotas = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.panelVeiculos = new System.Windows.Forms.Panel();
             this.buttonCamioes = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.panelReservas = new System.Windows.Forms.Panel();
             this.buttonCamionetas = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelClientes.SuspendLayout();
             this.panelFuncionarios.SuspendLayout();
@@ -58,61 +58,19 @@
             this.flowLayoutPanel1.Controls.Add(this.panelReservas);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 18, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(276, 617);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(207, 724);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // panelClientes
             // 
             this.panelClientes.Controls.Add(this.buttonCarros);
             this.panelClientes.Controls.Add(this.button1);
-            this.panelClientes.Location = new System.Drawing.Point(4, 22);
-            this.panelClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelClientes.Location = new System.Drawing.Point(3, 18);
             this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(272, 71);
+            this.panelClientes.Size = new System.Drawing.Size(204, 58);
             this.panelClientes.TabIndex = 3;
-            // 
-            // panelFuncionarios
-            // 
-            this.panelFuncionarios.Controls.Add(this.buttonMotas);
-            this.panelFuncionarios.Controls.Add(this.button4);
-            this.panelFuncionarios.Location = new System.Drawing.Point(4, 101);
-            this.panelFuncionarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panelFuncionarios.Name = "panelFuncionarios";
-            this.panelFuncionarios.Size = new System.Drawing.Size(272, 71);
-            this.panelFuncionarios.TabIndex = 4;
-            // 
-            // panelVeiculos
-            // 
-            this.panelVeiculos.Controls.Add(this.buttonCamioes);
-            this.panelVeiculos.Controls.Add(this.button3);
-            this.panelVeiculos.Location = new System.Drawing.Point(4, 180);
-            this.panelVeiculos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panelVeiculos.Name = "panelVeiculos";
-            this.panelVeiculos.Size = new System.Drawing.Size(272, 71);
-            this.panelVeiculos.TabIndex = 5;
-            // 
-            // panelReservas
-            // 
-            this.panelReservas.Controls.Add(this.buttonCamionetas);
-            this.panelReservas.Controls.Add(this.button5);
-            this.panelReservas.Location = new System.Drawing.Point(4, 259);
-            this.panelReservas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panelReservas.Name = "panelReservas";
-            this.panelReservas.Size = new System.Drawing.Size(272, 71);
-            this.panelReservas.TabIndex = 4;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(276, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1089, 617);
-            this.panel1.TabIndex = 5;
             // 
             // buttonCarros
             // 
@@ -121,11 +79,10 @@
             this.buttonCarros.ForeColor = System.Drawing.Color.White;
             this.buttonCarros.Image = global::Automobile.Properties.Resources.car_48;
             this.buttonCarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCarros.Location = new System.Drawing.Point(-8, -22);
-            this.buttonCarros.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCarros.Location = new System.Drawing.Point(-6, -18);
             this.buttonCarros.Name = "buttonCarros";
-            this.buttonCarros.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.buttonCarros.Size = new System.Drawing.Size(288, 117);
+            this.buttonCarros.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonCarros.Size = new System.Drawing.Size(216, 95);
             this.buttonCarros.TabIndex = 3;
             this.buttonCarros.Text = "Carros";
             this.buttonCarros.UseVisualStyleBackColor = false;
@@ -138,14 +95,22 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Automobile.Properties.Resources.clients_48;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-16, -23);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(-12, -19);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(288, 117);
+            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(216, 95);
             this.button1.TabIndex = 2;
             this.button1.Text = "Clientes";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // panelFuncionarios
+            // 
+            this.panelFuncionarios.Controls.Add(this.buttonMotas);
+            this.panelFuncionarios.Controls.Add(this.button4);
+            this.panelFuncionarios.Location = new System.Drawing.Point(3, 82);
+            this.panelFuncionarios.Name = "panelFuncionarios";
+            this.panelFuncionarios.Size = new System.Drawing.Size(204, 58);
+            this.panelFuncionarios.TabIndex = 4;
             // 
             // buttonMotas
             // 
@@ -154,11 +119,10 @@
             this.buttonMotas.ForeColor = System.Drawing.Color.White;
             this.buttonMotas.Image = global::Automobile.Properties.Resources.motorcycle_48;
             this.buttonMotas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMotas.Location = new System.Drawing.Point(-8, -22);
-            this.buttonMotas.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMotas.Location = new System.Drawing.Point(-6, -18);
             this.buttonMotas.Name = "buttonMotas";
-            this.buttonMotas.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.buttonMotas.Size = new System.Drawing.Size(288, 117);
+            this.buttonMotas.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonMotas.Size = new System.Drawing.Size(216, 95);
             this.buttonMotas.TabIndex = 3;
             this.buttonMotas.Text = "Motas";
             this.buttonMotas.UseVisualStyleBackColor = false;
@@ -171,14 +135,22 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Automobile.Properties.Resources.clients_48;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-16, -23);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(-12, -19);
             this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(288, 117);
+            this.button4.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(216, 95);
             this.button4.TabIndex = 2;
             this.button4.Text = "Clientes";
             this.button4.UseVisualStyleBackColor = false;
+            // 
+            // panelVeiculos
+            // 
+            this.panelVeiculos.Controls.Add(this.buttonCamioes);
+            this.panelVeiculos.Controls.Add(this.button3);
+            this.panelVeiculos.Location = new System.Drawing.Point(3, 146);
+            this.panelVeiculos.Name = "panelVeiculos";
+            this.panelVeiculos.Size = new System.Drawing.Size(204, 58);
+            this.panelVeiculos.TabIndex = 5;
             // 
             // buttonCamioes
             // 
@@ -187,11 +159,10 @@
             this.buttonCamioes.ForeColor = System.Drawing.Color.White;
             this.buttonCamioes.Image = global::Automobile.Properties.Resources.truck_2_48;
             this.buttonCamioes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCamioes.Location = new System.Drawing.Point(-8, -22);
-            this.buttonCamioes.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCamioes.Location = new System.Drawing.Point(-6, -18);
             this.buttonCamioes.Name = "buttonCamioes";
-            this.buttonCamioes.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.buttonCamioes.Size = new System.Drawing.Size(288, 117);
+            this.buttonCamioes.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonCamioes.Size = new System.Drawing.Size(216, 95);
             this.buttonCamioes.TabIndex = 3;
             this.buttonCamioes.Text = "Camiões";
             this.buttonCamioes.UseMnemonic = false;
@@ -205,14 +176,22 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::Automobile.Properties.Resources.clients_48;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-16, -23);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(-12, -19);
             this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(288, 117);
+            this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(216, 95);
             this.button3.TabIndex = 2;
             this.button3.Text = "Clientes";
             this.button3.UseVisualStyleBackColor = false;
+            // 
+            // panelReservas
+            // 
+            this.panelReservas.Controls.Add(this.buttonCamionetas);
+            this.panelReservas.Controls.Add(this.button5);
+            this.panelReservas.Location = new System.Drawing.Point(3, 210);
+            this.panelReservas.Name = "panelReservas";
+            this.panelReservas.Size = new System.Drawing.Size(204, 58);
+            this.panelReservas.TabIndex = 4;
             // 
             // buttonCamionetas
             // 
@@ -221,11 +200,10 @@
             this.buttonCamionetas.ForeColor = System.Drawing.Color.White;
             this.buttonCamionetas.Image = global::Automobile.Properties.Resources.bus_2_48;
             this.buttonCamionetas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCamionetas.Location = new System.Drawing.Point(-8, -22);
-            this.buttonCamionetas.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCamionetas.Location = new System.Drawing.Point(-6, -18);
             this.buttonCamionetas.Name = "buttonCamionetas";
-            this.buttonCamionetas.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.buttonCamionetas.Size = new System.Drawing.Size(288, 117);
+            this.buttonCamionetas.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonCamionetas.Size = new System.Drawing.Size(216, 95);
             this.buttonCamionetas.TabIndex = 3;
             this.buttonCamionetas.Text = "Camionetas";
             this.buttonCamionetas.UseVisualStyleBackColor = false;
@@ -238,26 +216,34 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::Automobile.Properties.Resources.clients_48;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(-16, -23);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(-12, -19);
             this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(288, 117);
+            this.button5.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(216, 95);
             this.button5.TabIndex = 2;
             this.button5.Text = "Clientes";
             this.button5.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(207, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1377, 724);
+            this.panel1.TabIndex = 5;
+            // 
             // ListaVeiculo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1365, 617);
+            this.ClientSize = new System.Drawing.Size(1584, 724);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ListaVeiculo";
             this.Text = "ListaVeiculo";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panelClientes.ResumeLayout(false);
             this.panelFuncionarios.ResumeLayout(false);

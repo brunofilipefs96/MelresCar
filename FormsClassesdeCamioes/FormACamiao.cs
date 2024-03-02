@@ -18,10 +18,6 @@ namespace Automobile
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            timer = new Timer();
-            timer.Interval = 1000;
-            timer.Tick += Timer_Tick;
-            timer.Start();
             Dock = DockStyle.Fill;
             gridCamiaoA.Columns.Add("Matrícula", "Matrícula");
             gridCamiaoA.Columns.Add("Marca", "Marca");
@@ -32,6 +28,9 @@ namespace Automobile
             gridCamiaoA.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
+            gridCamiaoA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            gridCamiaoA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            gridCamiaoA.MultiSelect = false;
             gridCamiaoA.EnableHeadersVisualStyles = false;
             gridCamiaoA.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridCamiaoA.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
@@ -42,32 +41,36 @@ namespace Automobile
             gridCamiaoA.RowsDefaultCellStyle.ForeColor = Color.White;
             gridCamiaoA.ScrollBars = ScrollBars.Vertical;
 
+            atualizaDataGridView();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            if (!IsDisposed && !Disposing)  //controla se o datagridview foi eliminado se sim não faz nada(problemas no logout)
-            {
-                gridCamiaoA.Rows.Clear();
-                foreach (var veiculo in Program.melresCar.Veiculos)
-                {
-                    if (veiculo is Camiao)
-                    {
-                        Camiao camiao = (Camiao)veiculo;
+        
 
-                        if (camiao.ClasseVeiculo == "A")
-                        {
-                            gridCamiaoA.Rows.Add(camiao.Matricula, camiao.Marca, camiao.Modelo, camiao.Estado, camiao.Combustivel, camiao.PesoMaximo, camiao.PrecoDiario);
-                        }
+        private void atualizaDataGridView()
+        {
+            gridCamiaoA.Rows.Clear();
+            foreach (var veiculo in Program.melresCar.Veiculos)
+            {
+                if (veiculo is Camiao)
+                {
+                    Camiao camiao = (Camiao)veiculo;
+
+                    if (camiao.ClasseVeiculo == "A")
+                    {
+                        gridCamiaoA.Rows.Add(camiao.Matricula, camiao.Marca, camiao.Modelo, camiao.Estado, camiao.Combustivel, camiao.PesoMaximo, camiao.PrecoDiario);
                     }
                 }
             }
         }
 
-
         private void crownButton1_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonReservar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

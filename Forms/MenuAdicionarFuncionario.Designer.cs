@@ -301,6 +301,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(770, 397);
+            this.ControlBox = false;
             this.Controls.Add(this.numericSalario);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.textBoxNome);
@@ -322,6 +323,7 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.bigLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuAdicionarFuncionario";
             this.Text = "MelresCar | Adicionar Funcionário";
             ((System.ComponentModel.ISupportInitialize)(this.numericSalario)).EndInit();

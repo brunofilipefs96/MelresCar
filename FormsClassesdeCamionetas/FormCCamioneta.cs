@@ -18,10 +18,6 @@ namespace Automobile
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            timer = new Timer();
-            timer.Interval = 1000;
-            timer.Tick += Timer_Tick;
-            timer.Start();
             Dock = DockStyle.Fill;
             gridCamionetaC.Columns.Add("Matrícula", "Matrícula");
             gridCamionetaC.Columns.Add("Marca", "Marca");
@@ -33,6 +29,9 @@ namespace Automobile
             gridCamionetaC.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
+            gridCamionetaC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            gridCamionetaC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            gridCamionetaC.MultiSelect = false;
             gridCamionetaC.EnableHeadersVisualStyles = false;
             gridCamionetaC.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridCamionetaC.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
@@ -43,23 +42,21 @@ namespace Automobile
             gridCamionetaC.RowsDefaultCellStyle.ForeColor = Color.White;
             gridCamionetaC.ScrollBars = ScrollBars.Vertical;
 
+            atualizaDataGridView();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void atualizaDataGridView()
         {
-            if (!IsDisposed && !Disposing)  //controla se o datagridview foi eliminado se sim não faz nada(problemas no logout)
+            gridCamionetaC.Rows.Clear();
+            foreach (var veiculo in Program.melresCar.Veiculos)
             {
-                gridCamionetaC.Rows.Clear();
-                foreach (var veiculo in Program.melresCar.Veiculos)
+                if (veiculo is Camioneta)
                 {
-                    if (veiculo is Camioneta)
-                    {
-                        Camioneta camioneta = (Camioneta)veiculo;
+                    Camioneta camioneta = (Camioneta)veiculo;
 
-                        if (camioneta.ClasseVeiculo == "C")
-                        {
-                            gridCamionetaC.Rows.Add(camioneta.Matricula, camioneta.Marca, camioneta.Modelo, camioneta.Estado, camioneta.Combustivel, camioneta.NumEixos, camioneta.NumPassageiros, camioneta.PrecoDiario);
-                        }
+                    if (camioneta.ClasseVeiculo == "C")
+                    {
+                        gridCamionetaC.Rows.Add(camioneta.Matricula, camioneta.Marca, camioneta.Modelo, camioneta.Estado, camioneta.Combustivel, camioneta.NumEixos, camioneta.NumPassageiros, camioneta.PrecoDiario);
                     }
                 }
             }

@@ -528,11 +528,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonAdicionarVeiculo);
             this.Controls.Add(this.labelEscolheTipo);
             this.Controls.Add(this.label);
             this.Controls.Add(this.comboBoxEscolherVeiculo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuAdicionarVeiculo";
             this.Text = "MenuAdicionarVeiculo";
             this.label.ResumeLayout(false);

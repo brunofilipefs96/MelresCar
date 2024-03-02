@@ -35,11 +35,11 @@ namespace Automobile
             buttonReservas.Size = new Size(216, 95);
             botaoSelecionado.Size = new Size(207, 95);
         }
-        UC_MenuPrincipal ucMenuPrincipal = new UC_MenuPrincipal();
-        UC_Clientes ucClientes = new UC_Clientes();
-        UC_Funcionarios ucFuncionario = new UC_Funcionarios();
-        UC_Veiculos ucVeiculo = new UC_Veiculos();
-        UC_Reservas ucReservas = new UC_Reservas();
+        public UC_MenuPrincipal ucMenuPrincipal = new UC_MenuPrincipal();
+        public UC_Clientes ucClientes = new UC_Clientes();
+        public UC_Funcionarios ucFuncionario = new UC_Funcionarios();
+        public UC_Veiculos ucVeiculo = new UC_Veiculos();
+        public UC_Reservas ucReservas = new UC_Reservas();
 
 
 

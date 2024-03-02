@@ -35,6 +35,7 @@
             this.BMota = new System.Windows.Forms.Button();
             this.AMota = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonBackMenuPrincipal = new ReaLTaiizor.Controls.CrownButton();
             this.SuspendLayout();
             // 
             // LabelMotaC
@@ -43,7 +44,7 @@
             this.LabelMotaC.BackColor = System.Drawing.Color.Transparent;
             this.LabelMotaC.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelMotaC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelMotaC.Location = new System.Drawing.Point(845, 208);
+            this.LabelMotaC.Location = new System.Drawing.Point(935, 207);
             this.LabelMotaC.Name = "LabelMotaC";
             this.LabelMotaC.Size = new System.Drawing.Size(50, 20);
             this.LabelMotaC.TabIndex = 87;
@@ -56,7 +57,7 @@
             this.LabelMotaB.BackColor = System.Drawing.Color.Transparent;
             this.LabelMotaB.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelMotaB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelMotaB.Location = new System.Drawing.Point(583, 208);
+            this.LabelMotaB.Location = new System.Drawing.Point(673, 207);
             this.LabelMotaB.Name = "LabelMotaB";
             this.LabelMotaB.Size = new System.Drawing.Size(50, 20);
             this.LabelMotaB.TabIndex = 86;
@@ -69,7 +70,7 @@
             this.LabelMotaA.BackColor = System.Drawing.Color.Transparent;
             this.LabelMotaA.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelMotaA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelMotaA.Location = new System.Drawing.Point(319, 208);
+            this.LabelMotaA.Location = new System.Drawing.Point(409, 207);
             this.LabelMotaA.Name = "LabelMotaA";
             this.LabelMotaA.Size = new System.Drawing.Size(41, 20);
             this.LabelMotaA.TabIndex = 85;
@@ -82,7 +83,7 @@
             this.CMota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.CMota.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CMota.ForeColor = System.Drawing.Color.White;
-            this.CMota.Location = new System.Drawing.Point(807, 102);
+            this.CMota.Location = new System.Drawing.Point(897, 101);
             this.CMota.Name = "CMota";
             this.CMota.Size = new System.Drawing.Size(118, 103);
             this.CMota.TabIndex = 84;
@@ -96,7 +97,7 @@
             this.BMota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.BMota.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BMota.ForeColor = System.Drawing.Color.White;
-            this.BMota.Location = new System.Drawing.Point(545, 102);
+            this.BMota.Location = new System.Drawing.Point(635, 101);
             this.BMota.Name = "BMota";
             this.BMota.Size = new System.Drawing.Size(118, 103);
             this.BMota.TabIndex = 83;
@@ -110,7 +111,7 @@
             this.AMota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.AMota.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AMota.ForeColor = System.Drawing.Color.White;
-            this.AMota.Location = new System.Drawing.Point(282, 102);
+            this.AMota.Location = new System.Drawing.Point(372, 101);
             this.AMota.Name = "AMota";
             this.AMota.Size = new System.Drawing.Size(118, 103);
             this.AMota.TabIndex = 82;
@@ -124,16 +125,28 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1213, 62);
+            this.label1.Size = new System.Drawing.Size(1395, 62);
             this.label1.TabIndex = 63;
             this.label1.Text = "Classe de Mota";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // buttonBackMenuPrincipal
+            // 
+            this.buttonBackMenuPrincipal.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonBackMenuPrincipal.Location = new System.Drawing.Point(0, 618);
+            this.buttonBackMenuPrincipal.Name = "buttonBackMenuPrincipal";
+            this.buttonBackMenuPrincipal.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonBackMenuPrincipal.Size = new System.Drawing.Size(1395, 52);
+            this.buttonBackMenuPrincipal.TabIndex = 88;
+            this.buttonBackMenuPrincipal.Text = "Voltar ao Menu Principal";
+            this.buttonBackMenuPrincipal.Click += new System.EventHandler(this.buttonBackMenuPrincipal_Click);
             // 
             // UC_ListarMota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Controls.Add(this.buttonBackMenuPrincipal);
             this.Controls.Add(this.LabelMotaC);
             this.Controls.Add(this.LabelMotaB);
             this.Controls.Add(this.LabelMotaA);
@@ -142,7 +155,7 @@
             this.Controls.Add(this.AMota);
             this.Controls.Add(this.label1);
             this.Name = "UC_ListarMota";
-            this.Size = new System.Drawing.Size(1213, 645);
+            this.Size = new System.Drawing.Size(1395, 670);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +170,6 @@
         private System.Windows.Forms.Button BMota;
         private System.Windows.Forms.Button AMota;
         private System.Windows.Forms.Label label1;
+        private ReaLTaiizor.Controls.CrownButton buttonBackMenuPrincipal;
     }
 }

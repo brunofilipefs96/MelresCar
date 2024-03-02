@@ -18,10 +18,6 @@ namespace Automobile
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            timer = new Timer();
-            timer.Interval = 1000;
-            timer.Tick += Timer_Tick;
-            timer.Start();
             Dock = DockStyle.Fill;
             gridCarroB.Columns.Add("Matrícula", "Matrícula");
             gridCarroB.Columns.Add("Marca", "Marca");
@@ -33,6 +29,9 @@ namespace Automobile
             gridCarroB.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
+            gridCarroB.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            gridCarroB.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            gridCarroB.MultiSelect = false;
             gridCarroB.EnableHeadersVisualStyles = false;
             gridCarroB.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridCarroB.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
@@ -43,24 +42,21 @@ namespace Automobile
             gridCarroB.RowsDefaultCellStyle.ForeColor = Color.White;
             gridCarroB.ScrollBars = ScrollBars.Vertical;
 
-
+            atualizaDataGridView();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void atualizaDataGridView()
         {
-            if (!IsDisposed && !Disposing)  //controla se o datagridview foi eliminado se sim não faz nada(problemas no logout)
+            gridCarroB.Rows.Clear();
+            foreach (var veiculo in Program.melresCar.Veiculos)
             {
-                gridCarroB.Rows.Clear();
-                foreach (var veiculo in Program.melresCar.Veiculos)
+                if (veiculo is Carro)
                 {
-                    if (veiculo is Carro)
-                    {
-                        Carro carro = (Carro)veiculo;
+                    Carro carro = (Carro)veiculo;
 
-                        if (carro.ClasseVeiculo == "B")
-                        {
-                            gridCarroB.Rows.Add(carro.Matricula, carro.Marca, carro.Modelo, carro.Estado, carro.Combustivel, carro.NumPortas, carro.TipoCaixa, carro.PrecoDiario);
-                        }
+                    if (carro.ClasseVeiculo == "B")
+                    {
+                        gridCarroB.Rows.Add(carro.Matricula, carro.Marca, carro.Modelo, carro.Estado, carro.Combustivel, carro.NumPortas, carro.TipoCaixa, carro.PrecoDiario);
                     }
                 }
             }

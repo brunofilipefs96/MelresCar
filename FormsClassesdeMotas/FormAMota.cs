@@ -18,10 +18,6 @@ namespace Automobile
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            timer = new Timer();
-            timer.Interval = 1000;
-            timer.Tick += Timer_Tick;
-            timer.Start();
             Dock = DockStyle.Fill;
             gridMotaA.Columns.Add("Matrícula", "Matrícula");
             gridMotaA.Columns.Add("Marca", "Marca");
@@ -32,6 +28,9 @@ namespace Automobile
             gridMotaA.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
+            gridMotaA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            gridMotaA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            gridMotaA.MultiSelect = false;
             gridMotaA.EnableHeadersVisualStyles = false;
             gridMotaA.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridMotaA.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
@@ -42,33 +41,32 @@ namespace Automobile
             gridMotaA.RowsDefaultCellStyle.ForeColor = Color.White;
             gridMotaA.ScrollBars = ScrollBars.Vertical;
 
-
+            atualizaDataGridView();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void atualizaDataGridView()
         {
-            if (!IsDisposed && !Disposing)  //controla se o datagridview foi eliminado se sim não faz nada(problemas no logout)
+            gridMotaA.Rows.Clear();
+            foreach (var veiculo in Program.melresCar.Veiculos)
             {
-                gridMotaA.Rows.Clear();
-                foreach (var veiculo in Program.melresCar.Veiculos)
+                if (veiculo is Mota)
                 {
-                    if (veiculo is Mota)
-                    {
-                        Mota mota = (Mota)veiculo;
+                    Mota mota = (Mota)veiculo;
 
-                        if (mota.ClasseVeiculo == "A")
-                        {
-                            gridMotaA.Rows.Add(mota.Matricula, mota.Marca, mota.Modelo, mota.Estado, mota.Combustivel, mota.Cilindrada, mota.PrecoDiario);
-                        }
+                    if (mota.ClasseVeiculo == "A")
+                    {
+                        gridMotaA.Rows.Add(mota.Matricula, mota.Marca, mota.Modelo, mota.Estado, mota.Combustivel, mota.Cilindrada, mota.PrecoDiario);
                     }
                 }
             }
         }
+        
 
         private void crownButton1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        
     }
 }

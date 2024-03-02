@@ -36,6 +36,7 @@
             this.textBoxPassword = new ReaLTaiizor.Controls.CrownTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonLogin = new ReaLTaiizor.Controls.CrownButton();
+            this.buttonQuit = new ReaLTaiizor.Controls.CrownButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,7 +109,7 @@
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(139, 356);
+            this.buttonLogin.Location = new System.Drawing.Point(192, 353);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Padding = new System.Windows.Forms.Padding(5);
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
@@ -116,11 +117,23 @@
             this.buttonLogin.Text = "Login";
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
+            // buttonQuit
+            // 
+            this.buttonQuit.Location = new System.Drawing.Point(85, 353);
+            this.buttonQuit.Name = "buttonQuit";
+            this.buttonQuit.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonQuit.Size = new System.Drawing.Size(75, 23);
+            this.buttonQuit.TabIndex = 7;
+            this.buttonQuit.Text = "Quit";
+            this.buttonQuit.Click += new System.EventHandler(this.buttonQuit_Click);
+            // 
             // MenuLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 478);
+            this.ControlBox = false;
+            this.Controls.Add(this.buttonQuit);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxPassword);
@@ -146,5 +159,6 @@
         private ReaLTaiizor.Controls.CrownTextBox textBoxPassword;
         private System.Windows.Forms.Label label2;
         private ReaLTaiizor.Controls.CrownButton buttonLogin;
+        private ReaLTaiizor.Controls.CrownButton buttonQuit;
     }
 }

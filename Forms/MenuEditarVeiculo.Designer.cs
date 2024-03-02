@@ -34,8 +34,6 @@
             this.buttonEditarVeiculo = new ReaLTaiizor.Controls.CrownButton();
             this.labelEscolheTipo = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.groupBoxEditarVeiculo = new System.Windows.Forms.GroupBox();
-            this.comboBoxEscolherVeiculo = new ReaLTaiizor.Controls.ForeverComboBox();
-            this.buttonProcurar = new ReaLTaiizor.Controls.CrownButton();
             this.numericPesoMax = new ReaLTaiizor.Controls.CrownNumeric();
             this.numericNumPassageiros = new ReaLTaiizor.Controls.CrownNumeric();
             this.numericAno = new ReaLTaiizor.Controls.CrownNumeric();
@@ -62,6 +60,8 @@
             this.comboBoxEixos = new ReaLTaiizor.Controls.CrownComboBox();
             this.comboBoxNumPortas = new ReaLTaiizor.Controls.CrownComboBox();
             this.comboBoxCilindrada = new ReaLTaiizor.Controls.CrownComboBox();
+            this.comboBoxEscolherVeiculo = new ReaLTaiizor.Controls.ForeverComboBox();
+            this.buttonProcurar = new ReaLTaiizor.Controls.CrownButton();
             this.groupBoxEditarVeiculo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericPesoMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericNumPassageiros)).BeginInit();
@@ -97,7 +97,7 @@
             // 
             this.buttonCancelar.Location = new System.Drawing.Point(539, 386);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
             this.buttonCancelar.TabIndex = 52;
             this.buttonCancelar.Text = "Cancelar";
@@ -107,7 +107,7 @@
             // 
             this.buttonEditarVeiculo.Location = new System.Drawing.Point(671, 386);
             this.buttonEditarVeiculo.Name = "buttonEditarVeiculo";
-            this.buttonEditarVeiculo.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonEditarVeiculo.Padding = new System.Windows.Forms.Padding(5);
             this.buttonEditarVeiculo.Size = new System.Drawing.Size(117, 52);
             this.buttonEditarVeiculo.TabIndex = 51;
             this.buttonEditarVeiculo.Text = "Editar";
@@ -159,40 +159,6 @@
             this.groupBoxEditarVeiculo.TabIndex = 49;
             this.groupBoxEditarVeiculo.TabStop = false;
             this.groupBoxEditarVeiculo.Text = "Editar Veiculo";
-            // 
-            // comboBoxEscolherVeiculo
-            // 
-            this.comboBoxEscolherVeiculo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(27)))), ((int)(((byte)(29)))));
-            this.comboBoxEscolherVeiculo.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.comboBoxEscolherVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxEscolherVeiculo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxEscolherVeiculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxEscolherVeiculo.Enabled = false;
-            this.comboBoxEscolherVeiculo.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.comboBoxEscolherVeiculo.ForeColor = System.Drawing.Color.White;
-            this.comboBoxEscolherVeiculo.FormattingEnabled = true;
-            this.comboBoxEscolherVeiculo.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
-            this.comboBoxEscolherVeiculo.HoverFontColor = System.Drawing.Color.White;
-            this.comboBoxEscolherVeiculo.ItemHeight = 18;
-            this.comboBoxEscolherVeiculo.Items.AddRange(new object[] {
-            "carro",
-            "mota",
-            "camioneta",
-            "camiao"});
-            this.comboBoxEscolherVeiculo.Location = new System.Drawing.Point(153, 13);
-            this.comboBoxEscolherVeiculo.Name = "comboBoxEscolherVeiculo";
-            this.comboBoxEscolherVeiculo.Size = new System.Drawing.Size(173, 24);
-            this.comboBoxEscolherVeiculo.TabIndex = 1;
-            // 
-            // buttonProcurar
-            // 
-            this.buttonProcurar.Location = new System.Drawing.Point(697, 13);
-            this.buttonProcurar.Name = "buttonProcurar";
-            this.buttonProcurar.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.buttonProcurar.Size = new System.Drawing.Size(75, 23);
-            this.buttonProcurar.TabIndex = 3;
-            this.buttonProcurar.Text = "Procurar";
-            this.buttonProcurar.Click += new System.EventHandler(this.buttonProcurar_Click);
             // 
             // numericPesoMax
             // 
@@ -530,12 +496,47 @@
             this.comboBoxCilindrada.Size = new System.Drawing.Size(163, 21);
             this.comboBoxCilindrada.TabIndex = 82;
             // 
+            // comboBoxEscolherVeiculo
+            // 
+            this.comboBoxEscolherVeiculo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(27)))), ((int)(((byte)(29)))));
+            this.comboBoxEscolherVeiculo.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.comboBoxEscolherVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxEscolherVeiculo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxEscolherVeiculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEscolherVeiculo.Enabled = false;
+            this.comboBoxEscolherVeiculo.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.comboBoxEscolherVeiculo.ForeColor = System.Drawing.Color.White;
+            this.comboBoxEscolherVeiculo.FormattingEnabled = true;
+            this.comboBoxEscolherVeiculo.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.comboBoxEscolherVeiculo.HoverFontColor = System.Drawing.Color.White;
+            this.comboBoxEscolherVeiculo.ItemHeight = 18;
+            this.comboBoxEscolherVeiculo.Items.AddRange(new object[] {
+            "carro",
+            "mota",
+            "camioneta",
+            "camiao"});
+            this.comboBoxEscolherVeiculo.Location = new System.Drawing.Point(153, 13);
+            this.comboBoxEscolherVeiculo.Name = "comboBoxEscolherVeiculo";
+            this.comboBoxEscolherVeiculo.Size = new System.Drawing.Size(173, 24);
+            this.comboBoxEscolherVeiculo.TabIndex = 1;
+            // 
+            // buttonProcurar
+            // 
+            this.buttonProcurar.Location = new System.Drawing.Point(697, 13);
+            this.buttonProcurar.Name = "buttonProcurar";
+            this.buttonProcurar.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonProcurar.Size = new System.Drawing.Size(75, 23);
+            this.buttonProcurar.TabIndex = 3;
+            this.buttonProcurar.Text = "Procurar";
+            this.buttonProcurar.Click += new System.EventHandler(this.buttonProcurar_Click);
+            // 
             // MenuEditarVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonProcurar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonEditarVeiculo);
@@ -544,6 +545,7 @@
             this.Controls.Add(this.comboBoxEscolherVeiculo);
             this.Controls.Add(this.textBoxProcurarMatricula);
             this.Controls.Add(this.matricula);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuEditarVeiculo";
             this.Text = "MenuEditarVeiculo";
             this.groupBoxEditarVeiculo.ResumeLayout(false);

@@ -13,81 +13,87 @@ namespace Automobile
     public partial class MenuEditarCliente : Form
     {
         private int _indexCliente;
+
         public MenuEditarCliente()
         {
             InitializeComponent();
-            groupBoxEditarCliente.Enabled = false;
         }
 
-        private void buttonProcurar_Click(object sender, EventArgs e)
+        public void clienteSelecionado(int posicao)
         {
-            if (textBoxCheckNif.Text == "")
-            {
-                MessageBox.Show("Por favor preencha o campo NIF");
-            }else if (textBoxCheckNif.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxCheckNif.Text))
-            {
-                MessageBox.Show("NIF inválido");
-                return;
-            }
-            else
-            {
-                foreach (var cliente in Program.melresCar.Clientes)
-                {
-                    if (cliente.Nif == textBoxCheckNif.Text)
-                    {
-                        _indexCliente = Program.melresCar.Clientes.IndexOf(cliente);
-                        textBoxName.Text = cliente.Nome;
-                        textBoxNif.Text = cliente.Nif;
-                        textBoxMorada.Text = cliente.Morada;
-                        textBoxEmail.Text = cliente.Email;
-                        textBoxTelemovel.Text = cliente.Telemovel;
-                        groupBoxEditarCliente.Enabled = true;
-                        buttonAlterar.Enabled = true;
-                        return;
-                    }
-                }
-                MessageBox.Show("Cliente não encontrado");
-            }
+            _indexCliente = posicao;
+            textBoxNome.Text = Program.melresCar.Clientes[_indexCliente].Nome;
+            textBoxNif.Text = Program.melresCar.Clientes[_indexCliente].Nif;
+            textBoxMorada.Text = Program.melresCar.Clientes[_indexCliente].Morada;
+            textBoxEmail.Text = Program.melresCar.Clientes[_indexCliente].Email;
+            textBoxTelemovel.Text = Program.melresCar.Clientes[_indexCliente].Telemovel;
         }
 
         private void buttonAlterar_Click(object sender, EventArgs e)
         {
-            if (textBoxName.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "")
+            if (textBoxNome.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "")
             {
-                MessageBox.Show("Por favor preencha todos os campos", "Editar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor preencha todos os campos", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 if (textBoxNif.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxNif.Text))
                 {
-                    MessageBox.Show("NIF inválido", "Editar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("NIF inválido", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else
+                else if (Program.melresCar.VerificaNifExistente(textBoxNif.Text))
                 {
-                    if (textBoxTelemovel.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxTelemovel.Text))
+                    if (Program.melresCar.Clientes[_indexCliente].Nif != textBoxNif.Text)
                     {
-                        MessageBox.Show("Telemóvel inválido", "Editar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("NIF já existente", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
-                        if (Program.melresCar.VerificaEmail(textBoxEmail.Text))
+                        if (textBoxTelemovel.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxTelemovel.Text))
                         {
-                            Program.melresCar.Clientes[_indexCliente].Nome = textBoxName.Text;
-                            Program.melresCar.Clientes[_indexCliente].Nif = textBoxNif.Text;
-                            Program.melresCar.Clientes[_indexCliente].Morada = textBoxMorada.Text;
-                            Program.melresCar.Clientes[_indexCliente].Email = textBoxEmail.Text;
-                            Program.melresCar.Clientes[_indexCliente].Telemovel = textBoxTelemovel.Text;
-                            Program.melresCar.EscreverFicheiroCSV("clientes");
-                            MessageBox.Show("Cliente alterado com sucesso.");
-                            this.Close();
+                            MessageBox.Show("Telemóvel inválido", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         else
                         {
-                            MessageBox.Show("Email inválido", "Editar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            if (Program.melresCar.VerificaEmail(textBoxEmail.Text))
+                            {
+                                if (Program.melresCar.VerificaEmailExistente(textBoxEmail.Text))
+                                {
+                                    if (Program.melresCar.Clientes[_indexCliente].Email != textBoxEmail.Text)
+                                    {
+                                        MessageBox.Show("Email já existente", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    }
+                                    else
+                                    {
+                                        Program.melresCar.Clientes[_indexCliente].Nome = textBoxNome.Text;
+                                        Program.melresCar.Clientes[_indexCliente].Nif = textBoxNif.Text;
+                                        Program.melresCar.Clientes[_indexCliente].Morada = textBoxMorada.Text;
+                                        Program.melresCar.Clientes[_indexCliente].Email = textBoxEmail.Text;
+                                        Program.melresCar.Clientes[_indexCliente].Telemovel = textBoxTelemovel.Text;
+                                        Program.melresCar.EscreverFicheiroCSV("clientes");
+                                        MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                                        menuPrincipalObject.ucClientes.atualizaDataGridView();
+                                        MessageBox.Show("Cliente alterado com sucesso.");
+                                        menuPrincipalObject.Enabled = true;
+                                        this.Close();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Email inválido", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
                         }
                     }
                 }
             }
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+            menuPrincipalObject.Enabled = true;
+            this.Close();
         }
     }
 }

@@ -18,10 +18,6 @@ namespace Automobile
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            timer = new Timer();
-            timer.Interval = 1000;
-            timer.Tick += Timer_Tick;
-            timer.Start();
             Dock = DockStyle.Fill;
             gridCamiaoB.Columns.Add("Matrícula", "Matrícula");
             gridCamiaoB.Columns.Add("Marca", "Marca");
@@ -32,6 +28,9 @@ namespace Automobile
             gridCamiaoB.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
+            gridCamiaoB.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            gridCamiaoB.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            gridCamiaoB.MultiSelect = false;
             gridCamiaoB.EnableHeadersVisualStyles = false;
             gridCamiaoB.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             gridCamiaoB.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
@@ -42,23 +41,21 @@ namespace Automobile
             gridCamiaoB.RowsDefaultCellStyle.ForeColor = Color.White;
             gridCamiaoB.ScrollBars = ScrollBars.Vertical;
 
+            atualizaDataGridView();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void atualizaDataGridView()
         {
-            if (!IsDisposed && !Disposing)  //controla se o datagridview foi eliminado se sim não faz nada(problemas no logout)
+            gridCamiaoB.Rows.Clear();
+            foreach (var veiculo in Program.melresCar.Veiculos)
             {
-                gridCamiaoB.Rows.Clear();
-                foreach (var veiculo in Program.melresCar.Veiculos)
+                if (veiculo is Camiao)
                 {
-                    if (veiculo is Camiao)
-                    {
-                        Camiao camiao = (Camiao)veiculo;
+                    Camiao camiao = (Camiao)veiculo;
 
-                        if (camiao.ClasseVeiculo == "B")
-                        {
-                            gridCamiaoB.Rows.Add(camiao.Matricula, camiao.Marca, camiao.Modelo, camiao.Estado, camiao.Combustivel, camiao.PesoMaximo, camiao.PrecoDiario);
-                        }
+                    if (camiao.ClasseVeiculo == "B")
+                    {
+                        gridCamiaoB.Rows.Add(camiao.Matricula, camiao.Marca, camiao.Modelo, camiao.Estado, camiao.Combustivel, camiao.PesoMaximo, camiao.PrecoDiario);
                     }
                 }
             }
@@ -67,6 +64,11 @@ namespace Automobile
         private void crownButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonReservar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

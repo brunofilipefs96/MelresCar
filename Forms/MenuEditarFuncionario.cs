@@ -10,112 +10,121 @@ using System.Windows.Forms;
 
 namespace Automobile
 {
-    
+
     public partial class MenuEditarFuncionario : Form
     {
         private int _indexFuncionario;
         public MenuEditarFuncionario()
         {
             InitializeComponent();
-            groupBoxEditarFuncionario.Enabled = false;
         }
 
-        private void buttonProcurar_Click(object sender, EventArgs e)
+        public void funcionarioSelecionado(int posicao)
         {
-            if(textBoxLoginUsername.Text == "" || textBoxLoginPassword.Text == "")
-            {
-                MessageBox.Show("Preencha os dois campos.");
-            } else
-            {
-                foreach(var funcionario in Program.melresCar.Funcionarios)
-                {
-                    if(funcionario.Username == textBoxLoginUsername.Text && funcionario.Password == textBoxLoginPassword.Text)
-                    {
-                        _indexFuncionario = Program.melresCar.Funcionarios.IndexOf(funcionario);
-                        textBoxName.Text = funcionario.Nome;
-                        textBoxNif.Text = funcionario.Nif;
-                        textBoxMorada.Text = funcionario.Morada;
-                        textBoxEmail.Text = funcionario.Email;
-                        textBoxTelemovel.Text = funcionario.Telemovel;
-                        textBoxUsername.Text = funcionario.Username;
-                        textBoxFirstPassword.Text = funcionario.Password;
-                        textBoxConfirmPassword.Text = funcionario.Password;
-                        textBoxSalario.Text = funcionario.Salario.ToString();
-                        groupBoxEditarFuncionario.Enabled = true;
-                        buttonAlterar.Enabled = true;
-                        return;
-                    }
-                }
-            }
+            _indexFuncionario = posicao;
+            textBoxNome.Text = Program.melresCar.Funcionarios[_indexFuncionario].Nome;
+            textBoxNif.Text = Program.melresCar.Funcionarios[_indexFuncionario].Nif;
+            textBoxMorada.Text = Program.melresCar.Funcionarios[_indexFuncionario].Morada;
+            textBoxEmail.Text = Program.melresCar.Funcionarios[_indexFuncionario].Email;
+            textBoxTelemovel.Text = Program.melresCar.Funcionarios[_indexFuncionario].Telemovel;
+            textBoxUsername.Text = Program.melresCar.Funcionarios[_indexFuncionario].Username;
+            textBoxFirstPassword.Text = Program.melresCar.Funcionarios[_indexFuncionario].Password;
+            textBoxConfirmPassword.Text = Program.melresCar.Funcionarios[_indexFuncionario].Password;
+            numericSalario.Text = Program.melresCar.Funcionarios[_indexFuncionario].Salario.ToString();
         }
 
         private void buttonAlterar_Click(object sender, EventArgs e)
         {
-            if (textBoxName.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "" || textBoxUsername.Text == "" || textBoxFirstPassword.Text == "" || textBoxConfirmPassword.Text == "" || textBoxSalario.Text == "")
+            if (textBoxNome.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "" || textBoxUsername.Text == "" || textBoxFirstPassword.Text == "" || textBoxConfirmPassword.Text == "" || numericSalario.Text == "")
             {
-                MessageBox.Show("Por favor preencha todos os campos", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor preencha todos os campos", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else
+            else if (textBoxNif.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxNif.Text))
             {
-                if (textBoxNif.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxNif.Text))
+                MessageBox.Show("NIF inválido", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (Program.melresCar.VerificaNifExistente(textBoxNif.Text))
+            {
+                if (Program.melresCar.Funcionarios[_indexFuncionario].Nif != textBoxNif.Text)
                 {
-                    MessageBox.Show("NIF inválido", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("NIF já existente", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
                     if (textBoxTelemovel.Text.Length != 9 || !Program.melresCar.VerificaInteiro(textBoxTelemovel.Text))
                     {
-                        MessageBox.Show("Telemóvel inválido", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Telemóvel inválido", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
                         if (Program.melresCar.VerificaEmail(textBoxEmail.Text))
                         {
-                            if (textBoxFirstPassword.Text != textBoxConfirmPassword.Text)
+                            if (Program.melresCar.VerificaEmailExistente(textBoxEmail.Text))
                             {
-                                MessageBox.Show("As passwords não coincidem", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            }
-                            else
-                            {
-                                if (textBoxFirstPassword.Text.Length < 8)
+                                if (Program.melresCar.Funcionarios[_indexFuncionario].Email != textBoxEmail.Text)
                                 {
-                                    MessageBox.Show("A password tem de ter no mínimo 8 caracteres", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    MessageBox.Show("Email já existente", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 }
                                 else
                                 {
-                                    if (!Program.melresCar.VerificaDecimal(textBoxSalario.Text))
+                                    if (Program.melresCar.VerificaUsernameExistente(textBoxUsername.Text))
                                     {
-                                        MessageBox.Show("Salário inválido", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                    }
-                                    else
-                                    {
-                                        Program.melresCar.Funcionarios[_indexFuncionario].Nome = textBoxName.Text;
-                                        Program.melresCar.Funcionarios[_indexFuncionario].Nif = textBoxNif.Text;
-                                        Program.melresCar.Funcionarios[_indexFuncionario].Morada = textBoxMorada.Text;
-                                        Program.melresCar.Funcionarios[_indexFuncionario].Email = textBoxEmail.Text;
-                                        Program.melresCar.Funcionarios[_indexFuncionario].Telemovel = textBoxTelemovel.Text;
-                                        Program.melresCar.Funcionarios[_indexFuncionario].Username = textBoxUsername.Text;
-                                        Program.melresCar.Funcionarios[_indexFuncionario].Password = textBoxFirstPassword.Text;
-                                        Program.melresCar.Funcionarios[_indexFuncionario].Salario = Convert.ToDecimal(textBoxSalario.Text);
-                                        Program.melresCar.EscreverFicheiroCSV("funcionarios");
-                                        MessageBox.Show("Funcionário atualizado com sucesso");
-                                        this.Close();
+                                        if (Program.melresCar.Funcionarios[_indexFuncionario].Username != textBoxUsername.Text)
+                                        {
+                                            MessageBox.Show("Username já existente", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                        }
+                                        else
+                                        {
+                                            if (textBoxFirstPassword.Text.Length < 8)
+                                            {
+                                                MessageBox.Show("A password tem de ter no mínimo 8 caracteres", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                            }
+                                            else if (textBoxFirstPassword.Text != textBoxConfirmPassword.Text)
+                                            {
+                                                MessageBox.Show("As passwords não coincidem", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                            }
+                                            else if (!Program.melresCar.VerificaDecimal(numericSalario.Text))
+                                            {
+                                                MessageBox.Show("Salário inválido", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                            }
+                                            else
+                                            {
+                                                Program.melresCar.Funcionarios[_indexFuncionario].Nome = textBoxNome.Text;
+                                                Program.melresCar.Funcionarios[_indexFuncionario].Nif = textBoxNif.Text;
+                                                Program.melresCar.Funcionarios[_indexFuncionario].Morada = textBoxMorada.Text;
+                                                Program.melresCar.Funcionarios[_indexFuncionario].Email = textBoxEmail.Text;
+                                                Program.melresCar.Funcionarios[_indexFuncionario].Telemovel = textBoxTelemovel.Text;
+                                                Program.melresCar.Funcionarios[_indexFuncionario].Username = textBoxUsername.Text;
+                                                Program.melresCar.Funcionarios[_indexFuncionario].Password = textBoxFirstPassword.Text;
+                                                Program.melresCar.Funcionarios[_indexFuncionario].Salario = Convert.ToDecimal(numericSalario.Text);
+                                                Program.melresCar.EscreverFicheiroCSV("funcionarios");
+                                                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                                                menuPrincipalObject.ucFuncionario.atualizaDataGridView();
+                                                menuPrincipalObject.Enabled = true;
+                                                MessageBox.Show("Funcionário atualizado com sucesso");
+                                                this.Close();
+                                            }
+                                        }
                                     }
                                 }
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Email inválido", "Editar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Email inválido", "Adicionar Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                 }
             }
+
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
+            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+            menuPrincipalObject.Enabled = true;
             this.Close();
         }
     }
 }
+

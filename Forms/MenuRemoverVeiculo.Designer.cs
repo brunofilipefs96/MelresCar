@@ -408,6 +408,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.labelEscolheTipo);
             this.Controls.Add(this.comboBoxEscolherVeiculo);
             this.Controls.Add(this.buttonCancelar);
@@ -416,6 +417,7 @@
             this.Controls.Add(this.textBoxProcurarMatricula);
             this.Controls.Add(this.labelIdentificacao);
             this.Controls.Add(this.buttonProcurar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuRemoverVeiculo";
             this.Text = "RemoverVeiculo";
             this.groupboxRemoverVeiculo.ResumeLayout(false);

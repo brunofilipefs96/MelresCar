@@ -154,6 +154,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.comboBoxCombustivel);
             this.Controls.Add(this.buttonVerifica);
             this.Controls.Add(this.labelNif);
@@ -164,6 +165,7 @@
             this.Controls.Add(this.textBoxDataFim);
             this.Controls.Add(this.labelDataInicio);
             this.Controls.Add(this.textBoxDataInicio);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuAdicionarReserva";
             this.Text = "MelresCar | MenuAdicionarReserva";
             this.ResumeLayout(false);

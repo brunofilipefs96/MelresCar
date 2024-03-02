@@ -101,6 +101,7 @@
             this.buttonReservar.Size = new System.Drawing.Size(117, 52);
             this.buttonReservar.TabIndex = 77;
             this.buttonReservar.Text = "Reservar";
+            this.buttonReservar.Click += new System.EventHandler(this.buttonReservar_Click);
             // 
             // FormBCamiao
             // 

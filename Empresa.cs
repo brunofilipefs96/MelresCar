@@ -122,6 +122,80 @@ namespace Automobile
             return false;
         }
 
+        public bool VerificaNifExistente(string nif)
+        {
+            foreach (Cliente cliente in Clientes)
+            {
+                if (cliente.Nif == nif)
+                {
+                    return true;
+                }
+            }
+            foreach (Funcionario funcionario in Funcionarios)
+            {
+                if (funcionario.Nif == nif)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool VerificaUsernameExistente(string username)
+        {
+            foreach (Funcionario funcionario in Funcionarios)
+            {
+                if (funcionario.Username == username)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool VerificaEmailExistente(string email)
+        {
+            foreach (Cliente cliente in Clientes)
+            {
+                if (cliente.Email == email)
+                {
+                    return true;
+                }
+            }
+            foreach (Funcionario funcionario in Funcionarios)
+            {
+                if (funcionario.Email == email)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public string ProcurarMatriculaVeiculo(int idVeiculo)
+        {
+            foreach (Veiculo veiculo in Veiculos)
+            {
+                if (veiculo.IdVeiculo == idVeiculo)
+                {
+                    return veiculo.Matricula;
+                }
+            }
+            return "Veículo não encontrado";
+        }
+
+        public string ProcuraNifCliente(int numCliente)
+        {
+            foreach (Cliente cliente in Clientes)
+            {
+                if (cliente.NumCliente == numCliente)
+                {
+                    return cliente.Nif;
+                }
+            }
+            return "Cliente não encontrado";
+        }
+
         public void CarregarFicheiroCSV(string nomeFicheiro)
         {
             if (!File.Exists(nomeFicheiro + ".csv"))

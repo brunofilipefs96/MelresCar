@@ -48,5 +48,10 @@ namespace Automobile
                 MessageBox.Show("Username ou password incorretos", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void buttonQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

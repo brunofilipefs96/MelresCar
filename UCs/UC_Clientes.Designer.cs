@@ -43,24 +43,24 @@
             this.buttonAddCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.buttonAddCliente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAddCliente.ForeColor = System.Drawing.Color.White;
-            this.buttonAddCliente.Location = new System.Drawing.Point(3, 45);
+            this.buttonAddCliente.Location = new System.Drawing.Point(713, 417);
             this.buttonAddCliente.Name = "buttonAddCliente";
-            this.buttonAddCliente.Size = new System.Drawing.Size(206, 95);
+            this.buttonAddCliente.Size = new System.Drawing.Size(144, 40);
             this.buttonAddCliente.TabIndex = 4;
-            this.buttonAddCliente.Text = "Adicionar Cliente";
+            this.buttonAddCliente.Text = "Adicionar";
             this.buttonAddCliente.UseVisualStyleBackColor = false;
             this.buttonAddCliente.Click += new System.EventHandler(this.buttonAddCliente_Click);
             // 
             // buttonRemCliente
             // 
-            this.buttonRemCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.buttonRemCliente.BackColor = System.Drawing.Color.DarkRed;
             this.buttonRemCliente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRemCliente.ForeColor = System.Drawing.Color.White;
-            this.buttonRemCliente.Location = new System.Drawing.Point(3, 272);
+            this.buttonRemCliente.Location = new System.Drawing.Point(413, 417);
             this.buttonRemCliente.Name = "buttonRemCliente";
-            this.buttonRemCliente.Size = new System.Drawing.Size(206, 95);
+            this.buttonRemCliente.Size = new System.Drawing.Size(144, 40);
             this.buttonRemCliente.TabIndex = 5;
-            this.buttonRemCliente.Text = "Remover Cliente";
+            this.buttonRemCliente.Text = "Remover";
             this.buttonRemCliente.UseVisualStyleBackColor = false;
             this.buttonRemCliente.Click += new System.EventHandler(this.buttonRemCliente_Click);
             // 
@@ -69,11 +69,11 @@
             this.buttonEditCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.buttonEditCliente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEditCliente.ForeColor = System.Drawing.Color.White;
-            this.buttonEditCliente.Location = new System.Drawing.Point(3, 158);
+            this.buttonEditCliente.Location = new System.Drawing.Point(563, 417);
             this.buttonEditCliente.Name = "buttonEditCliente";
-            this.buttonEditCliente.Size = new System.Drawing.Size(206, 95);
+            this.buttonEditCliente.Size = new System.Drawing.Size(144, 40);
             this.buttonEditCliente.TabIndex = 6;
-            this.buttonEditCliente.Text = "Editar Cliente";
+            this.buttonEditCliente.Text = "Editar";
             this.buttonEditCliente.UseVisualStyleBackColor = false;
             this.buttonEditCliente.Click += new System.EventHandler(this.buttonEditCliente_Click);
             // 
@@ -97,9 +97,10 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewClientes.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewClientes.Location = new System.Drawing.Point(214, 45);
+            this.dataGridViewClientes.Location = new System.Drawing.Point(14, 16);
             this.dataGridViewClientes.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewClientes.Name = "dataGridViewClientes";
+            this.dataGridViewClientes.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.AppWorkspace;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,7 +116,8 @@
             this.dataGridViewClientes.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridViewClientes.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewClientes.RowTemplate.Height = 24;
-            this.dataGridViewClientes.Size = new System.Drawing.Size(668, 322);
+            this.dataGridViewClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewClientes.Size = new System.Drawing.Size(875, 396);
             this.dataGridViewClientes.TabIndex = 7;
             // 
             // UC_Clientes

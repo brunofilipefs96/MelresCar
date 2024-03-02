@@ -49,6 +49,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BCarros = new System.Windows.Forms.Button();
             this.ACarros = new System.Windows.Forms.Button();
+            this.buttonBackMenuPrincipal = new ReaLTaiizor.Controls.CrownButton();
             this.SuspendLayout();
             // 
             // LabelCarroL
@@ -312,11 +313,23 @@
             this.ACarros.UseVisualStyleBackColor = false;
             this.ACarros.Click += new System.EventHandler(this.ACarros_Click);
             // 
+            // buttonBackMenuPrincipal
+            // 
+            this.buttonBackMenuPrincipal.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonBackMenuPrincipal.Location = new System.Drawing.Point(0, 618);
+            this.buttonBackMenuPrincipal.Name = "buttonBackMenuPrincipal";
+            this.buttonBackMenuPrincipal.Padding = new System.Windows.Forms.Padding(5);
+            this.buttonBackMenuPrincipal.Size = new System.Drawing.Size(1395, 52);
+            this.buttonBackMenuPrincipal.TabIndex = 82;
+            this.buttonBackMenuPrincipal.Text = "Voltar ao Menu Principal";
+            this.buttonBackMenuPrincipal.Click += new System.EventHandler(this.buttonBackMenuPrincipal_Click);
+            // 
             // UC_ListarCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Controls.Add(this.buttonBackMenuPrincipal);
             this.Controls.Add(this.LabelCarroL);
             this.Controls.Add(this.LabelCarroJ);
             this.Controls.Add(this.LCarros);
@@ -339,7 +352,7 @@
             this.Controls.Add(this.BCarros);
             this.Controls.Add(this.ACarros);
             this.Name = "UC_ListarCarro";
-            this.Size = new System.Drawing.Size(1395, 637);
+            this.Size = new System.Drawing.Size(1395, 670);
             this.ResumeLayout(false);
 
         }
@@ -366,5 +379,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BCarros;
         private System.Windows.Forms.Button ACarros;
+        private ReaLTaiizor.Controls.CrownButton buttonBackMenuPrincipal;
     }
 }

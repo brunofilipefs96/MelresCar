@@ -52,7 +52,7 @@
             this.textBoxTelemovel.MaxLength = 9;
             this.textBoxTelemovel.Name = "textBoxTelemovel";
             this.textBoxTelemovel.Size = new System.Drawing.Size(150, 20);
-            this.textBoxTelemovel.TabIndex = 20;
+            this.textBoxTelemovel.TabIndex = 4;
             // 
             // labelNtelemovel
             // 
@@ -75,7 +75,7 @@
             this.textBoxNif.MaxLength = 9;
             this.textBoxNif.Name = "textBoxNif";
             this.textBoxNif.Size = new System.Drawing.Size(149, 20);
-            this.textBoxNif.TabIndex = 18;
+            this.textBoxNif.TabIndex = 3;
             // 
             // labelNif
             // 
@@ -97,7 +97,7 @@
             this.textBoxMorada.Location = new System.Drawing.Point(198, 99);
             this.textBoxMorada.Name = "textBoxMorada";
             this.textBoxMorada.Size = new System.Drawing.Size(483, 20);
-            this.textBoxMorada.TabIndex = 16;
+            this.textBoxMorada.TabIndex = 2;
             // 
             // labelMorada
             // 
@@ -119,7 +119,7 @@
             this.textBoxNome.Location = new System.Drawing.Point(197, 73);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(288, 20);
-            this.textBoxNome.TabIndex = 14;
+            this.textBoxNome.TabIndex = 1;
             // 
             // textBoxEmail
             // 
@@ -129,7 +129,7 @@
             this.textBoxEmail.Location = new System.Drawing.Point(197, 182);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(224, 20);
-            this.textBoxEmail.TabIndex = 11;
+            this.textBoxEmail.TabIndex = 5;
             // 
             // labelEmail
             // 
@@ -163,28 +163,28 @@
             this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.bigLabel1.Location = new System.Drawing.Point(0, 0);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(770, 46);
+            this.bigLabel1.Size = new System.Drawing.Size(741, 46);
             this.bigLabel1.TabIndex = 22;
             this.bigLabel1.Text = "Adicionar Cliente";
             this.bigLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // buttonAdicionar
             // 
-            this.buttonAdicionar.Location = new System.Drawing.Point(641, 274);
+            this.buttonAdicionar.Location = new System.Drawing.Point(612, 254);
             this.buttonAdicionar.Name = "buttonAdicionar";
             this.buttonAdicionar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonAdicionar.Size = new System.Drawing.Size(117, 52);
-            this.buttonAdicionar.TabIndex = 58;
+            this.buttonAdicionar.TabIndex = 6;
             this.buttonAdicionar.Text = "Adicionar";
             this.buttonAdicionar.Click += new System.EventHandler(this.buttonAdicionar_Click);
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(509, 274);
+            this.buttonCancelar.Location = new System.Drawing.Point(480, 254);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
-            this.buttonCancelar.TabIndex = 59;
+            this.buttonCancelar.TabIndex = 7;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
@@ -193,7 +193,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(770, 338);
+            this.ClientSize = new System.Drawing.Size(741, 318);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonAdicionar);
             this.Controls.Add(this.bigLabel1);
@@ -207,6 +208,7 @@
             this.Controls.Add(this.labelNif);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxNif);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuAdicionarCliente";
             this.Text = "MelresCar | Adicionar Cliente";
             this.ResumeLayout(false);

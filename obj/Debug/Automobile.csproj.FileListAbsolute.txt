@@ -108,19 +108,10 @@ E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\bin\Debug\Automobi
 E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\bin\Debug\ReaLTaiizor.dll
 E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\bin\Debug\ReaLTaiizor.xml
 E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.csproj.AssemblyReference.cache
-E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.csproj.SuggestedBindingRedirects.cache
-E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.AdicionarCliente.resources
-E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.AdicionarVeiculo.resources
-E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.EditarCliente.resources
-E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.ListarCarro.resources
-E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.ListarMota.resources
 E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.ListaVeiculo.resources
-E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuFuncionarios.resources
 E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuLogin.resources
 E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuPrincipal.resources
 E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.Properties.Resources.resources
-E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.RemoverCliente.resources
-E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.RemoverVeiculo.resources
 E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.UC_Clientes.resources
 E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.UC_Funcionarios.resources
 E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.UC_MenuPrincipal.resources
@@ -236,7 +227,6 @@ C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Menu
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuEditarCliente.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuEditarFuncionario.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuEditarVeiculo.resources
-C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuRemoverFuncionario.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.UC_ListarCamiao.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.UC_ListarCamioneta.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.UC_ListarCarro.resources
@@ -245,7 +235,6 @@ C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.List
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuLogin.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuPrincipal.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Properties.Resources.resources
-C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuRemoverCliente.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuRemoverVeiculo.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.UC_Clientes.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.UC_Funcionarios.resources
@@ -297,3 +286,48 @@ C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormCMo
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormACamioneta.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormBCamioneta.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormCCamioneta.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormACamiao.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormBCamiao.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormCCamiao.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormACamioneta.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormBCamioneta.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormCCamioneta.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormACarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormBCarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormCCarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormDCarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormFCarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormGCarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormHCarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormICarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormJCarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormLCarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormAMota.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormBMota.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.FormCMota.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuAdicionarCliente.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuAdicionarFuncionario.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.Forms.MenuAdicionarReserva.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuAdicionarVeiculo.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuEditarCliente.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuEditarFuncionario.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuEditarVeiculo.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuRemoverFuncionario.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.UC_ListarCamiao.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.UC_ListarCamioneta.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.UC_ListarCarro.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.UC_ListarMota.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuRemoverCliente.resources
+E:\ATEC\Desenvolvimento\A decorrer\5412 - C#\MelresCar-master\obj\Debug\Automobile.MenuRemoverVeiculo.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormACamiao.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormBCamiao.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormCCamiao.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormACamioneta.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormBCamioneta.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormCCamioneta.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormAMota.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormBMota.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormCMota.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Forms.MenuAdicionarReserva.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Forms.MenuMostrarLucro.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Forms.MenuMostrarReserva.resources

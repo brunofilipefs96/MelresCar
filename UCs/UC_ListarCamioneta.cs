@@ -50,5 +50,11 @@ namespace Automobile
         {
             showClass("CCamioneta");
         }
+
+        private void buttonBackMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            Form form = Application.OpenForms["ListaVeiculo"];
+            form.Close();
+        }
     }
 }

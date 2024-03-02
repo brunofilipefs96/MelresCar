@@ -73,6 +73,7 @@
             this.gridCarroA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCarroA.Location = new System.Drawing.Point(543, 12);
             this.gridCarroA.Name = "gridCarroA";
+            this.gridCarroA.ReadOnly = true;
             this.gridCarroA.Size = new System.Drawing.Size(839, 357);
             this.gridCarroA.TabIndex = 2;
             // 
@@ -110,6 +111,7 @@
             this.buttonReservar.Size = new System.Drawing.Size(117, 52);
             this.buttonReservar.TabIndex = 61;
             this.buttonReservar.Text = "Reservar";
+            this.buttonReservar.Click += new System.EventHandler(this.buttonReservar_Click);
             // 
             // FormACarro
             // 
