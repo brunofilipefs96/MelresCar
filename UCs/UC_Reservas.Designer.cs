@@ -61,7 +61,6 @@
             this.buttonLucroEntreDatas.TabIndex = 15;
             this.buttonLucroEntreDatas.Text = "Lucro Entre Datas";
             this.buttonLucroEntreDatas.UseVisualStyleBackColor = false;
-            this.buttonLucroEntreDatas.Click += new System.EventHandler(this.buttonVerReserva_Click);
             // 
             // dataGridViewReservas
             // 

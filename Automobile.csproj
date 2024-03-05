@@ -206,12 +206,6 @@
     <Compile Include="Forms\MenuMostrarLucro.Designer.cs">
       <DependentUpon>MenuMostrarLucro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MenuMostrarReserva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MenuMostrarReserva.Designer.cs">
-      <DependentUpon>MenuMostrarReserva.cs</DependentUpon>
-    </Compile>
     <Compile Include="Funcionario.cs" />
     <Compile Include="Forms\MenuEditarFuncionario.cs">
       <SubType>Form</SubType>
@@ -389,9 +383,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuMostrarLucro.resx">
       <DependentUpon>MenuMostrarLucro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MenuMostrarReserva.resx">
-      <DependentUpon>MenuMostrarReserva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\UC_ListarCamiao.resx">
       <DependentUpon>UC_ListarCamiao.cs</DependentUpon>

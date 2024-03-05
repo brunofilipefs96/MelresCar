@@ -55,14 +55,9 @@ namespace Automobile
 
         private void buttonCriarReserva_Click(object sender, EventArgs e)
         {
-            MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
-            menuAdicionarReserva.Show();
-        }
-
-        private void buttonVerReserva_Click(object sender, EventArgs e)
-        {
-            MenuMostrarReserva menuMostrarReserva = new MenuMostrarReserva();
-            menuMostrarReserva.Show();
+            ListaVeiculo listaVeiculo = new ListaVeiculo();
+            listaVeiculo.Show();
+            
         }
 
         private void buttonLucroDatas_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Automobile.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -67,10 +68,22 @@ namespace Automobile
         {
             this.Close();
         }
-
+        
         private void buttonReservar_Click(object sender, EventArgs e)
         {
+            MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
 
+            //Enviar o id 
+            menuAdicionarReserva.IdVeiculo = Program.melresCar.Veiculos[gridCarroA.CurrentCell.RowIndex].IdVeiculo;
+
+            // testar isto
+
+
+
+            menuAdicionarReserva.veiculoSelecionado(gridCarroA.CurrentCell.RowIndex);
+            menuAdicionarReserva.Show();    
+            ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
+            listaVeiculoObject.Enabled = false;
         }
     }
 }

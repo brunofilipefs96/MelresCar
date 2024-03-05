@@ -66,5 +66,10 @@ namespace Automobile
         {
             this.Close();
         }
+
+        private void buttonReservar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
