@@ -69,13 +69,21 @@ namespace Automobile
 
         private void buttonReservar_Click(object sender, EventArgs e)
         {
-            MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
+            if (gridCamiaoB.CurrentRow == null)
+            {
+                MessageBox.Show("Selecione um veículo para reservar");
+                return;
+            }
+            else
+            {
+                MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
 
-            menuAdicionarReserva.veiculoSelecionado(Convert.ToInt32(gridCamiaoB.Rows[gridCamiaoB.CurrentRow.Index].Cells[0].Value));
+                menuAdicionarReserva.veiculoSelecionado(Convert.ToInt32(gridCamiaoB.Rows[gridCamiaoB.CurrentRow.Index].Cells[0].Value));
 
-            menuAdicionarReserva.Show();
-            ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
-            listaVeiculoObject.Enabled = false;
+                menuAdicionarReserva.Show();
+                ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
+                listaVeiculoObject.Enabled = false;
+            }
         }
 
         private void crownButton1_Click(object sender, EventArgs e)

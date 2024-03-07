@@ -116,7 +116,49 @@ namespace Automobile
                             }
                             else
                             {
-                                Carro carro = new Carro("carro", comboBoxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), comboBoxEstado.Text, Convert.ToDecimal(numericPrecoDia.Text), DateTime.Today, Convert.ToInt32(comboBoxNumPortas.Text), comboBoxCaixa.Text);
+                                string classeVeic = "";
+                                if(comboBoxNumPortas.Text == "3" && comboBoxCombustivel.Text == "gasolina" && comboBoxCaixa.Text == "manual")
+                                {
+                                    classeVeic = "A";    //3 Portas Manual a Gasolina
+                                }
+                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "hibrido" && comboBoxCaixa.Text == "automatico")
+                                {
+                                    classeVeic = "B";    //5 Portas automático e Hibrido
+                                }
+                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina")
+                                {
+                                    classeVeic = "C";    //Pequeno 5 Portas a Gasolina
+                                }
+                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
+                                {
+                                    classeVeic = "D";    //Pequeno 5 Portas a Gasoleo   
+                                }
+                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina")
+                                {
+                                    classeVeic = "F";    //Médio 5 Portas a Gasolina
+                                }
+                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
+                                {
+                                    classeVeic = "G";    //Médio 5 Portas a Gasoleo
+                                }
+                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
+                                {
+                                    classeVeic = "H";    //Station Wagon 5 Portas a Diesel
+                                }
+                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "eletrico")
+                                {
+                                    classeVeic = "I";    //Médio Elétrico 5 Portas
+                                }
+                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina" || comboBoxCombustivel.Text == "gasoleo")
+                                {
+                                    classeVeic = "J";    //SUV 5 Portas a Diesel/Gasolina
+                                }
+                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo" || comboBoxCombustivel.Text == "gasolina")
+                                {
+                                    classeVeic = "L";   //Executivo/Desportivo Premium 5 Portas
+                                }
+
+                                Carro carro = new Carro("carro", classeVeic, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), comboBoxEstado.Text, Convert.ToDecimal(numericPrecoDia.Text), DateTime.Today, Convert.ToInt32(comboBoxNumPortas.Text), comboBoxCaixa.Text);
                                 Program.melresCar.InserirVeiculo(carro);
                                 Program.melresCar.EscreverFicheiroCSV("veiculos");
                                 MessageBox.Show("Veículo adicionado com sucesso.");

@@ -12,7 +12,7 @@ namespace Automobile
     internal static class Program
     {
         public static Empresa melresCar = new Empresa();
-        
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

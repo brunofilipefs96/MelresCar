@@ -349,4 +349,4 @@ C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.Fo
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.FormBMota.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.FormCMota.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.Forms.MenuAdicionarReserva.resources
-C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.Forms.MenuMostrarLucro.resources
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.LucroDatas.resources

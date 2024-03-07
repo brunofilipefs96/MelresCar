@@ -61,8 +61,14 @@ namespace Automobile
 
         private void buttonLucroDatas_Click(object sender, EventArgs e)
         {
-            MenuMostrarLucro menuMostrarLucro = new MenuMostrarLucro();
+            LucroDatas menuMostrarLucro = new LucroDatas();
             menuMostrarLucro.Show();
+        }
+
+        private void buttonLucroEntreDatas_Click(object sender, EventArgs e)
+        {
+            LucroDatas lucroDatas = new LucroDatas();
+            lucroDatas.Show();
         }
     }
 }

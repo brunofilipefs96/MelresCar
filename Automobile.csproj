@@ -200,12 +200,6 @@
       <DependentUpon>MenuEditarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Empresa.cs" />
-    <Compile Include="Forms\MenuMostrarLucro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MenuMostrarLucro.Designer.cs">
-      <DependentUpon>MenuMostrarLucro.cs</DependentUpon>
-    </Compile>
     <Compile Include="Funcionario.cs" />
     <Compile Include="Forms\MenuEditarFuncionario.cs">
       <SubType>Form</SubType>
@@ -218,6 +212,12 @@
     </Compile>
     <Compile Include="Forms\MenuEditarVeiculo.Designer.cs">
       <DependentUpon>MenuEditarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LucroDatas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LucroDatas.Designer.cs">
+      <DependentUpon>LucroDatas.cs</DependentUpon>
     </Compile>
     <Compile Include="UCs\UC_ListarCamiao.cs">
       <SubType>UserControl</SubType>
@@ -381,8 +381,8 @@
     <EmbeddedResource Include="Forms\MenuEditarVeiculo.resx">
       <DependentUpon>MenuEditarVeiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MenuMostrarLucro.resx">
-      <DependentUpon>MenuMostrarLucro.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\LucroDatas.resx">
+      <DependentUpon>LucroDatas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\UC_ListarCamiao.resx">
       <DependentUpon>UC_ListarCamiao.cs</DependentUpon>
@@ -554,6 +554,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bCamioneta 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supercar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supercar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speed2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

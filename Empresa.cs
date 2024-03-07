@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using System.Runtime.Remoting;
 
 namespace Automobile
 {
@@ -21,6 +22,7 @@ namespace Automobile
         private int _contaFuncionarios;
         private string _loggedAccount;
         private int _daysAdded;
+        private DateTime _dataSistema = DateTime.Now;
 
         public List<Veiculo> Veiculos
         {
@@ -72,6 +74,12 @@ namespace Automobile
             get { return _daysAdded; }
             set { _daysAdded = value; }
         }
+        public DateTime DataSistema
+        {
+            get { return _dataSistema; }
+            set { _dataSistema = value; }
+        }
+
         public Empresa()
         {
             Veiculos = new List<Veiculo>();
@@ -213,6 +221,18 @@ namespace Automobile
                 }
             }
             return "Veículo não encontrado";
+        }
+
+        public string ProcurarEstadoVeiculo(int idVeiculo)
+        {
+            foreach (Veiculo veiculo in Veiculos)
+            {
+                if (veiculo.IdVeiculo == idVeiculo)
+                {
+                    return veiculo.Estado;
+                }
+            }
+            return "";
         }
 
         public string ProcuraNifCliente(int numCliente)
@@ -558,5 +578,47 @@ namespace Automobile
             return id + 1;
         }
 
+        public void adicionarDia()
+        {
+            DaysAdded++;
+            DataSistema.AddDays(1);
+
+            List<string> veiculosManutencao = new List<string>();
+            List<string> veiculosDisponiveis= new List<string>();
+            int contManutencao = 0;
+            int contDisponiveis = 0;
+
+            foreach(var veiculo in Veiculos)
+            {
+                if(DataSistema >= veiculo.DataPrevistaDisponibilidade && veiculo.Estado == "manutencao")
+                {
+                    veiculo.Estado = "disponivel";
+                    contManutencao++;
+                    veiculosManutencao.Add(veiculo.Matricula);
+                }
+            }
+            
+            foreach(var reserva in Reservas)
+            {
+                if (reserva.DataFim < DataSistema && Program.melresCar.ProcurarEstadoVeiculo(reserva.IdVeiculo) != "manutencao")
+                {
+                    veiculosDisponiveis.Add(Program.melresCar.ProcurarMatriculaVeiculo(reserva.IdVeiculo));
+                    contDisponiveis++;
+                }
+            }
+
+            string listaManutencao = string.Join(", ", veiculosManutencao);
+            string listaDisponiveis = string.Join(", ", veiculosDisponiveis);
+
+            if(contManutencao != 0)
+            {
+                MessageBox.Show("Os Veículos com as matrículas (" + listaManutencao + ") já sairam de Manutenção!");
+            }
+            if (contDisponiveis != 0)
+            {
+                MessageBox.Show("Os Veículos com as matrículas (" + listaDisponiveis + ") encontram-se disponiveis para alugar hoje!");
+            }
+            
+        }
     }
 }

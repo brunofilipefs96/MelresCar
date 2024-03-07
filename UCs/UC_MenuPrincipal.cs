@@ -15,6 +15,8 @@ namespace Automobile
         public UC_MenuPrincipal()
         {
             InitializeComponent();
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
         }
+
     }
 }

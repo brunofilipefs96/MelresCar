@@ -41,8 +41,6 @@ namespace Automobile
         public UC_Veiculos ucVeiculo = new UC_Veiculos();
         public UC_Reservas ucReservas = new UC_Reservas();
 
-
-
         private void buttonMenuPrincipal_Click(object sender, EventArgs e)
         {
             addUserControl(ucMenuPrincipal, buttonMenuPrincipal);
@@ -77,7 +75,7 @@ namespace Automobile
 
         private void buttonAddDay_Click(object sender, EventArgs e)
         {
-            Program.melresCar.DaysAdded++;
+            Program.melresCar.adicionarDia();
             labelDataHoje.Text = "Data: " + DateTime.Now.AddDays(Program.melresCar.DaysAdded).ToString("dd/MM/yyyy") + " (+" + Program.melresCar.DaysAdded + ")";
         }
     }

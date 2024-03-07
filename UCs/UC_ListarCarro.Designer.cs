@@ -57,9 +57,10 @@
             this.LabelCarroL.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroL.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroL.Location = new System.Drawing.Point(1136, 440);
+            this.LabelCarroL.Location = new System.Drawing.Point(1515, 542);
+            this.LabelCarroL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCarroL.Name = "LabelCarroL";
-            this.LabelCarroL.Size = new System.Drawing.Size(100, 151);
+            this.LabelCarroL.Size = new System.Drawing.Size(133, 186);
             this.LabelCarroL.TabIndex = 81;
             this.LabelCarroL.Text = "Executivo /Desportivo Premium 5 Portas Automático Diesel/ gasolina";
             this.LabelCarroL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -69,9 +70,10 @@
             this.LabelCarroJ.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroJ.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroJ.Location = new System.Drawing.Point(873, 440);
+            this.LabelCarroJ.Location = new System.Drawing.Point(1164, 542);
+            this.LabelCarroJ.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCarroJ.Name = "LabelCarroJ";
-            this.LabelCarroJ.Size = new System.Drawing.Size(96, 87);
+            this.LabelCarroJ.Size = new System.Drawing.Size(128, 107);
             this.LabelCarroJ.TabIndex = 80;
             this.LabelCarroJ.Text = "SUV 5 Portas a Diesel / Gasolina";
             this.LabelCarroJ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,9 +83,10 @@
             this.LCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.LCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LCarros.ForeColor = System.Drawing.Color.White;
-            this.LCarros.Location = new System.Drawing.Point(1125, 334);
+            this.LCarros.Location = new System.Drawing.Point(1500, 411);
+            this.LCarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LCarros.Name = "LCarros";
-            this.LCarros.Size = new System.Drawing.Size(118, 103);
+            this.LCarros.Size = new System.Drawing.Size(157, 127);
             this.LCarros.TabIndex = 79;
             this.LCarros.Text = "L";
             this.LCarros.UseVisualStyleBackColor = false;
@@ -94,9 +97,10 @@
             this.JCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.JCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JCarros.ForeColor = System.Drawing.Color.White;
-            this.JCarros.Location = new System.Drawing.Point(862, 334);
+            this.JCarros.Location = new System.Drawing.Point(1149, 411);
+            this.JCarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.JCarros.Name = "JCarros";
-            this.JCarros.Size = new System.Drawing.Size(118, 103);
+            this.JCarros.Size = new System.Drawing.Size(157, 127);
             this.JCarros.TabIndex = 78;
             this.JCarros.Text = "J";
             this.JCarros.UseVisualStyleBackColor = false;
@@ -107,9 +111,10 @@
             this.LabelCarroI.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroI.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroI.Location = new System.Drawing.Point(612, 440);
+            this.LabelCarroI.Location = new System.Drawing.Point(816, 542);
+            this.LabelCarroI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCarroI.Name = "LabelCarroI";
-            this.LabelCarroI.Size = new System.Drawing.Size(96, 87);
+            this.LabelCarroI.Size = new System.Drawing.Size(128, 107);
             this.LabelCarroI.TabIndex = 77;
             this.LabelCarroI.Text = "Médio Elétrico 5 Portas";
             this.LabelCarroI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -119,9 +124,10 @@
             this.ICarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.ICarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ICarros.ForeColor = System.Drawing.Color.White;
-            this.ICarros.Location = new System.Drawing.Point(600, 334);
+            this.ICarros.Location = new System.Drawing.Point(800, 411);
+            this.ICarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ICarros.Name = "ICarros";
-            this.ICarros.Size = new System.Drawing.Size(118, 103);
+            this.ICarros.Size = new System.Drawing.Size(157, 127);
             this.ICarros.TabIndex = 76;
             this.ICarros.Text = "I";
             this.ICarros.UseVisualStyleBackColor = false;
@@ -132,9 +138,10 @@
             this.LabelCarroH.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroH.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroH.Location = new System.Drawing.Point(346, 441);
+            this.LabelCarroH.Location = new System.Drawing.Point(461, 543);
+            this.LabelCarroH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCarroH.Name = "LabelCarroH";
-            this.LabelCarroH.Size = new System.Drawing.Size(96, 87);
+            this.LabelCarroH.Size = new System.Drawing.Size(128, 107);
             this.LabelCarroH.TabIndex = 75;
             this.LabelCarroH.Text = "Station Wagon 5 Portas a Diesel";
             this.LabelCarroH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,9 +151,10 @@
             this.HCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.HCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HCarros.ForeColor = System.Drawing.Color.White;
-            this.HCarros.Location = new System.Drawing.Point(338, 334);
+            this.HCarros.Location = new System.Drawing.Point(451, 411);
+            this.HCarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HCarros.Name = "HCarros";
-            this.HCarros.Size = new System.Drawing.Size(118, 103);
+            this.HCarros.Size = new System.Drawing.Size(157, 127);
             this.HCarros.TabIndex = 74;
             this.HCarros.Text = "H";
             this.HCarros.UseVisualStyleBackColor = false;
@@ -157,9 +165,10 @@
             this.LabelCarroG.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroG.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroG.Location = new System.Drawing.Point(89, 441);
+            this.LabelCarroG.Location = new System.Drawing.Point(119, 543);
+            this.LabelCarroG.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCarroG.Name = "LabelCarroG";
-            this.LabelCarroG.Size = new System.Drawing.Size(96, 72);
+            this.LabelCarroG.Size = new System.Drawing.Size(128, 89);
             this.LabelCarroG.TabIndex = 73;
             this.LabelCarroG.Text = "Médio 5 Portas a Diesel";
             this.LabelCarroG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -169,9 +178,10 @@
             this.GCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.GCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GCarros.ForeColor = System.Drawing.Color.White;
-            this.GCarros.Location = new System.Drawing.Point(75, 334);
+            this.GCarros.Location = new System.Drawing.Point(100, 411);
+            this.GCarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GCarros.Name = "GCarros";
-            this.GCarros.Size = new System.Drawing.Size(118, 103);
+            this.GCarros.Size = new System.Drawing.Size(157, 127);
             this.GCarros.TabIndex = 72;
             this.GCarros.Text = "G";
             this.GCarros.UseVisualStyleBackColor = false;
@@ -182,9 +192,10 @@
             this.LabelCarroF.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroF.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroF.Location = new System.Drawing.Point(1136, 208);
+            this.LabelCarroF.Location = new System.Drawing.Point(1515, 256);
+            this.LabelCarroF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCarroF.Name = "LabelCarroF";
-            this.LabelCarroF.Size = new System.Drawing.Size(96, 72);
+            this.LabelCarroF.Size = new System.Drawing.Size(128, 89);
             this.LabelCarroF.TabIndex = 71;
             this.LabelCarroF.Text = "Médio 5 Portas a Gasolina";
             this.LabelCarroF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -194,9 +205,10 @@
             this.LabelCarroD.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroD.Location = new System.Drawing.Point(873, 208);
+            this.LabelCarroD.Location = new System.Drawing.Point(1164, 256);
+            this.LabelCarroD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCarroD.Name = "LabelCarroD";
-            this.LabelCarroD.Size = new System.Drawing.Size(96, 72);
+            this.LabelCarroD.Size = new System.Drawing.Size(128, 89);
             this.LabelCarroD.TabIndex = 70;
             this.LabelCarroD.Text = "Pequeno 5 Portas a Diesel";
             this.LabelCarroD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -206,9 +218,10 @@
             this.LabelCarroC.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroC.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroC.Location = new System.Drawing.Point(612, 208);
+            this.LabelCarroC.Location = new System.Drawing.Point(816, 256);
+            this.LabelCarroC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCarroC.Name = "LabelCarroC";
-            this.LabelCarroC.Size = new System.Drawing.Size(96, 72);
+            this.LabelCarroC.Size = new System.Drawing.Size(128, 89);
             this.LabelCarroC.TabIndex = 69;
             this.LabelCarroC.Text = "Pequeno de 5 Portas a Gasolina";
             this.LabelCarroC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -218,9 +231,10 @@
             this.LabelCarroB.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroB.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroB.Location = new System.Drawing.Point(346, 208);
+            this.LabelCarroB.Location = new System.Drawing.Point(461, 256);
+            this.LabelCarroB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCarroB.Name = "LabelCarroB";
-            this.LabelCarroB.Size = new System.Drawing.Size(96, 72);
+            this.LabelCarroB.Size = new System.Drawing.Size(128, 89);
             this.LabelCarroB.TabIndex = 68;
             this.LabelCarroB.Text = "5 Portas Automático e Hibrido";
             this.LabelCarroB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -230,11 +244,12 @@
             this.LabelCarroA.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroA.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroA.Location = new System.Drawing.Point(89, 208);
+            this.LabelCarroA.Location = new System.Drawing.Point(119, 256);
+            this.LabelCarroA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelCarroA.Name = "LabelCarroA";
-            this.LabelCarroA.Size = new System.Drawing.Size(80, 50);
+            this.LabelCarroA.Size = new System.Drawing.Size(109, 89);
             this.LabelCarroA.TabIndex = 67;
-            this.LabelCarroA.Text = "3 Portas a Gasolina";
+            this.LabelCarroA.Text = "3 Portas Manual a Gasolina";
             this.LabelCarroA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FCarros
@@ -242,9 +257,10 @@
             this.FCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.FCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FCarros.ForeColor = System.Drawing.Color.White;
-            this.FCarros.Location = new System.Drawing.Point(1125, 102);
+            this.FCarros.Location = new System.Drawing.Point(1500, 126);
+            this.FCarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FCarros.Name = "FCarros";
-            this.FCarros.Size = new System.Drawing.Size(118, 103);
+            this.FCarros.Size = new System.Drawing.Size(157, 127);
             this.FCarros.TabIndex = 66;
             this.FCarros.Text = "F";
             this.FCarros.UseVisualStyleBackColor = false;
@@ -255,9 +271,10 @@
             this.DCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.DCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DCarros.ForeColor = System.Drawing.Color.White;
-            this.DCarros.Location = new System.Drawing.Point(862, 102);
+            this.DCarros.Location = new System.Drawing.Point(1149, 126);
+            this.DCarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DCarros.Name = "DCarros";
-            this.DCarros.Size = new System.Drawing.Size(118, 103);
+            this.DCarros.Size = new System.Drawing.Size(157, 127);
             this.DCarros.TabIndex = 65;
             this.DCarros.Text = "D";
             this.DCarros.UseVisualStyleBackColor = false;
@@ -268,9 +285,10 @@
             this.CCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.CCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CCarros.ForeColor = System.Drawing.Color.White;
-            this.CCarros.Location = new System.Drawing.Point(600, 102);
+            this.CCarros.Location = new System.Drawing.Point(800, 126);
+            this.CCarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CCarros.Name = "CCarros";
-            this.CCarros.Size = new System.Drawing.Size(118, 103);
+            this.CCarros.Size = new System.Drawing.Size(157, 127);
             this.CCarros.TabIndex = 64;
             this.CCarros.Text = "C";
             this.CCarros.UseVisualStyleBackColor = false;
@@ -281,8 +299,9 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1395, 62);
+            this.label1.Size = new System.Drawing.Size(1860, 76);
             this.label1.TabIndex = 63;
             this.label1.Text = "Classe de Carro";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -292,9 +311,10 @@
             this.BCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.BCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BCarros.ForeColor = System.Drawing.Color.White;
-            this.BCarros.Location = new System.Drawing.Point(338, 102);
+            this.BCarros.Location = new System.Drawing.Point(451, 126);
+            this.BCarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BCarros.Name = "BCarros";
-            this.BCarros.Size = new System.Drawing.Size(118, 103);
+            this.BCarros.Size = new System.Drawing.Size(157, 127);
             this.BCarros.TabIndex = 62;
             this.BCarros.Text = "B";
             this.BCarros.UseVisualStyleBackColor = false;
@@ -305,9 +325,10 @@
             this.ACarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.ACarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ACarros.ForeColor = System.Drawing.Color.White;
-            this.ACarros.Location = new System.Drawing.Point(75, 102);
+            this.ACarros.Location = new System.Drawing.Point(100, 126);
+            this.ACarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ACarros.Name = "ACarros";
-            this.ACarros.Size = new System.Drawing.Size(118, 103);
+            this.ACarros.Size = new System.Drawing.Size(157, 127);
             this.ACarros.TabIndex = 61;
             this.ACarros.Text = "A";
             this.ACarros.UseVisualStyleBackColor = false;
@@ -316,17 +337,18 @@
             // buttonBackMenuPrincipal
             // 
             this.buttonBackMenuPrincipal.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonBackMenuPrincipal.Location = new System.Drawing.Point(0, 618);
+            this.buttonBackMenuPrincipal.Location = new System.Drawing.Point(0, 761);
+            this.buttonBackMenuPrincipal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonBackMenuPrincipal.Name = "buttonBackMenuPrincipal";
-            this.buttonBackMenuPrincipal.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonBackMenuPrincipal.Size = new System.Drawing.Size(1395, 52);
+            this.buttonBackMenuPrincipal.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.buttonBackMenuPrincipal.Size = new System.Drawing.Size(1860, 64);
             this.buttonBackMenuPrincipal.TabIndex = 82;
             this.buttonBackMenuPrincipal.Text = "Voltar ao Menu Principal";
             this.buttonBackMenuPrincipal.Click += new System.EventHandler(this.buttonBackMenuPrincipal_Click);
             // 
             // UC_ListarCarro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Controls.Add(this.buttonBackMenuPrincipal);
@@ -351,8 +373,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BCarros);
             this.Controls.Add(this.ACarros);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UC_ListarCarro";
-            this.Size = new System.Drawing.Size(1395, 670);
+            this.Size = new System.Drawing.Size(1860, 825);
             this.ResumeLayout(false);
 
         }
