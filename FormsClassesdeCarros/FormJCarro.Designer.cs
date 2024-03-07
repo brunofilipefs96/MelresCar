@@ -71,17 +71,18 @@
             // 
             this.gridCarroJ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCarroJ.Location = new System.Drawing.Point(724, 15);
-            this.gridCarroJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridCarroJ.Margin = new System.Windows.Forms.Padding(4);
             this.gridCarroJ.Name = "gridCarroJ";
             this.gridCarroJ.ReadOnly = true;
             this.gridCarroJ.RowHeadersWidth = 51;
+            this.gridCarroJ.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridCarroJ.Size = new System.Drawing.Size(1119, 439);
             this.gridCarroJ.TabIndex = 9;
             // 
             // buttonCancelar
             // 
             this.buttonCancelar.Location = new System.Drawing.Point(724, 462);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.buttonCancelar.Size = new System.Drawing.Size(156, 64);
@@ -93,7 +94,7 @@
             // 
             this.fotoCarroJ.Image = global::Automobile.Properties.Resources.J;
             this.fotoCarroJ.Location = new System.Drawing.Point(11, 95);
-            this.fotoCarroJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fotoCarroJ.Margin = new System.Windows.Forms.Padding(4);
             this.fotoCarroJ.Name = "fotoCarroJ";
             this.fotoCarroJ.Size = new System.Drawing.Size(705, 475);
             this.fotoCarroJ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -124,7 +125,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bigLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormJCarro";
             this.Text = "MelresCar | Classe J";
             ((System.ComponentModel.ISupportInitialize)(this.gridCarroJ)).EndInit();

@@ -16,10 +16,13 @@ namespace Automobile
         public FormACarro()
         {
             InitializeComponent();
+            gridCarroA.AllowUserToAddRows = false;
+            gridCarroA.RowCount = 0;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Dock = DockStyle.Fill;
+            gridCarroA.Columns.Add("ID", "ID");
             gridCarroA.Columns.Add("Matrícula", "Matrícula");
             gridCarroA.Columns.Add("Marca", "Marca");
             gridCarroA.Columns.Add("Modelo", "Modelo");
@@ -58,7 +61,7 @@ namespace Automobile
 
                     if (carro.ClasseVeiculo == "A")
                     {
-                        gridCarroA.Rows.Add(carro.Matricula, carro.Marca, carro.Modelo, carro.Estado, carro.Combustivel, carro.NumPortas, carro.TipoCaixa, carro.PrecoDiario);
+                        gridCarroA.Rows.Add(veiculo.IdVeiculo, carro.Matricula, carro.Marca, carro.Modelo, carro.Estado, carro.Combustivel, carro.NumPortas, carro.TipoCaixa, carro.PrecoDiario);
                     }
                 }
             }
@@ -73,14 +76,8 @@ namespace Automobile
         {
             MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
 
-            //Enviar o id 
-            menuAdicionarReserva.IdVeiculo = Program.melresCar.Veiculos[gridCarroA.CurrentCell.RowIndex].IdVeiculo;
-
-            // testar isto
-
-
-
-            menuAdicionarReserva.veiculoSelecionado(gridCarroA.CurrentCell.RowIndex);
+            menuAdicionarReserva.veiculoSelecionado(Convert.ToInt32(gridCarroA.Rows[gridCarroA.CurrentRow.Index].Cells[0].Value));
+    
             menuAdicionarReserva.Show();    
             ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
             listaVeiculoObject.Enabled = false;

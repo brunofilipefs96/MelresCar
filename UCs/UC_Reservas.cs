@@ -57,7 +57,6 @@ namespace Automobile
         {
             ListaVeiculo listaVeiculo = new ListaVeiculo();
             listaVeiculo.Show();
-            
         }
 
         private void buttonLucroDatas_Click(object sender, EventArgs e)

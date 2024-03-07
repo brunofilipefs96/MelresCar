@@ -62,15 +62,15 @@ namespace Automobile
             PrecoTotal = 0;
         }
 
-        public Reserva( DateTime dataReserva, DateTime dataInicio, DateTime dataFim, int idVeiculo, int numCliente)
+        public Reserva(DateTime dataInicio, DateTime dataFim, int idVeiculo, int numCliente, decimal precoTotal)
         {
             IdReserva = Program.melresCar.gerarId("reserva");
-            DataReserva = dataReserva;
+            DataReserva = DateTime.Now;
             DataInicio = dataInicio;
             DataFim = dataFim;
             IdVeiculo = idVeiculo;
             NumCliente = numCliente;
-            PrecoTotal = PrecoTotal;
+            PrecoTotal = precoTotal;
         }
 
         public override string ToString()

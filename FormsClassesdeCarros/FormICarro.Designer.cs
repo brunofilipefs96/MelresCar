@@ -71,17 +71,18 @@
             // 
             this.gridCarroI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCarroI.Location = new System.Drawing.Point(724, 15);
-            this.gridCarroI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridCarroI.Margin = new System.Windows.Forms.Padding(4);
             this.gridCarroI.Name = "gridCarroI";
             this.gridCarroI.ReadOnly = true;
             this.gridCarroI.RowHeadersWidth = 51;
+            this.gridCarroI.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridCarroI.Size = new System.Drawing.Size(1119, 439);
             this.gridCarroI.TabIndex = 9;
             // 
             // buttonCancelar
             // 
             this.buttonCancelar.Location = new System.Drawing.Point(724, 462);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.buttonCancelar.Size = new System.Drawing.Size(156, 64);
@@ -92,7 +93,7 @@
             // buttonReservar
             // 
             this.buttonReservar.Location = new System.Drawing.Point(1687, 462);
-            this.buttonReservar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonReservar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReservar.Name = "buttonReservar";
             this.buttonReservar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.buttonReservar.Size = new System.Drawing.Size(156, 64);
@@ -104,7 +105,7 @@
             // 
             this.fotoCarroI.Image = global::Automobile.Properties.Resources.I1;
             this.fotoCarroI.Location = new System.Drawing.Point(11, 95);
-            this.fotoCarroI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fotoCarroI.Margin = new System.Windows.Forms.Padding(4);
             this.fotoCarroI.Name = "fotoCarroI";
             this.fotoCarroI.Size = new System.Drawing.Size(705, 475);
             this.fotoCarroI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -124,7 +125,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bigLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormICarro";
             this.Text = "MelresCar | Classe I";
             ((System.ComponentModel.ISupportInitialize)(this.gridCarroI)).EndInit();

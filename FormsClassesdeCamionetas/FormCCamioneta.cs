@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Automobile.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Automobile
         public FormCCamioneta()
         {
             InitializeComponent();
+            gridCamionetaC.AllowUserToAddRows = false;
+            gridCamionetaC.RowCount = 0;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -29,6 +32,7 @@ namespace Automobile
             gridCamionetaC.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
+
             gridCamionetaC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             gridCamionetaC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             gridCamionetaC.MultiSelect = false;
@@ -65,6 +69,17 @@ namespace Automobile
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonReservar_Click_1(object sender, EventArgs e)
+        {
+            MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
+
+            menuAdicionarReserva.veiculoSelecionado(Convert.ToInt32(gridCamionetaC.Rows[gridCamionetaC.CurrentRow.Index].Cells[0].Value));
+
+            menuAdicionarReserva.Show();
+            ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
+            listaVeiculoObject.Enabled = false;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Automobile.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,10 +16,13 @@ namespace Automobile
         public FormGCarro()
         {
             InitializeComponent();
+            gridCarroG.AllowUserToAddRows = false;
+            gridCarroG.RowCount = 0;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Dock = DockStyle.Fill;
+            gridCarroG.Columns.Add("ID", "ID");
             gridCarroG.Columns.Add("Matrícula", "Matrícula");
             gridCarroG.Columns.Add("Marca", "Marca");
             gridCarroG.Columns.Add("Modelo", "Modelo");
@@ -29,6 +33,7 @@ namespace Automobile
             gridCarroG.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
+
             gridCarroG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             gridCarroG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             gridCarroG.MultiSelect = false;
@@ -56,7 +61,7 @@ namespace Automobile
 
                     if (carro.ClasseVeiculo == "G")
                     {
-                        gridCarroG.Rows.Add(carro.Matricula, carro.Marca, carro.Modelo, carro.Estado, carro.Combustivel, carro.NumPortas, carro.TipoCaixa, carro.PrecoDiario);
+                        gridCarroG.Rows.Add(veiculo.IdVeiculo, carro.Matricula, carro.Marca, carro.Modelo, carro.Estado, carro.Combustivel, carro.NumPortas, carro.TipoCaixa, carro.PrecoDiario);
                     }
                 }
             }
@@ -65,6 +70,17 @@ namespace Automobile
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonReservar_Click_1(object sender, EventArgs e)
+        {
+            MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
+
+            menuAdicionarReserva.veiculoSelecionado(Convert.ToInt32(gridCarroG.Rows[gridCarroG.CurrentRow.Index].Cells[0].Value));
+
+            menuAdicionarReserva.Show();
+            ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
+            listaVeiculoObject.Enabled = false;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Automobile.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Automobile
         public FormCCamiao()
         {
             InitializeComponent();
+            gridCamiaoC.AllowUserToAddRows = false;
+            gridCamiaoC.RowCount = 0;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -28,6 +31,8 @@ namespace Automobile
             gridCamiaoC.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
+
+            gridCamiaoC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             gridCamiaoC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             gridCamiaoC.MultiSelect = false;
             gridCamiaoC.EnableHeadersVisualStyles = false;
@@ -40,7 +45,10 @@ namespace Automobile
             gridCamiaoC.RowsDefaultCellStyle.ForeColor = Color.White;
             gridCamiaoC.ScrollBars = ScrollBars.Vertical;
 
+            atualizaDataGridView();
         }
+
+
 
         private void atualizaDataGridView()
         {
@@ -59,14 +67,21 @@ namespace Automobile
             }
         }
 
-        private void crownButton1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void buttonReservar_Click(object sender, EventArgs e)
         {
+            MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
 
+            menuAdicionarReserva.veiculoSelecionado(Convert.ToInt32(gridCamiaoC.Rows[gridCamiaoC.CurrentRow.Index].Cells[0].Value));
+
+            menuAdicionarReserva.Show();
+            ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
+            listaVeiculoObject.Enabled = false;
+        }
+
+        private void crownButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

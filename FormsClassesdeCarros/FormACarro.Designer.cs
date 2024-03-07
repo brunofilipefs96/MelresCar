@@ -78,6 +78,7 @@
             this.gridCarroA.Name = "gridCarroA";
             this.gridCarroA.ReadOnly = true;
             this.gridCarroA.RowHeadersWidth = 51;
+            this.gridCarroA.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridCarroA.Size = new System.Drawing.Size(1119, 439);
             this.gridCarroA.TabIndex = 2;
             // 

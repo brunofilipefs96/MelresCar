@@ -47,6 +47,7 @@
             this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.dungeonHeaderLabel2 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.dataGridViewReservas = new System.Windows.Forms.DataGridView();
+            this.airCheckBox1 = new ReaLTaiizor.Controls.AirCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReservas)).BeginInit();
             this.SuspendLayout();
@@ -86,6 +87,7 @@
             this.buttonAdicionarReserva.Size = new System.Drawing.Size(156, 64);
             this.buttonAdicionarReserva.TabIndex = 34;
             this.buttonAdicionarReserva.Text = "Adicionar";
+            this.buttonAdicionarReserva.Click += new System.EventHandler(this.buttonAdicionarReserva_Click);
             // 
             // buttonCancelar
             // 
@@ -269,6 +271,22 @@
             this.dataGridViewReservas.Size = new System.Drawing.Size(753, 487);
             this.dataGridViewReservas.TabIndex = 71;
             // 
+            // airCheckBox1
+            // 
+            this.airCheckBox1.Checked = false;
+            this.airCheckBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.airCheckBox1.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8=";
+            this.airCheckBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.airCheckBox1.Image = null;
+            this.airCheckBox1.Location = new System.Drawing.Point(36, 102);
+            this.airCheckBox1.Name = "airCheckBox1";
+            this.airCheckBox1.NoRounding = false;
+            this.airCheckBox1.Size = new System.Drawing.Size(275, 17);
+            this.airCheckBox1.TabIndex = 73;
+            this.airCheckBox1.Text = "Selecionar Data e Hora Atual";
+            this.airCheckBox1.Transparent = false;
+            this.airCheckBox1.CheckedChanged += new ReaLTaiizor.Controls.AirCheckBox.CheckedChangedEventHandler(this.airCheckBox1_CheckedChanged);
+            // 
             // MenuAdicionarReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -276,6 +294,7 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1924, 807);
             this.ControlBox = false;
+            this.Controls.Add(this.airCheckBox1);
             this.Controls.Add(this.dataGridViewReservas);
             this.Controls.Add(this.dungeonHeaderLabel2);
             this.Controls.Add(this.dungeonHeaderLabel1);
@@ -314,5 +333,6 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel dungeonHeaderLabel1;
         private ReaLTaiizor.Controls.DungeonHeaderLabel dungeonHeaderLabel2;
         private System.Windows.Forms.DataGridView dataGridViewReservas;
+        private ReaLTaiizor.Controls.AirCheckBox airCheckBox1;
     }
 }

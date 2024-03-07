@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Automobile.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,10 +16,13 @@ namespace Automobile
         public FormCCarro()
         {
             InitializeComponent();
+            gridCarroC.AllowUserToAddRows = false;
+            gridCarroC.RowCount = 0;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Dock = DockStyle.Fill;
+            gridCarroC.Columns.Add("ID", "ID");
             gridCarroC.Columns.Add("Matrícula", "Matrícula");
             gridCarroC.Columns.Add("Marca", "Marca");
             gridCarroC.Columns.Add("Modelo", "Modelo");
@@ -29,6 +33,7 @@ namespace Automobile
             gridCarroC.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
+
             gridCarroC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             gridCarroC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             gridCarroC.MultiSelect = false;
@@ -56,7 +61,7 @@ namespace Automobile
 
                     if (carro.ClasseVeiculo == "C")
                     {
-                        gridCarroC.Rows.Add(carro.Matricula, carro.Marca, carro.Modelo, carro.Estado, carro.Combustivel, carro.NumPortas, carro.TipoCaixa, carro.PrecoDiario);
+                        gridCarroC.Rows.Add(veiculo.IdVeiculo, carro.Matricula, carro.Marca, carro.Modelo, carro.Estado, carro.Combustivel, carro.NumPortas, carro.TipoCaixa, carro.PrecoDiario);
                     }
                 }
             }
@@ -67,5 +72,15 @@ namespace Automobile
             this.Close();
         }
 
+        private void buttonReservar_Click_1(object sender, EventArgs e)
+        {
+            MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
+
+            menuAdicionarReserva.veiculoSelecionado(Convert.ToInt32(gridCarroC.Rows[gridCarroC.CurrentRow.Index].Cells[0].Value));
+
+            menuAdicionarReserva.Show();
+            ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
+            listaVeiculoObject.Enabled = false;
+        }
     }
 }

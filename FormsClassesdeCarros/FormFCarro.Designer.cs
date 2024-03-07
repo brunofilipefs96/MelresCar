@@ -63,7 +63,7 @@
             this.bigLabel1.Location = new System.Drawing.Point(0, 0);
             this.bigLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(1579, 57);
+            this.bigLabel1.Size = new System.Drawing.Size(1917, 57);
             this.bigLabel1.TabIndex = 4;
             this.bigLabel1.Text = "Classe F";
             // 
@@ -71,17 +71,18 @@
             // 
             this.gridCarroF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCarroF.Location = new System.Drawing.Point(724, 15);
-            this.gridCarroF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridCarroF.Margin = new System.Windows.Forms.Padding(4);
             this.gridCarroF.Name = "gridCarroF";
             this.gridCarroF.ReadOnly = true;
             this.gridCarroF.RowHeadersWidth = 51;
+            this.gridCarroF.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridCarroF.Size = new System.Drawing.Size(1119, 439);
             this.gridCarroF.TabIndex = 9;
             // 
             // buttonCancelar
             // 
             this.buttonCancelar.Location = new System.Drawing.Point(724, 462);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.buttonCancelar.Size = new System.Drawing.Size(156, 64);
@@ -92,18 +93,19 @@
             // buttonReservar
             // 
             this.buttonReservar.Location = new System.Drawing.Point(1687, 462);
-            this.buttonReservar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonReservar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReservar.Name = "buttonReservar";
             this.buttonReservar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.buttonReservar.Size = new System.Drawing.Size(156, 64);
             this.buttonReservar.TabIndex = 62;
             this.buttonReservar.Text = "Reservar";
+            this.buttonReservar.Click += new System.EventHandler(this.buttonReservar_Click_1);
             // 
             // fotoCarroF
             // 
             this.fotoCarroF.Image = global::Automobile.Properties.Resources.F;
             this.fotoCarroF.Location = new System.Drawing.Point(11, 95);
-            this.fotoCarroF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fotoCarroF.Margin = new System.Windows.Forms.Padding(4);
             this.fotoCarroF.Name = "fotoCarroF";
             this.fotoCarroF.Size = new System.Drawing.Size(705, 475);
             this.fotoCarroF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -115,7 +117,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1579, 784);
+            this.ClientSize = new System.Drawing.Size(1917, 784);
             this.Controls.Add(this.buttonReservar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.gridCarroF);
@@ -123,7 +125,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bigLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormFCarro";
             this.Text = "MelresCar | Classe F";
             ((System.ComponentModel.ISupportInitialize)(this.gridCarroF)).EndInit();

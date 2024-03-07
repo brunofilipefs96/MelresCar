@@ -63,7 +63,7 @@
             this.bigLabel1.Location = new System.Drawing.Point(0, 0);
             this.bigLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(1585, 57);
+            this.bigLabel1.Size = new System.Drawing.Size(1769, 57);
             this.bigLabel1.TabIndex = 4;
             this.bigLabel1.Text = "Classe B";
             // 
@@ -75,6 +75,7 @@
             this.gridCarroB.Name = "gridCarroB";
             this.gridCarroB.ReadOnly = true;
             this.gridCarroB.RowHeadersWidth = 51;
+            this.gridCarroB.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridCarroB.Size = new System.Drawing.Size(1119, 439);
             this.gridCarroB.TabIndex = 8;
             // 
@@ -98,6 +99,7 @@
             this.buttonReservar.Size = new System.Drawing.Size(156, 64);
             this.buttonReservar.TabIndex = 62;
             this.buttonReservar.Text = "Reservar";
+            this.buttonReservar.Click += new System.EventHandler(this.buttonReservar_Click_1);
             // 
             // fotoCarroB
             // 
@@ -115,7 +117,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1585, 788);
+            this.ClientSize = new System.Drawing.Size(1769, 856);
             this.Controls.Add(this.buttonReservar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.gridCarroB);

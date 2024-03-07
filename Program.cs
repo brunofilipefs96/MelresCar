@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,9 +27,6 @@ namespace Automobile
             melresCar.CarregarFicheiroCSV("clientes");
             melresCar.CarregarFicheiroCSV("reservas");
             melresCar.CarregarFicheiroCSV("funcionarios");
-
-
-
 
             Application.Run(new MenuLogin());
 

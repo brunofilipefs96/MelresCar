@@ -172,6 +172,37 @@ namespace Automobile
             return false;
         }
 
+        public bool VerificaReservasExistentes(int idVeiculo, DateTime dataInicio, DateTime dataFim)
+        {
+            foreach (Reserva reserva in Reservas)
+            {
+                if (reserva.IdVeiculo == idVeiculo)
+                {
+                    if (dataInicio >= reserva.DataInicio && dataInicio <= reserva.DataFim)
+                    {
+                        return true;
+                    }
+                    if (dataFim >= reserva.DataInicio && dataFim <= reserva.DataFim)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        public decimal ProcuraPrecoVeiculo(int idVeiculo)
+        {
+            foreach(var veiculo in Veiculos)
+            {
+                if (veiculo.IdVeiculo == idVeiculo)
+                {
+                    return veiculo.PrecoDiario;
+                }
+            }
+            return 0;
+        }
+
         public string ProcurarMatriculaVeiculo(int idVeiculo)
         {
             foreach (Veiculo veiculo in Veiculos)
