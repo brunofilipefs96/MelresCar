@@ -12,7 +12,7 @@ namespace Automobile
 {
     public partial class UC_Clientes : UserControl
     {
-        
+
         public UC_Clientes()
         {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace Automobile
             dataGridViewClientes.Columns.Add("Morada", "Morada");
             dataGridViewClientes.Columns.Add("Email", "Email");
             dataGridViewClientes.Columns.Add("Telemovel", "Telemovel");
-            
+
 
             dataGridViewClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridViewClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -62,31 +62,49 @@ namespace Automobile
 
         private void buttonEditCliente_Click(object sender, EventArgs e)
         {
-            MenuEditarCliente editarCliente = new MenuEditarCliente();
-            editarCliente.clienteSelecionado(dataGridViewClientes.CurrentCell.RowIndex);
-            editarCliente.Show();
-            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-            menuPrincipalObject.Enabled = false;
+            if (dataGridViewClientes.CurrentCell == null)
+            {
+                MessageBox.Show("Selecione um cliente para editar");
+                return;
+            }
+            else
+            {
+                MenuEditarCliente editarCliente = new MenuEditarCliente();
+                editarCliente.clienteSelecionado(dataGridViewClientes.CurrentCell.RowIndex);
+                editarCliente.Show();
+                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                menuPrincipalObject.Enabled = false;
+            }
         }
 
         private void buttonRemCliente_Click(object sender, EventArgs e)
         {
-            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-            menuPrincipalObject.Enabled = false;
-            DialogResult dialogResult = MessageBox.Show("Tem a certeza que pretende remover o cliente?", "Remover Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dialogResult == DialogResult.No)
+            if (dataGridViewClientes.CurrentCell == null)
             {
-                menuPrincipalObject.Enabled = true;
+                MessageBox.Show("Selecione um cliente para remover");
                 return;
             }
-            Program.melresCar.RemoverCliente(dataGridViewClientes.CurrentCell.RowIndex);
-            Program.melresCar.EscreverFicheiroCSV("clientes");
-            atualizaDataGridView();
-            MessageBox.Show("Cliente removido com sucesso");
-            menuPrincipalObject.Enabled = true;
+            else
+            {
+                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                menuPrincipalObject.Enabled = false;
+                DialogResult dialogResult = MessageBox.Show("Tem a certeza que pretende remover o cliente?", "Remover Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.No)
+                {
+                    menuPrincipalObject.Enabled = true;
+                    return;
+                }
+                Program.melresCar.RemoverCliente(dataGridViewClientes.CurrentCell.RowIndex);
+                Program.melresCar.EscreverFicheiroCSV("clientes");
+                atualizaDataGridView();
+                MessageBox.Show("Cliente removido com sucesso");
+                menuPrincipalObject.Enabled = true;
+            }
         }
 
-      
+        private void dataGridViewClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }

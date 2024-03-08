@@ -69,6 +69,8 @@ namespace Automobile
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
+            Form formListaVeiculo = Application.OpenForms["ListaVeiculo"];
+            formListaVeiculo.Enabled = true;
             this.Close();
         }
 
@@ -87,7 +89,8 @@ namespace Automobile
 
                 menuAdicionarReserva.Show();
                 ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
-                listaVeiculoObject.Enabled = false;
+                listaVeiculoObject.Close();
+                this.Close();
             }
         }
     }

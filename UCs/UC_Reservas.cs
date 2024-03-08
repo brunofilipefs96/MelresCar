@@ -57,18 +57,16 @@ namespace Automobile
         {
             ListaVeiculo listaVeiculo = new ListaVeiculo();
             listaVeiculo.Show();
-        }
-
-        private void buttonLucroDatas_Click(object sender, EventArgs e)
-        {
-            LucroDatas menuMostrarLucro = new LucroDatas();
-            menuMostrarLucro.Show();
+            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+            menuPrincipalObject.Enabled = false;
         }
 
         private void buttonLucroEntreDatas_Click(object sender, EventArgs e)
         {
             LucroDatas lucroDatas = new LucroDatas();
             lucroDatas.Show();
+            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+            menuPrincipalObject.Enabled = false;
         }
     }
 }

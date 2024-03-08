@@ -46,28 +46,35 @@ namespace Automobile
                 }
                 else
                 {
-                    if (Program.melresCar.VerificaEmail(textBoxEmail.Text))
+                    if (Program.melresCar.VerificaTelemovelExistente(textBoxTelemovel.Text))
                     {
-                        if (Program.melresCar.VerificaEmailExistente(textBoxEmail.Text))
-                        {
-                            MessageBox.Show("Email já existente", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                        else
-                        {
-                            Cliente cliente = new Cliente(textBoxNome.Text, textBoxNif.Text, textBoxMorada.Text, textBoxEmail.Text, textBoxTelemovel.Text);
-                            Program.melresCar.InserirCliente(cliente);
-                            Program.melresCar.EscreverFicheiroCSV("clientes");
-                            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-                            menuPrincipalObject.ucClientes.atualizaDataGridView();
-                            menuPrincipalObject.Enabled = true;
-                            MessageBox.Show("Cliente adicionado com sucesso");
-                            this.Close();
-                        }
-                        
+                        MessageBox.Show("Telemóvel já existente!", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
-                        MessageBox.Show("Email inválido", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        if (Program.melresCar.VerificaEmail(textBoxEmail.Text))
+                        {
+                            if (Program.melresCar.VerificaEmailExistente(textBoxEmail.Text))
+                            {
+                                MessageBox.Show("Email já existente", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                            else
+                            {
+                                Cliente cliente = new Cliente(textBoxNome.Text, textBoxNif.Text, textBoxMorada.Text, textBoxEmail.Text, textBoxTelemovel.Text);
+                                Program.melresCar.InserirCliente(cliente);
+                                Program.melresCar.EscreverFicheiroCSV("clientes");
+                                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                                menuPrincipalObject.ucClientes.atualizaDataGridView();
+                                menuPrincipalObject.Enabled = true;
+                                MessageBox.Show("Cliente adicionado com sucesso");
+                                this.Close();
+                            }
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Email inválido", "Adicionar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                 }
             }

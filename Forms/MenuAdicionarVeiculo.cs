@@ -158,11 +158,15 @@ namespace Automobile
                                     classeVeic = "L";   //Executivo/Desportivo Premium 5 Portas
                                 }
 
-                                Carro carro = new Carro("carro", classeVeic, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), comboBoxEstado.Text, Convert.ToDecimal(numericPrecoDia.Text), DateTime.Today, Convert.ToInt32(comboBoxNumPortas.Text), comboBoxCaixa.Text);
+                                Carro carro = new Carro("carro", classeVeic, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), Convert.ToInt32(comboBoxNumPortas.Text), comboBoxCaixa.Text);
                                 Program.melresCar.InserirVeiculo(carro);
                                 Program.melresCar.EscreverFicheiroCSV("veiculos");
-                                MessageBox.Show("Veículo adicionado com sucesso.");
+                                MessageBox.Show("Carro adicionado com sucesso.");
+                                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                                menuPrincipalObject.ucVeiculo.atualizaDataGridView();
+                                menuPrincipalObject.Enabled = true;
                                 this.Close();
+
                             }
                             break;
                         case 1:
@@ -172,10 +176,13 @@ namespace Automobile
                             }
                             else
                             {
-                                Mota mota = new Mota("mota", comboBoxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), comboBoxEstado.Text, Convert.ToDecimal(numericPrecoDia.Text), DateTime.Today, Convert.ToInt32(comboBoxCilindrada.Text));
+                                Mota mota = new Mota("mota", comboBoxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), Convert.ToInt32(comboBoxCilindrada.Text));
                                 Program.melresCar.InserirVeiculo(mota);
                                 Program.melresCar.EscreverFicheiroCSV("veiculos");
-                                MessageBox.Show("Veículo adicionado com sucesso.");
+                                MessageBox.Show("Mota adicionada com sucesso.");
+                                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                                menuPrincipalObject.ucClientes.atualizaDataGridView();
+                                menuPrincipalObject.Enabled = true;
                                 this.Close();
                             }
                             break;
@@ -186,10 +193,13 @@ namespace Automobile
                             }
                             else
                             {
-                                Camioneta camioneta = new Camioneta("camioneta", comboBoxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), comboBoxEstado.Text, Convert.ToDecimal(numericPrecoDia.Text), DateTime.Today, Convert.ToInt32(comboBoxEixos.Text), Convert.ToInt32(numericNumPassageiros.Text));
+                                Camioneta camioneta = new Camioneta("camioneta", comboBoxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), Convert.ToInt32(comboBoxEixos.Text), Convert.ToInt32(numericNumPassageiros.Text));
                                 Program.melresCar.InserirVeiculo(camioneta);
                                 Program.melresCar.EscreverFicheiroCSV("veiculos");
-                                MessageBox.Show("Veículo adicionado com sucesso.");
+                                MessageBox.Show("Camioneta adicionada com sucesso.");
+                                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                                menuPrincipalObject.ucClientes.atualizaDataGridView();
+                                menuPrincipalObject.Enabled = true;
                                 this.Close();
                             }
                             break;
@@ -200,10 +210,13 @@ namespace Automobile
                             }
                             else
                             {
-                                Camiao camiao = new Camiao("camiao", comboBoxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), comboBoxEstado.Text, Convert.ToDecimal(numericPrecoDia.Text), DateTime.Today, Convert.ToDouble(numericPesoMax.Text));
+                                Camiao camiao = new Camiao("camiao", comboBoxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), DateTime.Today, Convert.ToDouble(numericPesoMax.Text));
                                 Program.melresCar.InserirVeiculo(camiao);
                                 Program.melresCar.EscreverFicheiroCSV("veiculos");
-                                MessageBox.Show("Veículo adicionado com sucesso.");
+                                MessageBox.Show("Camião adicionado com sucesso.");
+                                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                                menuPrincipalObject.ucClientes.atualizaDataGridView();
+                                menuPrincipalObject.Enabled = true;
                                 this.Close();
                             }
                             break;
@@ -214,6 +227,8 @@ namespace Automobile
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
+            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+            menuPrincipalObject.Enabled = true;
             this.Close();
         }
 

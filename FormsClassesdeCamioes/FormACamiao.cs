@@ -69,6 +69,8 @@ namespace Automobile
 
         private void crownButton1_Click_1(object sender, EventArgs e)
         {
+            Form formListaVeiculo = Application.OpenForms["ListaVeiculo"];
+            formListaVeiculo.Enabled = true;
             this.Close();
         }
 
@@ -82,12 +84,11 @@ namespace Automobile
             else
             {
                 MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
-
                 menuAdicionarReserva.veiculoSelecionado(Convert.ToInt32(gridCamiaoA.Rows[gridCamiaoA.CurrentRow.Index].Cells[0].Value));
-
                 menuAdicionarReserva.Show();
                 ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
-                listaVeiculoObject.Enabled = false;
+                listaVeiculoObject.Close();
+                this.Close();
             }
         }
     }

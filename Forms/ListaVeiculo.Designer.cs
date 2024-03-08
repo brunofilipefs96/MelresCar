@@ -42,6 +42,7 @@
             this.buttonCamionetas = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonMenuPrincipal = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelClientes.SuspendLayout();
             this.panelFuncionarios.SuspendLayout();
@@ -52,6 +53,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.flowLayoutPanel1.Controls.Add(this.buttonMenuPrincipal);
             this.flowLayoutPanel1.Controls.Add(this.panelClientes);
             this.flowLayoutPanel1.Controls.Add(this.panelFuncionarios);
             this.flowLayoutPanel1.Controls.Add(this.panelVeiculos);
@@ -67,7 +69,7 @@
             // 
             this.panelClientes.Controls.Add(this.buttonCarros);
             this.panelClientes.Controls.Add(this.button1);
-            this.panelClientes.Location = new System.Drawing.Point(3, 18);
+            this.panelClientes.Location = new System.Drawing.Point(3, 122);
             this.panelClientes.Name = "panelClientes";
             this.panelClientes.Size = new System.Drawing.Size(204, 58);
             this.panelClientes.TabIndex = 3;
@@ -107,7 +109,7 @@
             // 
             this.panelFuncionarios.Controls.Add(this.buttonMotas);
             this.panelFuncionarios.Controls.Add(this.button4);
-            this.panelFuncionarios.Location = new System.Drawing.Point(3, 82);
+            this.panelFuncionarios.Location = new System.Drawing.Point(3, 186);
             this.panelFuncionarios.Name = "panelFuncionarios";
             this.panelFuncionarios.Size = new System.Drawing.Size(204, 58);
             this.panelFuncionarios.TabIndex = 4;
@@ -147,7 +149,7 @@
             // 
             this.panelVeiculos.Controls.Add(this.buttonCamioes);
             this.panelVeiculos.Controls.Add(this.button3);
-            this.panelVeiculos.Location = new System.Drawing.Point(3, 146);
+            this.panelVeiculos.Location = new System.Drawing.Point(3, 250);
             this.panelVeiculos.Name = "panelVeiculos";
             this.panelVeiculos.Size = new System.Drawing.Size(204, 58);
             this.panelVeiculos.TabIndex = 5;
@@ -188,7 +190,7 @@
             // 
             this.panelReservas.Controls.Add(this.buttonCamionetas);
             this.panelReservas.Controls.Add(this.button5);
-            this.panelReservas.Location = new System.Drawing.Point(3, 210);
+            this.panelReservas.Location = new System.Drawing.Point(3, 314);
             this.panelReservas.Name = "panelReservas";
             this.panelReservas.Size = new System.Drawing.Size(204, 58);
             this.panelReservas.TabIndex = 4;
@@ -233,6 +235,22 @@
             this.panel1.Size = new System.Drawing.Size(1377, 724);
             this.panel1.TabIndex = 5;
             // 
+            // buttonMenuPrincipal
+            // 
+            this.buttonMenuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.buttonMenuPrincipal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuPrincipal.ForeColor = System.Drawing.Color.White;
+            this.buttonMenuPrincipal.Image = global::Automobile.Properties.Resources.menu_48;
+            this.buttonMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonMenuPrincipal.Location = new System.Drawing.Point(3, 18);
+            this.buttonMenuPrincipal.Name = "buttonMenuPrincipal";
+            this.buttonMenuPrincipal.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonMenuPrincipal.Size = new System.Drawing.Size(200, 98);
+            this.buttonMenuPrincipal.TabIndex = 6;
+            this.buttonMenuPrincipal.Text = "Menu Principal";
+            this.buttonMenuPrincipal.UseVisualStyleBackColor = false;
+            this.buttonMenuPrincipal.Click += new System.EventHandler(this.buttonMenuPrincipal_Click);
+            // 
             // ListaVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,5 +286,6 @@
         private System.Windows.Forms.Button buttonCamionetas;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonMenuPrincipal;
     }
 }

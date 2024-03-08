@@ -47,7 +47,8 @@ namespace Automobile
                 buttonRemFuncionario.Visible = true;
                 labelWarningFuncionarios.Visible = false;
             }
-            else {                 
+            else
+            {
                 buttonAddFuncionario.Visible = false;
                 buttonEditFuncionario.Visible = false;
                 buttonRemFuncionario.Visible = false;
@@ -68,28 +69,45 @@ namespace Automobile
 
         private void buttonEditFuncionario_Click(object sender, EventArgs e)
         {
-            MenuEditarFuncionario menuEditarFuncionario = new MenuEditarFuncionario();
-            menuEditarFuncionario.funcionarioSelecionado(dataGridViewFuncionario.CurrentCell.RowIndex);
-            menuEditarFuncionario.Show();
-            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-            menuPrincipalObject.Enabled = false;
+            if (dataGridViewFuncionario.CurrentCell == null)
+            {
+                MessageBox.Show("Selecione um funcionário para editar");
+                return;
+            }
+            else
+            {
+                MenuEditarFuncionario menuEditarFuncionario = new MenuEditarFuncionario();
+                menuEditarFuncionario.funcionarioSelecionado(dataGridViewFuncionario.CurrentCell.RowIndex);
+                menuEditarFuncionario.Show();
+                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                menuPrincipalObject.Enabled = false;
+            }
+
         }
 
         private void buttonRemFuncionario_Click(object sender, EventArgs e)
         {
-            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-            menuPrincipalObject.Enabled = false;
-            DialogResult dialogResult = MessageBox.Show("Tem a certeza que pretende remover o Funcionário?", "Remover Funcionário", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dialogResult == DialogResult.No)
+            if (dataGridViewFuncionario.CurrentCell == null)
             {
-                menuPrincipalObject.Enabled = true;
+                MessageBox.Show("Selecione um funcionário para editar");
                 return;
             }
-            Program.melresCar.RemoverFuncionario(dataGridViewFuncionario.CurrentCell.RowIndex);
-            Program.melresCar.EscreverFicheiroCSV("funcionarios");
-            atualizaDataGridView();
-            MessageBox.Show("Funcionário removido com sucesso");
-            menuPrincipalObject.Enabled = true;
+            else
+            {
+                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                menuPrincipalObject.Enabled = false;
+                DialogResult dialogResult = MessageBox.Show("Tem a certeza que pretende remover o Funcionário?", "Remover Funcionário", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.No)
+                {
+                    menuPrincipalObject.Enabled = true;
+                    return;
+                }
+                Program.melresCar.RemoverFuncionario(dataGridViewFuncionario.CurrentCell.RowIndex);
+                Program.melresCar.EscreverFicheiroCSV("funcionarios");
+                atualizaDataGridView();
+                MessageBox.Show("Funcionário removido com sucesso");
+                menuPrincipalObject.Enabled = true;
+            }
         }
 
         private void buttonAddFuncionario_Click(object sender, EventArgs e)
@@ -100,6 +118,6 @@ namespace Automobile
             menuPrincipalObject.Enabled = false;
         }
 
-      
+
     }
 }

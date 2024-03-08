@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuLogin));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelLogin = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.buttonLogin = new ReaLTaiizor.Controls.CrownButton();
             this.buttonQuit = new ReaLTaiizor.Controls.CrownButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -160,5 +162,6 @@
         private System.Windows.Forms.Label label2;
         private ReaLTaiizor.Controls.CrownButton buttonLogin;
         private ReaLTaiizor.Controls.CrownButton buttonQuit;
+        private System.Windows.Forms.Timer timer1;
     }
 }

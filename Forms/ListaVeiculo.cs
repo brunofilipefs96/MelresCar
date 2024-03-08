@@ -101,7 +101,19 @@ namespace Automobile
 
         private void buttonBackMenuPrincipal_Click(object sender, EventArgs e)
         {
+            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+            menuPrincipalObject.Enabled = true;
             this.Close();
+        }
+
+        private void buttonMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+            menuPrincipalObject.ucReservas.atualizaDataGridView();
+            menuPrincipalObject.Enabled = true;
+            Form form = Application.OpenForms["ListaVeiculo"];
+            form.Close();
+            
         }
     }
 }

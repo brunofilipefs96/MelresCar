@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,7 +19,15 @@ namespace Automobile
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            
+
+            timer1.Interval = 1000;
+            timer1.Tick += new EventHandler(timer_Tick);
+            timer1.Start();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            Program.AdicionarSegundos();
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)

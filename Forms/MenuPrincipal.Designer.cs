@@ -116,16 +116,16 @@
             // buttonMenuPrincipal
             // 
             this.buttonMenuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonMenuPrincipal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuPrincipal.Font = new System.Drawing.Font("Britannic Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMenuPrincipal.ForeColor = System.Drawing.Color.White;
-            this.buttonMenuPrincipal.Image = global::Automobile.Properties.Resources.menu_48;
             this.buttonMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonMenuPrincipal.Location = new System.Drawing.Point(-6, -18);
             this.buttonMenuPrincipal.Name = "buttonMenuPrincipal";
-            this.buttonMenuPrincipal.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonMenuPrincipal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonMenuPrincipal.Size = new System.Drawing.Size(216, 95);
             this.buttonMenuPrincipal.TabIndex = 3;
-            this.buttonMenuPrincipal.Text = "Menu Principal";
+            this.buttonMenuPrincipal.Text = "Melres Car";
+            this.buttonMenuPrincipal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonMenuPrincipal.UseVisualStyleBackColor = false;
             this.buttonMenuPrincipal.Click += new System.EventHandler(this.buttonMenuPrincipal_Click);
             // 

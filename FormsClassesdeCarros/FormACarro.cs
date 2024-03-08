@@ -16,6 +16,7 @@ namespace Automobile
         public FormACarro()
         {
             InitializeComponent();
+
             gridCarroA.AllowUserToAddRows = false;
             gridCarroA.RowCount = 0;
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -33,7 +34,6 @@ namespace Automobile
             gridCarroA.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
-
             gridCarroA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             gridCarroA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             gridCarroA.MultiSelect = false;
@@ -69,7 +69,9 @@ namespace Automobile
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form formListaVeiculo = Application.OpenForms["ListaVeiculo"];
+            formListaVeiculo.Enabled = true;
+            this.Close(); 
         }
         
         private void buttonReservar_Click(object sender, EventArgs e)
@@ -83,12 +85,11 @@ namespace Automobile
             else
             {
                 MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
-
                 menuAdicionarReserva.veiculoSelecionado(Convert.ToInt32(gridCarroA.Rows[gridCarroA.CurrentRow.Index].Cells[0].Value));
-
                 menuAdicionarReserva.Show();
                 ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["listaVeiculo"];
-                listaVeiculoObject.Enabled = false;
+                listaVeiculoObject.Close();
+                this.Close();
             }
         }
     }

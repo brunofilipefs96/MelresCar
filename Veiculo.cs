@@ -18,7 +18,8 @@ namespace Automobile
         private int _ano;
         private string _estado;
         private decimal _precoDiario;
-        private DateTime _dataPrevistaDisponibilidade;
+        private DateTime _dataInicioManutencao;
+        private DateTime _dataFimManutencao;
 
         public int IdVeiculo
         {
@@ -70,10 +71,15 @@ namespace Automobile
             get { return _precoDiario; }
             set { _precoDiario = value; }
         }
-        public DateTime DataPrevistaDisponibilidade
+        public DateTime DataInicioManutencao
         {
-            get { return _dataPrevistaDisponibilidade; }
-            set { _dataPrevistaDisponibilidade = value; }
+            get { return _dataInicioManutencao; }
+            set { _dataInicioManutencao = value; }
+        }
+        public DateTime DataFimManutencao
+        {
+            get { return _dataFimManutencao; }
+            set { _dataFimManutencao = value; }
         }
         public Veiculo()
         {
@@ -85,12 +91,13 @@ namespace Automobile
             Matricula = "n/d";
             Combustivel = "n/d";
             Ano = -1;
-            Estado = "n/d";
+            Estado = "disponivel";
             PrecoDiario = -1;
-            DataPrevistaDisponibilidade = new DateTime();
+            DataInicioManutencao = new DateTime();
+            DataFimManutencao = new DateTime();
         }
 
-        public Veiculo( string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade)
+        public Veiculo( string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, decimal precoDiario)
         {
             IdVeiculo = Program.melresCar.gerarId("veiculo");
             TipoVeiculo = tipoVeiculo;
@@ -100,14 +107,15 @@ namespace Automobile
             Matricula = matricula;
             Combustivel = combustivel;
             Ano = ano;
-            Estado = estado;
+            Estado = "disponivel";
             PrecoDiario = precoDiario;
-            DataPrevistaDisponibilidade = dataPrevistaDisponibilidade;
+            DataInicioManutencao = new DateTime();
+            DataFimManutencao = new DateTime();
         }
 
         public override string ToString()
         {
-            return $"{IdVeiculo},{TipoVeiculo},{ClasseVeiculo},{Marca},{Modelo},{Matricula},{Combustivel},{Ano},{Estado},{PrecoDiario},{DataPrevistaDisponibilidade}";
+            return $"{IdVeiculo},{TipoVeiculo},{ClasseVeiculo},{Marca},{Modelo},{Matricula},{Combustivel},{Ano},{Estado},{PrecoDiario},{DataInicioManutencao},{DataFimManutencao}";
         }
 
     }

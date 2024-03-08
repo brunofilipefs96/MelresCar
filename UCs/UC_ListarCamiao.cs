@@ -19,7 +19,9 @@ namespace Automobile
 
         public void showClass(string selectedButton)
         {
-            switch(selectedButton)
+            ListaVeiculo listaVeiculoObject = (ListaVeiculo)Application.OpenForms["ListaVeiculo"];
+            listaVeiculoObject.Enabled = false;
+            switch (selectedButton)
             {
                 case "ACamiao":
                     FormACamiao formACamiao = new FormACamiao();
@@ -51,10 +53,5 @@ namespace Automobile
             showClass("CCamiao");
         }
 
-        private void buttonBackMenuPrincipal_Click(object sender, EventArgs e)
-        {
-            Form form = Application.OpenForms["ListaVeiculo"];
-            form.Close();
-        }
     }
 }

@@ -22,7 +22,6 @@ namespace Automobile
         private int _contaFuncionarios;
         private string _loggedAccount;
         private int _daysAdded;
-        private DateTime _dataSistema = DateTime.Now;
 
         public List<Veiculo> Veiculos
         {
@@ -73,11 +72,6 @@ namespace Automobile
         {
             get { return _daysAdded; }
             set { _daysAdded = value; }
-        }
-        public DateTime DataSistema
-        {
-            get { return _dataSistema; }
-            set { _dataSistema = value; }
         }
 
         public Empresa()
@@ -142,6 +136,25 @@ namespace Automobile
             foreach (Funcionario funcionario in Funcionarios)
             {
                 if (funcionario.Nif == nif)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool VerificaTelemovelExistente(string telemovel)
+        {
+            foreach (Cliente cliente in Clientes)
+            {
+                if (cliente.Telemovel == telemovel)
+                {
+                    return true;
+                }
+            }
+            foreach (Funcionario funcionario in Funcionarios)
+            {
+                if (funcionario.Telemovel == telemovel)
                 {
                     return true;
                 }
@@ -235,6 +248,18 @@ namespace Automobile
             return "";
         }
 
+        public int ProcuraPosicaoVeiculoLista(int idVeiculo)
+        {
+            for (int i = 0; i < Veiculos.Count; i++)
+            {
+                if (Veiculos[i].IdVeiculo == idVeiculo)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
         public string ProcuraNifCliente(int numCliente)
         {
             foreach (Cliente cliente in Clientes)
@@ -245,6 +270,25 @@ namespace Automobile
                 }
             }
             return "Cliente não encontrado";
+        }
+           
+        public bool ProcuraDataDisponibilidade(int idVeiculo, DateTime dataInicioReserva, DateTime dataFimReserva)
+        {
+            foreach (Reserva reserva in Reservas)
+            {
+                if (reserva.IdVeiculo == idVeiculo)
+                {
+                    if (dataInicioReserva >= reserva.DataInicio && dataInicioReserva <= reserva.DataFim)
+                    {
+                        return false;
+                    }
+                    if (dataFimReserva >= reserva.DataInicio && dataFimReserva <= reserva.DataFim)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
 
         public void CarregarFicheiroCSV(string nomeFicheiro)
@@ -276,10 +320,11 @@ namespace Automobile
                             carroAux.Ano = Convert.ToInt32(fields[7]);
                             carroAux.Estado = fields[8];
                             carroAux.PrecoDiario = Convert.ToDecimal(fields[9]);
-                            carroAux.DataPrevistaDisponibilidade = Convert.ToDateTime(fields[10]);
+                            carroAux.DataInicioManutencao = Convert.ToDateTime(fields[10]);
+                            carroAux.DataFimManutencao = Convert.ToDateTime(fields[11]);
                             //Campos Extra do Carro
-                            carroAux.NumPortas = Convert.ToInt32(fields[11]);
-                            carroAux.TipoCaixa = fields[12];
+                            carroAux.NumPortas = Convert.ToInt32(fields[12]);
+                            carroAux.TipoCaixa = fields[13];
                             Veiculos.Add(carroAux);
                         }
                         else if (fields[1] == "mota")
@@ -295,9 +340,10 @@ namespace Automobile
                             motaAux.Ano = Convert.ToInt32(fields[7]);
                             motaAux.Estado = fields[8];
                             motaAux.PrecoDiario = Convert.ToDecimal(fields[9]);
-                            motaAux.DataPrevistaDisponibilidade = Convert.ToDateTime(fields[10]);
+                            motaAux.DataInicioManutencao = Convert.ToDateTime(fields[10]);
+                            motaAux.DataFimManutencao = Convert.ToDateTime(fields[11]);
                             //Campos Extra da Mota
-                            motaAux.Cilindrada = Convert.ToInt32(fields[11]);
+                            motaAux.Cilindrada = Convert.ToInt32(fields[12]);
                             Veiculos.Add(motaAux);
                         }
                         else if (fields[1] == "camiao")
@@ -313,9 +359,10 @@ namespace Automobile
                             camiaoAux.Ano = Convert.ToInt32(fields[7]);
                             camiaoAux.Estado = fields[8];
                             camiaoAux.PrecoDiario = Convert.ToDecimal(fields[9]);
-                            camiaoAux.DataPrevistaDisponibilidade = Convert.ToDateTime(fields[10]);
+                            camiaoAux.DataInicioManutencao = Convert.ToDateTime(fields[10]);
+                            camiaoAux.DataFimManutencao = Convert.ToDateTime(fields[11]);
                             //Campos Extra do Camiao
-                            camiaoAux.PesoMaximo = Convert.ToDouble(fields[11]);
+                            camiaoAux.PesoMaximo = Convert.ToDouble(fields[12]);
                             Veiculos.Add(camiaoAux);
                         }
                         else if (fields[1] == "camioneta")
@@ -331,10 +378,11 @@ namespace Automobile
                             camionetaAux.Ano = Convert.ToInt32(fields[7]);
                             camionetaAux.Estado = fields[8];
                             camionetaAux.PrecoDiario = Convert.ToDecimal(fields[9]);
-                            camionetaAux.DataPrevistaDisponibilidade = Convert.ToDateTime(fields[10]);
+                            camionetaAux.DataInicioManutencao = Convert.ToDateTime(fields[10]);
+                            camionetaAux.DataFimManutencao = Convert.ToDateTime(fields[11]);
                             //Campos Extra da Camioneta
-                            camionetaAux.NumEixos = Convert.ToInt32(fields[11]);
-                            camionetaAux.NumPassageiros = Convert.ToInt32(fields[12]);
+                            camionetaAux.NumEixos = Convert.ToInt32(fields[12]);
+                            camionetaAux.NumPassageiros = Convert.ToInt32(fields[13]);
                             Veiculos.Add(camionetaAux);
                         }
                         
@@ -424,6 +472,7 @@ namespace Automobile
                         string line = string.Join(",", fields);
                         writer.WriteLine(line);
                     }
+                    
                     writer.Close();
                 }
                 else if (nomeFicheiro == "reservas")
@@ -487,12 +536,6 @@ namespace Automobile
         {
             Reservas.Add(reserva);
             ContaReservas++;
-        }
-        
-        public void RemoverVeiculo(Veiculo veiculo)
-        {
-            Veiculos.Remove(veiculo);
-            ContaVeiculos--;
         }
         public void RemoverCliente(int indexCliente)
         {
@@ -580,8 +623,7 @@ namespace Automobile
 
         public void adicionarDia()
         {
-            DaysAdded++;
-            DataSistema.AddDays(1);
+            Program.AdicionarDia();
 
             List<string> veiculosManutencao = new List<string>();
             List<string> veiculosDisponiveis= new List<string>();
@@ -590,19 +632,18 @@ namespace Automobile
 
             foreach(var veiculo in Veiculos)
             {
-                if(DataSistema >= veiculo.DataPrevistaDisponibilidade && veiculo.Estado == "manutencao")
+                if (veiculo.DataFimManutencao < Program.HoraDoSistema() && veiculo.Estado == "manutencao")
                 {
-                    veiculo.Estado = "disponivel";
-                    contManutencao++;
                     veiculosManutencao.Add(veiculo.Matricula);
+                    contManutencao++;
                 }
             }
             
             foreach(var reserva in Reservas)
             {
-                if (reserva.DataFim < DataSistema && Program.melresCar.ProcurarEstadoVeiculo(reserva.IdVeiculo) != "manutencao")
+                if (reserva.DataInicio <= Program.HoraDoSistema() && reserva.DataFim >= Program.HoraDoSistema())
                 {
-                    veiculosDisponiveis.Add(Program.melresCar.ProcurarMatriculaVeiculo(reserva.IdVeiculo));
+                    veiculosDisponiveis.Add(ProcurarMatriculaVeiculo(reserva.IdVeiculo));
                     contDisponiveis++;
                 }
             }

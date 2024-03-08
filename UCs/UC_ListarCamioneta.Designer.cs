@@ -35,7 +35,6 @@
             this.BCamioneta = new System.Windows.Forms.Button();
             this.ACamioneta = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonBackMenuPrincipal = new ReaLTaiizor.Controls.CrownButton();
             this.SuspendLayout();
             // 
             // LabelMotaC
@@ -125,23 +124,11 @@
             this.label1.Text = "Classe de Camionetas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // buttonBackMenuPrincipal
-            // 
-            this.buttonBackMenuPrincipal.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonBackMenuPrincipal.Location = new System.Drawing.Point(0, 618);
-            this.buttonBackMenuPrincipal.Name = "buttonBackMenuPrincipal";
-            this.buttonBackMenuPrincipal.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonBackMenuPrincipal.Size = new System.Drawing.Size(1395, 52);
-            this.buttonBackMenuPrincipal.TabIndex = 95;
-            this.buttonBackMenuPrincipal.Text = "Voltar ao Menu Principal";
-            this.buttonBackMenuPrincipal.Click += new System.EventHandler(this.buttonBackMenuPrincipal_Click);
-            // 
             // UC_ListarCamioneta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.Controls.Add(this.buttonBackMenuPrincipal);
             this.Controls.Add(this.LabelMotaC);
             this.Controls.Add(this.LabelMotaB);
             this.Controls.Add(this.LabelMotaA);
@@ -165,6 +152,5 @@
         private System.Windows.Forms.Button BCamioneta;
         private System.Windows.Forms.Button ACamioneta;
         private System.Windows.Forms.Label label1;
-        private ReaLTaiizor.Controls.CrownButton buttonBackMenuPrincipal;
     }
 }

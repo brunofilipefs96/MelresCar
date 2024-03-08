@@ -17,11 +17,13 @@ namespace Automobile
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = false;
-
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
+            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+            menuPrincipalObject.ucReservas.atualizaDataGridView();
+            menuPrincipalObject.Enabled = true;
             this.Close();
         }
 

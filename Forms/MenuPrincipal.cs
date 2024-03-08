@@ -76,7 +76,7 @@ namespace Automobile
         private void buttonAddDay_Click(object sender, EventArgs e)
         {
             Program.melresCar.adicionarDia();
-            labelDataHoje.Text = "Data: " + DateTime.Now.AddDays(Program.melresCar.DaysAdded).ToString("dd/MM/yyyy") + " (+" + Program.melresCar.DaysAdded + ")";
+            labelDataHoje.Text = "Data: " + Program.HoraDoSistema().ToString("dd/MM/yyyy") + " (+" + Program.DiasAdicionados() + ")";
         }
     }
 }

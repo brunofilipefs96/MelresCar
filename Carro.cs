@@ -28,7 +28,7 @@ namespace Automobile
             TipoCaixa = "n/d";
         }
 
-        public Carro(string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade, int numPortas, string tipoCaixa) : base(tipoVeiculo, classeVeiculo, marca, modelo, matricula, combustivel, ano, estado, precoDiario, dataPrevistaDisponibilidade)
+        public Carro(string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, decimal precoDiario, int numPortas, string tipoCaixa) : base(tipoVeiculo, classeVeiculo, marca, modelo, matricula, combustivel, ano, precoDiario)
         {
             NumPortas = numPortas;
             TipoCaixa = tipoCaixa;

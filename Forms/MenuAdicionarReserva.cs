@@ -69,6 +69,9 @@ namespace Automobile.Forms
             dataGridViewReservas.RowHeadersDefaultCellStyle.ForeColor = Color.White;
             dataGridViewReservas.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             dataGridViewReservas.RowsDefaultCellStyle.ForeColor = Color.White;
+
+            dateTimePicker2.Value = dateTimePicker2.Value.AddHours(1);
+
             calculaPrecoTotal();
             atualizaDataGridView();
         }
@@ -90,8 +93,8 @@ namespace Automobile.Forms
                     dataGridViewReservas.Rows.Add(reserva.IdReserva, reserva.DataInicio, reserva.DataFim);
                 }
             }
-
-
+            labelVeiculo.Text = "Veículo: " + Program.melresCar.ProcurarMatriculaVeiculo(_idVeiculo);
+            labelPrecoDiario.Text = "Preço Diário: " + Program.melresCar.ProcuraPrecoVeiculo(_idVeiculo);
         }
         private void buttonVerifica_Click(object sender, EventArgs e)
         {
@@ -110,11 +113,13 @@ namespace Automobile.Forms
         {
             _idVeiculo = posicao;
             atualizaDataGridView();
+            precoTotal.Text = "Preço Total: " + Program.melresCar.ProcuraPrecoVeiculo(_idVeiculo);
         }
-
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
+            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+            menuPrincipalObject.Enabled = true;
             this.Close();
         }
 
@@ -128,7 +133,6 @@ namespace Automobile.Forms
                     dataGridViewClientes.Rows.Add(cliente.NumCliente, cliente.Nome, cliente.Nif);
                 }
             }
-
         }
 
 
@@ -141,7 +145,6 @@ namespace Automobile.Forms
             dias++;
             _precoTotal = (dias * Program.melresCar.ProcuraPrecoVeiculo(_idVeiculo));
             precoTotal.Text = "Preço Total: " + _precoTotal.ToString();
-
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -179,6 +182,11 @@ namespace Automobile.Forms
 
             if (!_dataAtualCheckBox)
             {
+                if (Program.melresCar.ProcuraDataDisponibilidade(_idVeiculo, dateTimePicker1.Value, dateTimePicker2.Value))
+                {
+                    MessageBox.Show("Veículo em manutenção nas datas/horas inseridas!");
+                    return;
+                }
                 if (dateTimePicker1.Value < DateTime.Now)
                 {
                     MessageBox.Show("Data/Hora Inicial não pode ser inferior à Data/Hora atual!");
@@ -202,6 +210,11 @@ namespace Automobile.Forms
             }
             else
             {
+                if (Program.melresCar.ProcuraDataDisponibilidade(_idVeiculo, DateTime.Now, dateTimePicker2.Value))
+                {
+                    MessageBox.Show("Veículo em manutenção nas datas/horas inseridas!");
+                    return;
+                }
                 if (dateTimePicker2.Value <= DateTime.Now)
                 {
                     MessageBox.Show("Data/Hora Final não pode ser inferior à Data/Hora atual!");

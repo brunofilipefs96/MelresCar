@@ -26,7 +26,7 @@ namespace Automobile
             NumEixos = -1;
             NumPassageiros = -1;
         }
-        public Camioneta(string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, string estado, decimal precoDiario, DateTime dataPrevistaDisponibilidade, int numEixos, int numPassageiros) : base(tipoVeiculo, classeVeiculo, marca, modelo, matricula, combustivel, ano, estado, precoDiario, dataPrevistaDisponibilidade)
+        public Camioneta(string tipoVeiculo, string classeVeiculo, string marca, string modelo, string matricula, string combustivel, int ano, decimal precoDiario, int numEixos, int numPassageiros) : base(tipoVeiculo, classeVeiculo, marca, modelo, matricula, combustivel, ano, precoDiario)
         {
             NumEixos = numEixos;
             NumPassageiros = numPassageiros;

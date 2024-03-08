@@ -233,7 +233,6 @@ C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.List
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuLogin.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuPrincipal.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Properties.Resources.resources
-C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.MenuRemoverVeiculo.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.UC_Clientes.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.UC_Funcionarios.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.UC_MenuPrincipal.resources
@@ -327,8 +326,6 @@ C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Form
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormBMota.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.FormCMota.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Forms.MenuAdicionarReserva.resources
-C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Forms.MenuMostrarLucro.resources
-C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Forms.MenuMostrarReserva.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.FormACamiao.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.FormBCamiao.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.FormCCamiao.resources
@@ -350,3 +347,4 @@ C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.Fo
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.FormCMota.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.Forms.MenuAdicionarReserva.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.LucroDatas.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.LucroDatas.resources
