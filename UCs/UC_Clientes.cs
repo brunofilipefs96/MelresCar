@@ -19,7 +19,7 @@ namespace Automobile
             Dock = DockStyle.Fill;
             dataGridViewClientes.AllowUserToAddRows = false;
             dataGridViewClientes.RowCount = 0;
-            dataGridViewClientes.Columns.Add("NumCliente", "NumCliente");
+            dataGridViewClientes.Columns.Add("NumCliente", "Nº Cliente");
             dataGridViewClientes.Columns.Add("Nome", "Nome");
             dataGridViewClientes.Columns.Add("Nif", "NIF");
             dataGridViewClientes.Columns.Add("Morada", "Morada");

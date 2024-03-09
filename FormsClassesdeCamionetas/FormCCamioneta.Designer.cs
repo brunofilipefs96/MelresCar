@@ -44,7 +44,7 @@
             // 
             this.buttonCancelar.Location = new System.Drawing.Point(543, 375);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
             this.buttonCancelar.TabIndex = 65;
             this.buttonCancelar.Text = "Cancelar";
@@ -99,7 +99,7 @@
             // 
             this.buttonReservar.Location = new System.Drawing.Point(1265, 375);
             this.buttonReservar.Name = "buttonReservar";
-            this.buttonReservar.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonReservar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonReservar.Size = new System.Drawing.Size(117, 52);
             this.buttonReservar.TabIndex = 66;
             this.buttonReservar.Text = "Reservar";

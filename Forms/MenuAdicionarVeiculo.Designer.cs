@@ -32,6 +32,9 @@
             this.buttonAdicionarVeiculo = new ReaLTaiizor.Controls.CrownButton();
             this.labelEscolheTipo = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.comboBoxEscolherVeiculo = new ReaLTaiizor.Controls.ForeverComboBox();
+            this.comboBoxCilindrada = new ReaLTaiizor.Controls.CrownComboBox();
+            this.comboBoxNumPortas = new ReaLTaiizor.Controls.CrownComboBox();
+            this.comboBoxEixos = new ReaLTaiizor.Controls.CrownComboBox();
             this.labelPrecoDiario = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelPassageiros = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelAno = new ReaLTaiizor.Controls.DungeonHeaderLabel();
@@ -47,25 +50,17 @@
             this.labelMarca = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelPesoMax = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.textBoxModelo = new ReaLTaiizor.Controls.CrownTextBox();
-            this.comboBoxClasse = new ReaLTaiizor.Controls.CrownComboBox();
-            this.labelClasse = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.label = new System.Windows.Forms.GroupBox();
-            this.numericPesoMax = new ReaLTaiizor.Controls.CrownNumeric();
-            this.numericNumPassageiros = new ReaLTaiizor.Controls.CrownNumeric();
-            this.numericAno = new ReaLTaiizor.Controls.CrownNumeric();
-            this.numericPrecoDia = new ReaLTaiizor.Controls.CrownNumeric();
-            this.comboBoxCaixa = new ReaLTaiizor.Controls.CrownComboBox();
             this.comboBoxCombustivel = new ReaLTaiizor.Controls.CrownComboBox();
-            this.comboBoxEstado = new ReaLTaiizor.Controls.CrownComboBox();
-            this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.comboBoxEixos = new ReaLTaiizor.Controls.CrownComboBox();
-            this.comboBoxNumPortas = new ReaLTaiizor.Controls.CrownComboBox();
-            this.comboBoxCilindrada = new ReaLTaiizor.Controls.CrownComboBox();
-            this.label.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPesoMax)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericNumPassageiros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericAno)).BeginInit();
+            this.comboBoxCaixa = new ReaLTaiizor.Controls.CrownComboBox();
+            this.numericPrecoDia = new ReaLTaiizor.Controls.CrownNumeric();
+            this.numericAno = new ReaLTaiizor.Controls.CrownNumeric();
+            this.numericNumPassageiros = new ReaLTaiizor.Controls.CrownNumeric();
+            this.numericPesoMax = new ReaLTaiizor.Controls.CrownNumeric();
+            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numericPrecoDia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericAno)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericNumPassageiros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericPesoMax)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonCancelar
@@ -94,7 +89,7 @@
             this.labelEscolheTipo.BackColor = System.Drawing.Color.Transparent;
             this.labelEscolheTipo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelEscolheTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelEscolheTipo.Location = new System.Drawing.Point(28, 13);
+            this.labelEscolheTipo.Location = new System.Drawing.Point(50, 92);
             this.labelEscolheTipo.Name = "labelEscolheTipo";
             this.labelEscolheTipo.Size = new System.Drawing.Size(119, 20);
             this.labelEscolheTipo.TabIndex = 44;
@@ -118,11 +113,48 @@
             "mota",
             "camioneta",
             "camiao"});
-            this.comboBoxEscolherVeiculo.Location = new System.Drawing.Point(153, 13);
+            this.comboBoxEscolherVeiculo.Location = new System.Drawing.Point(175, 92);
             this.comboBoxEscolherVeiculo.Name = "comboBoxEscolherVeiculo";
             this.comboBoxEscolherVeiculo.Size = new System.Drawing.Size(173, 24);
             this.comboBoxEscolherVeiculo.TabIndex = 1;
             this.comboBoxEscolherVeiculo.SelectedIndexChanged += new System.EventHandler(this.comboBoxEscolherVeiculo_SelectedIndexChanged);
+            // 
+            // comboBoxCilindrada
+            // 
+            this.comboBoxCilindrada.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxCilindrada.FormattingEnabled = true;
+            this.comboBoxCilindrada.Items.AddRange(new object[] {
+            "50",
+            "125",
+            "300"});
+            this.comboBoxCilindrada.Location = new System.Drawing.Point(525, 134);
+            this.comboBoxCilindrada.Name = "comboBoxCilindrada";
+            this.comboBoxCilindrada.Size = new System.Drawing.Size(163, 21);
+            this.comboBoxCilindrada.TabIndex = 53;
+            // 
+            // comboBoxNumPortas
+            // 
+            this.comboBoxNumPortas.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxNumPortas.FormattingEnabled = true;
+            this.comboBoxNumPortas.Items.AddRange(new object[] {
+            "3",
+            "5"});
+            this.comboBoxNumPortas.Location = new System.Drawing.Point(525, 134);
+            this.comboBoxNumPortas.Name = "comboBoxNumPortas";
+            this.comboBoxNumPortas.Size = new System.Drawing.Size(163, 21);
+            this.comboBoxNumPortas.TabIndex = 55;
+            // 
+            // comboBoxEixos
+            // 
+            this.comboBoxEixos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxEixos.FormattingEnabled = true;
+            this.comboBoxEixos.Items.AddRange(new object[] {
+            "2",
+            "3"});
+            this.comboBoxEixos.Location = new System.Drawing.Point(525, 133);
+            this.comboBoxEixos.Name = "comboBoxEixos";
+            this.comboBoxEixos.Size = new System.Drawing.Size(163, 21);
+            this.comboBoxEixos.TabIndex = 56;
             // 
             // labelPrecoDiario
             // 
@@ -130,7 +162,7 @@
             this.labelPrecoDiario.BackColor = System.Drawing.Color.Transparent;
             this.labelPrecoDiario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelPrecoDiario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelPrecoDiario.Location = new System.Drawing.Point(21, 195);
+            this.labelPrecoDiario.Location = new System.Drawing.Point(87, 265);
             this.labelPrecoDiario.Name = "labelPrecoDiario";
             this.labelPrecoDiario.Size = new System.Drawing.Size(82, 20);
             this.labelPrecoDiario.TabIndex = 14;
@@ -142,7 +174,7 @@
             this.labelPassageiros.BackColor = System.Drawing.Color.Transparent;
             this.labelPassageiros.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelPassageiros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelPassageiros.Location = new System.Drawing.Point(336, 89);
+            this.labelPassageiros.Location = new System.Drawing.Point(402, 159);
             this.labelPassageiros.Name = "labelPassageiros";
             this.labelPassageiros.Size = new System.Drawing.Size(118, 20);
             this.labelPassageiros.TabIndex = 16;
@@ -154,7 +186,7 @@
             this.labelAno.BackColor = System.Drawing.Color.Transparent;
             this.labelAno.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelAno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelAno.Location = new System.Drawing.Point(61, 169);
+            this.labelAno.Location = new System.Drawing.Point(127, 239);
             this.labelAno.Name = "labelAno";
             this.labelAno.Size = new System.Drawing.Size(42, 20);
             this.labelAno.TabIndex = 11;
@@ -166,7 +198,7 @@
             this.labelCilindrada.BackColor = System.Drawing.Color.Transparent;
             this.labelCilindrada.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelCilindrada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelCilindrada.Location = new System.Drawing.Point(371, 65);
+            this.labelCilindrada.Location = new System.Drawing.Point(437, 135);
             this.labelCilindrada.Name = "labelCilindrada";
             this.labelCilindrada.Size = new System.Drawing.Size(83, 20);
             this.labelCilindrada.TabIndex = 17;
@@ -178,7 +210,7 @@
             this.labelCombustivel.BackColor = System.Drawing.Color.Transparent;
             this.labelCombustivel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelCombustivel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelCombustivel.Location = new System.Drawing.Point(7, 143);
+            this.labelCombustivel.Location = new System.Drawing.Point(73, 213);
             this.labelCombustivel.Name = "labelCombustivel";
             this.labelCombustivel.Size = new System.Drawing.Size(100, 20);
             this.labelCombustivel.TabIndex = 10;
@@ -190,7 +222,7 @@
             this.labelCaixa.BackColor = System.Drawing.Color.Transparent;
             this.labelCaixa.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelCaixa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelCaixa.Location = new System.Drawing.Point(401, 91);
+            this.labelCaixa.Location = new System.Drawing.Point(467, 161);
             this.labelCaixa.Name = "labelCaixa";
             this.labelCaixa.Size = new System.Drawing.Size(50, 20);
             this.labelCaixa.TabIndex = 19;
@@ -202,7 +234,7 @@
             this.labelMatricula.BackColor = System.Drawing.Color.Transparent;
             this.labelMatricula.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelMatricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelMatricula.Location = new System.Drawing.Point(28, 117);
+            this.labelMatricula.Location = new System.Drawing.Point(94, 187);
             this.labelMatricula.Name = "labelMatricula";
             this.labelMatricula.Size = new System.Drawing.Size(79, 20);
             this.labelMatricula.TabIndex = 8;
@@ -214,7 +246,7 @@
             this.labelNumPortas.BackColor = System.Drawing.Color.Transparent;
             this.labelNumPortas.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelNumPortas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNumPortas.Location = new System.Drawing.Point(372, 64);
+            this.labelNumPortas.Location = new System.Drawing.Point(438, 134);
             this.labelNumPortas.Name = "labelNumPortas";
             this.labelNumPortas.Size = new System.Drawing.Size(81, 20);
             this.labelNumPortas.TabIndex = 21;
@@ -225,7 +257,7 @@
             this.textBoxMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.textBoxMatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMatricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxMatricula.Location = new System.Drawing.Point(109, 117);
+            this.textBoxMatricula.Location = new System.Drawing.Point(175, 187);
             this.textBoxMatricula.MaxLength = 8;
             this.textBoxMatricula.Name = "textBoxMatricula";
             this.textBoxMatricula.Size = new System.Drawing.Size(85, 20);
@@ -237,7 +269,7 @@
             this.textBoxMarca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.textBoxMarca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxMarca.Location = new System.Drawing.Point(109, 65);
+            this.textBoxMarca.Location = new System.Drawing.Point(175, 135);
             this.textBoxMarca.Name = "textBoxMarca";
             this.textBoxMarca.Size = new System.Drawing.Size(129, 20);
             this.textBoxMarca.TabIndex = 2;
@@ -248,7 +280,7 @@
             this.labelEixos.BackColor = System.Drawing.Color.Transparent;
             this.labelEixos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelEixos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelEixos.Location = new System.Drawing.Point(378, 63);
+            this.labelEixos.Location = new System.Drawing.Point(444, 133);
             this.labelEixos.Name = "labelEixos";
             this.labelEixos.Size = new System.Drawing.Size(72, 20);
             this.labelEixos.TabIndex = 23;
@@ -260,7 +292,7 @@
             this.labelModelo.BackColor = System.Drawing.Color.Transparent;
             this.labelModelo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelModelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelModelo.Location = new System.Drawing.Point(41, 91);
+            this.labelModelo.Location = new System.Drawing.Point(107, 161);
             this.labelModelo.Name = "labelModelo";
             this.labelModelo.Size = new System.Drawing.Size(66, 20);
             this.labelModelo.TabIndex = 4;
@@ -272,7 +304,7 @@
             this.labelMarca.BackColor = System.Drawing.Color.Transparent;
             this.labelMarca.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelMarca.Location = new System.Drawing.Point(47, 65);
+            this.labelMarca.Location = new System.Drawing.Point(113, 135);
             this.labelMarca.Name = "labelMarca";
             this.labelMarca.Size = new System.Drawing.Size(60, 20);
             this.labelMarca.TabIndex = 3;
@@ -284,117 +316,70 @@
             this.labelPesoMax.BackColor = System.Drawing.Color.Transparent;
             this.labelPesoMax.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelPesoMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelPesoMax.Location = new System.Drawing.Point(367, 60);
+            this.labelPesoMax.Location = new System.Drawing.Point(402, 131);
             this.labelPesoMax.Name = "labelPesoMax";
-            this.labelPesoMax.Size = new System.Drawing.Size(83, 20);
+            this.labelPesoMax.Size = new System.Drawing.Size(118, 20);
             this.labelPesoMax.TabIndex = 25;
-            this.labelPesoMax.Text = "Peso/Max:";
+            this.labelPesoMax.Text = "Peso/Max (Kg):";
             // 
             // textBoxModelo
             // 
             this.textBoxModelo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.textBoxModelo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxModelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxModelo.Location = new System.Drawing.Point(109, 91);
+            this.textBoxModelo.Location = new System.Drawing.Point(175, 161);
             this.textBoxModelo.Name = "textBoxModelo";
             this.textBoxModelo.Size = new System.Drawing.Size(129, 20);
             this.textBoxModelo.TabIndex = 3;
             // 
-            // comboBoxClasse
+            // comboBoxCombustivel
             // 
-            this.comboBoxClasse.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxClasse.FormattingEnabled = true;
-            this.comboBoxClasse.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H"});
-            this.comboBoxClasse.Location = new System.Drawing.Point(109, 221);
-            this.comboBoxClasse.Name = "comboBoxClasse";
-            this.comboBoxClasse.Size = new System.Drawing.Size(62, 21);
-            this.comboBoxClasse.TabIndex = 8;
+            this.comboBoxCombustivel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxCombustivel.FormattingEnabled = true;
+            this.comboBoxCombustivel.Items.AddRange(new object[] {
+            "gasolina",
+            "diesel",
+            "hibrido",
+            "eletrico"});
+            this.comboBoxCombustivel.Location = new System.Drawing.Point(175, 212);
+            this.comboBoxCombustivel.Name = "comboBoxCombustivel";
+            this.comboBoxCombustivel.Size = new System.Drawing.Size(129, 21);
+            this.comboBoxCombustivel.TabIndex = 5;
+            this.comboBoxCombustivel.SelectedIndexChanged += new System.EventHandler(this.comboBoxCombustivel_SelectedIndexChanged);
             // 
-            // labelClasse
+            // comboBoxCaixa
             // 
-            this.labelClasse.AutoSize = true;
-            this.labelClasse.BackColor = System.Drawing.Color.Transparent;
-            this.labelClasse.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelClasse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelClasse.Location = new System.Drawing.Point(47, 221);
-            this.labelClasse.Name = "labelClasse";
-            this.labelClasse.Size = new System.Drawing.Size(56, 20);
-            this.labelClasse.TabIndex = 49;
-            this.labelClasse.Text = "Classe:";
+            this.comboBoxCaixa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxCaixa.FormattingEnabled = true;
+            this.comboBoxCaixa.Items.AddRange(new object[] {
+            "manual",
+            "automatica"});
+            this.comboBoxCaixa.Location = new System.Drawing.Point(525, 161);
+            this.comboBoxCaixa.Name = "comboBoxCaixa";
+            this.comboBoxCaixa.Size = new System.Drawing.Size(163, 21);
+            this.comboBoxCaixa.TabIndex = 54;
             // 
-            // label
+            // numericPrecoDia
             // 
-            this.label.Controls.Add(this.numericPesoMax);
-            this.label.Controls.Add(this.numericNumPassageiros);
-            this.label.Controls.Add(this.numericAno);
-            this.label.Controls.Add(this.numericPrecoDia);
-            this.label.Controls.Add(this.comboBoxCaixa);
-            this.label.Controls.Add(this.comboBoxCombustivel);
-            this.label.Controls.Add(this.comboBoxEstado);
-            this.label.Controls.Add(this.dungeonHeaderLabel1);
-            this.label.Controls.Add(this.labelClasse);
-            this.label.Controls.Add(this.comboBoxClasse);
-            this.label.Controls.Add(this.textBoxModelo);
-            this.label.Controls.Add(this.labelPesoMax);
-            this.label.Controls.Add(this.labelMarca);
-            this.label.Controls.Add(this.labelModelo);
-            this.label.Controls.Add(this.labelEixos);
-            this.label.Controls.Add(this.textBoxMarca);
-            this.label.Controls.Add(this.textBoxMatricula);
-            this.label.Controls.Add(this.labelNumPortas);
-            this.label.Controls.Add(this.labelMatricula);
-            this.label.Controls.Add(this.labelCaixa);
-            this.label.Controls.Add(this.labelCombustivel);
-            this.label.Controls.Add(this.labelCilindrada);
-            this.label.Controls.Add(this.labelAno);
-            this.label.Controls.Add(this.labelPassageiros);
-            this.label.Controls.Add(this.labelPrecoDiario);
-            this.label.Controls.Add(this.comboBoxEixos);
-            this.label.Controls.Add(this.comboBoxNumPortas);
-            this.label.Controls.Add(this.comboBoxCilindrada);
-            this.label.Location = new System.Drawing.Point(88, 54);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(643, 306);
-            this.label.TabIndex = 43;
-            this.label.TabStop = false;
-            this.label.Text = "Adicionar Veiculo";
-            // 
-            // numericPesoMax
-            // 
-            this.numericPesoMax.DecimalPlaces = 2;
-            this.numericPesoMax.Location = new System.Drawing.Point(460, 63);
-            this.numericPesoMax.Maximum = new decimal(new int[] {
-            999999,
+            this.numericPrecoDia.DecimalPlaces = 2;
+            this.numericPrecoDia.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericPrecoDia.Location = new System.Drawing.Point(175, 265);
+            this.numericPrecoDia.Maximum = new decimal(new int[] {
+            9999,
             0,
             0,
             0});
-            this.numericPesoMax.Name = "numericPesoMax";
-            this.numericPesoMax.Size = new System.Drawing.Size(73, 20);
-            this.numericPesoMax.TabIndex = 61;
-            // 
-            // numericNumPassageiros
-            // 
-            this.numericNumPassageiros.Location = new System.Drawing.Point(459, 91);
-            this.numericNumPassageiros.Maximum = new decimal(new int[] {
-            200,
-            0,
-            0,
-            0});
-            this.numericNumPassageiros.Name = "numericNumPassageiros";
-            this.numericNumPassageiros.Size = new System.Drawing.Size(62, 20);
-            this.numericNumPassageiros.TabIndex = 60;
+            this.numericPrecoDia.Name = "numericPrecoDia";
+            this.numericPrecoDia.Size = new System.Drawing.Size(73, 20);
+            this.numericPrecoDia.TabIndex = 7;
             // 
             // numericAno
             // 
-            this.numericAno.Location = new System.Drawing.Point(109, 169);
+            this.numericAno.Location = new System.Drawing.Point(175, 239);
             this.numericAno.Maximum = new decimal(new int[] {
             2200,
             0,
@@ -414,113 +399,48 @@
             0,
             0});
             // 
-            // numericPrecoDia
+            // numericNumPassageiros
             // 
-            this.numericPrecoDia.DecimalPlaces = 2;
-            this.numericPrecoDia.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.numericPrecoDia.Location = new System.Drawing.Point(109, 195);
-            this.numericPrecoDia.Maximum = new decimal(new int[] {
-            9999,
+            this.numericNumPassageiros.Location = new System.Drawing.Point(525, 161);
+            this.numericNumPassageiros.Maximum = new decimal(new int[] {
+            64,
             0,
             0,
             0});
-            this.numericPrecoDia.Name = "numericPrecoDia";
-            this.numericPrecoDia.Size = new System.Drawing.Size(73, 20);
-            this.numericPrecoDia.TabIndex = 7;
+            this.numericNumPassageiros.Name = "numericNumPassageiros";
+            this.numericNumPassageiros.Size = new System.Drawing.Size(62, 20);
+            this.numericNumPassageiros.TabIndex = 60;
             // 
-            // comboBoxCaixa
+            // numericPesoMax
             // 
-            this.comboBoxCaixa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxCaixa.FormattingEnabled = true;
-            this.comboBoxCaixa.Items.AddRange(new object[] {
-            "manual",
-            "automatica"});
-            this.comboBoxCaixa.Location = new System.Drawing.Point(459, 91);
-            this.comboBoxCaixa.Name = "comboBoxCaixa";
-            this.comboBoxCaixa.Size = new System.Drawing.Size(163, 21);
-            this.comboBoxCaixa.TabIndex = 54;
+            this.numericPesoMax.DecimalPlaces = 2;
+            this.numericPesoMax.Increment = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericPesoMax.Location = new System.Drawing.Point(526, 133);
+            this.numericPesoMax.Maximum = new decimal(new int[] {
+            24000,
+            0,
+            0,
+            0});
+            this.numericPesoMax.Name = "numericPesoMax";
+            this.numericPesoMax.Size = new System.Drawing.Size(73, 20);
+            this.numericPesoMax.TabIndex = 61;
             // 
-            // comboBoxCombustivel
+            // bigLabel1
             // 
-            this.comboBoxCombustivel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxCombustivel.FormattingEnabled = true;
-            this.comboBoxCombustivel.Items.AddRange(new object[] {
-            "gasolina",
-            "diesel",
-            "hibrido",
-            "eletrico"});
-            this.comboBoxCombustivel.Location = new System.Drawing.Point(109, 142);
-            this.comboBoxCombustivel.Name = "comboBoxCombustivel";
-            this.comboBoxCombustivel.Size = new System.Drawing.Size(129, 21);
-            this.comboBoxCombustivel.TabIndex = 5;
-            this.comboBoxCombustivel.SelectedIndexChanged += new System.EventHandler(this.comboBoxCombustivel_SelectedIndexChanged);
-            // 
-            // comboBoxEstado
-            // 
-            this.comboBoxEstado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxEstado.FormattingEnabled = true;
-            this.comboBoxEstado.Items.AddRange(new object[] {
-            "disponivel",
-            "manutencao",
-            "reservado",
-            "alugado"});
-            this.comboBoxEstado.Location = new System.Drawing.Point(109, 248);
-            this.comboBoxEstado.Name = "comboBoxEstado";
-            this.comboBoxEstado.Size = new System.Drawing.Size(99, 21);
-            this.comboBoxEstado.TabIndex = 9;
-            // 
-            // dungeonHeaderLabel1
-            // 
-            this.dungeonHeaderLabel1.AutoSize = true;
-            this.dungeonHeaderLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.dungeonHeaderLabel1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.dungeonHeaderLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.dungeonHeaderLabel1.Location = new System.Drawing.Point(43, 246);
-            this.dungeonHeaderLabel1.Name = "dungeonHeaderLabel1";
-            this.dungeonHeaderLabel1.Size = new System.Drawing.Size(60, 20);
-            this.dungeonHeaderLabel1.TabIndex = 50;
-            this.dungeonHeaderLabel1.Text = "Estado:";
-            // 
-            // comboBoxEixos
-            // 
-            this.comboBoxEixos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxEixos.FormattingEnabled = true;
-            this.comboBoxEixos.Items.AddRange(new object[] {
-            "2",
-            "3"});
-            this.comboBoxEixos.Location = new System.Drawing.Point(459, 63);
-            this.comboBoxEixos.Name = "comboBoxEixos";
-            this.comboBoxEixos.Size = new System.Drawing.Size(163, 21);
-            this.comboBoxEixos.TabIndex = 56;
-            // 
-            // comboBoxNumPortas
-            // 
-            this.comboBoxNumPortas.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxNumPortas.FormattingEnabled = true;
-            this.comboBoxNumPortas.Items.AddRange(new object[] {
-            "3",
-            "5"});
-            this.comboBoxNumPortas.Location = new System.Drawing.Point(459, 64);
-            this.comboBoxNumPortas.Name = "comboBoxNumPortas";
-            this.comboBoxNumPortas.Size = new System.Drawing.Size(163, 21);
-            this.comboBoxNumPortas.TabIndex = 55;
-            // 
-            // comboBoxCilindrada
-            // 
-            this.comboBoxCilindrada.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxCilindrada.FormattingEnabled = true;
-            this.comboBoxCilindrada.Items.AddRange(new object[] {
-            "50",
-            "125",
-            "300"});
-            this.comboBoxCilindrada.Location = new System.Drawing.Point(459, 64);
-            this.comboBoxCilindrada.Name = "comboBoxCilindrada";
-            this.comboBoxCilindrada.Size = new System.Drawing.Size(163, 21);
-            this.comboBoxCilindrada.TabIndex = 53;
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel1.Location = new System.Drawing.Point(0, 0);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(800, 46);
+            this.bigLabel1.TabIndex = 62;
+            this.bigLabel1.Text = "Adicionar Veículo";
+            this.bigLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // MenuAdicionarVeiculo
             // 
@@ -529,20 +449,42 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.bigLabel1);
+            this.Controls.Add(this.numericPesoMax);
+            this.Controls.Add(this.numericNumPassageiros);
             this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.numericAno);
             this.Controls.Add(this.buttonAdicionarVeiculo);
+            this.Controls.Add(this.numericPrecoDia);
             this.Controls.Add(this.labelEscolheTipo);
-            this.Controls.Add(this.label);
+            this.Controls.Add(this.comboBoxCaixa);
+            this.Controls.Add(this.comboBoxCombustivel);
             this.Controls.Add(this.comboBoxEscolherVeiculo);
+            this.Controls.Add(this.comboBoxCilindrada);
+            this.Controls.Add(this.comboBoxNumPortas);
+            this.Controls.Add(this.comboBoxEixos);
+            this.Controls.Add(this.labelPrecoDiario);
+            this.Controls.Add(this.textBoxModelo);
+            this.Controls.Add(this.labelPassageiros);
+            this.Controls.Add(this.labelPesoMax);
+            this.Controls.Add(this.labelAno);
+            this.Controls.Add(this.labelMarca);
+            this.Controls.Add(this.labelCilindrada);
+            this.Controls.Add(this.labelModelo);
+            this.Controls.Add(this.labelCombustivel);
+            this.Controls.Add(this.labelEixos);
+            this.Controls.Add(this.labelCaixa);
+            this.Controls.Add(this.textBoxMarca);
+            this.Controls.Add(this.labelMatricula);
+            this.Controls.Add(this.textBoxMatricula);
+            this.Controls.Add(this.labelNumPortas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuAdicionarVeiculo";
             this.Text = "MenuAdicionarVeiculo";
-            this.label.ResumeLayout(false);
-            this.label.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPesoMax)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericNumPassageiros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericAno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericPrecoDia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericAno)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericNumPassageiros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericPesoMax)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -554,6 +496,9 @@
         private ReaLTaiizor.Controls.CrownButton buttonAdicionarVeiculo;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelEscolheTipo;
         private ReaLTaiizor.Controls.ForeverComboBox comboBoxEscolherVeiculo;
+        private ReaLTaiizor.Controls.CrownComboBox comboBoxCilindrada;
+        private ReaLTaiizor.Controls.CrownComboBox comboBoxNumPortas;
+        private ReaLTaiizor.Controls.CrownComboBox comboBoxEixos;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelPrecoDiario;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelPassageiros;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelAno;
@@ -569,19 +514,12 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelMarca;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelPesoMax;
         private ReaLTaiizor.Controls.CrownTextBox textBoxModelo;
-        private ReaLTaiizor.Controls.CrownComboBox comboBoxClasse;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel labelClasse;
-        private System.Windows.Forms.GroupBox label;
-        private ReaLTaiizor.Controls.CrownComboBox comboBoxEstado;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel dungeonHeaderLabel1;
         private ReaLTaiizor.Controls.CrownComboBox comboBoxCombustivel;
-        private ReaLTaiizor.Controls.CrownComboBox comboBoxNumPortas;
         private ReaLTaiizor.Controls.CrownComboBox comboBoxCaixa;
-        private ReaLTaiizor.Controls.CrownComboBox comboBoxCilindrada;
-        private ReaLTaiizor.Controls.CrownComboBox comboBoxEixos;
         private ReaLTaiizor.Controls.CrownNumeric numericPrecoDia;
         private ReaLTaiizor.Controls.CrownNumeric numericAno;
         private ReaLTaiizor.Controls.CrownNumeric numericNumPassageiros;
         private ReaLTaiizor.Controls.CrownNumeric numericPesoMax;
+        private ReaLTaiizor.Controls.BigLabel bigLabel1;
     }
 }

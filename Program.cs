@@ -34,11 +34,11 @@ namespace Automobile
 
             Application.Run(new MenuLogin());
         }
-        public static DateTime HoraDoSistema()
+        public static DateTime DataHoraDoSistema()
         {
             return _horaDoSistema;
         }
-        public static void HoraDoSistema(DateTime hora)
+        public static void DataHoraDoSistema(DateTime hora)
         {
             _horaDoSistema = hora;
         }

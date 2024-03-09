@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Automobile.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -39,10 +41,12 @@ namespace Automobile
             dataGridViewVeiculos.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             dataGridViewVeiculos.RowsDefaultCellStyle.ForeColor = Color.White;
 
-            atualizaDataGridView();
+            atualizaDataGridView(comboBoxTipoVeiculo.SelectedIndex);
         }
-        public void atualizaDataGridView()
+
+        public void atualizaDataGridView(int index)
         {
+            comboBoxTipoVeiculo.SelectedIndex = index;
             dataGridViewVeiculos.Columns.Clear();
             dataGridViewVeiculos.Rows.Clear();
             if (comboBoxTipoVeiculo.SelectedIndex == 0)
@@ -106,7 +110,7 @@ namespace Automobile
                     if (veiculo is Mota)
                     {
                         Mota mota = (Mota)veiculo;
-                        dataGridViewVeiculos.Rows.Add(mota.Matricula, mota.Marca, mota.Modelo, mota.Estado, mota.Combustivel, mota.Cilindrada, mota.PrecoDiario);
+                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo, mota.Matricula, mota.Marca, mota.Modelo, mota.Estado, mota.Combustivel, mota.Cilindrada, mota.PrecoDiario);
                     }
                 }
                 else if (comboBoxTipoVeiculo.SelectedIndex == 2)
@@ -114,7 +118,7 @@ namespace Automobile
                     if (veiculo is Camioneta)
                     {
                         Camioneta camioneta = (Camioneta)veiculo;
-                        dataGridViewVeiculos.Rows.Add(camioneta.Matricula, camioneta.Marca, camioneta.Modelo, camioneta.Estado, camioneta.Combustivel, camioneta.NumEixos, camioneta.NumPassageiros, camioneta.PrecoDiario);
+                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo, camioneta.Matricula, camioneta.Marca, camioneta.Modelo, camioneta.Estado, camioneta.Combustivel, camioneta.NumEixos, camioneta.NumPassageiros, camioneta.PrecoDiario);
                     }
                 }
                 else if (comboBoxTipoVeiculo.SelectedIndex == 3)
@@ -122,7 +126,7 @@ namespace Automobile
                     if (veiculo is Camiao)
                     {
                         Camiao camiao = (Camiao)veiculo;
-                        dataGridViewVeiculos.Rows.Add(camiao.Matricula, camiao.Marca, camiao.Modelo, camiao.Estado, camiao.Combustivel, camiao.PesoMaximo, camiao.PrecoDiario);
+                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo, camiao.Matricula, camiao.Marca, camiao.Modelo, camiao.Estado, camiao.Combustivel, camiao.PesoMaximo, camiao.PrecoDiario);
                     }
                 }
             }
@@ -172,7 +176,7 @@ namespace Automobile
                 int posicaoListaVeiculo = Program.melresCar.ProcuraPosicaoVeiculoLista(Convert.ToInt32(dataGridViewVeiculos.Rows[dataGridViewVeiculos.CurrentRow.Index].Cells[0].Value));
                 Program.melresCar.Veiculos.RemoveAt(posicaoListaVeiculo);
                 Program.melresCar.EscreverFicheiroCSV("veiculos");
-                atualizaDataGridView();
+                atualizaDataGridView(comboBoxTipoVeiculo.SelectedIndex);
                 MessageBox.Show("Veículo removido com sucesso");
                 menuPrincipalObject.Enabled = true;
             }
@@ -188,7 +192,25 @@ namespace Automobile
 
         private void dungeonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            atualizaDataGridView();
+            atualizaDataGridView(comboBoxTipoVeiculo.SelectedIndex);
+        }
+
+        private void buttonManutencaoVeiculo_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewVeiculos.CurrentCell == null)
+            {
+                MessageBox.Show("Selecione um veículo para Manutenção");
+                return;
+            }
+            else
+            {
+                MenuManutencao manutencao = new MenuManutencao();
+                int posicaoListaVeiculo = Program.melresCar.ProcuraPosicaoVeiculoLista(Convert.ToInt32(dataGridViewVeiculos.Rows[dataGridViewVeiculos.CurrentRow.Index].Cells[0].Value));
+                manutencao.veiculoSelecionado(posicaoListaVeiculo);
+                manutencao.Show();
+                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                menuPrincipalObject.Enabled = false;
+            }
         }
     }
 }

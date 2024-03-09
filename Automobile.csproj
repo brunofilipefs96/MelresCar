@@ -200,6 +200,12 @@
       <DependentUpon>MenuEditarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Empresa.cs" />
+    <Compile Include="Forms\MenuManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuManutencao.Designer.cs">
+      <DependentUpon>MenuManutencao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Funcionario.cs" />
     <Compile Include="Forms\MenuEditarFuncionario.cs">
       <SubType>Form</SubType>
@@ -377,6 +383,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LucroDatas.resx">
       <DependentUpon>LucroDatas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuManutencao.resx">
+      <DependentUpon>MenuManutencao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\UC_ListarCamiao.resx">
       <DependentUpon>UC_ListarCamiao.cs</DependentUpon>

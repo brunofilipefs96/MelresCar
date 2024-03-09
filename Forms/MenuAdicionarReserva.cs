@@ -19,8 +19,8 @@ namespace Automobile.Forms
         {
             InitializeComponent();
             _dataAtualCheckBox = false;
-            dateTimePicker1.MinDate = DateTime.Now;
-            dateTimePicker2.MinDate = DateTime.Now;
+            dateTimePicker1.MinDate = Program.DataHoraDoSistema();
+            dateTimePicker2.MinDate = Program.DataHoraDoSistema();
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker2.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "dd/MM/yyyy HH:mm";
@@ -95,6 +95,32 @@ namespace Automobile.Forms
             }
             labelVeiculo.Text = "Veículo: " + Program.melresCar.ProcurarMatriculaVeiculo(_idVeiculo);
             labelPrecoDiario.Text = "Preço Diário: " + Program.melresCar.ProcuraPrecoVeiculo(_idVeiculo);
+            bool manutencao = false;
+            if (airCheckBox1 != null)
+            {
+                if (Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataInicioManutencao >= dateTimePicker1.Value || Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataFimManutencao >= dateTimePicker1.Value)
+                {
+                    manutencao = true;
+                }
+            }
+            else
+            {
+                if (Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataInicioManutencao >= Program.DataHoraDoSistema() || Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataFimManutencao >= Program.DataHoraDoSistema())
+                {
+                    manutencao = true;
+                }
+            }
+
+            if (!manutencao)
+            {
+                labelDatasManutencao.Text = "";
+            }
+            else
+            {
+                labelDatasManutencao.Text = "Datas de Manutenção: " + Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataInicioManutencao.ToString("dd/MM/yyyy") + " - " + Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataFimManutencao.ToString("dd/MM/yyyy");
+            }
+
+
         }
         private void buttonVerifica_Click(object sender, EventArgs e)
         {
@@ -187,7 +213,7 @@ namespace Automobile.Forms
                     MessageBox.Show("Veículo em manutenção nas datas/horas inseridas!");
                     return;
                 }
-                if (dateTimePicker1.Value < DateTime.Now)
+                if (dateTimePicker1.Value < Program.DataHoraDoSistema())
                 {
                     MessageBox.Show("Data/Hora Inicial não pode ser inferior à Data/Hora atual!");
                     return;
@@ -210,23 +236,23 @@ namespace Automobile.Forms
             }
             else
             {
-                if (Program.melresCar.ProcuraDataDisponibilidade(_idVeiculo, DateTime.Now, dateTimePicker2.Value))
+                if (Program.melresCar.ProcuraDataDisponibilidade(_idVeiculo, Program.DataHoraDoSistema(), dateTimePicker2.Value))
                 {
                     MessageBox.Show("Veículo em manutenção nas datas/horas inseridas!");
                     return;
                 }
-                if (dateTimePicker2.Value <= DateTime.Now)
+                if (dateTimePicker2.Value <= Program.DataHoraDoSistema())
                 {
                     MessageBox.Show("Data/Hora Final não pode ser inferior à Data/Hora atual!");
                     return;
                 }
-                if (Program.melresCar.VerificaReservasExistentes(_idVeiculo, DateTime.Now, dateTimePicker2.Value))
+                if (Program.melresCar.VerificaReservasExistentes(_idVeiculo, Program.DataHoraDoSistema(), dateTimePicker2.Value))
                 {
                     MessageBox.Show("Já existem Reservas para esse Veículo nas Datas/Horas Inseridas!");
                     return;
                 }
                
-                Reserva novaReserva = new Reserva(DateTime.Now, dateTimePicker2.Value, _idVeiculo, _numCliente, _precoTotal);
+                Reserva novaReserva = new Reserva(Program.DataHoraDoSistema(), dateTimePicker2.Value, _idVeiculo, _numCliente, _precoTotal);
                 Program.melresCar.InserirReserva(novaReserva);
             }
 

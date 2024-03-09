@@ -22,6 +22,7 @@ namespace Automobile
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Dock = DockStyle.Fill;
+            gridCamiaoC.Columns.Add("ID", "ID");
             gridCamiaoC.Columns.Add("Matrícula", "Matrícula");
             gridCamiaoC.Columns.Add("Marca", "Marca");
             gridCamiaoC.Columns.Add("Modelo", "Modelo");
@@ -61,7 +62,7 @@ namespace Automobile
 
                     if (camiao.ClasseVeiculo == "C")
                     {
-                        gridCamiaoC.Rows.Add(camiao.Matricula, camiao.Marca, camiao.Modelo, camiao.Estado, camiao.Combustivel, camiao.PesoMaximo, camiao.PrecoDiario);
+                        gridCamiaoC.Rows.Add(veiculo.IdVeiculo, camiao.Matricula, camiao.Marca, camiao.Modelo, camiao.Estado, camiao.Combustivel, camiao.PesoMaximo, camiao.PrecoDiario);
                     }
                 }
             }

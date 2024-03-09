@@ -17,7 +17,6 @@ namespace Automobile
         {
             InitializeComponent();
             comboBoxEscolherVeiculo.SelectedIndex = 0;
-            comboBoxClasse.SelectedIndex = 0;
             numericPrecoDia.ThousandsSeparator = false;
             numericPesoMax.ThousandsSeparator = false;
         }
@@ -41,29 +40,17 @@ namespace Automobile
         private void comboBoxEscolherVeiculo_SelectedIndexChanged(object sender, EventArgs e)
         {
             desativarBoxes();
-            comboBoxClasse.Items.Clear();
             if (comboBoxEscolherVeiculo.SelectedIndex == 0)
             {
                 labelNumPortas.Show();
                 comboBoxNumPortas.Show();
                 labelCaixa.Show();
                 comboBoxCaixa.Show();
-                comboBoxClasse.Items.Add("A");
-                comboBoxClasse.Items.Add("B");
-                comboBoxClasse.Items.Add("C");
-                comboBoxClasse.Items.Add("D");
-                comboBoxClasse.Items.Add("E");
-                comboBoxClasse.Items.Add("F");
-                comboBoxClasse.Items.Add("G");
-                comboBoxClasse.Items.Add("H");
             }
             else if (comboBoxEscolherVeiculo.SelectedIndex == 1)
             {
                 labelCilindrada.Show();
                 comboBoxCilindrada.Show();
-                comboBoxClasse.Items.Add("A");
-                comboBoxClasse.Items.Add("B");
-                comboBoxClasse.Items.Add("C");
             }
             else if (comboBoxEscolherVeiculo.SelectedIndex == 2)
             {
@@ -71,27 +58,18 @@ namespace Automobile
                 comboBoxEixos.Show();
                 labelPassageiros.Show();
                 numericNumPassageiros.Show();
-                comboBoxClasse.Items.Add("A");
-                comboBoxClasse.Items.Add("B");
-                comboBoxClasse.Items.Add("C");
             }
             else if (comboBoxEscolherVeiculo.SelectedIndex == 3)
             {
                 labelPesoMax.Show();
                 numericPesoMax.Show();
-                comboBoxClasse.Items.Add("A");
-                comboBoxClasse.Items.Add("B");
-                comboBoxClasse.Items.Add("C");
             }
-
-            comboBoxClasse.SelectedIndex = 0;
-
         }
 
         private void buttonAdicionarVeiculo_Click(object sender, EventArgs e)
         {
 
-            if (textBoxMarca.Text == "" || textBoxModelo.Text == "" || textBoxMatricula.Text == "" || comboBoxCombustivel.Text == "" || numericAno.Text == "" || numericPrecoDia.Text == "" || comboBoxClasse.Text == "" || comboBoxEstado.Text == "")
+            if (textBoxMarca.Text == "" || textBoxModelo.Text == "" || textBoxMatricula.Text == "" || comboBoxCombustivel.Text == "" || numericAno.Text == "" || numericPrecoDia.Text == "")
             {
                 MessageBox.Show("Por favor preencha todos os campos", "Adicionar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -107,6 +85,7 @@ namespace Automobile
                 }
                 else
                 {
+                    string classeVeic = "";
                     switch (comboBoxEscolherVeiculo.SelectedIndex)
                     {
                         case 0:
@@ -116,7 +95,6 @@ namespace Automobile
                             }
                             else
                             {
-                                string classeVeic = "";
                                 if(comboBoxNumPortas.Text == "3" && comboBoxCombustivel.Text == "gasolina" && comboBoxCaixa.Text == "manual")
                                 {
                                     classeVeic = "A";    //3 Portas Manual a Gasolina
@@ -163,7 +141,7 @@ namespace Automobile
                                 Program.melresCar.EscreverFicheiroCSV("veiculos");
                                 MessageBox.Show("Carro adicionado com sucesso.");
                                 MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-                                menuPrincipalObject.ucVeiculo.atualizaDataGridView();
+                                menuPrincipalObject.ucVeiculo.atualizaDataGridView(comboBoxEscolherVeiculo.SelectedIndex);
                                 menuPrincipalObject.Enabled = true;
                                 this.Close();
 
@@ -176,12 +154,24 @@ namespace Automobile
                             }
                             else
                             {
-                                Mota mota = new Mota("mota", comboBoxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), Convert.ToInt32(comboBoxCilindrada.Text));
+                                if (comboBoxCilindrada.SelectedIndex == 0)
+                                {
+                                    classeVeic = "A";    
+                                }
+                                else if (comboBoxCilindrada.SelectedIndex == 1)
+                                {
+                                    classeVeic = "B";    
+                                }
+                                else if (comboBoxCilindrada.SelectedIndex == 2)
+                                {
+                                    classeVeic = "C";    
+                                }
+                                Mota mota = new Mota("mota", classeVeic, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), Convert.ToInt32(comboBoxCilindrada.Text));
                                 Program.melresCar.InserirVeiculo(mota);
                                 Program.melresCar.EscreverFicheiroCSV("veiculos");
                                 MessageBox.Show("Mota adicionada com sucesso.");
                                 MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-                                menuPrincipalObject.ucClientes.atualizaDataGridView();
+                                menuPrincipalObject.ucVeiculo.atualizaDataGridView(comboBoxEscolherVeiculo.SelectedIndex);
                                 menuPrincipalObject.Enabled = true;
                                 this.Close();
                             }
@@ -193,12 +183,24 @@ namespace Automobile
                             }
                             else
                             {
-                                Camioneta camioneta = new Camioneta("camioneta", comboBoxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), Convert.ToInt32(comboBoxEixos.Text), Convert.ToInt32(numericNumPassageiros.Text));
+                                if (numericNumPassageiros.Value <= 8)
+                                {
+                                    classeVeic = "A";
+                                }
+                                else if (numericNumPassageiros.Value <= 16)
+                                {
+                                    classeVeic = "B";
+                                }
+                                else if (numericNumPassageiros.Value <= 64)
+                                {
+                                    classeVeic = "C";
+                                }
+                                Camioneta camioneta = new Camioneta("camioneta", classeVeic, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), Convert.ToInt32(comboBoxEixos.Text), Convert.ToInt32(numericNumPassageiros.Text));
                                 Program.melresCar.InserirVeiculo(camioneta);
                                 Program.melresCar.EscreverFicheiroCSV("veiculos");
                                 MessageBox.Show("Camioneta adicionada com sucesso.");
                                 MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-                                menuPrincipalObject.ucClientes.atualizaDataGridView();
+                                menuPrincipalObject.ucVeiculo.atualizaDataGridView(comboBoxEscolherVeiculo.SelectedIndex);
                                 menuPrincipalObject.Enabled = true;
                                 this.Close();
                             }
@@ -210,12 +212,24 @@ namespace Automobile
                             }
                             else
                             {
-                                Camiao camiao = new Camiao("camiao", comboBoxClasse.Text, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), DateTime.Today, Convert.ToDouble(numericPesoMax.Text));
+                                if (numericPesoMax.Value <= 3500)
+                                {
+                                    classeVeic = "A";
+                                }
+                                else if (numericPesoMax.Value <= 8000)
+                                {
+                                    classeVeic = "B";
+                                }
+                                else if (numericPesoMax.Value <= 24000)
+                                {
+                                    classeVeic = "C";
+                                }
+                                Camiao camiao = new Camiao("camiao", classeVeic, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), DateTime.Today, Convert.ToDouble(numericPesoMax.Text));
                                 Program.melresCar.InserirVeiculo(camiao);
                                 Program.melresCar.EscreverFicheiroCSV("veiculos");
                                 MessageBox.Show("Camião adicionado com sucesso.");
                                 MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-                                menuPrincipalObject.ucClientes.atualizaDataGridView();
+                                menuPrincipalObject.ucVeiculo.atualizaDataGridView(comboBoxEscolherVeiculo.SelectedIndex);
                                 menuPrincipalObject.Enabled = true;
                                 this.Close();
                             }

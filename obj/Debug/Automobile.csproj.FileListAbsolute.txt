@@ -348,3 +348,4 @@ C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.Fo
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.Forms.MenuAdicionarReserva.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.LucroDatas.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.LucroDatas.resources
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Forms.MenuManutencao.resources

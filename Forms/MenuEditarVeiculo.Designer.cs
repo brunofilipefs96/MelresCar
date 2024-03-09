@@ -55,6 +55,7 @@
             this.comboBoxNumPortas = new ReaLTaiizor.Controls.CrownComboBox();
             this.comboBoxCilindrada = new ReaLTaiizor.Controls.CrownComboBox();
             this.labelEditarCliente = new ReaLTaiizor.Controls.BigLabel();
+            this.labelVeiculo = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numericPesoMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericNumPassageiros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericAno)).BeginInit();
@@ -399,6 +400,18 @@
             this.labelEditarCliente.TabIndex = 116;
             this.labelEditarCliente.Text = "Editar Veículo";
             // 
+            // labelVeiculo
+            // 
+            this.labelVeiculo.AutoSize = true;
+            this.labelVeiculo.BackColor = System.Drawing.Color.Transparent;
+            this.labelVeiculo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelVeiculo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelVeiculo.Location = new System.Drawing.Point(63, 71);
+            this.labelVeiculo.Name = "labelVeiculo";
+            this.labelVeiculo.Size = new System.Drawing.Size(67, 20);
+            this.labelVeiculo.TabIndex = 117;
+            this.labelVeiculo.Text = "Veículo: ";
+            // 
             // MenuEditarVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,6 +419,7 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.labelVeiculo);
             this.Controls.Add(this.labelEditarCliente);
             this.Controls.Add(this.numericPesoMax);
             this.Controls.Add(this.numericNumPassageiros);
@@ -473,5 +487,6 @@
         private ReaLTaiizor.Controls.CrownComboBox comboBoxNumPortas;
         private ReaLTaiizor.Controls.CrownComboBox comboBoxCilindrada;
         private ReaLTaiizor.Controls.BigLabel labelEditarCliente;
+        private ReaLTaiizor.Controls.DungeonHeaderLabel labelVeiculo;
     }
 }

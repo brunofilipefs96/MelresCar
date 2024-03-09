@@ -23,6 +23,7 @@ namespace Automobile
 
         public void veiculoSelecionado(int posicao)
         {
+            labelVeiculo.Text = "Veiculo: " + Program.melresCar.Veiculos[posicao].Matricula;
             _indexVeiculo = posicao;
             textBoxMarca.Text = Program.melresCar.Veiculos[_indexVeiculo].Marca;
             textBoxModelo.Text = Program.melresCar.Veiculos[_indexVeiculo].Modelo;
@@ -109,7 +110,7 @@ namespace Automobile
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
                             MessageBox.Show("Carro adicionado com sucesso.");
                             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-                            menuPrincipalObject.ucVeiculo.atualizaDataGridView();
+                            menuPrincipalObject.ucVeiculo.atualizaDataGridView(0);
                             menuPrincipalObject.Enabled = true;
                             this.Close();
                         }
@@ -126,7 +127,7 @@ namespace Automobile
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
                             MessageBox.Show("Mota adicionada com sucesso.");
                             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-                            menuPrincipalObject.ucClientes.atualizaDataGridView();
+                            menuPrincipalObject.ucVeiculo.atualizaDataGridView(1);
                             menuPrincipalObject.Enabled = true;
                             this.Close();
                         }
@@ -144,7 +145,7 @@ namespace Automobile
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
                             MessageBox.Show("Camioneta adicionada com sucesso.");
                             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-                            menuPrincipalObject.ucClientes.atualizaDataGridView();
+                            menuPrincipalObject.ucVeiculo.atualizaDataGridView(2);
                             menuPrincipalObject.Enabled = true;
                             this.Close();
                         }
@@ -161,7 +162,7 @@ namespace Automobile
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
                             MessageBox.Show("Camião adicionado com sucesso.");
                             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-                            menuPrincipalObject.ucClientes.atualizaDataGridView();
+                            menuPrincipalObject.ucVeiculo.atualizaDataGridView(3);
                             menuPrincipalObject.Enabled = true;
                             this.Close();
                         }

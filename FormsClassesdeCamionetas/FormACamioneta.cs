@@ -22,13 +22,14 @@ namespace Automobile
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Dock = DockStyle.Fill;
+            gridCamionetaA.Columns.Add("ID", "ID");
             gridCamionetaA.Columns.Add("Matrícula", "Matrícula");
             gridCamionetaA.Columns.Add("Marca", "Marca");
             gridCamionetaA.Columns.Add("Modelo", "Modelo");
             gridCamionetaA.Columns.Add("Estado", "Estado");
             gridCamionetaA.Columns.Add("Combustível", "Combustível");
-            gridCamionetaA.Columns.Add("NumEixos", "NumEixos");
-            gridCamionetaA.Columns.Add("NumPassageiros", "NumPassageiros");
+            gridCamionetaA.Columns.Add("NumEixos", "Nº Eixos");
+            gridCamionetaA.Columns.Add("NumPassageiros", "Nº Passageiros");
             gridCamionetaA.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
@@ -60,7 +61,7 @@ namespace Automobile
 
                     if (camioneta.ClasseVeiculo == "A")
                     {
-                        gridCamionetaA.Rows.Add(camioneta.Matricula, camioneta.Marca, camioneta.Modelo, camioneta.Estado, camioneta.Combustivel, camioneta.NumEixos, camioneta.NumPassageiros, camioneta.PrecoDiario);
+                        gridCamionetaA.Rows.Add(veiculo.IdVeiculo, camioneta.Matricula, camioneta.Marca, camioneta.Modelo, camioneta.Estado, camioneta.Combustivel, camioneta.NumEixos, camioneta.NumPassageiros, camioneta.PrecoDiario);
                     }
                 }
             }

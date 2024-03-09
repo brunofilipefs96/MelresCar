@@ -288,6 +288,20 @@ namespace Automobile
                     }
                 }
             }
+            foreach (Veiculo veiculo in Veiculos)
+            {
+                if (veiculo.IdVeiculo == idVeiculo)
+                {
+                    if (dataInicioReserva >= veiculo.DataInicioManutencao && dataInicioReserva <= veiculo.DataFimManutencao)
+                    {
+                        return false;
+                    }
+                    if (dataFimReserva >= veiculo.DataInicioManutencao && dataFimReserva <= veiculo.DataFimManutencao)
+                    {
+                        return false;
+                    }
+                }
+            }
             return true;
         }
 
@@ -632,7 +646,7 @@ namespace Automobile
 
             foreach(var veiculo in Veiculos)
             {
-                if (veiculo.DataFimManutencao < Program.HoraDoSistema() && veiculo.Estado == "manutencao")
+                if (veiculo.DataFimManutencao < Program.DataHoraDoSistema() && veiculo.Estado == "manutencao")
                 {
                     veiculosManutencao.Add(veiculo.Matricula);
                     contManutencao++;
@@ -641,7 +655,7 @@ namespace Automobile
             
             foreach(var reserva in Reservas)
             {
-                if (reserva.DataInicio <= Program.HoraDoSistema() && reserva.DataFim >= Program.HoraDoSistema())
+                if (reserva.DataInicio <= Program.DataHoraDoSistema() && reserva.DataFim >= Program.DataHoraDoSistema())
                 {
                     veiculosDisponiveis.Add(ProcurarMatriculaVeiculo(reserva.IdVeiculo));
                     contDisponiveis++;
