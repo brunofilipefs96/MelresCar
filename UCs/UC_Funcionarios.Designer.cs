@@ -31,52 +31,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.buttonEditFuncionario = new System.Windows.Forms.Button();
-            this.buttonRemFuncionario = new System.Windows.Forms.Button();
-            this.buttonAddFuncionario = new System.Windows.Forms.Button();
             this.labelWarningFuncionarios = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.dataGridViewFuncionario = new ReaLTaiizor.Controls.PoisonDataGridView();
+            this.buttonAddFuncionario = new ReaLTaiizor.Controls.Button();
+            this.buttonEditFuncionario = new ReaLTaiizor.Controls.Button();
+            this.buttonRemFuncionario = new ReaLTaiizor.Controls.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFuncionario)).BeginInit();
             this.SuspendLayout();
-            // 
-            // buttonEditFuncionario
-            // 
-            this.buttonEditFuncionario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonEditFuncionario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditFuncionario.ForeColor = System.Drawing.Color.White;
-            this.buttonEditFuncionario.Location = new System.Drawing.Point(563, 417);
-            this.buttonEditFuncionario.Name = "buttonEditFuncionario";
-            this.buttonEditFuncionario.Size = new System.Drawing.Size(144, 40);
-            this.buttonEditFuncionario.TabIndex = 9;
-            this.buttonEditFuncionario.Text = "Editar";
-            this.buttonEditFuncionario.UseVisualStyleBackColor = false;
-            this.buttonEditFuncionario.Click += new System.EventHandler(this.buttonEditFuncionario_Click);
-            // 
-            // buttonRemFuncionario
-            // 
-            this.buttonRemFuncionario.BackColor = System.Drawing.Color.DarkRed;
-            this.buttonRemFuncionario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemFuncionario.ForeColor = System.Drawing.Color.White;
-            this.buttonRemFuncionario.Location = new System.Drawing.Point(413, 417);
-            this.buttonRemFuncionario.Name = "buttonRemFuncionario";
-            this.buttonRemFuncionario.Size = new System.Drawing.Size(144, 40);
-            this.buttonRemFuncionario.TabIndex = 8;
-            this.buttonRemFuncionario.Text = "Remover";
-            this.buttonRemFuncionario.UseVisualStyleBackColor = false;
-            this.buttonRemFuncionario.Click += new System.EventHandler(this.buttonRemFuncionario_Click);
-            // 
-            // buttonAddFuncionario
-            // 
-            this.buttonAddFuncionario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonAddFuncionario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddFuncionario.ForeColor = System.Drawing.Color.White;
-            this.buttonAddFuncionario.Location = new System.Drawing.Point(713, 417);
-            this.buttonAddFuncionario.Name = "buttonAddFuncionario";
-            this.buttonAddFuncionario.Size = new System.Drawing.Size(144, 40);
-            this.buttonAddFuncionario.TabIndex = 7;
-            this.buttonAddFuncionario.Text = "Adicionar";
-            this.buttonAddFuncionario.UseVisualStyleBackColor = false;
-            this.buttonAddFuncionario.Click += new System.EventHandler(this.buttonAddFuncionario_Click);
             // 
             // labelWarningFuncionarios
             // 
@@ -84,9 +45,10 @@
             this.labelWarningFuncionarios.BackColor = System.Drawing.Color.Transparent;
             this.labelWarningFuncionarios.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelWarningFuncionarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelWarningFuncionarios.Location = new System.Drawing.Point(212, 428);
+            this.labelWarningFuncionarios.Location = new System.Drawing.Point(283, 527);
+            this.labelWarningFuncionarios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelWarningFuncionarios.Name = "labelWarningFuncionarios";
-            this.labelWarningFuncionarios.Size = new System.Drawing.Size(476, 20);
+            this.labelWarningFuncionarios.Size = new System.Drawing.Size(606, 25);
             this.labelWarningFuncionarios.TabIndex = 11;
             this.labelWarningFuncionarios.Text = "Contacte o Administrador para realizar alterações aos Funcionários";
             // 
@@ -117,7 +79,8 @@
             this.dataGridViewFuncionario.EnableHeadersVisualStyles = false;
             this.dataGridViewFuncionario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dataGridViewFuncionario.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dataGridViewFuncionario.Location = new System.Drawing.Point(134, 25);
+            this.dataGridViewFuncionario.Location = new System.Drawing.Point(179, 31);
+            this.dataGridViewFuncionario.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewFuncionario.Name = "dataGridViewFuncionario";
             this.dataGridViewFuncionario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -128,23 +91,91 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewFuncionario.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewFuncionario.RowHeadersWidth = 51;
             this.dataGridViewFuncionario.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewFuncionario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewFuncionario.Size = new System.Drawing.Size(600, 358);
+            this.dataGridViewFuncionario.Size = new System.Drawing.Size(800, 441);
             this.dataGridViewFuncionario.TabIndex = 12;
+            // 
+            // buttonAddFuncionario
+            // 
+            this.buttonAddFuncionario.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAddFuncionario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonAddFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAddFuncionario.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonAddFuncionario.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonAddFuncionario.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddFuncionario.Image = null;
+            this.buttonAddFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAddFuncionario.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonAddFuncionario.Location = new System.Drawing.Point(951, 513);
+            this.buttonAddFuncionario.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddFuncionario.Name = "buttonAddFuncionario";
+            this.buttonAddFuncionario.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonAddFuncionario.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonAddFuncionario.Size = new System.Drawing.Size(160, 49);
+            this.buttonAddFuncionario.TabIndex = 13;
+            this.buttonAddFuncionario.Text = "Adicionar";
+            this.buttonAddFuncionario.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonAddFuncionario.Click += new System.EventHandler(this.buttonAddFuncionario_Click_1);
+            // 
+            // buttonEditFuncionario
+            // 
+            this.buttonEditFuncionario.BackColor = System.Drawing.Color.Transparent;
+            this.buttonEditFuncionario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonEditFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonEditFuncionario.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonEditFuncionario.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonEditFuncionario.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEditFuncionario.Image = null;
+            this.buttonEditFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonEditFuncionario.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonEditFuncionario.Location = new System.Drawing.Point(783, 513);
+            this.buttonEditFuncionario.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonEditFuncionario.Name = "buttonEditFuncionario";
+            this.buttonEditFuncionario.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonEditFuncionario.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonEditFuncionario.Size = new System.Drawing.Size(160, 49);
+            this.buttonEditFuncionario.TabIndex = 14;
+            this.buttonEditFuncionario.Text = "Editar";
+            this.buttonEditFuncionario.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonEditFuncionario.Click += new System.EventHandler(this.buttonEditFuncionario_Click_1);
+            // 
+            // buttonRemFuncionario
+            // 
+            this.buttonRemFuncionario.BackColor = System.Drawing.Color.Transparent;
+            this.buttonRemFuncionario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonRemFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonRemFuncionario.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonRemFuncionario.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonRemFuncionario.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRemFuncionario.Image = null;
+            this.buttonRemFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonRemFuncionario.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonRemFuncionario.Location = new System.Drawing.Point(615, 513);
+            this.buttonRemFuncionario.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRemFuncionario.Name = "buttonRemFuncionario";
+            this.buttonRemFuncionario.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonRemFuncionario.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonRemFuncionario.Size = new System.Drawing.Size(160, 49);
+            this.buttonRemFuncionario.TabIndex = 15;
+            this.buttonRemFuncionario.Text = "Remover";
+            this.buttonRemFuncionario.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonRemFuncionario.Click += new System.EventHandler(this.buttonRemFuncionario_Click_1);
             // 
             // UC_Funcionarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.buttonRemFuncionario);
+            this.Controls.Add(this.buttonEditFuncionario);
+            this.Controls.Add(this.buttonAddFuncionario);
             this.Controls.Add(this.dataGridViewFuncionario);
             this.Controls.Add(this.labelWarningFuncionarios);
-            this.Controls.Add(this.buttonEditFuncionario);
-            this.Controls.Add(this.buttonRemFuncionario);
-            this.Controls.Add(this.buttonAddFuncionario);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_Funcionarios";
-            this.Size = new System.Drawing.Size(907, 478);
+            this.Size = new System.Drawing.Size(1209, 588);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintFuncionarios);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFuncionario)).EndInit();
             this.ResumeLayout(false);
@@ -153,11 +184,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonEditFuncionario;
-        private System.Windows.Forms.Button buttonRemFuncionario;
-        private System.Windows.Forms.Button buttonAddFuncionario;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelWarningFuncionarios;
         private ReaLTaiizor.Controls.PoisonDataGridView dataGridViewFuncionario;
+        private ReaLTaiizor.Controls.Button buttonAddFuncionario;
+        private ReaLTaiizor.Controls.Button buttonEditFuncionario;
+        private ReaLTaiizor.Controls.Button buttonRemFuncionario;
     }
 }

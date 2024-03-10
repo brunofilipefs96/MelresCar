@@ -34,18 +34,21 @@ namespace Automobile
 
             //configurações do datagridview
 
-            gridMotaA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            gridMotaA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            gridMotaA.MultiSelect = false;
-            gridMotaA.EnableHeadersVisualStyles = false;
-            gridMotaA.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            gridMotaA.BackgroundColor = Color.FromArgb(235, 241, 241);
             gridMotaA.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            gridMotaA.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            gridMotaA.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            gridMotaA.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            gridMotaA.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            gridMotaA.RowsDefaultCellStyle.ForeColor = Color.White;
-            gridMotaA.ScrollBars = ScrollBars.Vertical;
+            gridMotaA.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            gridMotaA.ColumnHeadersDefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
+            gridMotaA.RowHeadersVisible = false;
+            gridMotaA.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 8);
+            gridMotaA.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            gridMotaA.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            gridMotaA.GridColor = Color.FromArgb(96, 155, 173);
+            gridMotaA.BorderStyle = BorderStyle.None;
+            gridMotaA.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            gridMotaA.ScrollBars = ScrollBars.Both;
+            gridMotaA.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gridMotaA.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gridMotaA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             atualizaDataGridView();
         }

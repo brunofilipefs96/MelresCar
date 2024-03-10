@@ -68,7 +68,7 @@ namespace Automobile
             }
         }
 
-        private void buttonEditFuncionario_Click(object sender, EventArgs e)
+        private void buttonEditFuncionario_Click_1(object sender, EventArgs e)
         {
             if (dataGridViewFuncionario.CurrentCell == null)
             {
@@ -83,10 +83,9 @@ namespace Automobile
                 MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
                 menuPrincipalObject.Enabled = false;
             }
-
         }
 
-        private void buttonRemFuncionario_Click(object sender, EventArgs e)
+        private void buttonRemFuncionario_Click_1(object sender, EventArgs e)
         {
             if (dataGridViewFuncionario.CurrentCell == null)
             {
@@ -111,14 +110,14 @@ namespace Automobile
             }
         }
 
-        private void buttonAddFuncionario_Click(object sender, EventArgs e)
+        private void buttonAddFuncionario_Click_1(object sender, EventArgs e)
         {
             MenuAdicionarFuncionario adicionarFuncionario = new MenuAdicionarFuncionario();
             adicionarFuncionario.Show();
             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
             menuPrincipalObject.Enabled = false;
         }
-
+        
         private void PaintFuncionarios(object sender, PaintEventArgs e)
         {
             Graphics mgraphics = e.Graphics;
@@ -129,5 +128,7 @@ namespace Automobile
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
+
+        
     }
 }

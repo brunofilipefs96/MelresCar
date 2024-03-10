@@ -35,18 +35,21 @@ namespace Automobile
 
             //configurações do datagridview
 
-            gridCamionetaC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            gridCamionetaC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            gridCamionetaC.MultiSelect = false;
-            gridCamionetaC.EnableHeadersVisualStyles = false;
-            gridCamionetaC.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            gridCamionetaC.BackgroundColor = Color.FromArgb(235, 241, 241);
             gridCamionetaC.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            gridCamionetaC.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            gridCamionetaC.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            gridCamionetaC.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            gridCamionetaC.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            gridCamionetaC.RowsDefaultCellStyle.ForeColor = Color.White;
-            gridCamionetaC.ScrollBars = ScrollBars.Vertical;
+            gridCamionetaC.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            gridCamionetaC.ColumnHeadersDefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
+            gridCamionetaC.RowHeadersVisible = false;
+            gridCamionetaC.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 8);
+            gridCamionetaC.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            gridCamionetaC.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            gridCamionetaC.GridColor = Color.FromArgb(96, 155, 173);
+            gridCamionetaC.BorderStyle = BorderStyle.None;
+            gridCamionetaC.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            gridCamionetaC.ScrollBars = ScrollBars.Both;
+            gridCamionetaC.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gridCamionetaC.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gridCamionetaC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             atualizaDataGridView();
         }

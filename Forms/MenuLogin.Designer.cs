@@ -47,9 +47,10 @@
             this.labelLogin.BackColor = System.Drawing.Color.Transparent;
             this.labelLogin.Font = new System.Drawing.Font("Stencil", 20F);
             this.labelLogin.ForeColor = System.Drawing.Color.White;
-            this.labelLogin.Location = new System.Drawing.Point(90, 10);
+            this.labelLogin.Location = new System.Drawing.Point(120, 12);
+            this.labelLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(91, 32);
+            this.labelLogin.Size = new System.Drawing.Size(114, 40);
             this.labelLogin.TabIndex = 1;
             this.labelLogin.Text = "Login";
             // 
@@ -59,9 +60,10 @@
             this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxUsername.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F);
             this.textBoxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxUsername.Location = new System.Drawing.Point(64, 132);
+            this.textBoxUsername.Location = new System.Drawing.Point(85, 162);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(156, 26);
+            this.textBoxUsername.Size = new System.Drawing.Size(207, 30);
             this.textBoxUsername.TabIndex = 3;
             // 
             // textBoxPassword
@@ -70,9 +72,10 @@
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPassword.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F);
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxPassword.Location = new System.Drawing.Point(63, 194);
+            this.textBoxPassword.Location = new System.Drawing.Point(84, 239);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(155, 26);
+            this.textBoxPassword.Size = new System.Drawing.Size(206, 30);
             this.textBoxPassword.TabIndex = 4;
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
@@ -81,9 +84,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Stencil", 14F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(60, 170);
+            this.label2.Location = new System.Drawing.Point(80, 209);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 21);
+            this.label2.Size = new System.Drawing.Size(211, 26);
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
             // 
@@ -97,9 +101,10 @@
             this.PanelLogin.Controls.Add(this.textBoxUsername);
             this.PanelLogin.Controls.Add(this.textBoxPassword);
             this.PanelLogin.Controls.Add(this.label2);
-            this.PanelLogin.Location = new System.Drawing.Point(96, 166);
+            this.PanelLogin.Location = new System.Drawing.Point(128, 204);
+            this.PanelLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelLogin.Name = "PanelLogin";
-            this.PanelLogin.Size = new System.Drawing.Size(287, 361);
+            this.PanelLogin.Size = new System.Drawing.Size(383, 444);
             this.PanelLogin.TabIndex = 8;
             // 
             // buttonLogin
@@ -113,11 +118,12 @@
             this.buttonLogin.Image = null;
             this.buttonLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonLogin.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.buttonLogin.Location = new System.Drawing.Point(141, 282);
+            this.buttonLogin.Location = new System.Drawing.Point(188, 347);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.buttonLogin.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.buttonLogin.Size = new System.Drawing.Size(120, 40);
+            this.buttonLogin.Size = new System.Drawing.Size(160, 49);
             this.buttonLogin.TabIndex = 7;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -134,11 +140,12 @@
             this.buttonQuit.Image = null;
             this.buttonQuit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonQuit.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.buttonQuit.Location = new System.Drawing.Point(15, 282);
+            this.buttonQuit.Location = new System.Drawing.Point(20, 347);
+            this.buttonQuit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonQuit.Name = "buttonQuit";
             this.buttonQuit.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.buttonQuit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.buttonQuit.Size = new System.Drawing.Size(120, 40);
+            this.buttonQuit.Size = new System.Drawing.Size(160, 49);
             this.buttonQuit.TabIndex = 6;
             this.buttonQuit.Text = "Quit";
             this.buttonQuit.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -149,21 +156,23 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Stencil", 14F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(59, 101);
+            this.label1.Location = new System.Drawing.Point(79, 124);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 28);
+            this.label1.Size = new System.Drawing.Size(212, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "Username";
             // 
             // MenuLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Automobile.Properties.Resources.melrescar;
-            this.ClientSize = new System.Drawing.Size(975, 550);
+            this.ClientSize = new System.Drawing.Size(1300, 677);
             this.ControlBox = false;
             this.Controls.Add(this.PanelLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MenuLogin";
             this.Text = "MelresCar | Rent-a-Car";
             this.Load += new System.EventHandler(this.MenuLogin_Load);

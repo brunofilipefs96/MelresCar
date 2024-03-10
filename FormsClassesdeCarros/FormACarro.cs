@@ -35,18 +35,21 @@ namespace Automobile
             gridCarroA.Columns.Add("PreçoDiário", "PreçoDiário");
 
             //configurações do datagridview
-            gridCarroA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            gridCarroA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            gridCarroA.MultiSelect = false;
-            gridCarroA.EnableHeadersVisualStyles = false;
-            gridCarroA.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            gridCarroA.BackgroundColor = Color.FromArgb(235, 241, 241);
             gridCarroA.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            gridCarroA.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            gridCarroA.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            gridCarroA.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            gridCarroA.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            gridCarroA.RowsDefaultCellStyle.ForeColor = Color.White;
-            gridCarroA.ScrollBars = ScrollBars.Vertical;
+            gridCarroA.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            gridCarroA.ColumnHeadersDefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
+            gridCarroA.RowHeadersVisible = false;
+            gridCarroA.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 8);
+            gridCarroA.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            gridCarroA.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            gridCarroA.GridColor = Color.FromArgb(96, 155, 173);
+            gridCarroA.BorderStyle = BorderStyle.None;
+            gridCarroA.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            gridCarroA.ScrollBars = ScrollBars.Both;
+            gridCarroA.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gridCarroA.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gridCarroA.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             atualizaDataGridView();
         }

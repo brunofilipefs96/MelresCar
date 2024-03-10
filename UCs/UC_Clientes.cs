@@ -45,7 +45,6 @@ namespace Automobile
             dataGridViewClientes.BorderStyle = BorderStyle.None;
             dataGridViewClientes.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
 
-
             atualizaDataGridView();
         }
 
@@ -58,7 +57,7 @@ namespace Automobile
             }
         }
 
-        private void buttonAddCliente_Click(object sender, EventArgs e)
+        private void buttonAddCliente_Click_1(object sender, EventArgs e)
         {
             MenuAdicionarCliente adicionarCliente = new MenuAdicionarCliente();
             adicionarCliente.Show();
@@ -66,7 +65,7 @@ namespace Automobile
             menuPrincipalObject.Enabled = false;
         }
 
-        private void buttonEditCliente_Click(object sender, EventArgs e)
+        private void buttonEditCliente_Click_1(object sender, EventArgs e)
         {
             if (dataGridViewClientes.CurrentCell == null)
             {
@@ -83,7 +82,7 @@ namespace Automobile
             }
         }
 
-        private void buttonRemCliente_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             if (dataGridViewClientes.CurrentCell == null)
             {
@@ -107,7 +106,6 @@ namespace Automobile
                 menuPrincipalObject.Enabled = true;
             }
         }
-
 
         private void PaintClientes(object sender, PaintEventArgs e)
         {

@@ -38,14 +38,18 @@ namespace Automobile
             gridCarroL.BackgroundColor = Color.FromArgb(235, 241, 241);
             gridCarroL.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             gridCarroL.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
-            gridCarroL.ColumnHeadersDefaultCellStyle.Font = new Font("Stencil", 12);
+            gridCarroL.ColumnHeadersDefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
             gridCarroL.RowHeadersVisible = false;
-            gridCarroL.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
+            gridCarroL.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 8);
             gridCarroL.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
             gridCarroL.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
             gridCarroL.GridColor = Color.FromArgb(96, 155, 173);
             gridCarroL.BorderStyle = BorderStyle.None;
             gridCarroL.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            gridCarroL.ScrollBars = ScrollBars.Both;
+            gridCarroL.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gridCarroL.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gridCarroL.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             atualizaDataGridView();
         }

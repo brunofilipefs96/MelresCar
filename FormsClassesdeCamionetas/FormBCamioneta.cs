@@ -35,18 +35,21 @@ namespace Automobile
 
             //configurações do datagridview
 
-            gridCamionetaB.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            gridCamionetaB.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            gridCamionetaB.MultiSelect = false;
-            gridCamionetaB.EnableHeadersVisualStyles = false;
-            gridCamionetaB.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            gridCamionetaB.BackgroundColor = Color.FromArgb(235, 241, 241);
             gridCamionetaB.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            gridCamionetaB.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            gridCamionetaB.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            gridCamionetaB.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            gridCamionetaB.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            gridCamionetaB.RowsDefaultCellStyle.ForeColor = Color.White;
-            gridCamionetaB.ScrollBars = ScrollBars.Vertical;
+            gridCamionetaB.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            gridCamionetaB.ColumnHeadersDefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
+            gridCamionetaB.RowHeadersVisible = false;
+            gridCamionetaB.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 8);
+            gridCamionetaB.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            gridCamionetaB.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            gridCamionetaB.GridColor = Color.FromArgb(96, 155, 173);
+            gridCamionetaB.BorderStyle = BorderStyle.None;
+            gridCamionetaB.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            gridCamionetaB.ScrollBars = ScrollBars.Both;
+            gridCamionetaB.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gridCamionetaB.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gridCamionetaB.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             atualizaDataGridView();
         }
@@ -104,6 +107,11 @@ namespace Automobile
             LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(96, 155, 173), Color.FromArgb(245, 251, 251), LinearGradientMode.Vertical);
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
+        }
+
+        private void gridCamionetaA_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

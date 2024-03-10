@@ -54,7 +54,7 @@
             this.bigLabel1.Location = new System.Drawing.Point(0, 0);
             this.bigLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(1924, 57);
+            this.bigLabel1.Size = new System.Drawing.Size(1877, 57);
             this.bigLabel1.TabIndex = 0;
             this.bigLabel1.Text = "Classe A";
             // 
@@ -163,7 +163,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1924, 774);
+            this.ClientSize = new System.Drawing.Size(1877, 548);
             this.Controls.Add(this.gridCarroA);
             this.Controls.Add(this.buttonReservar);
             this.Controls.Add(this.buttonCancelar);

@@ -67,14 +67,14 @@
             this.bigLabel1.Location = new System.Drawing.Point(0, 0);
             this.bigLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(1913, 57);
+            this.bigLabel1.Size = new System.Drawing.Size(1877, 57);
             this.bigLabel1.TabIndex = 4;
             this.bigLabel1.Text = "Classe G";
             // 
             // buttonCancelar
             // 
             this.buttonCancelar.Location = new System.Drawing.Point(724, 462);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.buttonCancelar.Size = new System.Drawing.Size(156, 64);
@@ -85,7 +85,7 @@
             // buttonReservar
             // 
             this.buttonReservar.Location = new System.Drawing.Point(1687, 462);
-            this.buttonReservar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonReservar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReservar.Name = "buttonReservar";
             this.buttonReservar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.buttonReservar.Size = new System.Drawing.Size(156, 64);
@@ -98,7 +98,7 @@
             this.fotoCarroG.BackColor = System.Drawing.Color.Transparent;
             this.fotoCarroG.Image = global::Automobile.Properties.Resources.G;
             this.fotoCarroG.Location = new System.Drawing.Point(11, 95);
-            this.fotoCarroG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fotoCarroG.Margin = new System.Windows.Forms.Padding(4);
             this.fotoCarroG.Name = "fotoCarroG";
             this.fotoCarroG.Size = new System.Drawing.Size(705, 475);
             this.fotoCarroG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -155,7 +155,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1913, 774);
+            this.ClientSize = new System.Drawing.Size(1877, 548);
             this.Controls.Add(this.gridCarroG);
             this.Controls.Add(this.buttonReservar);
             this.Controls.Add(this.buttonCancelar);
@@ -163,7 +163,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bigLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormGCarro";
             this.Text = "MelresCar | Classe G";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintCarroG);
