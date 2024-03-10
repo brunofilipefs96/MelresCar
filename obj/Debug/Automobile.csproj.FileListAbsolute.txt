@@ -209,7 +209,6 @@ C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.Me
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.MenuEditarCliente.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.MenuEditarFuncionario.resources
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.MenuEditarVeiculo.resources
-C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.MenuRemoverVeiculo.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\bin\Debug\Automobile.exe.config
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\bin\Debug\Automobile.exe
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\bin\Debug\Automobile.pdb
@@ -361,3 +360,7 @@ C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.Forms.MenuManuten
 C:\Users\hugoc\Documents\GitHub\MelresCar\bin\Debug\Bunifu.Licensing.dll
 C:\Users\hugoc\Documents\GitHub\MelresCar\bin\Debug\Bunifu.UI.WinForms.dll
 C:\Users\hugoc\Documents\GitHub\MelresCar\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\bin\Debug\Bunifu.Licensing.dll
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\bin\Debug\Bunifu.UI.WinForms.dll
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.Forms.MenuManutencao.resources

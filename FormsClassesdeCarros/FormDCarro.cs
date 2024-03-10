@@ -35,18 +35,17 @@ namespace Automobile
 
             //configurações do datagridview
 
-            gridCarroD.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            gridCarroD.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            gridCarroD.MultiSelect = false;
-            gridCarroD.EnableHeadersVisualStyles = false;
-            gridCarroD.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            gridCarroD.BackgroundColor = Color.FromArgb(235, 241, 241);
             gridCarroD.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            gridCarroD.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            gridCarroD.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            gridCarroD.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            gridCarroD.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            gridCarroD.RowsDefaultCellStyle.ForeColor = Color.White;
-            gridCarroD.ScrollBars = ScrollBars.Vertical;
+            gridCarroD.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            gridCarroD.ColumnHeadersDefaultCellStyle.Font = new Font("Stencil", 12);
+            gridCarroD.RowHeadersVisible = false;
+            gridCarroD.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
+            gridCarroD.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            gridCarroD.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            gridCarroD.GridColor = Color.FromArgb(96, 155, 173);
+            gridCarroD.BorderStyle = BorderStyle.None;
+            gridCarroD.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
 
             atualizaDataGridView();
         }
