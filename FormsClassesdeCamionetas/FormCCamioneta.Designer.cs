@@ -63,6 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
@@ -87,6 +88,7 @@
             // 
             // fotoCamionetaC
             // 
+            this.fotoCamionetaC.BackColor = System.Drawing.Color.Transparent;
             this.fotoCamionetaC.Image = global::Automobile.Properties.Resources.cCamioneta;
             this.fotoCamionetaC.Location = new System.Drawing.Point(8, 77);
             this.fotoCamionetaC.Name = "fotoCamionetaC";
@@ -120,6 +122,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormCCamioneta";
             this.Text = "MelresCar | Classe C";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintCamionetaC);
             ((System.ComponentModel.ISupportInitialize)(this.gridCamionetaC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoCamionetaC)).EndInit();
             this.ResumeLayout(false);

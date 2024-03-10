@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.gridMotaB = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
-            this.timer = new System.Windows.Forms.Timer(this.components);
             this.buttonCancelar = new ReaLTaiizor.Controls.CrownButton();
             this.fotoMotaB = new System.Windows.Forms.PictureBox();
             this.buttonReservar = new ReaLTaiizor.Controls.CrownButton();
@@ -53,6 +51,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
@@ -87,6 +86,7 @@
             // 
             // fotoMotaB
             // 
+            this.fotoMotaB.BackColor = System.Drawing.Color.Transparent;
             this.fotoMotaB.Image = global::Automobile.Properties.Resources.MotaB;
             this.fotoMotaB.Location = new System.Drawing.Point(8, 66);
             this.fotoMotaB.Name = "fotoMotaB";
@@ -120,6 +120,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormBMota";
             this.Text = "MelresCar | Classe B";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintMotaB);
             ((System.ComponentModel.ISupportInitialize)(this.gridMotaB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoMotaB)).EndInit();
             this.ResumeLayout(false);
@@ -133,7 +134,6 @@
         private System.Windows.Forms.DataGridView gridMotaB;
         private System.Windows.Forms.Label label1;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
-        private System.Windows.Forms.Timer timer;
         private ReaLTaiizor.Controls.CrownButton buttonCancelar;
         private ReaLTaiizor.Controls.CrownButton buttonReservar;
     }

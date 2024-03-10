@@ -326,6 +326,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuAdicionarFuncionario";
             this.Text = "MelresCar | Adicionar Funcionário";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintAdicionarFuncionario);
             ((System.ComponentModel.ISupportInitialize)(this.numericSalario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

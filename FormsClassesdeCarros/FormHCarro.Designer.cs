@@ -43,6 +43,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
@@ -98,7 +99,7 @@
             // 
             // fotoCarroH
             // 
-            this.fotoCarroH.Image = global::Automobile.Properties.Resources.H1;
+            this.fotoCarroH.BackColor = System.Drawing.Color.Transparent;
             this.fotoCarroH.Location = new System.Drawing.Point(8, 77);
             this.fotoCarroH.Name = "fotoCarroH";
             this.fotoCarroH.Size = new System.Drawing.Size(529, 386);
@@ -121,6 +122,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormHCarro";
             this.Text = "MelresCar | Classe H";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintCarroH);
             ((System.ComponentModel.ISupportInitialize)(this.gridCarroH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoCarroH)).EndInit();
             this.ResumeLayout(false);

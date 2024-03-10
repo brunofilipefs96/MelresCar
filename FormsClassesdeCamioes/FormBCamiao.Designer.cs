@@ -52,6 +52,7 @@
             // 
             // fotoCamiaoB
             // 
+            this.fotoCamiaoB.BackColor = System.Drawing.Color.Transparent;
             this.fotoCamiaoB.Image = global::Automobile.Properties.Resources.camiaoB;
             this.fotoCamiaoB.Location = new System.Drawing.Point(8, 66);
             this.fotoCamiaoB.Name = "fotoCamiaoB";
@@ -73,6 +74,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
@@ -120,6 +122,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormBCamiao";
             this.Text = "MelresCar | Classe B";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintCamiaoB);
             ((System.ComponentModel.ISupportInitialize)(this.fotoCamiaoB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridCamiaoB)).EndInit();
             this.ResumeLayout(false);

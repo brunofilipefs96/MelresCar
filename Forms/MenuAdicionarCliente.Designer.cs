@@ -211,6 +211,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuAdicionarCliente";
             this.Text = "MelresCar | Adicionar Cliente";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintAdiconaCliente);
             this.ResumeLayout(false);
             this.PerformLayout();
 

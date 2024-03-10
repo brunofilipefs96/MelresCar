@@ -51,7 +51,7 @@
             this.dataInicio.HeadLineColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataInicio.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(238)))), ((int)(((byte)(245)))));
             this.dataInicio.Location = new System.Drawing.Point(67, 24);
-            this.dataInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataInicio.Margin = new System.Windows.Forms.Padding(2);
             this.dataInicio.Name = "dataInicio";
             this.dataInicio.NMColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
             this.dataInicio.NMHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
@@ -82,7 +82,7 @@
             this.dataFim.HeadLineColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataFim.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(238)))), ((int)(((byte)(245)))));
             this.dataFim.Location = new System.Drawing.Point(794, 24);
-            this.dataFim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataFim.Margin = new System.Windows.Forms.Padding(2);
             this.dataFim.Name = "dataFim";
             this.dataFim.NMColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
             this.dataFim.NMHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
@@ -103,7 +103,7 @@
             // 
             this.buttonCancelar.Location = new System.Drawing.Point(67, 419);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
             this.buttonCancelar.TabIndex = 40;
             this.buttonCancelar.Text = "Cancelar";
@@ -113,7 +113,7 @@
             // 
             this.buttonAlterar.Location = new System.Drawing.Point(470, 192);
             this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonAlterar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonAlterar.Size = new System.Drawing.Size(117, 52);
             this.buttonAlterar.TabIndex = 41;
             this.buttonAlterar.Text = "Gerar";
@@ -172,9 +172,10 @@
             this.Controls.Add(this.dataFim);
             this.Controls.Add(this.dataInicio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LucroDatas";
             this.Text = "MelresCar | Lucro Entre Datas";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintLucroDatas);
             this.ResumeLayout(false);
             this.PerformLayout();
 

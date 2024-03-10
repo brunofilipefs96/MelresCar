@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,14 +33,17 @@ namespace Automobile
             dataGridViewReservas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewReservas.MultiSelect = false;
 
-            dataGridViewReservas.EnableHeadersVisualStyles = false;
-            dataGridViewReservas.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            dataGridViewReservas.BackgroundColor = Color.FromArgb(235, 241, 241);
             dataGridViewReservas.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewReservas.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            dataGridViewReservas.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewReservas.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewReservas.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewReservas.RowsDefaultCellStyle.ForeColor = Color.White;
+            dataGridViewReservas.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            dataGridViewReservas.ColumnHeadersDefaultCellStyle.Font = new Font("Stencil", 10);
+            dataGridViewReservas.RowHeadersVisible = false;
+            dataGridViewReservas.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 8);
+            dataGridViewReservas.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            dataGridViewReservas.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewReservas.GridColor = Color.FromArgb(96, 155, 173);
+            dataGridViewReservas.BorderStyle = BorderStyle.None;
+            dataGridViewReservas.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
 
             atualizaDataGridView();
         }
@@ -67,6 +71,17 @@ namespace Automobile
             lucroDatas.Show();
             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
             menuPrincipalObject.Enabled = false;
+        }
+
+        private void PaintReservas(object sender, PaintEventArgs e)
+        {
+            Graphics mgraphics = e.Graphics;
+            Pen pen = new Pen(Color.FromArgb(96, 155, 173), 1);
+
+            Rectangle area = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(96, 155, 173), Color.FromArgb(245, 251, 251), LinearGradientMode.Vertical);
+            mgraphics.FillRectangle(lgb, area);
+            mgraphics.DrawRectangle(pen, area);
         }
     }
 }

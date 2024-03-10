@@ -36,20 +36,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(168, 413);
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Stencil", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(88, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(462, 50);
+            this.label1.Size = new System.Drawing.Size(213, 44);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Bem-vindo ao Melres Car";
+            this.label1.Text = "Bem-vindo";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Automobile.Properties.Resources.speed2;
-            this.pictureBox1.Location = new System.Drawing.Point(27, -154);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Image = global::Automobile.Properties.Resources.sppeed3;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(848, 688);
+            this.pictureBox1.Size = new System.Drawing.Size(954, 518);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -57,12 +60,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UC_MenuPrincipal";
-            this.Size = new System.Drawing.Size(1395, 670);
+            this.Size = new System.Drawing.Size(953, 517);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintMenuprincipal);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

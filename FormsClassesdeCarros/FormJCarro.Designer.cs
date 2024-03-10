@@ -43,6 +43,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
@@ -80,7 +81,7 @@
             // 
             this.buttonCancelar.Location = new System.Drawing.Point(543, 375);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
             this.buttonCancelar.TabIndex = 60;
             this.buttonCancelar.Text = "Cancelar";
@@ -88,6 +89,7 @@
             // 
             // fotoCarroJ
             // 
+            this.fotoCarroJ.BackColor = System.Drawing.Color.Transparent;
             this.fotoCarroJ.Image = global::Automobile.Properties.Resources.J;
             this.fotoCarroJ.Location = new System.Drawing.Point(8, 77);
             this.fotoCarroJ.Name = "fotoCarroJ";
@@ -100,7 +102,7 @@
             // 
             this.buttonReservar.Location = new System.Drawing.Point(1265, 375);
             this.buttonReservar.Name = "buttonReservar";
-            this.buttonReservar.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonReservar.Padding = new System.Windows.Forms.Padding(5);
             this.buttonReservar.Size = new System.Drawing.Size(117, 52);
             this.buttonReservar.TabIndex = 62;
             this.buttonReservar.Text = "Reservar";
@@ -121,6 +123,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormJCarro";
             this.Text = "MelresCar | Classe J";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintCarroJ);
             ((System.ComponentModel.ISupportInitialize)(this.gridCarroJ)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoCarroJ)).EndInit();
             this.ResumeLayout(false);

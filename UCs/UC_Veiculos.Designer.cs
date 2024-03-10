@@ -31,58 +31,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridViewVeiculos = new System.Windows.Forms.DataGridView();
             this.buttonEditVeiculo = new System.Windows.Forms.Button();
             this.buttonRemVeiculo = new System.Windows.Forms.Button();
             this.buttonAddVeiculo = new System.Windows.Forms.Button();
             this.comboBoxTipoVeiculo = new ReaLTaiizor.Controls.DungeonComboBox();
             this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.buttonManutencaoVeiculo = new System.Windows.Forms.Button();
+            this.dataGridViewVeiculos = new ReaLTaiizor.Controls.PoisonDataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVeiculos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridViewVeiculos
-            // 
-            this.dataGridViewVeiculos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewVeiculos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewVeiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewVeiculos.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewVeiculos.Location = new System.Drawing.Point(16, 46);
-            this.dataGridViewVeiculos.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridViewVeiculos.Name = "dataGridViewVeiculos";
-            this.dataGridViewVeiculos.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewVeiculos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewVeiculos.RowHeadersWidth = 51;
-            this.dataGridViewVeiculos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dataGridViewVeiculos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewVeiculos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridViewVeiculos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridViewVeiculos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridViewVeiculos.RowTemplate.Height = 24;
-            this.dataGridViewVeiculos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewVeiculos.Size = new System.Drawing.Size(875, 365);
-            this.dataGridViewVeiculos.TabIndex = 11;
             // 
             // buttonEditVeiculo
             // 
@@ -182,20 +139,64 @@
             this.buttonManutencaoVeiculo.UseVisualStyleBackColor = false;
             this.buttonManutencaoVeiculo.Click += new System.EventHandler(this.buttonManutencaoVeiculo_Click);
             // 
+            // dataGridViewVeiculos
+            // 
+            this.dataGridViewVeiculos.AllowUserToResizeRows = false;
+            this.dataGridViewVeiculos.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewVeiculos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewVeiculos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridViewVeiculos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewVeiculos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewVeiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewVeiculos.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewVeiculos.EnableHeadersVisualStyles = false;
+            this.dataGridViewVeiculos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridViewVeiculos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dataGridViewVeiculos.Location = new System.Drawing.Point(3, 52);
+            this.dataGridViewVeiculos.Name = "dataGridViewVeiculos";
+            this.dataGridViewVeiculos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewVeiculos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewVeiculos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridViewVeiculos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewVeiculos.Size = new System.Drawing.Size(887, 358);
+            this.dataGridViewVeiculos.TabIndex = 15;
+            // 
             // UC_Veiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.dataGridViewVeiculos);
             this.Controls.Add(this.buttonManutencaoVeiculo);
             this.Controls.Add(this.dungeonHeaderLabel1);
             this.Controls.Add(this.comboBoxTipoVeiculo);
-            this.Controls.Add(this.dataGridViewVeiculos);
             this.Controls.Add(this.buttonEditVeiculo);
             this.Controls.Add(this.buttonRemVeiculo);
             this.Controls.Add(this.buttonAddVeiculo);
             this.Name = "UC_Veiculos";
             this.Size = new System.Drawing.Size(907, 478);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintVeiculos);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVeiculos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -203,13 +204,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridViewVeiculos;
         private System.Windows.Forms.Button buttonEditVeiculo;
         private System.Windows.Forms.Button buttonRemVeiculo;
         private System.Windows.Forms.Button buttonAddVeiculo;
         private ReaLTaiizor.Controls.DungeonComboBox comboBoxTipoVeiculo;
         private ReaLTaiizor.Controls.DungeonHeaderLabel dungeonHeaderLabel1;
         private System.Windows.Forms.Button buttonManutencaoVeiculo;
+        private ReaLTaiizor.Controls.PoisonDataGridView dataGridViewVeiculos;
     }
 }

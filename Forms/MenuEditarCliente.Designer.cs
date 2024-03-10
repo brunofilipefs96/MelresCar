@@ -210,6 +210,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuEditarCliente";
             this.Text = "MelresCar | Editar Cliente";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintEditarCliente);
             this.ResumeLayout(false);
             this.PerformLayout();
 

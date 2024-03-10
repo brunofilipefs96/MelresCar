@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -32,14 +33,19 @@ namespace Automobile
             dataGridViewVeiculos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewVeiculos.MultiSelect = false;
 
-            dataGridViewVeiculos.EnableHeadersVisualStyles = false;
-            dataGridViewVeiculos.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            dataGridViewVeiculos.BackgroundColor = Color.FromArgb(235, 241, 241);
             dataGridViewVeiculos.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewVeiculos.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            dataGridViewVeiculos.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewVeiculos.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewVeiculos.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewVeiculos.RowsDefaultCellStyle.ForeColor = Color.White;
+            dataGridViewVeiculos.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            dataGridViewVeiculos.ColumnHeadersDefaultCellStyle.Font = new Font("Stencil", 10);
+            dataGridViewVeiculos.RowHeadersVisible = false;
+            dataGridViewVeiculos.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 8);
+            dataGridViewVeiculos.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            dataGridViewVeiculos.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewVeiculos.GridColor = Color.FromArgb(96, 155, 173);
+            dataGridViewVeiculos.BorderStyle = BorderStyle.None;
+            dataGridViewVeiculos.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            
+
 
             atualizaDataGridView(comboBoxTipoVeiculo.SelectedIndex);
         }
@@ -211,6 +217,17 @@ namespace Automobile
                 MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
                 menuPrincipalObject.Enabled = false;
             }
+        }
+
+        private void PaintVeiculos(object sender, PaintEventArgs e)
+        {
+            Graphics mgraphics = e.Graphics;
+            Pen pen = new Pen(Color.FromArgb(96, 155, 173), 1);
+
+            Rectangle area = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(96, 155, 173), Color.FromArgb(245, 251, 251), LinearGradientMode.Vertical);
+            mgraphics.FillRectangle(lgb, area);
+            mgraphics.DrawRectangle(pen, area);
         }
     }
 }

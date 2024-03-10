@@ -18,8 +18,11 @@ namespace Automobile
         public MenuLogin()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.AutoScaleMode = AutoScaleMode.None;
+            this.FormBorderStyle = FormBorderStyle.None;
 
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             timer1.Interval = 1000;
             timer1.Tick += new EventHandler(timer_Tick);
             timer1.Start();
@@ -30,9 +33,21 @@ namespace Automobile
             Program.AdicionarSegundos();
         }
 
-        private void buttonLogin_Click(object sender, EventArgs e)
+
+        private void MenuLogin_Load(object sender, EventArgs e)
         {
-            if (textBoxUsername.Text == "admin" && textBoxPassword.Text == "admin") {
+            PanelLogin.BackColor = Color.FromArgb(100, 0, 0, 0);          
+        }
+
+        private void buttonQuit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonLogin_Click_1(object sender, EventArgs e)
+        {
+            if (textBoxUsername.Text == "admin" && textBoxPassword.Text == "admin")
+            {
                 loggedIn = true;
                 Program.melresCar.LoggedAccount = "admin";
                 MenuPrincipal menuPrincipal = new MenuPrincipal();
@@ -53,14 +68,10 @@ namespace Automobile
                     }
                 }
             }
-            if (!loggedIn){
+            if (!loggedIn)
+            {
                 MessageBox.Show("Username ou password incorretos", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
-
-        private void buttonQuit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

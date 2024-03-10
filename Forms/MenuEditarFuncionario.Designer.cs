@@ -323,6 +323,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuEditarFuncionario";
             this.Text = "MelresCar | Editar Funcionário";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintEditarFuncionario);
             ((System.ComponentModel.ISupportInitialize)(this.numericSalario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

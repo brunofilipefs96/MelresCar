@@ -154,12 +154,9 @@ C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_ListarMota.res
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuAdicionarFuncionario.resources
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuAdicionarCliente.resources
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuEditarCliente.resources
-C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuRemoverCliente.resources
-C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuRemoverVeiculo.resources
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuAdicionarVeiculo.resources
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuEditarFuncionario.resources
 C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuEditarVeiculo.resources
-C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuRemoverFuncionario.resources
 C:\Users\Bruno\source\repos\MelresCar\obj\Debug\Automobile.MenuAdicionarCliente.resources
 C:\Users\Bruno\source\repos\MelresCar\obj\Debug\Automobile.MenuAdicionarFuncionario.resources
 C:\Users\Bruno\source\repos\MelresCar\obj\Debug\Automobile.MenuAdicionarVeiculo.resources
@@ -349,3 +346,18 @@ C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.Fo
 C:\Users\hfgco\Documents\Aulas\Projetos Github\MelresCar\obj\Debug\Automobile.LucroDatas.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.LucroDatas.resources
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\obj\Debug\Automobile.Forms.MenuManutencao.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormACamiao.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormBCamiao.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormCCamiao.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormACamioneta.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormBCamioneta.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormCCamioneta.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormAMota.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormBMota.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.FormCMota.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.Forms.MenuAdicionarReserva.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.LucroDatas.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\obj\Debug\Automobile.Forms.MenuManutencao.resources
+C:\Users\hugoc\Documents\GitHub\MelresCar\bin\Debug\Bunifu.Licensing.dll
+C:\Users\hugoc\Documents\GitHub\MelresCar\bin\Debug\Bunifu.UI.WinForms.dll
+C:\Users\hugoc\Documents\GitHub\MelresCar\bin\Debug\Bunifu.UI.WinForms.xml

@@ -128,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.LabelMotaC);
             this.Controls.Add(this.LabelMotaB);
             this.Controls.Add(this.LabelMotaA);
@@ -139,6 +139,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_ListarCamiao";
             this.Size = new System.Drawing.Size(1395, 670);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintCamioes);
             this.ResumeLayout(false);
 
         }

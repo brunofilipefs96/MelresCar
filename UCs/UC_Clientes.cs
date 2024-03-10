@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,14 +32,19 @@ namespace Automobile
             dataGridViewClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewClientes.MultiSelect = false;
 
-            dataGridViewClientes.EnableHeadersVisualStyles = false;
-            dataGridViewClientes.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+
+            dataGridViewClientes.BackgroundColor = Color.FromArgb(235, 241, 241);
             dataGridViewClientes.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewClientes.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            dataGridViewClientes.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewClientes.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewClientes.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewClientes.RowsDefaultCellStyle.ForeColor = Color.White;
+            dataGridViewClientes.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            dataGridViewClientes.ColumnHeadersDefaultCellStyle.Font = new Font("Stencil", 12);
+            dataGridViewClientes.RowHeadersVisible = false;
+            dataGridViewClientes.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
+            dataGridViewClientes.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            dataGridViewClientes.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewClientes.GridColor = Color.FromArgb(96, 155, 173);
+            dataGridViewClientes.BorderStyle = BorderStyle.None;
+            dataGridViewClientes.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+
 
             atualizaDataGridView();
         }
@@ -102,9 +108,16 @@ namespace Automobile
             }
         }
 
-        private void dataGridViewClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
+        private void PaintClientes(object sender, PaintEventArgs e)
+        {
+            Graphics mgraphics = e.Graphics;
+            Pen pen = new Pen(Color.FromArgb(96, 155, 173), 1);
+
+            Rectangle area = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(96, 155, 173), Color.FromArgb(245, 251, 251), LinearGradientMode.Vertical);
+            mgraphics.FillRectangle(lgb, area);
+            mgraphics.DrawRectangle(pen, area);
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonMenuPrincipal = new System.Windows.Forms.Button();
             this.panelClientes = new System.Windows.Forms.Panel();
             this.buttonCarros = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.buttonCamionetas = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonMenuPrincipal = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelClientes.SuspendLayout();
             this.panelFuncionarios.SuspendLayout();
@@ -64,6 +64,22 @@
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(207, 724);
             this.flowLayoutPanel1.TabIndex = 4;
+            // 
+            // buttonMenuPrincipal
+            // 
+            this.buttonMenuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.buttonMenuPrincipal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuPrincipal.ForeColor = System.Drawing.Color.White;
+            this.buttonMenuPrincipal.Image = global::Automobile.Properties.Resources.menu_48;
+            this.buttonMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonMenuPrincipal.Location = new System.Drawing.Point(3, 18);
+            this.buttonMenuPrincipal.Name = "buttonMenuPrincipal";
+            this.buttonMenuPrincipal.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonMenuPrincipal.Size = new System.Drawing.Size(200, 98);
+            this.buttonMenuPrincipal.TabIndex = 6;
+            this.buttonMenuPrincipal.Text = "Menu Principal";
+            this.buttonMenuPrincipal.UseVisualStyleBackColor = false;
+            this.buttonMenuPrincipal.Click += new System.EventHandler(this.buttonMenuPrincipal_Click);
             // 
             // panelClientes
             // 
@@ -228,28 +244,13 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(207, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1377, 724);
             this.panel1.TabIndex = 5;
-            // 
-            // buttonMenuPrincipal
-            // 
-            this.buttonMenuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonMenuPrincipal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMenuPrincipal.ForeColor = System.Drawing.Color.White;
-            this.buttonMenuPrincipal.Image = global::Automobile.Properties.Resources.menu_48;
-            this.buttonMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMenuPrincipal.Location = new System.Drawing.Point(3, 18);
-            this.buttonMenuPrincipal.Name = "buttonMenuPrincipal";
-            this.buttonMenuPrincipal.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.buttonMenuPrincipal.Size = new System.Drawing.Size(200, 98);
-            this.buttonMenuPrincipal.TabIndex = 6;
-            this.buttonMenuPrincipal.Text = "Menu Principal";
-            this.buttonMenuPrincipal.UseVisualStyleBackColor = false;
-            this.buttonMenuPrincipal.Click += new System.EventHandler(this.buttonMenuPrincipal_Click);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintListVeiculo);
             // 
             // ListaVeiculo
             // 

@@ -450,6 +450,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuEditarVeiculo";
             this.Text = "MenuEditarVeiculo";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintEditarVeiculo);
             ((System.ComponentModel.ISupportInitialize)(this.numericPesoMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericNumPassageiros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericAno)).EndInit();

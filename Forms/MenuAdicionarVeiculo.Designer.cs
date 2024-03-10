@@ -481,6 +481,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuAdicionarVeiculo";
             this.Text = "MenuAdicionarVeiculo";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintAdicionarVeiculo);
             ((System.ComponentModel.ISupportInitialize)(this.numericPrecoDia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericAno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericNumPassageiros)).EndInit();

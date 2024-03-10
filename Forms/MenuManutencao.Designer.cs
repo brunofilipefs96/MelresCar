@@ -208,6 +208,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuManutencao";
             this.Text = "MelresCar | Agendar Manutenção";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintAgendarManutencao);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewManutencoes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

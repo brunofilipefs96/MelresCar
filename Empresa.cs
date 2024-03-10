@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Runtime.Remoting;
+using System.Runtime.InteropServices;
+using System.Drawing.Drawing2D;
+using System.Drawing;
 
 namespace Automobile
 {

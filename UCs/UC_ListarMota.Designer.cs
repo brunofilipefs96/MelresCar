@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.LabelMotaC);
             this.Controls.Add(this.LabelMotaB);
             this.Controls.Add(this.LabelMotaA);
@@ -143,6 +143,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_ListarMota";
             this.Size = new System.Drawing.Size(1395, 670);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintMota);
             this.ResumeLayout(false);
             this.PerformLayout();
 

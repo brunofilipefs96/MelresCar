@@ -77,7 +77,6 @@
             this.flowLayoutPanel1.Controls.Add(this.panelAddDay);
             this.flowLayoutPanel1.Controls.Add(this.panelLogout);
             this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
@@ -87,20 +86,22 @@
             // labelLoggedInAs
             // 
             this.labelLoggedInAs.AutoSize = true;
+            this.labelLoggedInAs.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F);
             this.labelLoggedInAs.ForeColor = System.Drawing.Color.White;
             this.labelLoggedInAs.Location = new System.Drawing.Point(3, 15);
             this.labelLoggedInAs.Name = "labelLoggedInAs";
-            this.labelLoggedInAs.Size = new System.Drawing.Size(41, 13);
+            this.labelLoggedInAs.Size = new System.Drawing.Size(42, 16);
             this.labelLoggedInAs.TabIndex = 7;
             this.labelLoggedInAs.Text = "Conta: ";
             // 
             // labelDataHoje
             // 
             this.labelDataHoje.AutoSize = true;
+            this.labelDataHoje.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F);
             this.labelDataHoje.ForeColor = System.Drawing.Color.White;
-            this.labelDataHoje.Location = new System.Drawing.Point(50, 15);
+            this.labelDataHoje.Location = new System.Drawing.Point(51, 15);
             this.labelDataHoje.Name = "labelDataHoje";
-            this.labelDataHoje.Size = new System.Drawing.Size(36, 13);
+            this.labelDataHoje.Size = new System.Drawing.Size(37, 16);
             this.labelDataHoje.TabIndex = 0;
             this.labelDataHoje.Text = "Data: ";
             // 
@@ -108,7 +109,7 @@
             // 
             this.panel1.Controls.Add(this.buttonMenuPrincipal);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(3, 31);
+            this.panel1.Location = new System.Drawing.Point(3, 34);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(204, 58);
             this.panel1.TabIndex = 4;
@@ -116,13 +117,13 @@
             // buttonMenuPrincipal
             // 
             this.buttonMenuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonMenuPrincipal.Font = new System.Drawing.Font("Britannic Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuPrincipal.Font = new System.Drawing.Font("Stencil", 20F);
             this.buttonMenuPrincipal.ForeColor = System.Drawing.Color.White;
             this.buttonMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMenuPrincipal.Location = new System.Drawing.Point(-6, -18);
+            this.buttonMenuPrincipal.Location = new System.Drawing.Point(-6, -8);
             this.buttonMenuPrincipal.Name = "buttonMenuPrincipal";
             this.buttonMenuPrincipal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonMenuPrincipal.Size = new System.Drawing.Size(216, 95);
+            this.buttonMenuPrincipal.Size = new System.Drawing.Size(216, 85);
             this.buttonMenuPrincipal.TabIndex = 3;
             this.buttonMenuPrincipal.Text = "Melres Car";
             this.buttonMenuPrincipal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,7 +135,6 @@
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = global::Automobile.Properties.Resources.clients_48;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.Location = new System.Drawing.Point(-12, -19);
             this.button6.Name = "button6";
@@ -148,7 +148,7 @@
             // 
             this.panelClientes.Controls.Add(this.buttonClientes);
             this.panelClientes.Controls.Add(this.button1);
-            this.panelClientes.Location = new System.Drawing.Point(3, 95);
+            this.panelClientes.Location = new System.Drawing.Point(3, 98);
             this.panelClientes.Name = "panelClientes";
             this.panelClientes.Size = new System.Drawing.Size(204, 58);
             this.panelClientes.TabIndex = 3;
@@ -156,7 +156,7 @@
             // buttonClientes
             // 
             this.buttonClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonClientes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClientes.Font = new System.Drawing.Font("Stencil", 10F);
             this.buttonClientes.ForeColor = System.Drawing.Color.White;
             this.buttonClientes.Image = global::Automobile.Properties.Resources.clients_48;
             this.buttonClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -174,7 +174,6 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Automobile.Properties.Resources.clients_48;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(-12, -19);
             this.button1.Name = "button1";
@@ -188,7 +187,7 @@
             // 
             this.panelFuncionarios.Controls.Add(this.buttonFuncionarios);
             this.panelFuncionarios.Controls.Add(this.button4);
-            this.panelFuncionarios.Location = new System.Drawing.Point(3, 159);
+            this.panelFuncionarios.Location = new System.Drawing.Point(3, 162);
             this.panelFuncionarios.Name = "panelFuncionarios";
             this.panelFuncionarios.Size = new System.Drawing.Size(204, 58);
             this.panelFuncionarios.TabIndex = 4;
@@ -196,7 +195,7 @@
             // buttonFuncionarios
             // 
             this.buttonFuncionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonFuncionarios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFuncionarios.Font = new System.Drawing.Font("Stencil", 10F);
             this.buttonFuncionarios.ForeColor = System.Drawing.Color.White;
             this.buttonFuncionarios.Image = global::Automobile.Properties.Resources.funcionarios_48;
             this.buttonFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -205,7 +204,7 @@
             this.buttonFuncionarios.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.buttonFuncionarios.Size = new System.Drawing.Size(216, 95);
             this.buttonFuncionarios.TabIndex = 3;
-            this.buttonFuncionarios.Text = "Funcionários";
+            this.buttonFuncionarios.Text = "          Funcionários";
             this.buttonFuncionarios.UseVisualStyleBackColor = false;
             this.buttonFuncionarios.Click += new System.EventHandler(this.buttonFuncionarios_Click);
             // 
@@ -228,7 +227,7 @@
             // 
             this.panelVeiculos.Controls.Add(this.buttonVeiculos);
             this.panelVeiculos.Controls.Add(this.button3);
-            this.panelVeiculos.Location = new System.Drawing.Point(3, 223);
+            this.panelVeiculos.Location = new System.Drawing.Point(3, 226);
             this.panelVeiculos.Name = "panelVeiculos";
             this.panelVeiculos.Size = new System.Drawing.Size(204, 58);
             this.panelVeiculos.TabIndex = 5;
@@ -236,7 +235,7 @@
             // buttonVeiculos
             // 
             this.buttonVeiculos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonVeiculos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVeiculos.Font = new System.Drawing.Font("Stencil", 10F);
             this.buttonVeiculos.ForeColor = System.Drawing.Color.White;
             this.buttonVeiculos.Image = global::Automobile.Properties.Resources.car_48;
             this.buttonVeiculos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -268,7 +267,7 @@
             // 
             this.panelReservas.Controls.Add(this.buttonReservas);
             this.panelReservas.Controls.Add(this.button5);
-            this.panelReservas.Location = new System.Drawing.Point(3, 287);
+            this.panelReservas.Location = new System.Drawing.Point(3, 290);
             this.panelReservas.Name = "panelReservas";
             this.panelReservas.Size = new System.Drawing.Size(204, 58);
             this.panelReservas.TabIndex = 4;
@@ -276,7 +275,7 @@
             // buttonReservas
             // 
             this.buttonReservas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonReservas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReservas.Font = new System.Drawing.Font("Stencil", 10F);
             this.buttonReservas.ForeColor = System.Drawing.Color.White;
             this.buttonReservas.Image = global::Automobile.Properties.Resources.reservas_48;
             this.buttonReservas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -308,7 +307,7 @@
             // 
             this.panelAddDay.Controls.Add(this.buttonAddDay);
             this.panelAddDay.Controls.Add(this.button8);
-            this.panelAddDay.Location = new System.Drawing.Point(3, 351);
+            this.panelAddDay.Location = new System.Drawing.Point(3, 354);
             this.panelAddDay.Name = "panelAddDay";
             this.panelAddDay.Size = new System.Drawing.Size(204, 58);
             this.panelAddDay.TabIndex = 5;
@@ -316,7 +315,7 @@
             // buttonAddDay
             // 
             this.buttonAddDay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonAddDay.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddDay.Font = new System.Drawing.Font("Stencil", 10F);
             this.buttonAddDay.ForeColor = System.Drawing.Color.White;
             this.buttonAddDay.Image = global::Automobile.Properties.Resources.MaisUmDia_48;
             this.buttonAddDay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -325,7 +324,7 @@
             this.buttonAddDay.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.buttonAddDay.Size = new System.Drawing.Size(216, 95);
             this.buttonAddDay.TabIndex = 3;
-            this.buttonAddDay.Text = "Avançar um Dia";
+            this.buttonAddDay.Text = "           Avançar um Dia";
             this.buttonAddDay.UseVisualStyleBackColor = false;
             this.buttonAddDay.Click += new System.EventHandler(this.buttonAddDay_Click);
             // 
@@ -348,7 +347,7 @@
             // 
             this.panelLogout.Controls.Add(this.buttonLogout);
             this.panelLogout.Controls.Add(this.button7);
-            this.panelLogout.Location = new System.Drawing.Point(3, 415);
+            this.panelLogout.Location = new System.Drawing.Point(3, 418);
             this.panelLogout.Name = "panelLogout";
             this.panelLogout.Size = new System.Drawing.Size(204, 58);
             this.panelLogout.TabIndex = 4;
@@ -356,14 +355,14 @@
             // buttonLogout
             // 
             this.buttonLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonLogout.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogout.Font = new System.Drawing.Font("Stencil", 10F);
             this.buttonLogout.ForeColor = System.Drawing.Color.White;
             this.buttonLogout.Image = global::Automobile.Properties.Resources.logout_48;
             this.buttonLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonLogout.Location = new System.Drawing.Point(-6, -18);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.buttonLogout.Size = new System.Drawing.Size(216, 95);
+            this.buttonLogout.Size = new System.Drawing.Size(216, 94);
             this.buttonLogout.TabIndex = 3;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = false;
@@ -388,7 +387,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 476);
+            this.label1.Location = new System.Drawing.Point(3, 479);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.label1.Size = new System.Drawing.Size(106, 13);
@@ -402,6 +401,7 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(891, 478);
             this.panelMain.TabIndex = 2;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintMenu);
             // 
             // MenuPrincipal
             // 

@@ -30,11 +30,12 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonEditFuncionario = new System.Windows.Forms.Button();
             this.buttonRemFuncionario = new System.Windows.Forms.Button();
             this.buttonAddFuncionario = new System.Windows.Forms.Button();
-            this.dataGridViewFuncionario = new System.Windows.Forms.DataGridView();
             this.labelWarningFuncionarios = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.dataGridViewFuncionario = new ReaLTaiizor.Controls.PoisonDataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFuncionario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,33 +78,6 @@
             this.buttonAddFuncionario.UseVisualStyleBackColor = false;
             this.buttonAddFuncionario.Click += new System.EventHandler(this.buttonAddFuncionario_Click);
             // 
-            // dataGridViewFuncionario
-            // 
-            this.dataGridViewFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridViewFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewFuncionario.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewFuncionario.Location = new System.Drawing.Point(14, 16);
-            this.dataGridViewFuncionario.Name = "dataGridViewFuncionario";
-            this.dataGridViewFuncionario.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewFuncionario.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewFuncionario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewFuncionario.Size = new System.Drawing.Size(875, 396);
-            this.dataGridViewFuncionario.TabIndex = 10;
-            // 
             // labelWarningFuncionarios
             // 
             this.labelWarningFuncionarios.AutoSize = true;
@@ -116,18 +90,62 @@
             this.labelWarningFuncionarios.TabIndex = 11;
             this.labelWarningFuncionarios.Text = "Contacte o Administrador para realizar alterações aos Funcionários";
             // 
+            // dataGridViewFuncionario
+            // 
+            this.dataGridViewFuncionario.AllowUserToResizeRows = false;
+            this.dataGridViewFuncionario.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewFuncionario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridViewFuncionario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewFuncionario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewFuncionario.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewFuncionario.EnableHeadersVisualStyles = false;
+            this.dataGridViewFuncionario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridViewFuncionario.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dataGridViewFuncionario.Location = new System.Drawing.Point(134, 25);
+            this.dataGridViewFuncionario.Name = "dataGridViewFuncionario";
+            this.dataGridViewFuncionario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewFuncionario.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewFuncionario.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridViewFuncionario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewFuncionario.Size = new System.Drawing.Size(600, 358);
+            this.dataGridViewFuncionario.TabIndex = 12;
+            // 
             // UC_Funcionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.Controls.Add(this.labelWarningFuncionarios);
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.dataGridViewFuncionario);
+            this.Controls.Add(this.labelWarningFuncionarios);
             this.Controls.Add(this.buttonEditFuncionario);
             this.Controls.Add(this.buttonRemFuncionario);
             this.Controls.Add(this.buttonAddFuncionario);
             this.Name = "UC_Funcionarios";
             this.Size = new System.Drawing.Size(907, 478);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintFuncionarios);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFuncionario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -139,7 +157,7 @@
         private System.Windows.Forms.Button buttonEditFuncionario;
         private System.Windows.Forms.Button buttonRemFuncionario;
         private System.Windows.Forms.Button buttonAddFuncionario;
-        private System.Windows.Forms.DataGridView dataGridViewFuncionario;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelWarningFuncionarios;
+        private ReaLTaiizor.Controls.PoisonDataGridView dataGridViewFuncionario;
     }
 }
