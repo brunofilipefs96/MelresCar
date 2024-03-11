@@ -31,10 +31,10 @@
             this.LabelMotaC = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelMotaB = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelMotaA = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.CMota = new System.Windows.Forms.Button();
-            this.BMota = new System.Windows.Forms.Button();
-            this.AMota = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.AMota = new ReaLTaiizor.Controls.Button();
+            this.BMota = new ReaLTaiizor.Controls.Button();
+            this.CMota = new ReaLTaiizor.Controls.Button();
             this.SuspendLayout();
             // 
             // LabelMotaC
@@ -76,48 +76,6 @@
             this.LabelMotaA.Text = "50cc";
             this.LabelMotaA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CMota
-            // 
-            this.CMota.AutoSize = true;
-            this.CMota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.CMota.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CMota.ForeColor = System.Drawing.Color.White;
-            this.CMota.Location = new System.Drawing.Point(897, 101);
-            this.CMota.Name = "CMota";
-            this.CMota.Size = new System.Drawing.Size(118, 103);
-            this.CMota.TabIndex = 84;
-            this.CMota.Text = "C";
-            this.CMota.UseVisualStyleBackColor = false;
-            this.CMota.Click += new System.EventHandler(this.CMota_Click);
-            // 
-            // BMota
-            // 
-            this.BMota.AutoSize = true;
-            this.BMota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.BMota.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMota.ForeColor = System.Drawing.Color.White;
-            this.BMota.Location = new System.Drawing.Point(635, 101);
-            this.BMota.Name = "BMota";
-            this.BMota.Size = new System.Drawing.Size(118, 103);
-            this.BMota.TabIndex = 83;
-            this.BMota.Text = "B";
-            this.BMota.UseVisualStyleBackColor = false;
-            this.BMota.Click += new System.EventHandler(this.BMota_Click);
-            // 
-            // AMota
-            // 
-            this.AMota.AutoSize = true;
-            this.AMota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.AMota.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AMota.ForeColor = System.Drawing.Color.White;
-            this.AMota.Location = new System.Drawing.Point(372, 101);
-            this.AMota.Name = "AMota";
-            this.AMota.Size = new System.Drawing.Size(118, 103);
-            this.AMota.TabIndex = 82;
-            this.AMota.Text = "A";
-            this.AMota.UseVisualStyleBackColor = false;
-            this.AMota.Click += new System.EventHandler(this.AMota_Click);
-            // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -129,17 +87,80 @@
             this.label1.Text = "Classe de Mota";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // AMota
+            // 
+            this.AMota.BackColor = System.Drawing.Color.Transparent;
+            this.AMota.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.AMota.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AMota.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.AMota.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.AMota.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMota.Image = null;
+            this.AMota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AMota.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.AMota.Location = new System.Drawing.Point(372, 98);
+            this.AMota.Name = "AMota";
+            this.AMota.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.AMota.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.AMota.Size = new System.Drawing.Size(118, 103);
+            this.AMota.TabIndex = 88;
+            this.AMota.Text = "A";
+            this.AMota.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.AMota.Click += new System.EventHandler(this.AMota_Click_1);
+            // 
+            // BMota
+            // 
+            this.BMota.BackColor = System.Drawing.Color.Transparent;
+            this.BMota.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BMota.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BMota.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BMota.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BMota.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMota.Image = null;
+            this.BMota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BMota.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BMota.Location = new System.Drawing.Point(635, 98);
+            this.BMota.Name = "BMota";
+            this.BMota.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BMota.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BMota.Size = new System.Drawing.Size(118, 103);
+            this.BMota.TabIndex = 89;
+            this.BMota.Text = "B";
+            this.BMota.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.BMota.Click += new System.EventHandler(this.BMota_Click_1);
+            // 
+            // CMota
+            // 
+            this.CMota.BackColor = System.Drawing.Color.Transparent;
+            this.CMota.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CMota.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CMota.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CMota.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CMota.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CMota.Image = null;
+            this.CMota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CMota.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CMota.Location = new System.Drawing.Point(897, 98);
+            this.CMota.Name = "CMota";
+            this.CMota.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CMota.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CMota.Size = new System.Drawing.Size(118, 103);
+            this.CMota.TabIndex = 90;
+            this.CMota.Text = "C";
+            this.CMota.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.CMota.Click += new System.EventHandler(this.CMota_Click_1);
+            // 
             // UC_ListarMota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.LabelMotaC);
-            this.Controls.Add(this.LabelMotaB);
-            this.Controls.Add(this.LabelMotaA);
             this.Controls.Add(this.CMota);
             this.Controls.Add(this.BMota);
             this.Controls.Add(this.AMota);
+            this.Controls.Add(this.LabelMotaC);
+            this.Controls.Add(this.LabelMotaB);
+            this.Controls.Add(this.LabelMotaA);
             this.Controls.Add(this.label1);
             this.Name = "UC_ListarMota";
             this.Size = new System.Drawing.Size(1395, 670);
@@ -154,9 +175,9 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelMotaC;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelMotaB;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelMotaA;
-        private System.Windows.Forms.Button CMota;
-        private System.Windows.Forms.Button BMota;
-        private System.Windows.Forms.Button AMota;
         private System.Windows.Forms.Label label1;
+        private ReaLTaiizor.Controls.Button AMota;
+        private ReaLTaiizor.Controls.Button BMota;
+        private ReaLTaiizor.Controls.Button CMota;
     }
 }

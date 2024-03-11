@@ -39,17 +39,17 @@ namespace Automobile
             }
         }
 
-        private void ACamioneta_Click(object sender, EventArgs e)
+        private void ACamioneta_Click_1(object sender, EventArgs e)
         {
             showClass("ACamioneta");
         }
 
-        private void BCamioneta_Click(object sender, EventArgs e)
+        private void BCamioneta_Click_1(object sender, EventArgs e)
         {
             showClass("BCamioneta");
         }
 
-        private void CCamioneta_Click(object sender, EventArgs e)
+        private void CCamioneta_Click_1(object sender, EventArgs e)
         {
             showClass("CCamioneta");
         }
@@ -64,5 +64,6 @@ namespace Automobile
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
+        
     }
 }

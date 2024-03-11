@@ -69,52 +69,52 @@ namespace Automobile
 
             
         }
-        private void ACarros_Click(object sender, EventArgs e)
+        private void ACarros_Click_1(object sender, EventArgs e)
         {
             showClass("ACarros");
         }
 
-        private void BCarros_Click(object sender, EventArgs e)
+        private void BCarros_Click_1(object sender, EventArgs e)
         {
             showClass("BCarros");
         }
 
-        private void CCarros_Click(object sender, EventArgs e)
+        private void CCarros_Click_1(object sender, EventArgs e)
         {
             showClass("CCarros");
         }
 
-        private void DCarros_Click(object sender, EventArgs e)
+        private void DCarros_Click_1(object sender, EventArgs e)
         {
             showClass("DCarros");
         }
 
-        private void FCarros_Click(object sender, EventArgs e)
+        private void FCarros_Click_1(object sender, EventArgs e)
         {
             showClass("FCarros");
         }
 
-        private void GCarros_Click(object sender, EventArgs e)
+        private void GCarros_Click_1(object sender, EventArgs e)
         {
             showClass("GCarros");
         }
 
-        private void HCarros_Click(object sender, EventArgs e)
+        private void HCarros_Click_1(object sender, EventArgs e)
         {
             showClass("HCarros");
         }
 
-        private void ICarros_Click(object sender, EventArgs e)
+        private void ICarros_Click_1(object sender, EventArgs e)
         {
             showClass("ICarros");
         }
 
-        private void JCarros_Click(object sender, EventArgs e)
+        private void JCarros_Click_1(object sender, EventArgs e)
         {
             showClass("JCarros");
         }
 
-        private void LCarros_Click(object sender, EventArgs e)
+        private void LCarros_Click_1(object sender, EventArgs e)
         {
             showClass("LCarros");
         }
@@ -129,5 +129,7 @@ namespace Automobile
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
+
+        
     }
 }

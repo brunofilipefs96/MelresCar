@@ -31,10 +31,10 @@
             this.LabelMotaC = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelMotaB = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelMotaA = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.CCamiao = new System.Windows.Forms.Button();
-            this.BCamiao = new System.Windows.Forms.Button();
-            this.ACamiao = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.ACamiao = new ReaLTaiizor.Controls.Button();
+            this.BCamiao = new ReaLTaiizor.Controls.Button();
+            this.CCamiao = new ReaLTaiizor.Controls.Button();
             this.SuspendLayout();
             // 
             // LabelMotaC
@@ -73,46 +73,6 @@
             this.LabelMotaA.Text = "Classes A PBT: 3.5 Toneladas";
             this.LabelMotaA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CCamiao
-            // 
-            this.CCamiao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.CCamiao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CCamiao.ForeColor = System.Drawing.Color.White;
-            this.CCamiao.Location = new System.Drawing.Point(897, 98);
-            this.CCamiao.Name = "CCamiao";
-            this.CCamiao.Size = new System.Drawing.Size(118, 103);
-            this.CCamiao.TabIndex = 91;
-            this.CCamiao.Text = "C";
-            this.CCamiao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.CCamiao.UseVisualStyleBackColor = false;
-            this.CCamiao.Click += new System.EventHandler(this.CCamiao_Click);
-            // 
-            // BCamiao
-            // 
-            this.BCamiao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.BCamiao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BCamiao.ForeColor = System.Drawing.Color.White;
-            this.BCamiao.Location = new System.Drawing.Point(635, 98);
-            this.BCamiao.Name = "BCamiao";
-            this.BCamiao.Size = new System.Drawing.Size(118, 103);
-            this.BCamiao.TabIndex = 90;
-            this.BCamiao.Text = "B";
-            this.BCamiao.UseVisualStyleBackColor = false;
-            this.BCamiao.Click += new System.EventHandler(this.BCamiao_Click);
-            // 
-            // ACamiao
-            // 
-            this.ACamiao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.ACamiao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ACamiao.ForeColor = System.Drawing.Color.White;
-            this.ACamiao.Location = new System.Drawing.Point(372, 98);
-            this.ACamiao.Name = "ACamiao";
-            this.ACamiao.Size = new System.Drawing.Size(118, 103);
-            this.ACamiao.TabIndex = 89;
-            this.ACamiao.Text = "A";
-            this.ACamiao.UseVisualStyleBackColor = false;
-            this.ACamiao.Click += new System.EventHandler(this.ACamiao_Click);
-            // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -124,17 +84,80 @@
             this.label1.Text = "Classes de Camiões";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // ACamiao
+            // 
+            this.ACamiao.BackColor = System.Drawing.Color.Transparent;
+            this.ACamiao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ACamiao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ACamiao.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ACamiao.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ACamiao.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ACamiao.Image = null;
+            this.ACamiao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ACamiao.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ACamiao.Location = new System.Drawing.Point(372, 98);
+            this.ACamiao.Name = "ACamiao";
+            this.ACamiao.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ACamiao.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ACamiao.Size = new System.Drawing.Size(118, 103);
+            this.ACamiao.TabIndex = 95;
+            this.ACamiao.Text = "A";
+            this.ACamiao.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.ACamiao.Click += new System.EventHandler(this.ACamiao_Click_1);
+            // 
+            // BCamiao
+            // 
+            this.BCamiao.BackColor = System.Drawing.Color.Transparent;
+            this.BCamiao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BCamiao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BCamiao.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BCamiao.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BCamiao.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BCamiao.Image = null;
+            this.BCamiao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BCamiao.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BCamiao.Location = new System.Drawing.Point(635, 98);
+            this.BCamiao.Name = "BCamiao";
+            this.BCamiao.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BCamiao.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BCamiao.Size = new System.Drawing.Size(118, 103);
+            this.BCamiao.TabIndex = 97;
+            this.BCamiao.Text = "B";
+            this.BCamiao.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.BCamiao.Click += new System.EventHandler(this.BCamiao_Click_1);
+            // 
+            // CCamiao
+            // 
+            this.CCamiao.BackColor = System.Drawing.Color.Transparent;
+            this.CCamiao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CCamiao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CCamiao.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CCamiao.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CCamiao.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CCamiao.Image = null;
+            this.CCamiao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CCamiao.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CCamiao.Location = new System.Drawing.Point(897, 98);
+            this.CCamiao.Name = "CCamiao";
+            this.CCamiao.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CCamiao.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CCamiao.Size = new System.Drawing.Size(118, 103);
+            this.CCamiao.TabIndex = 98;
+            this.CCamiao.Text = "C";
+            this.CCamiao.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.CCamiao.Click += new System.EventHandler(this.CCamiao_Click_1);
+            // 
             // UC_ListarCamiao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.LabelMotaC);
-            this.Controls.Add(this.LabelMotaB);
-            this.Controls.Add(this.LabelMotaA);
             this.Controls.Add(this.CCamiao);
             this.Controls.Add(this.BCamiao);
             this.Controls.Add(this.ACamiao);
+            this.Controls.Add(this.LabelMotaC);
+            this.Controls.Add(this.LabelMotaB);
+            this.Controls.Add(this.LabelMotaA);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_ListarCamiao";
@@ -149,9 +172,9 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelMotaC;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelMotaB;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelMotaA;
-        private System.Windows.Forms.Button CCamiao;
-        private System.Windows.Forms.Button BCamiao;
-        private System.Windows.Forms.Button ACamiao;
         private System.Windows.Forms.Label label1;
+        private ReaLTaiizor.Controls.Button ACamiao;
+        private ReaLTaiizor.Controls.Button BCamiao;
+        private ReaLTaiizor.Controls.Button CCamiao;
     }
 }

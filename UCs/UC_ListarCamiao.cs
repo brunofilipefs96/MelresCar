@@ -39,17 +39,17 @@ namespace Automobile
             }
         }
 
-        private void ACamiao_Click(object sender, EventArgs e)
+        private void ACamiao_Click_1(object sender, EventArgs e)
         {
             showClass("ACamiao");
         }
 
-        private void BCamiao_Click(object sender, EventArgs e)
+        private void BCamiao_Click_1(object sender, EventArgs e)
         {
             showClass("BCamiao");
         }
 
-        private void CCamiao_Click(object sender, EventArgs e)
+        private void CCamiao_Click_1(object sender, EventArgs e)
         {
             showClass("CCamiao");
         }

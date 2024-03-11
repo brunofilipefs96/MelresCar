@@ -17,10 +17,10 @@ namespace Automobile
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.AutoSize = false;
+            this.AutoSize = false;  
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void buttonCancelar_Click_1(object sender, EventArgs e)
         {
             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
             menuPrincipalObject.ucReservas.atualizaDataGridView();
@@ -28,7 +28,7 @@ namespace Automobile
             this.Close();
         }
 
-        private void buttonAlterar_Click(object sender, EventArgs e)
+        private void buttonGerar_Click(object sender, EventArgs e)
         {
             labelLucro.Visible = true;
             decimal lucroTotal = 0;
@@ -53,7 +53,7 @@ namespace Automobile
                     dataDias = dataDias.AddDays(1);
                 }
             }
-            labelLucro.Text = lucroTotal.ToString();    
+            labelLucro.Text = lucroTotal.ToString();
         }
 
         private void PaintLucroDatas(object sender, PaintEventArgs e)

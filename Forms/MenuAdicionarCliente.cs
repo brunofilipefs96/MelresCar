@@ -18,14 +18,14 @@ namespace Automobile
             InitializeComponent();
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void buttonCancelar_Click_1(object sender, EventArgs e)
         {
             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
             menuPrincipalObject.Enabled = true;
             this.Close();
         }
 
-        private void buttonAdicionar_Click(object sender, EventArgs e)
+        private void buttonAdicionar_Click_1(object sender, EventArgs e)
         {
             if (textBoxNome.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "")
             {
@@ -91,5 +91,9 @@ namespace Automobile
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
+
+        
+
+        
     }
 }

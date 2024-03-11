@@ -31,10 +31,10 @@
             this.LabelMotaC = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelMotaB = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelMotaA = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.CCamioneta = new System.Windows.Forms.Button();
-            this.BCamioneta = new System.Windows.Forms.Button();
-            this.ACamioneta = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.CCamioneta = new ReaLTaiizor.Controls.Button();
+            this.BCamioneta = new ReaLTaiizor.Controls.Button();
+            this.ACamioneta = new ReaLTaiizor.Controls.Button();
             this.SuspendLayout();
             // 
             // LabelMotaC
@@ -73,45 +73,6 @@
             this.LabelMotaA.Text = "Classe A Cap.Max 8 Passageiros";
             this.LabelMotaA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CCamioneta
-            // 
-            this.CCamioneta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.CCamioneta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CCamioneta.ForeColor = System.Drawing.Color.White;
-            this.CCamioneta.Location = new System.Drawing.Point(889, 97);
-            this.CCamioneta.Name = "CCamioneta";
-            this.CCamioneta.Size = new System.Drawing.Size(118, 103);
-            this.CCamioneta.TabIndex = 91;
-            this.CCamioneta.Text = "C";
-            this.CCamioneta.UseVisualStyleBackColor = false;
-            this.CCamioneta.Click += new System.EventHandler(this.CCamioneta_Click);
-            // 
-            // BCamioneta
-            // 
-            this.BCamioneta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.BCamioneta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BCamioneta.ForeColor = System.Drawing.Color.White;
-            this.BCamioneta.Location = new System.Drawing.Point(627, 97);
-            this.BCamioneta.Name = "BCamioneta";
-            this.BCamioneta.Size = new System.Drawing.Size(118, 103);
-            this.BCamioneta.TabIndex = 90;
-            this.BCamioneta.Text = "B";
-            this.BCamioneta.UseVisualStyleBackColor = false;
-            this.BCamioneta.Click += new System.EventHandler(this.BCamioneta_Click);
-            // 
-            // ACamioneta
-            // 
-            this.ACamioneta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.ACamioneta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ACamioneta.ForeColor = System.Drawing.Color.White;
-            this.ACamioneta.Location = new System.Drawing.Point(364, 97);
-            this.ACamioneta.Name = "ACamioneta";
-            this.ACamioneta.Size = new System.Drawing.Size(118, 103);
-            this.ACamioneta.TabIndex = 89;
-            this.ACamioneta.Text = "A";
-            this.ACamioneta.UseVisualStyleBackColor = false;
-            this.ACamioneta.Click += new System.EventHandler(this.ACamioneta_Click);
-            // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -124,17 +85,80 @@
             this.label1.Text = "Classe de Camionetas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // CCamioneta
+            // 
+            this.CCamioneta.BackColor = System.Drawing.Color.Transparent;
+            this.CCamioneta.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CCamioneta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CCamioneta.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CCamioneta.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CCamioneta.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CCamioneta.Image = null;
+            this.CCamioneta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CCamioneta.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CCamioneta.Location = new System.Drawing.Point(897, 98);
+            this.CCamioneta.Name = "CCamioneta";
+            this.CCamioneta.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CCamioneta.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CCamioneta.Size = new System.Drawing.Size(118, 103);
+            this.CCamioneta.TabIndex = 95;
+            this.CCamioneta.Text = "C";
+            this.CCamioneta.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.CCamioneta.Click += new System.EventHandler(this.CCamioneta_Click_1);
+            // 
+            // BCamioneta
+            // 
+            this.BCamioneta.BackColor = System.Drawing.Color.Transparent;
+            this.BCamioneta.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BCamioneta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BCamioneta.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BCamioneta.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BCamioneta.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BCamioneta.Image = null;
+            this.BCamioneta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BCamioneta.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BCamioneta.Location = new System.Drawing.Point(635, 98);
+            this.BCamioneta.Name = "BCamioneta";
+            this.BCamioneta.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BCamioneta.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BCamioneta.Size = new System.Drawing.Size(118, 103);
+            this.BCamioneta.TabIndex = 96;
+            this.BCamioneta.Text = "B";
+            this.BCamioneta.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.BCamioneta.Click += new System.EventHandler(this.BCamioneta_Click_1);
+            // 
+            // ACamioneta
+            // 
+            this.ACamioneta.BackColor = System.Drawing.Color.Transparent;
+            this.ACamioneta.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ACamioneta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ACamioneta.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ACamioneta.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ACamioneta.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ACamioneta.Image = null;
+            this.ACamioneta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ACamioneta.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ACamioneta.Location = new System.Drawing.Point(372, 98);
+            this.ACamioneta.Name = "ACamioneta";
+            this.ACamioneta.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ACamioneta.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ACamioneta.Size = new System.Drawing.Size(118, 103);
+            this.ACamioneta.TabIndex = 97;
+            this.ACamioneta.Text = "A";
+            this.ACamioneta.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.ACamioneta.Click += new System.EventHandler(this.ACamioneta_Click_1);
+            // 
             // UC_ListarCamioneta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.ACamioneta);
+            this.Controls.Add(this.BCamioneta);
+            this.Controls.Add(this.CCamioneta);
             this.Controls.Add(this.LabelMotaC);
             this.Controls.Add(this.LabelMotaB);
             this.Controls.Add(this.LabelMotaA);
-            this.Controls.Add(this.CCamioneta);
-            this.Controls.Add(this.BCamioneta);
-            this.Controls.Add(this.ACamioneta);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_ListarCamioneta";
@@ -149,9 +173,9 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelMotaC;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelMotaB;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelMotaA;
-        private System.Windows.Forms.Button CCamioneta;
-        private System.Windows.Forms.Button BCamioneta;
-        private System.Windows.Forms.Button ACamioneta;
         private System.Windows.Forms.Label label1;
+        private ReaLTaiizor.Controls.Button CCamioneta;
+        private ReaLTaiizor.Controls.Button BCamioneta;
+        private ReaLTaiizor.Controls.Button ACamioneta;
     }
 }

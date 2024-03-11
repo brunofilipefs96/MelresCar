@@ -56,23 +56,20 @@ namespace Automobile
                 dataGridViewReservas.Rows.Add(reserva.IdReserva, reserva.DataReserva, reserva.DataInicio, reserva.DataFim, Program.melresCar.ProcurarMatriculaVeiculo(reserva.IdVeiculo), Program.melresCar.ProcuraNifCliente(reserva.NumCliente), reserva.PrecoTotal);
             }
         }
-
-        private void buttonCriarReserva_Click(object sender, EventArgs e)
+        private void buttonCriarReserva_Click_1(object sender, EventArgs e)
         {
             ListaVeiculo listaVeiculo = new ListaVeiculo();
             listaVeiculo.Show();
             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
             menuPrincipalObject.Enabled = false;
         }
-
-        private void buttonLucroEntreDatas_Click(object sender, EventArgs e)
+        private void buttonLucroEntreDatas_Click_1(object sender, EventArgs e)
         {
             LucroDatas lucroDatas = new LucroDatas();
             lucroDatas.Show();
             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
             menuPrincipalObject.Enabled = false;
         }
-
         private void PaintReservas(object sender, PaintEventArgs e)
         {
             Graphics mgraphics = e.Graphics;
@@ -83,5 +80,7 @@ namespace Automobile
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
+
+        
     }
 }

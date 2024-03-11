@@ -32,39 +32,27 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.crownButton1 = new ReaLTaiizor.Controls.CrownButton();
             this.label1 = new System.Windows.Forms.Label();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.fotoMotaA = new System.Windows.Forms.PictureBox();
-            this.buttonReservar = new ReaLTaiizor.Controls.CrownButton();
             this.gridCamiaoA = new ReaLTaiizor.Controls.PoisonDataGridView();
+            this.buttonReservar = new ReaLTaiizor.Controls.Button();
+            this.button1 = new ReaLTaiizor.Controls.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fotoMotaA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridCamiaoA)).BeginInit();
             this.SuspendLayout();
-            // 
-            // crownButton1
-            // 
-            this.crownButton1.Location = new System.Drawing.Point(724, 462);
-            this.crownButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.crownButton1.Name = "crownButton1";
-            this.crownButton1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.crownButton1.Size = new System.Drawing.Size(156, 64);
-            this.crownButton1.TabIndex = 71;
-            this.crownButton1.Text = "Cancelar";
-            this.crownButton1.Click += new System.EventHandler(this.crownButton1_Click_1);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.label1.Location = new System.Drawing.Point(0, 57);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 11F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(0, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 20);
+            this.label1.Size = new System.Drawing.Size(316, 20);
             this.label1.TabIndex = 68;
             this.label1.Text = "Camiao com Peso Bruto Total de 3.5 Toneladas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,12 +61,11 @@
             // 
             this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bigLabel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel1.Font = new System.Drawing.Font("Stencil", 25F);
+            this.bigLabel1.ForeColor = System.Drawing.Color.Black;
             this.bigLabel1.Location = new System.Drawing.Point(0, 0);
-            this.bigLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(1877, 57);
+            this.bigLabel1.Size = new System.Drawing.Size(1408, 46);
             this.bigLabel1.TabIndex = 67;
             this.bigLabel1.Text = "Classe A";
             // 
@@ -86,24 +73,12 @@
             // 
             this.fotoMotaA.BackColor = System.Drawing.Color.Transparent;
             this.fotoMotaA.Image = global::Automobile.Properties.Resources.camiaoA;
-            this.fotoMotaA.Location = new System.Drawing.Point(11, 81);
-            this.fotoMotaA.Margin = new System.Windows.Forms.Padding(4);
+            this.fotoMotaA.Location = new System.Drawing.Point(8, 66);
             this.fotoMotaA.Name = "fotoMotaA";
-            this.fotoMotaA.Size = new System.Drawing.Size(705, 475);
+            this.fotoMotaA.Size = new System.Drawing.Size(529, 386);
             this.fotoMotaA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.fotoMotaA.TabIndex = 70;
             this.fotoMotaA.TabStop = false;
-            // 
-            // buttonReservar
-            // 
-            this.buttonReservar.Location = new System.Drawing.Point(1687, 462);
-            this.buttonReservar.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonReservar.Name = "buttonReservar";
-            this.buttonReservar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.buttonReservar.Size = new System.Drawing.Size(156, 64);
-            this.buttonReservar.TabIndex = 72;
-            this.buttonReservar.Text = "Reservar";
-            this.buttonReservar.Click += new System.EventHandler(this.buttonReservar_Click_1);
             // 
             // gridCamiaoA
             // 
@@ -132,8 +107,7 @@
             this.gridCamiaoA.EnableHeadersVisualStyles = false;
             this.gridCamiaoA.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridCamiaoA.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gridCamiaoA.Location = new System.Drawing.Point(724, 13);
-            this.gridCamiaoA.Margin = new System.Windows.Forms.Padding(4);
+            this.gridCamiaoA.Location = new System.Drawing.Point(543, 11);
             this.gridCamiaoA.Name = "gridCamiaoA";
             this.gridCamiaoA.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -147,23 +121,64 @@
             this.gridCamiaoA.RowHeadersWidth = 51;
             this.gridCamiaoA.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridCamiaoA.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridCamiaoA.Size = new System.Drawing.Size(1119, 441);
+            this.gridCamiaoA.Size = new System.Drawing.Size(839, 358);
             this.gridCamiaoA.TabIndex = 76;
+            // 
+            // buttonReservar
+            // 
+            this.buttonReservar.BackColor = System.Drawing.Color.Transparent;
+            this.buttonReservar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonReservar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonReservar.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonReservar.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonReservar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReservar.Image = null;
+            this.buttonReservar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonReservar.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonReservar.Location = new System.Drawing.Point(1262, 393);
+            this.buttonReservar.Name = "buttonReservar";
+            this.buttonReservar.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonReservar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonReservar.Size = new System.Drawing.Size(120, 40);
+            this.buttonReservar.TabIndex = 93;
+            this.buttonReservar.Text = "Reservar";
+            this.buttonReservar.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonReservar.Click += new System.EventHandler(this.buttonReservar_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.button1.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.button1.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = null;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.button1.Location = new System.Drawing.Point(543, 393);
+            this.button1.Name = "button1";
+            this.button1.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.button1.Size = new System.Drawing.Size(120, 40);
+            this.button1.TabIndex = 92;
+            this.button1.Text = "Cancelar";
+            this.button1.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormACamiao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1877, 548);
-            this.Controls.Add(this.gridCamiaoA);
+            this.ClientSize = new System.Drawing.Size(1408, 445);
             this.Controls.Add(this.buttonReservar);
-            this.Controls.Add(this.crownButton1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.gridCamiaoA);
             this.Controls.Add(this.fotoMotaA);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bigLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormACamiao";
             this.Text = "MelresCar | Classe A";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintCamiaoA);
@@ -175,13 +190,12 @@
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.CrownButton crownButton1;
         private System.Windows.Forms.PictureBox fotoMotaA;
         private System.Windows.Forms.Label label1;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private System.Windows.Forms.Timer timer;
-        private ReaLTaiizor.Controls.CrownButton buttonReservar;
         private ReaLTaiizor.Controls.PoisonDataGridView gridCamiaoA;
+        private ReaLTaiizor.Controls.Button buttonReservar;
+        private ReaLTaiizor.Controls.Button button1;
     }
 }

@@ -71,20 +71,21 @@ namespace Automobile
             }
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void buttonCancelar_Click_1(object sender, EventArgs e)
         {
             Form formListaVeiculo = Application.OpenForms["ListaVeiculo"];
             formListaVeiculo.Enabled = true;
             this.Close();
         }
 
-        private void buttonReservar_Click_1(object sender, EventArgs e)
+        private void buttonReservar_Click(object sender, EventArgs e)
         {
             if (gridCarroB.CurrentRow == null)
             {
                 MessageBox.Show("Selecione um veículo para reservar");
                 return;
-            } else
+            }
+            else
             {
                 MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
 

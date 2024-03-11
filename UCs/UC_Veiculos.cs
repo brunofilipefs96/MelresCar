@@ -144,7 +144,7 @@ namespace Automobile
             listaVeiculo.Show();
         }
 
-        private void buttonEditVeiculo_Click(object sender, EventArgs e)
+        private void buttonEditVeiculo_Click_1(object sender, EventArgs e)
         {
             if (dataGridViewVeiculos.CurrentCell == null)
             {
@@ -162,7 +162,7 @@ namespace Automobile
             }
         }
 
-        private void buttonRemVeiculo_Click(object sender, EventArgs e)
+        private void buttonRemVeiculo_Click_1(object sender, EventArgs e)
         {
             if (dataGridViewVeiculos.CurrentCell == null)
             {
@@ -188,7 +188,7 @@ namespace Automobile
             }
         }
 
-        private void buttonAddVeiculo_Click(object sender, EventArgs e)
+        private void buttonAddVeiculo_Click_1(object sender, EventArgs e)
         {
             MenuAdicionarVeiculo adicionarVeiculo = new MenuAdicionarVeiculo();
             adicionarVeiculo.Show();
@@ -196,12 +196,13 @@ namespace Automobile
             menuPrincipalObject.Enabled = false;
         }
 
+
         private void dungeonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             atualizaDataGridView(comboBoxTipoVeiculo.SelectedIndex);
         }
 
-        private void buttonManutencaoVeiculo_Click(object sender, EventArgs e)
+        private void buttonManutencaoVeiculo_Click_1(object sender, EventArgs e)
         {
             if (dataGridViewVeiculos.CurrentCell == null)
             {

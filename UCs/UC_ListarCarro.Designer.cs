@@ -30,25 +30,25 @@
         {
             this.LabelCarroL = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelCarroJ = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.LCarros = new System.Windows.Forms.Button();
-            this.JCarros = new System.Windows.Forms.Button();
             this.LabelCarroI = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.ICarros = new System.Windows.Forms.Button();
             this.LabelCarroH = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.HCarros = new System.Windows.Forms.Button();
             this.LabelCarroG = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.GCarros = new System.Windows.Forms.Button();
             this.LabelCarroF = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelCarroD = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelCarroC = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelCarroB = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.LabelCarroA = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.FCarros = new System.Windows.Forms.Button();
-            this.DCarros = new System.Windows.Forms.Button();
-            this.CCarros = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.BCarros = new System.Windows.Forms.Button();
-            this.ACarros = new System.Windows.Forms.Button();
+            this.ACarros = new ReaLTaiizor.Controls.Button();
+            this.BCarros = new ReaLTaiizor.Controls.Button();
+            this.CCarros = new ReaLTaiizor.Controls.Button();
+            this.DCarros = new ReaLTaiizor.Controls.Button();
+            this.FCarros = new ReaLTaiizor.Controls.Button();
+            this.GCarros = new ReaLTaiizor.Controls.Button();
+            this.HCarros = new ReaLTaiizor.Controls.Button();
+            this.ICarros = new ReaLTaiizor.Controls.Button();
+            this.JCarros = new ReaLTaiizor.Controls.Button();
+            this.LCarros = new ReaLTaiizor.Controls.Button();
             this.SuspendLayout();
             // 
             // LabelCarroL
@@ -75,32 +75,6 @@
             this.LabelCarroJ.Text = "SUV 5 Portas a Diesel / Gasolina";
             this.LabelCarroJ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LCarros
-            // 
-            this.LCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.LCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LCarros.ForeColor = System.Drawing.Color.White;
-            this.LCarros.Location = new System.Drawing.Point(1125, 334);
-            this.LCarros.Name = "LCarros";
-            this.LCarros.Size = new System.Drawing.Size(118, 103);
-            this.LCarros.TabIndex = 79;
-            this.LCarros.Text = "L";
-            this.LCarros.UseVisualStyleBackColor = false;
-            this.LCarros.Click += new System.EventHandler(this.LCarros_Click);
-            // 
-            // JCarros
-            // 
-            this.JCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.JCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JCarros.ForeColor = System.Drawing.Color.White;
-            this.JCarros.Location = new System.Drawing.Point(862, 334);
-            this.JCarros.Name = "JCarros";
-            this.JCarros.Size = new System.Drawing.Size(118, 103);
-            this.JCarros.TabIndex = 78;
-            this.JCarros.Text = "J";
-            this.JCarros.UseVisualStyleBackColor = false;
-            this.JCarros.Click += new System.EventHandler(this.JCarros_Click);
-            // 
             // LabelCarroI
             // 
             this.LabelCarroI.BackColor = System.Drawing.Color.Transparent;
@@ -112,19 +86,6 @@
             this.LabelCarroI.TabIndex = 77;
             this.LabelCarroI.Text = "Médio Elétrico 5 Portas";
             this.LabelCarroI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ICarros
-            // 
-            this.ICarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.ICarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ICarros.ForeColor = System.Drawing.Color.White;
-            this.ICarros.Location = new System.Drawing.Point(600, 334);
-            this.ICarros.Name = "ICarros";
-            this.ICarros.Size = new System.Drawing.Size(118, 103);
-            this.ICarros.TabIndex = 76;
-            this.ICarros.Text = "I";
-            this.ICarros.UseVisualStyleBackColor = false;
-            this.ICarros.Click += new System.EventHandler(this.ICarros_Click);
             // 
             // LabelCarroH
             // 
@@ -138,19 +99,6 @@
             this.LabelCarroH.Text = "Station Wagon 5 Portas a Diesel";
             this.LabelCarroH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // HCarros
-            // 
-            this.HCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.HCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HCarros.ForeColor = System.Drawing.Color.White;
-            this.HCarros.Location = new System.Drawing.Point(338, 334);
-            this.HCarros.Name = "HCarros";
-            this.HCarros.Size = new System.Drawing.Size(118, 103);
-            this.HCarros.TabIndex = 74;
-            this.HCarros.Text = "H";
-            this.HCarros.UseVisualStyleBackColor = false;
-            this.HCarros.Click += new System.EventHandler(this.HCarros_Click);
-            // 
             // LabelCarroG
             // 
             this.LabelCarroG.BackColor = System.Drawing.Color.Transparent;
@@ -162,19 +110,6 @@
             this.LabelCarroG.TabIndex = 73;
             this.LabelCarroG.Text = "Médio 5 Portas a Diesel";
             this.LabelCarroG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // GCarros
-            // 
-            this.GCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.GCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GCarros.ForeColor = System.Drawing.Color.White;
-            this.GCarros.Location = new System.Drawing.Point(75, 334);
-            this.GCarros.Name = "GCarros";
-            this.GCarros.Size = new System.Drawing.Size(118, 103);
-            this.GCarros.TabIndex = 72;
-            this.GCarros.Text = "G";
-            this.GCarros.UseVisualStyleBackColor = false;
-            this.GCarros.Click += new System.EventHandler(this.GCarros_Click);
             // 
             // LabelCarroF
             // 
@@ -236,49 +171,10 @@
             this.LabelCarroA.Text = "3 Portas Manual a Gasolina";
             this.LabelCarroA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FCarros
-            // 
-            this.FCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.FCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FCarros.ForeColor = System.Drawing.Color.White;
-            this.FCarros.Location = new System.Drawing.Point(1125, 102);
-            this.FCarros.Name = "FCarros";
-            this.FCarros.Size = new System.Drawing.Size(118, 103);
-            this.FCarros.TabIndex = 66;
-            this.FCarros.Text = "F";
-            this.FCarros.UseVisualStyleBackColor = false;
-            this.FCarros.Click += new System.EventHandler(this.FCarros_Click);
-            // 
-            // DCarros
-            // 
-            this.DCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.DCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCarros.ForeColor = System.Drawing.Color.White;
-            this.DCarros.Location = new System.Drawing.Point(862, 102);
-            this.DCarros.Name = "DCarros";
-            this.DCarros.Size = new System.Drawing.Size(118, 103);
-            this.DCarros.TabIndex = 65;
-            this.DCarros.Text = "D";
-            this.DCarros.UseVisualStyleBackColor = false;
-            this.DCarros.Click += new System.EventHandler(this.DCarros_Click);
-            // 
-            // CCarros
-            // 
-            this.CCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.CCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CCarros.ForeColor = System.Drawing.Color.White;
-            this.CCarros.Location = new System.Drawing.Point(600, 102);
-            this.CCarros.Name = "CCarros";
-            this.CCarros.Size = new System.Drawing.Size(118, 103);
-            this.CCarros.TabIndex = 64;
-            this.CCarros.Text = "C";
-            this.CCarros.UseVisualStyleBackColor = false;
-            this.CCarros.Click += new System.EventHandler(this.CCarros_Click);
-            // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Stencil", 20F);
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1395, 62);
@@ -286,58 +182,242 @@
             this.label1.Text = "Classe de Carro";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BCarros
-            // 
-            this.BCarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.BCarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BCarros.ForeColor = System.Drawing.Color.White;
-            this.BCarros.Location = new System.Drawing.Point(338, 102);
-            this.BCarros.Name = "BCarros";
-            this.BCarros.Size = new System.Drawing.Size(118, 103);
-            this.BCarros.TabIndex = 62;
-            this.BCarros.Text = "B";
-            this.BCarros.UseVisualStyleBackColor = false;
-            this.BCarros.Click += new System.EventHandler(this.BCarros_Click);
-            // 
             // ACarros
             // 
-            this.ACarros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.ACarros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ACarros.ForeColor = System.Drawing.Color.White;
+            this.ACarros.BackColor = System.Drawing.Color.Transparent;
+            this.ACarros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ACarros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ACarros.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ACarros.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ACarros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ACarros.Image = null;
+            this.ACarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ACarros.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.ACarros.Location = new System.Drawing.Point(75, 102);
             this.ACarros.Name = "ACarros";
+            this.ACarros.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ACarros.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.ACarros.Size = new System.Drawing.Size(118, 103);
-            this.ACarros.TabIndex = 61;
+            this.ACarros.TabIndex = 82;
             this.ACarros.Text = "A";
-            this.ACarros.UseVisualStyleBackColor = false;
-            this.ACarros.Click += new System.EventHandler(this.ACarros_Click);
+            this.ACarros.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.ACarros.Click += new System.EventHandler(this.ACarros_Click_1);
+            // 
+            // BCarros
+            // 
+            this.BCarros.BackColor = System.Drawing.Color.Transparent;
+            this.BCarros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BCarros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BCarros.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BCarros.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BCarros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BCarros.Image = null;
+            this.BCarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BCarros.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.BCarros.Location = new System.Drawing.Point(338, 102);
+            this.BCarros.Name = "BCarros";
+            this.BCarros.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BCarros.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BCarros.Size = new System.Drawing.Size(118, 103);
+            this.BCarros.TabIndex = 83;
+            this.BCarros.Text = "B";
+            this.BCarros.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.BCarros.Click += new System.EventHandler(this.BCarros_Click_1);
+            // 
+            // CCarros
+            // 
+            this.CCarros.BackColor = System.Drawing.Color.Transparent;
+            this.CCarros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CCarros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CCarros.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CCarros.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CCarros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CCarros.Image = null;
+            this.CCarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CCarros.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CCarros.Location = new System.Drawing.Point(600, 102);
+            this.CCarros.Name = "CCarros";
+            this.CCarros.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CCarros.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CCarros.Size = new System.Drawing.Size(118, 103);
+            this.CCarros.TabIndex = 84;
+            this.CCarros.Text = "C";
+            this.CCarros.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.CCarros.Click += new System.EventHandler(this.CCarros_Click_1);
+            // 
+            // DCarros
+            // 
+            this.DCarros.BackColor = System.Drawing.Color.Transparent;
+            this.DCarros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.DCarros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DCarros.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.DCarros.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.DCarros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCarros.Image = null;
+            this.DCarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DCarros.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.DCarros.Location = new System.Drawing.Point(862, 102);
+            this.DCarros.Name = "DCarros";
+            this.DCarros.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.DCarros.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.DCarros.Size = new System.Drawing.Size(118, 103);
+            this.DCarros.TabIndex = 85;
+            this.DCarros.Text = "D";
+            this.DCarros.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.DCarros.Click += new System.EventHandler(this.DCarros_Click_1);
+            // 
+            // FCarros
+            // 
+            this.FCarros.BackColor = System.Drawing.Color.Transparent;
+            this.FCarros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.FCarros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FCarros.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.FCarros.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.FCarros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FCarros.Image = null;
+            this.FCarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.FCarros.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.FCarros.Location = new System.Drawing.Point(1125, 102);
+            this.FCarros.Name = "FCarros";
+            this.FCarros.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.FCarros.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.FCarros.Size = new System.Drawing.Size(118, 103);
+            this.FCarros.TabIndex = 86;
+            this.FCarros.Text = "F";
+            this.FCarros.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.FCarros.Click += new System.EventHandler(this.FCarros_Click_1);
+            // 
+            // GCarros
+            // 
+            this.GCarros.BackColor = System.Drawing.Color.Transparent;
+            this.GCarros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.GCarros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GCarros.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.GCarros.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.GCarros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GCarros.Image = null;
+            this.GCarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GCarros.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.GCarros.Location = new System.Drawing.Point(75, 334);
+            this.GCarros.Name = "GCarros";
+            this.GCarros.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.GCarros.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.GCarros.Size = new System.Drawing.Size(118, 103);
+            this.GCarros.TabIndex = 87;
+            this.GCarros.Text = "G";
+            this.GCarros.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.GCarros.Click += new System.EventHandler(this.GCarros_Click_1);
+            // 
+            // HCarros
+            // 
+            this.HCarros.BackColor = System.Drawing.Color.Transparent;
+            this.HCarros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.HCarros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HCarros.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.HCarros.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.HCarros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HCarros.Image = null;
+            this.HCarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HCarros.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.HCarros.Location = new System.Drawing.Point(338, 334);
+            this.HCarros.Name = "HCarros";
+            this.HCarros.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.HCarros.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.HCarros.Size = new System.Drawing.Size(118, 103);
+            this.HCarros.TabIndex = 88;
+            this.HCarros.Text = "H";
+            this.HCarros.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.HCarros.Click += new System.EventHandler(this.HCarros_Click_1);
+            // 
+            // ICarros
+            // 
+            this.ICarros.BackColor = System.Drawing.Color.Transparent;
+            this.ICarros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ICarros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ICarros.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ICarros.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ICarros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ICarros.Image = null;
+            this.ICarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ICarros.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.ICarros.Location = new System.Drawing.Point(600, 334);
+            this.ICarros.Name = "ICarros";
+            this.ICarros.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ICarros.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.ICarros.Size = new System.Drawing.Size(118, 103);
+            this.ICarros.TabIndex = 89;
+            this.ICarros.Text = "I";
+            this.ICarros.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.ICarros.Click += new System.EventHandler(this.ICarros_Click_1);
+            // 
+            // JCarros
+            // 
+            this.JCarros.BackColor = System.Drawing.Color.Transparent;
+            this.JCarros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.JCarros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.JCarros.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.JCarros.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.JCarros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JCarros.Image = null;
+            this.JCarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.JCarros.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.JCarros.Location = new System.Drawing.Point(862, 334);
+            this.JCarros.Name = "JCarros";
+            this.JCarros.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.JCarros.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.JCarros.Size = new System.Drawing.Size(118, 103);
+            this.JCarros.TabIndex = 90;
+            this.JCarros.Text = "J";
+            this.JCarros.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.JCarros.Click += new System.EventHandler(this.JCarros_Click_1);
+            // 
+            // LCarros
+            // 
+            this.LCarros.BackColor = System.Drawing.Color.Transparent;
+            this.LCarros.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.LCarros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LCarros.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.LCarros.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.LCarros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LCarros.Image = null;
+            this.LCarros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LCarros.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.LCarros.Location = new System.Drawing.Point(1125, 334);
+            this.LCarros.Name = "LCarros";
+            this.LCarros.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.LCarros.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.LCarros.Size = new System.Drawing.Size(118, 103);
+            this.LCarros.TabIndex = 91;
+            this.LCarros.Text = "L";
+            this.LCarros.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LCarros.Click += new System.EventHandler(this.LCarros_Click_1);
             // 
             // UC_ListarCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.LabelCarroL);
-            this.Controls.Add(this.LabelCarroJ);
             this.Controls.Add(this.LCarros);
             this.Controls.Add(this.JCarros);
-            this.Controls.Add(this.LabelCarroI);
             this.Controls.Add(this.ICarros);
-            this.Controls.Add(this.LabelCarroH);
             this.Controls.Add(this.HCarros);
-            this.Controls.Add(this.LabelCarroG);
             this.Controls.Add(this.GCarros);
+            this.Controls.Add(this.FCarros);
+            this.Controls.Add(this.DCarros);
+            this.Controls.Add(this.CCarros);
+            this.Controls.Add(this.BCarros);
+            this.Controls.Add(this.ACarros);
+            this.Controls.Add(this.LabelCarroL);
+            this.Controls.Add(this.LabelCarroJ);
+            this.Controls.Add(this.LabelCarroI);
+            this.Controls.Add(this.LabelCarroH);
+            this.Controls.Add(this.LabelCarroG);
             this.Controls.Add(this.LabelCarroF);
             this.Controls.Add(this.LabelCarroD);
             this.Controls.Add(this.LabelCarroC);
             this.Controls.Add(this.LabelCarroB);
             this.Controls.Add(this.LabelCarroA);
-            this.Controls.Add(this.FCarros);
-            this.Controls.Add(this.DCarros);
-            this.Controls.Add(this.CCarros);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BCarros);
-            this.Controls.Add(this.ACarros);
             this.Name = "UC_ListarCarro";
             this.Size = new System.Drawing.Size(1395, 670);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintCarro);
@@ -348,24 +428,24 @@
         #endregion
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelCarroL;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelCarroJ;
-        private System.Windows.Forms.Button LCarros;
-        private System.Windows.Forms.Button JCarros;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelCarroI;
-        private System.Windows.Forms.Button ICarros;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelCarroH;
-        private System.Windows.Forms.Button HCarros;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelCarroG;
-        private System.Windows.Forms.Button GCarros;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelCarroF;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelCarroD;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelCarroC;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelCarroB;
         private ReaLTaiizor.Controls.DungeonHeaderLabel LabelCarroA;
-        private System.Windows.Forms.Button FCarros;
-        private System.Windows.Forms.Button DCarros;
-        private System.Windows.Forms.Button CCarros;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button BCarros;
-        private System.Windows.Forms.Button ACarros;
+        private ReaLTaiizor.Controls.Button ACarros;
+        private ReaLTaiizor.Controls.Button BCarros;
+        private ReaLTaiizor.Controls.Button CCarros;
+        private ReaLTaiizor.Controls.Button DCarros;
+        private ReaLTaiizor.Controls.Button FCarros;
+        private ReaLTaiizor.Controls.Button GCarros;
+        private ReaLTaiizor.Controls.Button HCarros;
+        private ReaLTaiizor.Controls.Button ICarros;
+        private ReaLTaiizor.Controls.Button JCarros;
+        private ReaLTaiizor.Controls.Button LCarros;
     }
 }

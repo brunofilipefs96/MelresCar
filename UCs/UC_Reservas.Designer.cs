@@ -31,37 +31,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.buttonCriarReserva = new System.Windows.Forms.Button();
-            this.buttonLucroEntreDatas = new System.Windows.Forms.Button();
             this.dataGridViewReservas = new ReaLTaiizor.Controls.PoisonDataGridView();
+            this.buttonCriarReserva = new ReaLTaiizor.Controls.Button();
+            this.buttonLucroEntreDatas = new ReaLTaiizor.Controls.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReservas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // buttonCriarReserva
-            // 
-            this.buttonCriarReserva.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonCriarReserva.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCriarReserva.ForeColor = System.Drawing.Color.White;
-            this.buttonCriarReserva.Location = new System.Drawing.Point(714, 417);
-            this.buttonCriarReserva.Name = "buttonCriarReserva";
-            this.buttonCriarReserva.Size = new System.Drawing.Size(144, 40);
-            this.buttonCriarReserva.TabIndex = 13;
-            this.buttonCriarReserva.Text = "Criar Reserva";
-            this.buttonCriarReserva.UseVisualStyleBackColor = false;
-            this.buttonCriarReserva.Click += new System.EventHandler(this.buttonCriarReserva_Click);
-            // 
-            // buttonLucroEntreDatas
-            // 
-            this.buttonLucroEntreDatas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonLucroEntreDatas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLucroEntreDatas.ForeColor = System.Drawing.Color.White;
-            this.buttonLucroEntreDatas.Location = new System.Drawing.Point(564, 417);
-            this.buttonLucroEntreDatas.Name = "buttonLucroEntreDatas";
-            this.buttonLucroEntreDatas.Size = new System.Drawing.Size(144, 40);
-            this.buttonLucroEntreDatas.TabIndex = 15;
-            this.buttonLucroEntreDatas.Text = "Lucro Entre Datas";
-            this.buttonLucroEntreDatas.UseVisualStyleBackColor = false;
-            this.buttonLucroEntreDatas.Click += new System.EventHandler(this.buttonLucroEntreDatas_Click);
             // 
             // dataGridViewReservas
             // 
@@ -106,14 +80,56 @@
             this.dataGridViewReservas.Size = new System.Drawing.Size(839, 349);
             this.dataGridViewReservas.TabIndex = 17;
             // 
+            // buttonCriarReserva
+            // 
+            this.buttonCriarReserva.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCriarReserva.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonCriarReserva.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCriarReserva.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonCriarReserva.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonCriarReserva.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCriarReserva.Image = null;
+            this.buttonCriarReserva.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCriarReserva.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonCriarReserva.Location = new System.Drawing.Point(714, 417);
+            this.buttonCriarReserva.Name = "buttonCriarReserva";
+            this.buttonCriarReserva.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonCriarReserva.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonCriarReserva.Size = new System.Drawing.Size(120, 40);
+            this.buttonCriarReserva.TabIndex = 18;
+            this.buttonCriarReserva.Text = "Criar Reserva";
+            this.buttonCriarReserva.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonCriarReserva.Click += new System.EventHandler(this.buttonCriarReserva_Click_1);
+            // 
+            // buttonLucroEntreDatas
+            // 
+            this.buttonLucroEntreDatas.BackColor = System.Drawing.Color.Transparent;
+            this.buttonLucroEntreDatas.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonLucroEntreDatas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLucroEntreDatas.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonLucroEntreDatas.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonLucroEntreDatas.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLucroEntreDatas.Image = null;
+            this.buttonLucroEntreDatas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonLucroEntreDatas.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonLucroEntreDatas.Location = new System.Drawing.Point(588, 417);
+            this.buttonLucroEntreDatas.Name = "buttonLucroEntreDatas";
+            this.buttonLucroEntreDatas.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonLucroEntreDatas.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonLucroEntreDatas.Size = new System.Drawing.Size(120, 40);
+            this.buttonLucroEntreDatas.TabIndex = 19;
+            this.buttonLucroEntreDatas.Text = "Lucro Entre Datas";
+            this.buttonLucroEntreDatas.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonLucroEntreDatas.Click += new System.EventHandler(this.buttonLucroEntreDatas_Click_1);
+            // 
             // UC_Reservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.dataGridViewReservas);
             this.Controls.Add(this.buttonLucroEntreDatas);
             this.Controls.Add(this.buttonCriarReserva);
+            this.Controls.Add(this.dataGridViewReservas);
             this.Name = "UC_Reservas";
             this.Size = new System.Drawing.Size(907, 478);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintReservas);
@@ -123,8 +139,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button buttonCriarReserva;
-        private System.Windows.Forms.Button buttonLucroEntreDatas;
         private ReaLTaiizor.Controls.PoisonDataGridView dataGridViewReservas;
+        private ReaLTaiizor.Controls.Button buttonCriarReserva;
+        private ReaLTaiizor.Controls.Button buttonLucroEntreDatas;
     }
 }

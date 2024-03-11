@@ -71,14 +71,25 @@ namespace Automobile
             }
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void PaintCarroC(object sender, PaintEventArgs e)
+        {
+            Graphics mgraphics = e.Graphics;
+            Pen pen = new Pen(Color.FromArgb(96, 155, 173), 1);
+
+            Rectangle area = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(96, 155, 173), Color.FromArgb(245, 251, 251), LinearGradientMode.Vertical);
+            mgraphics.FillRectangle(lgb, area);
+            mgraphics.DrawRectangle(pen, area);
+        }
+
+        private void buttonCancelar_Click_1(object sender, EventArgs e)
         {
             Form formListaVeiculo = Application.OpenForms["ListaVeiculo"];
             formListaVeiculo.Enabled = true;
             this.Close();
         }
 
-        private void buttonReservar_Click_1(object sender, EventArgs e)
+        private void buttonReservar_Click(object sender, EventArgs e)
         {
             if (gridCarroC.CurrentRow == null)
             {
@@ -96,17 +107,6 @@ namespace Automobile
                 listaVeiculoObject.Close();
                 this.Close();
             }
-        }
-
-        private void PaintCarroC(object sender, PaintEventArgs e)
-        {
-            Graphics mgraphics = e.Graphics;
-            Pen pen = new Pen(Color.FromArgb(96, 155, 173), 1);
-
-            Rectangle area = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
-            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(96, 155, 173), Color.FromArgb(245, 251, 251), LinearGradientMode.Vertical);
-            mgraphics.FillRectangle(lgb, area);
-            mgraphics.DrawRectangle(pen, area);
         }
     }
 }

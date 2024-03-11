@@ -37,22 +37,18 @@ namespace Automobile
                     break;
             }
         }
-
-        private void AMota_Click(object sender, EventArgs e)
+        private void AMota_Click_1(object sender, EventArgs e)
         {
             showClass("AMota");
         }
-
-        private void BMota_Click(object sender, EventArgs e)
+        private void BMota_Click_1(object sender, EventArgs e)
         {
             showClass("BMota");
         }
-
-        private void CMota_Click(object sender, EventArgs e)
+        private void CMota_Click_1(object sender, EventArgs e)
         {
             showClass("CMota");
         }
-
         private void PaintMota(object sender, PaintEventArgs e)
         {
             Graphics mgraphics = e.Graphics;
