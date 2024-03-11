@@ -143,7 +143,7 @@ namespace Automobile.Forms
             precoTotal.Text = "Preço Total: " + Program.melresCar.ProcuraPrecoVeiculo(_idVeiculo);
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void buttonCancelar_Click_1(object sender, EventArgs e)
         {
             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
             menuPrincipalObject.Enabled = true;
@@ -209,7 +209,7 @@ namespace Automobile.Forms
             mgraphics.DrawRectangle(pen, area);
         }
 
-        private void buttonAdicionarReserva_Click(object sender, EventArgs e)
+        private void buttonAdicionarReserva_Click_1(object sender, EventArgs e)
         {
             if (dataGridViewClientes.SelectedRows.Count == 0)
             {
@@ -263,13 +263,10 @@ namespace Automobile.Forms
                     MessageBox.Show("Já existem Reservas para esse Veículo nas Datas/Horas Inseridas!");
                     return;
                 }
-               
+
                 Reserva novaReserva = new Reserva(Program.DataHoraDoSistema(), dateTimePicker2.Value, _idVeiculo, _numCliente, _precoTotal);
                 Program.melresCar.InserirReserva(novaReserva);
             }
-
-
-
 
             Program.melresCar.EscreverFicheiroCSV("reservas");
 
@@ -279,7 +276,6 @@ namespace Automobile.Forms
             MessageBox.Show("Reserva adicionado com sucesso");
             this.Close();
         }
-
 
     }
 }

@@ -82,7 +82,7 @@ namespace Automobile
             labelPesoMax.Hide();
             numericPesoMax.Hide();
         }
-        private void buttonEditarVeiculo_Click(object sender, EventArgs e)
+        private void buttonEditarVeiculo_Click_1(object sender, EventArgs e)
         {
             if (textBoxMarca.Text == "" || textBoxModelo.Text == "" || comboBoxCombustivel.Text == "" || numericAno.Text == "" || numericPrecoDia.Text == "" || comboBoxEstado.Text == "")
             {
@@ -172,7 +172,7 @@ namespace Automobile
             }
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void buttonCancelar_Click_1(object sender, EventArgs e)
         {
             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
             menuPrincipalObject.Enabled = true;
@@ -189,5 +189,9 @@ namespace Automobile
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
+
+        
+
+        
     }
 }

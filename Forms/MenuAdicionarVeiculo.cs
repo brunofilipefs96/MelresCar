@@ -67,9 +67,8 @@ namespace Automobile
             }
         }
 
-        private void buttonAdicionarVeiculo_Click(object sender, EventArgs e)
+        private void buttonAdicionarVeiculo_Click_1(object sender, EventArgs e)
         {
-
             if (textBoxMarca.Text == "" || textBoxModelo.Text == "" || textBoxMatricula.Text == "" || comboBoxCombustivel.Text == "" || numericAno.Text == "" || numericPrecoDia.Text == "")
             {
                 MessageBox.Show("Por favor preencha todos os campos", "Adicionar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -96,7 +95,7 @@ namespace Automobile
                             }
                             else
                             {
-                                if(comboBoxNumPortas.Text == "3" && comboBoxCombustivel.Text == "gasolina" && comboBoxCaixa.Text == "manual")
+                                if (comboBoxNumPortas.Text == "3" && comboBoxCombustivel.Text == "gasolina" && comboBoxCaixa.Text == "manual")
                                 {
                                     classeVeic = "A";    //3 Portas Manual a Gasolina
                                 }
@@ -157,15 +156,15 @@ namespace Automobile
                             {
                                 if (comboBoxCilindrada.SelectedIndex == 0)
                                 {
-                                    classeVeic = "A";    
+                                    classeVeic = "A";
                                 }
                                 else if (comboBoxCilindrada.SelectedIndex == 1)
                                 {
-                                    classeVeic = "B";    
+                                    classeVeic = "B";
                                 }
                                 else if (comboBoxCilindrada.SelectedIndex == 2)
                                 {
-                                    classeVeic = "C";    
+                                    classeVeic = "C";
                                 }
                                 Mota mota = new Mota("mota", classeVeic, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), Convert.ToInt32(comboBoxCilindrada.Text));
                                 Program.melresCar.InserirVeiculo(mota);
@@ -240,7 +239,7 @@ namespace Automobile
             }
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void buttonCancelar_Click_1(object sender, EventArgs e)
         {
             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
             menuPrincipalObject.Enabled = true;
@@ -281,6 +280,17 @@ namespace Automobile
         }
 
         private void PaintAdicionarVeiculo(object sender, PaintEventArgs e)
+        {
+            Graphics mgraphics = e.Graphics;
+            Pen pen = new Pen(Color.FromArgb(96, 155, 173), 1);
+
+            Rectangle area = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(96, 155, 173), Color.FromArgb(245, 251, 251), LinearGradientMode.Vertical);
+            mgraphics.FillRectangle(lgb, area);
+            mgraphics.DrawRectangle(pen, area);
+        }
+
+        private void pintaAno(object sender, PaintEventArgs e)
         {
             Graphics mgraphics = e.Graphics;
             Pen pen = new Pen(Color.FromArgb(96, 155, 173), 1);

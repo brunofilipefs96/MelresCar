@@ -48,7 +48,7 @@
             this.textBoxNif = new ReaLTaiizor.Controls.CrownTextBox();
             this.buttonAdicionar = new ReaLTaiizor.Controls.Button();
             this.buttonCancelar = new ReaLTaiizor.Controls.Button();
-            this.numericSalario = new ReaLTaiizor.Controls.DungeonNumeric();
+            this.numericSalario = new ReaLTaiizor.Controls.CrownTextBox();
             this.SuspendLayout();
             // 
             // bigLabel1
@@ -105,7 +105,7 @@
             this.labelSalario.BackColor = System.Drawing.Color.Transparent;
             this.labelSalario.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F);
             this.labelSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.labelSalario.Location = new System.Drawing.Point(116, 303);
+            this.labelSalario.Location = new System.Drawing.Point(116, 297);
             this.labelSalario.Name = "labelSalario";
             this.labelSalario.Size = new System.Drawing.Size(80, 21);
             this.labelSalario.TabIndex = 48;
@@ -308,24 +308,15 @@
             // 
             // numericSalario
             // 
-            this.numericSalario.BackColor = System.Drawing.Color.Transparent;
-            this.numericSalario.BackColorA = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.numericSalario.BackColorB = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.numericSalario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.numericSalario.ButtonForeColorA = System.Drawing.Color.White;
-            this.numericSalario.ButtonForeColorB = System.Drawing.Color.White;
+            this.numericSalario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.numericSalario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericSalario.Font = new System.Drawing.Font("Franklin Gothic Medium", 11F);
             this.numericSalario.ForeColor = System.Drawing.Color.White;
             this.numericSalario.Location = new System.Drawing.Point(197, 296);
-            this.numericSalario.Maximum = ((long)(100));
-            this.numericSalario.Minimum = ((long)(0));
-            this.numericSalario.MinimumSize = new System.Drawing.Size(62, 28);
+            this.numericSalario.MaxLength = 9;
             this.numericSalario.Name = "numericSalario";
-            this.numericSalario.Size = new System.Drawing.Size(93, 28);
-            this.numericSalario.TabIndex = 98;
-            this.numericSalario.Text = "dungeonNumeric1";
-            this.numericSalario.TextAlignment = ReaLTaiizor.Controls.DungeonNumeric._TextAlignment.Near;
-            this.numericSalario.Value = ((long)(0));
+            this.numericSalario.Size = new System.Drawing.Size(149, 24);
+            this.numericSalario.TabIndex = 102;
             // 
             // MenuAdicionarFuncionario
             // 
@@ -386,6 +377,6 @@
         private ReaLTaiizor.Controls.CrownTextBox textBoxNif;
         private ReaLTaiizor.Controls.Button buttonAdicionar;
         private ReaLTaiizor.Controls.Button buttonCancelar;
-        private ReaLTaiizor.Controls.DungeonNumeric numericSalario;
+        private ReaLTaiizor.Controls.CrownTextBox numericSalario;
     }
 }

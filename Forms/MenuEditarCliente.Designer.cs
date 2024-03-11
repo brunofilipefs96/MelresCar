@@ -38,28 +38,29 @@
             this.labelNif = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.textBoxEmail = new ReaLTaiizor.Controls.CrownTextBox();
             this.textBoxNif = new ReaLTaiizor.Controls.CrownTextBox();
-            this.buttonAlterar = new ReaLTaiizor.Controls.CrownButton();
-            this.buttonCancelar = new ReaLTaiizor.Controls.CrownButton();
             this.labelEditarCliente = new ReaLTaiizor.Controls.BigLabel();
+            this.buttonCancelar = new ReaLTaiizor.Controls.Button();
+            this.buttonAlterar = new ReaLTaiizor.Controls.Button();
             this.SuspendLayout();
             // 
             // labelName
             // 
             this.labelName.AutoSize = true;
             this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelName.Location = new System.Drawing.Point(57, 81);
+            this.labelName.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F);
+            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.labelName.Location = new System.Drawing.Point(50, 78);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(60, 20);
+            this.labelName.Size = new System.Drawing.Size(58, 21);
             this.labelName.TabIndex = 37;
             this.labelName.Text = "Nome: ";
             // 
             // textBoxNome
             // 
-            this.textBoxNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.textBoxNome.ForeColor = System.Drawing.Color.White;
             this.textBoxNome.Location = new System.Drawing.Point(114, 81);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(288, 20);
@@ -67,9 +68,10 @@
             // 
             // textBoxTelemovel
             // 
-            this.textBoxTelemovel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxTelemovel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxTelemovel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxTelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxTelemovel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.textBoxTelemovel.ForeColor = System.Drawing.Color.White;
             this.textBoxTelemovel.Location = new System.Drawing.Point(447, 133);
             this.textBoxTelemovel.MaxLength = 9;
             this.textBoxTelemovel.Name = "textBoxTelemovel";
@@ -78,9 +80,10 @@
             // 
             // textBoxMorada
             // 
-            this.textBoxMorada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxMorada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxMorada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMorada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxMorada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.textBoxMorada.ForeColor = System.Drawing.Color.White;
             this.textBoxMorada.Location = new System.Drawing.Point(114, 107);
             this.textBoxMorada.Name = "textBoxMorada";
             this.textBoxMorada.Size = new System.Drawing.Size(483, 20);
@@ -90,11 +93,11 @@
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
-            this.labelEmail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelEmail.Location = new System.Drawing.Point(62, 133);
+            this.labelEmail.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F);
+            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.labelEmail.Location = new System.Drawing.Point(50, 133);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(55, 20);
+            this.labelEmail.Size = new System.Drawing.Size(58, 21);
             this.labelEmail.TabIndex = 38;
             this.labelEmail.Text = "Email: ";
             // 
@@ -102,11 +105,11 @@
             // 
             this.labelMorada.AutoSize = true;
             this.labelMorada.BackColor = System.Drawing.Color.Transparent;
-            this.labelMorada.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelMorada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelMorada.Location = new System.Drawing.Point(46, 107);
+            this.labelMorada.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F);
+            this.labelMorada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.labelMorada.Location = new System.Drawing.Point(37, 104);
             this.labelMorada.Name = "labelMorada";
-            this.labelMorada.Size = new System.Drawing.Size(71, 20);
+            this.labelMorada.Size = new System.Drawing.Size(71, 21);
             this.labelMorada.TabIndex = 40;
             this.labelMorada.Text = "Morada: ";
             // 
@@ -114,11 +117,11 @@
             // 
             this.labelNtelemovel.AutoSize = true;
             this.labelNtelemovel.BackColor = System.Drawing.Color.Transparent;
-            this.labelNtelemovel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelNtelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNtelemovel.Location = new System.Drawing.Point(339, 133);
+            this.labelNtelemovel.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F);
+            this.labelNtelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.labelNtelemovel.Location = new System.Drawing.Point(334, 134);
             this.labelNtelemovel.Name = "labelNtelemovel";
-            this.labelNtelemovel.Size = new System.Drawing.Size(111, 20);
+            this.labelNtelemovel.Size = new System.Drawing.Size(107, 21);
             this.labelNtelemovel.TabIndex = 44;
             this.labelNtelemovel.Text = "Nº Telemovel: ";
             // 
@@ -126,66 +129,90 @@
             // 
             this.labelNif.AutoSize = true;
             this.labelNif.BackColor = System.Drawing.Color.Transparent;
-            this.labelNif.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelNif.Location = new System.Drawing.Point(411, 81);
+            this.labelNif.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F);
+            this.labelNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.labelNif.Location = new System.Drawing.Point(405, 80);
             this.labelNif.Name = "labelNif";
-            this.labelNif.Size = new System.Drawing.Size(40, 20);
+            this.labelNif.Size = new System.Drawing.Size(37, 21);
             this.labelNif.TabIndex = 42;
             this.labelNif.Text = "Nif: ";
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.textBoxEmail.Location = new System.Drawing.Point(114, 133);
+            this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.textBoxEmail.ForeColor = System.Drawing.Color.White;
+            this.textBoxEmail.Location = new System.Drawing.Point(114, 134);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(224, 20);
             this.textBoxEmail.TabIndex = 36;
             // 
             // textBoxNif
             // 
-            this.textBoxNif.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxNif.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxNif.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxNif.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.textBoxNif.ForeColor = System.Drawing.Color.White;
             this.textBoxNif.Location = new System.Drawing.Point(448, 81);
             this.textBoxNif.MaxLength = 9;
             this.textBoxNif.Name = "textBoxNif";
             this.textBoxNif.Size = new System.Drawing.Size(149, 20);
             this.textBoxNif.TabIndex = 43;
             // 
-            // buttonAlterar
-            // 
-            this.buttonAlterar.Location = new System.Drawing.Point(578, 196);
-            this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonAlterar.Size = new System.Drawing.Size(117, 52);
-            this.buttonAlterar.TabIndex = 35;
-            this.buttonAlterar.Text = "Alterar";
-            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
-            // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.Location = new System.Drawing.Point(455, 196);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
-            this.buttonCancelar.TabIndex = 46;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
-            // 
             // labelEditarCliente
             // 
             this.labelEditarCliente.AutoSize = true;
             this.labelEditarCliente.BackColor = System.Drawing.Color.Transparent;
-            this.labelEditarCliente.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.labelEditarCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.labelEditarCliente.Font = new System.Drawing.Font("Stencil", 25F);
+            this.labelEditarCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelEditarCliente.Location = new System.Drawing.Point(12, 9);
             this.labelEditarCliente.Name = "labelEditarCliente";
-            this.labelEditarCliente.Size = new System.Drawing.Size(219, 46);
+            this.labelEditarCliente.Size = new System.Drawing.Size(280, 40);
             this.labelEditarCliente.TabIndex = 47;
             this.labelEditarCliente.Text = "Editar Cliente";
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCancelar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCancelar.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelar.Image = null;
+            this.buttonCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCancelar.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.Location = new System.Drawing.Point(431, 196);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.Size = new System.Drawing.Size(120, 40);
+            this.buttonCancelar.TabIndex = 97;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click_1);
+            // 
+            // buttonAlterar
+            // 
+            this.buttonAlterar.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAlterar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAlterar.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAlterar.Image = null;
+            this.buttonAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAlterar.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.Location = new System.Drawing.Point(557, 196);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.Size = new System.Drawing.Size(120, 40);
+            this.buttonAlterar.TabIndex = 98;
+            this.buttonAlterar.Text = "Alterar";
+            this.buttonAlterar.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click_1);
             // 
             // MenuEditarCliente
             // 
@@ -194,8 +221,9 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(707, 260);
             this.ControlBox = false;
-            this.Controls.Add(this.labelEditarCliente);
+            this.Controls.Add(this.buttonAlterar);
             this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.labelEditarCliente);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.textBoxTelemovel);
@@ -206,7 +234,6 @@
             this.Controls.Add(this.labelNif);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxNif);
-            this.Controls.Add(this.buttonAlterar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuEditarCliente";
             this.Text = "MelresCar | Editar Cliente";
@@ -228,8 +255,8 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelNif;
         private ReaLTaiizor.Controls.CrownTextBox textBoxEmail;
         private ReaLTaiizor.Controls.CrownTextBox textBoxNif;
-        private ReaLTaiizor.Controls.CrownButton buttonAlterar;
-        private ReaLTaiizor.Controls.CrownButton buttonCancelar;
         private ReaLTaiizor.Controls.BigLabel labelEditarCliente;
+        private ReaLTaiizor.Controls.Button buttonCancelar;
+        private ReaLTaiizor.Controls.Button buttonAlterar;
     }
 }

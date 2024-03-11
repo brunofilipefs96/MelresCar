@@ -34,7 +34,7 @@ namespace Automobile
             numericSalario.Text = Program.melresCar.Funcionarios[_indexFuncionario].Salario.ToString();
         }
 
-        private void buttonAlterar_Click(object sender, EventArgs e)
+        private void buttonAlterar_Click_1(object sender, EventArgs e)
         {
             if (textBoxNome.Text == "" || textBoxNif.Text == "" || textBoxMorada.Text == "" || textBoxEmail.Text == "" || textBoxTelemovel.Text == "" || textBoxUsername.Text == "" || textBoxFirstPassword.Text == "" || textBoxConfirmPassword.Text == "" || numericSalario.Text == "")
             {
@@ -117,10 +117,9 @@ namespace Automobile
                     }
                 }
             }
-
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void buttonCancelar_Click_1(object sender, EventArgs e)
         {
             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
             menuPrincipalObject.Enabled = true;
@@ -137,6 +136,10 @@ namespace Automobile
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
+
+        
+
+        
     }
 }
 

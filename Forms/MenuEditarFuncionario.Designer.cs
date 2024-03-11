@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonCancelar = new ReaLTaiizor.Controls.CrownButton();
-            this.buttonAlterar = new ReaLTaiizor.Controls.CrownButton();
             this.labelEditarFuncionario = new ReaLTaiizor.Controls.BigLabel();
             this.textBoxConfirmPassword = new ReaLTaiizor.Controls.CrownTextBox();
             this.textBoxFirstPassword = new ReaLTaiizor.Controls.CrownTextBox();
@@ -48,47 +46,28 @@
             this.labelMorada = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.textBoxNif = new ReaLTaiizor.Controls.CrownTextBox();
             this.labelNif = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.numericSalario = new ReaLTaiizor.Controls.CrownNumeric();
-            ((System.ComponentModel.ISupportInitialize)(this.numericSalario)).BeginInit();
+            this.buttonAlterar = new ReaLTaiizor.Controls.Button();
+            this.buttonCancelar = new ReaLTaiizor.Controls.Button();
+            this.numericSalario = new ReaLTaiizor.Controls.CrownTextBox();
             this.SuspendLayout();
-            // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.Location = new System.Drawing.Point(418, 393);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonCancelar.Size = new System.Drawing.Size(117, 52);
-            this.buttonCancelar.TabIndex = 39;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
-            // 
-            // buttonAlterar
-            // 
-            this.buttonAlterar.Location = new System.Drawing.Point(541, 393);
-            this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonAlterar.Size = new System.Drawing.Size(117, 52);
-            this.buttonAlterar.TabIndex = 32;
-            this.buttonAlterar.Text = "Alterar";
-            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // labelEditarFuncionario
             // 
             this.labelEditarFuncionario.AutoSize = true;
             this.labelEditarFuncionario.BackColor = System.Drawing.Color.Transparent;
-            this.labelEditarFuncionario.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.labelEditarFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.labelEditarFuncionario.Font = new System.Drawing.Font("Stencil", 25F);
+            this.labelEditarFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelEditarFuncionario.Location = new System.Drawing.Point(12, 9);
             this.labelEditarFuncionario.Name = "labelEditarFuncionario";
-            this.labelEditarFuncionario.Size = new System.Drawing.Size(290, 46);
+            this.labelEditarFuncionario.Size = new System.Drawing.Size(369, 40);
             this.labelEditarFuncionario.TabIndex = 48;
             this.labelEditarFuncionario.Text = "Editar Funcionário";
             // 
             // textBoxConfirmPassword
             // 
-            this.textBoxConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxConfirmPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxConfirmPassword.ForeColor = System.Drawing.Color.White;
             this.textBoxConfirmPassword.Location = new System.Drawing.Point(261, 279);
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(132, 20);
@@ -97,9 +76,9 @@
             // 
             // textBoxFirstPassword
             // 
-            this.textBoxFirstPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxFirstPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxFirstPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxFirstPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxFirstPassword.ForeColor = System.Drawing.Color.White;
             this.textBoxFirstPassword.Location = new System.Drawing.Point(261, 253);
             this.textBoxFirstPassword.Name = "textBoxFirstPassword";
             this.textBoxFirstPassword.Size = new System.Drawing.Size(132, 20);
@@ -108,9 +87,9 @@
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxUsername.ForeColor = System.Drawing.Color.White;
             this.textBoxUsername.Location = new System.Drawing.Point(261, 227);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(132, 20);
@@ -121,7 +100,7 @@
             this.labelSalario.AutoSize = true;
             this.labelSalario.BackColor = System.Drawing.Color.Transparent;
             this.labelSalario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelSalario.Location = new System.Drawing.Point(177, 305);
             this.labelSalario.Name = "labelSalario";
             this.labelSalario.Size = new System.Drawing.Size(78, 20);
@@ -133,7 +112,7 @@
             this.labelConfirmarPassword.AutoSize = true;
             this.labelConfirmarPassword.BackColor = System.Drawing.Color.Transparent;
             this.labelConfirmarPassword.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelConfirmarPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelConfirmarPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelConfirmarPassword.Location = new System.Drawing.Point(71, 279);
             this.labelConfirmarPassword.Name = "labelConfirmarPassword";
             this.labelConfirmarPassword.Size = new System.Drawing.Size(184, 20);
@@ -145,7 +124,7 @@
             this.labelPassword.AutoSize = true;
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
             this.labelPassword.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelPassword.Location = new System.Drawing.Point(144, 253);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(113, 20);
@@ -157,7 +136,7 @@
             this.labelUtilizador.AutoSize = true;
             this.labelUtilizador.BackColor = System.Drawing.Color.Transparent;
             this.labelUtilizador.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelUtilizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelUtilizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelUtilizador.Location = new System.Drawing.Point(169, 227);
             this.labelUtilizador.Name = "labelUtilizador";
             this.labelUtilizador.Size = new System.Drawing.Size(86, 20);
@@ -166,9 +145,9 @@
             // 
             // textBoxMorada
             // 
-            this.textBoxMorada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxMorada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxMorada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMorada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxMorada.ForeColor = System.Drawing.Color.White;
             this.textBoxMorada.Location = new System.Drawing.Point(261, 149);
             this.textBoxMorada.Name = "textBoxMorada";
             this.textBoxMorada.Size = new System.Drawing.Size(296, 20);
@@ -179,7 +158,7 @@
             this.labelNome.AutoSize = true;
             this.labelNome.BackColor = System.Drawing.Color.Transparent;
             this.labelNome.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelNome.Location = new System.Drawing.Point(195, 97);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(60, 20);
@@ -191,7 +170,7 @@
             this.labelEmail.AutoSize = true;
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
             this.labelEmail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelEmail.Location = new System.Drawing.Point(200, 175);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(55, 20);
@@ -200,9 +179,9 @@
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxEmail.ForeColor = System.Drawing.Color.White;
             this.textBoxEmail.Location = new System.Drawing.Point(261, 175);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(164, 20);
@@ -210,9 +189,9 @@
             // 
             // textBoxTelemovel
             // 
-            this.textBoxTelemovel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxTelemovel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxTelemovel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxTelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxTelemovel.ForeColor = System.Drawing.Color.White;
             this.textBoxTelemovel.Location = new System.Drawing.Point(261, 201);
             this.textBoxTelemovel.Name = "textBoxTelemovel";
             this.textBoxTelemovel.Size = new System.Drawing.Size(103, 20);
@@ -220,9 +199,9 @@
             // 
             // textBoxNome
             // 
-            this.textBoxNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxNome.ForeColor = System.Drawing.Color.White;
             this.textBoxNome.Location = new System.Drawing.Point(261, 97);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(203, 20);
@@ -233,7 +212,7 @@
             this.labelNtelemovel.AutoSize = true;
             this.labelNtelemovel.BackColor = System.Drawing.Color.Transparent;
             this.labelNtelemovel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelNtelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelNtelemovel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelNtelemovel.Location = new System.Drawing.Point(144, 201);
             this.labelNtelemovel.Name = "labelNtelemovel";
             this.labelNtelemovel.Size = new System.Drawing.Size(111, 20);
@@ -245,7 +224,7 @@
             this.labelMorada.AutoSize = true;
             this.labelMorada.BackColor = System.Drawing.Color.Transparent;
             this.labelMorada.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelMorada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelMorada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelMorada.Location = new System.Drawing.Point(184, 149);
             this.labelMorada.Name = "labelMorada";
             this.labelMorada.Size = new System.Drawing.Size(71, 20);
@@ -254,9 +233,9 @@
             // 
             // textBoxNif
             // 
-            this.textBoxNif.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.textBoxNif.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.textBoxNif.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.textBoxNif.ForeColor = System.Drawing.Color.White;
             this.textBoxNif.Location = new System.Drawing.Point(261, 123);
             this.textBoxNif.Name = "textBoxNif";
             this.textBoxNif.Size = new System.Drawing.Size(103, 20);
@@ -267,30 +246,64 @@
             this.labelNif.AutoSize = true;
             this.labelNif.BackColor = System.Drawing.Color.Transparent;
             this.labelNif.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labelNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.labelNif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.labelNif.Location = new System.Drawing.Point(215, 123);
             this.labelNif.Name = "labelNif";
             this.labelNif.Size = new System.Drawing.Size(40, 20);
             this.labelNif.TabIndex = 55;
             this.labelNif.Text = "Nif: ";
             // 
+            // buttonAlterar
+            // 
+            this.buttonAlterar.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAlterar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAlterar.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAlterar.Image = null;
+            this.buttonAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAlterar.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.Location = new System.Drawing.Point(538, 393);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonAlterar.Size = new System.Drawing.Size(120, 40);
+            this.buttonAlterar.TabIndex = 97;
+            this.buttonAlterar.Text = "Alterar";
+            this.buttonAlterar.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click_1);
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCancelar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCancelar.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelar.Image = null;
+            this.buttonCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCancelar.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.Location = new System.Drawing.Point(401, 393);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonCancelar.Size = new System.Drawing.Size(120, 40);
+            this.buttonCancelar.TabIndex = 98;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click_1);
+            // 
             // numericSalario
             // 
-            this.numericSalario.DecimalPlaces = 2;
-            this.numericSalario.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.numericSalario.Location = new System.Drawing.Point(261, 308);
-            this.numericSalario.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
+            this.numericSalario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.numericSalario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericSalario.ForeColor = System.Drawing.Color.White;
+            this.numericSalario.Location = new System.Drawing.Point(261, 305);
             this.numericSalario.Name = "numericSalario";
-            this.numericSalario.Size = new System.Drawing.Size(69, 20);
-            this.numericSalario.TabIndex = 67;
+            this.numericSalario.Size = new System.Drawing.Size(103, 20);
+            this.numericSalario.TabIndex = 99;
             // 
             // MenuEditarFuncionario
             // 
@@ -300,6 +313,8 @@
             this.ClientSize = new System.Drawing.Size(670, 457);
             this.ControlBox = false;
             this.Controls.Add(this.numericSalario);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.buttonAlterar);
             this.Controls.Add(this.textBoxConfirmPassword);
             this.Controls.Add(this.textBoxFirstPassword);
             this.Controls.Add(this.textBoxUsername);
@@ -318,22 +333,16 @@
             this.Controls.Add(this.textBoxNif);
             this.Controls.Add(this.labelNif);
             this.Controls.Add(this.labelEditarFuncionario);
-            this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.buttonAlterar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuEditarFuncionario";
             this.Text = "MelresCar | Editar Funcionário";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintEditarFuncionario);
-            ((System.ComponentModel.ISupportInitialize)(this.numericSalario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.CrownButton buttonCancelar;
-        private ReaLTaiizor.Controls.CrownButton buttonAlterar;
         private ReaLTaiizor.Controls.BigLabel labelEditarFuncionario;
         private ReaLTaiizor.Controls.CrownTextBox textBoxConfirmPassword;
         private ReaLTaiizor.Controls.CrownTextBox textBoxFirstPassword;
@@ -352,6 +361,8 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelMorada;
         private ReaLTaiizor.Controls.CrownTextBox textBoxNif;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelNif;
-        private ReaLTaiizor.Controls.CrownNumeric numericSalario;
+        private ReaLTaiizor.Controls.Button buttonAlterar;
+        private ReaLTaiizor.Controls.Button buttonCancelar;
+        private ReaLTaiizor.Controls.CrownTextBox numericSalario;
     }
 }
