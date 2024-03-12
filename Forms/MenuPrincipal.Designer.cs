@@ -52,7 +52,6 @@
             this.panelLogout = new System.Windows.Forms.Panel();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -76,11 +75,10 @@
             this.flowLayoutPanel1.Controls.Add(this.panelReservas);
             this.flowLayoutPanel1.Controls.Add(this.panelAddDay);
             this.flowLayoutPanel1.Controls.Add(this.panelLogout);
-            this.flowLayoutPanel1.Controls.Add(this.label1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(207, 478);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(207, 506);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // labelLoggedInAs
@@ -383,23 +381,12 @@
             this.button7.Text = "Clientes";
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 479);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(106, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Data Hoje: ";
-            // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panelMain.Location = new System.Drawing.Point(204, 0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(891, 478);
+            this.panelMain.Size = new System.Drawing.Size(891, 506);
             this.panelMain.TabIndex = 2;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintMenu);
             // 
@@ -407,7 +394,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1093, 478);
+            this.ClientSize = new System.Drawing.Size(1093, 506);
+            this.ControlBox = false;
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -452,6 +440,5 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label labelDataHoje;
         private System.Windows.Forms.Label labelLoggedInAs;
-        private System.Windows.Forms.Label label1;
     }
 }

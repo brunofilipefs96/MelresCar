@@ -13,7 +13,6 @@ namespace Automobile
     {
         public static Empresa melresCar = new Empresa();
         private static DateTime _horaDoSistema;
-        private static int DaysAdded;
 
         /// <summary>
         /// The main entry point for the application.
@@ -34,23 +33,17 @@ namespace Automobile
 
             Application.Run(new MenuLogin());
         }
+
         public static DateTime DataHoraDoSistema()
         {
             return _horaDoSistema;
         }
-        public static void DataHoraDoSistema(DateTime hora)
-        {
-            _horaDoSistema = hora;
-        }
-        public static void AdicionarDia()
+
+        public static void AdicionarDiaDataHoraSistema()
         {
             _horaDoSistema = _horaDoSistema.AddDays(1);
-            DaysAdded++;
         }
-        public static int DiasAdicionados()
-        {
-            return DaysAdded;
-        }
+       
         public static void AdicionarSegundos()
         {
             _horaDoSistema = _horaDoSistema.AddSeconds(1);

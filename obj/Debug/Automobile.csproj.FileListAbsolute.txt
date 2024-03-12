@@ -419,3 +419,6 @@ C:\Users\T0126211\Downloads\MelresCar-master\obj\Debug\Automobile.csproj.CoreCom
 C:\Users\T0126211\Downloads\MelresCar-master\obj\Debug\Automobile.csproj.CopyComplete
 C:\Users\T0126211\Downloads\MelresCar-master\obj\Debug\Automobile.exe
 C:\Users\T0126211\Downloads\MelresCar-master\obj\Debug\Automobile.pdb
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\bin\Debug\Bunifu.Licensing.dll
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\bin\Debug\Bunifu.UI.WinForms.dll
+C:\Users\Bruno\Documents\Github Repositories\MelresCar\bin\Debug\Bunifu.UI.WinForms.xml

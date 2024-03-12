@@ -193,6 +193,7 @@
             this.textBoxTelemovel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxTelemovel.ForeColor = System.Drawing.Color.White;
             this.textBoxTelemovel.Location = new System.Drawing.Point(261, 201);
+            this.textBoxTelemovel.MaxLength = 9;
             this.textBoxTelemovel.Name = "textBoxTelemovel";
             this.textBoxTelemovel.Size = new System.Drawing.Size(103, 20);
             this.textBoxTelemovel.TabIndex = 58;
@@ -237,6 +238,7 @@
             this.textBoxNif.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNif.ForeColor = System.Drawing.Color.White;
             this.textBoxNif.Location = new System.Drawing.Point(261, 123);
+            this.textBoxNif.MaxLength = 9;
             this.textBoxNif.Name = "textBoxNif";
             this.textBoxNif.Size = new System.Drawing.Size(103, 20);
             this.textBoxNif.TabIndex = 56;
@@ -301,6 +303,7 @@
             this.numericSalario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericSalario.ForeColor = System.Drawing.Color.White;
             this.numericSalario.Location = new System.Drawing.Point(261, 305);
+            this.numericSalario.MaxLength = 6;
             this.numericSalario.Name = "numericSalario";
             this.numericSalario.Size = new System.Drawing.Size(103, 20);
             this.numericSalario.TabIndex = 99;

@@ -45,10 +45,9 @@
             this.labelWarningFuncionarios.BackColor = System.Drawing.Color.Transparent;
             this.labelWarningFuncionarios.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelWarningFuncionarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.labelWarningFuncionarios.Location = new System.Drawing.Point(283, 527);
-            this.labelWarningFuncionarios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelWarningFuncionarios.Location = new System.Drawing.Point(212, 428);
             this.labelWarningFuncionarios.Name = "labelWarningFuncionarios";
-            this.labelWarningFuncionarios.Size = new System.Drawing.Size(606, 25);
+            this.labelWarningFuncionarios.Size = new System.Drawing.Size(476, 20);
             this.labelWarningFuncionarios.TabIndex = 11;
             this.labelWarningFuncionarios.Text = "Contacte o Administrador para realizar alterações aos Funcionários";
             // 
@@ -79,9 +78,9 @@
             this.dataGridViewFuncionario.EnableHeadersVisualStyles = false;
             this.dataGridViewFuncionario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dataGridViewFuncionario.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dataGridViewFuncionario.Location = new System.Drawing.Point(179, 31);
-            this.dataGridViewFuncionario.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewFuncionario.Location = new System.Drawing.Point(134, 25);
             this.dataGridViewFuncionario.Name = "dataGridViewFuncionario";
+            this.dataGridViewFuncionario.ReadOnly = true;
             this.dataGridViewFuncionario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
@@ -94,7 +93,7 @@
             this.dataGridViewFuncionario.RowHeadersWidth = 51;
             this.dataGridViewFuncionario.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewFuncionario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewFuncionario.Size = new System.Drawing.Size(800, 441);
+            this.dataGridViewFuncionario.Size = new System.Drawing.Size(600, 358);
             this.dataGridViewFuncionario.TabIndex = 12;
             // 
             // buttonAddFuncionario
@@ -108,12 +107,11 @@
             this.buttonAddFuncionario.Image = null;
             this.buttonAddFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAddFuncionario.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.buttonAddFuncionario.Location = new System.Drawing.Point(951, 513);
-            this.buttonAddFuncionario.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddFuncionario.Location = new System.Drawing.Point(713, 417);
             this.buttonAddFuncionario.Name = "buttonAddFuncionario";
             this.buttonAddFuncionario.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.buttonAddFuncionario.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.buttonAddFuncionario.Size = new System.Drawing.Size(160, 49);
+            this.buttonAddFuncionario.Size = new System.Drawing.Size(120, 40);
             this.buttonAddFuncionario.TabIndex = 13;
             this.buttonAddFuncionario.Text = "Adicionar";
             this.buttonAddFuncionario.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -130,12 +128,11 @@
             this.buttonEditFuncionario.Image = null;
             this.buttonEditFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonEditFuncionario.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.buttonEditFuncionario.Location = new System.Drawing.Point(783, 513);
-            this.buttonEditFuncionario.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonEditFuncionario.Location = new System.Drawing.Point(587, 417);
             this.buttonEditFuncionario.Name = "buttonEditFuncionario";
             this.buttonEditFuncionario.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.buttonEditFuncionario.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.buttonEditFuncionario.Size = new System.Drawing.Size(160, 49);
+            this.buttonEditFuncionario.Size = new System.Drawing.Size(120, 40);
             this.buttonEditFuncionario.TabIndex = 14;
             this.buttonEditFuncionario.Text = "Editar";
             this.buttonEditFuncionario.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -152,12 +149,11 @@
             this.buttonRemFuncionario.Image = null;
             this.buttonRemFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonRemFuncionario.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.buttonRemFuncionario.Location = new System.Drawing.Point(615, 513);
-            this.buttonRemFuncionario.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRemFuncionario.Location = new System.Drawing.Point(461, 417);
             this.buttonRemFuncionario.Name = "buttonRemFuncionario";
             this.buttonRemFuncionario.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.buttonRemFuncionario.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.buttonRemFuncionario.Size = new System.Drawing.Size(160, 49);
+            this.buttonRemFuncionario.Size = new System.Drawing.Size(120, 40);
             this.buttonRemFuncionario.TabIndex = 15;
             this.buttonRemFuncionario.Text = "Remover";
             this.buttonRemFuncionario.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -165,7 +161,7 @@
             // 
             // UC_Funcionarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.buttonRemFuncionario);
@@ -173,9 +169,8 @@
             this.Controls.Add(this.buttonAddFuncionario);
             this.Controls.Add(this.dataGridViewFuncionario);
             this.Controls.Add(this.labelWarningFuncionarios);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_Funcionarios";
-            this.Size = new System.Drawing.Size(1209, 588);
+            this.Size = new System.Drawing.Size(907, 478);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintFuncionarios);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFuncionario)).EndInit();
             this.ResumeLayout(false);

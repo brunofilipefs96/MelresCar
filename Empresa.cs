@@ -253,11 +253,11 @@ namespace Automobile
 
         public int ProcuraPosicaoVeiculoLista(int idVeiculo)
         {
-            for (int i = 0; i < Veiculos.Count; i++)
+            foreach (Veiculo veiculo in Veiculos)
             {
-                if (Veiculos[i].IdVeiculo == idVeiculo)
+                if (veiculo.IdVeiculo == idVeiculo)
                 {
-                    return i;
+                    return Veiculos.IndexOf(veiculo);
                 }
             }
             return -1;
@@ -281,11 +281,11 @@ namespace Automobile
             {
                 if (reserva.IdVeiculo == idVeiculo)
                 {
-                    if (dataInicioReserva >= reserva.DataInicio && dataInicioReserva <= reserva.DataFim)
+                    if (dataInicioReserva.Date >= reserva.DataInicio.Date && dataInicioReserva.Date <= reserva.DataFim.Date)
                     {
                         return false;
                     }
-                    if (dataFimReserva >= reserva.DataInicio && dataFimReserva <= reserva.DataFim)
+                    if (dataFimReserva.Date >= reserva.DataInicio.Date && dataFimReserva.Date <= reserva.DataFim.Date)
                     {
                         return false;
                     }
@@ -295,11 +295,11 @@ namespace Automobile
             {
                 if (veiculo.IdVeiculo == idVeiculo)
                 {
-                    if (dataInicioReserva >= veiculo.DataInicioManutencao && dataInicioReserva <= veiculo.DataFimManutencao)
+                    if (dataInicioReserva.Date >= veiculo.DataInicioManutencao.Date && dataInicioReserva.Date <= veiculo.DataFimManutencao.Date)
                     {
                         return false;
                     }
-                    if (dataFimReserva >= veiculo.DataInicioManutencao && dataFimReserva <= veiculo.DataFimManutencao)
+                    if (dataFimReserva.Date >= veiculo.DataInicioManutencao.Date && dataFimReserva.Date <= veiculo.DataFimManutencao.Date)
                     {
                         return false;
                     }
@@ -640,7 +640,8 @@ namespace Automobile
 
         public void adicionarDia()
         {
-            Program.AdicionarDia();
+            Program.AdicionarDiaDataHoraSistema();
+            DaysAdded++;
 
             List<string> veiculosManutencao = new List<string>();
             List<string> veiculosDisponiveis= new List<string>();

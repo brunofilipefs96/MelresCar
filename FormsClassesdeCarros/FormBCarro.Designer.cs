@@ -109,6 +109,7 @@
             this.gridCarroB.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridCarroB.Location = new System.Drawing.Point(543, 11);
             this.gridCarroB.Name = "gridCarroB";
+            this.gridCarroB.ReadOnly = true;
             this.gridCarroB.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
@@ -172,6 +173,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1408, 445);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonReservar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.gridCarroB);

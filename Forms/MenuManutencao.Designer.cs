@@ -189,6 +189,7 @@
             this.buttonCancelar.TabIndex = 119;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonAgendarManutencao
             // 
@@ -209,6 +210,7 @@
             this.buttonAgendarManutencao.TabIndex = 120;
             this.buttonAgendarManutencao.Text = "Agendar";
             this.buttonAgendarManutencao.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonAgendarManutencao.Click += new System.EventHandler(this.buttonAgendarManutencao_Click);
             // 
             // MenuManutencao
             // 

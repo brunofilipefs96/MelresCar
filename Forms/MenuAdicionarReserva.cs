@@ -71,10 +71,40 @@ namespace Automobile.Forms
             dataGridViewReservas.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
             dataGridViewReservas.RowsDefaultCellStyle.ForeColor = Color.White;
 
-            dateTimePicker2.Value = dateTimePicker2.Value.AddHours(1);
-
             calculaPrecoTotal();
-            atualizaDataGridView();
+
+            if (Program.melresCar.DaysAdded != 0)
+            {
+                airCheckBox1.Hide();
+            }
+        }
+
+        private void atualizaManutencao()
+        {
+            bool manutencao = false;
+            if (airCheckBox1 != null)
+            {
+                if (Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataInicioManutencao.Date >= dateTimePicker1.Value.Date || Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataFimManutencao.Date >= dateTimePicker1.Value.Date || Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataInicioManutencao.Date >= dateTimePicker2.Value.Date || Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataFimManutencao.Date >= dateTimePicker2.Value.Date)
+                {
+                    manutencao = true;
+                }
+            }
+            else
+            {
+                if (Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataInicioManutencao >= Program.DataHoraDoSistema() || Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataFimManutencao >= Program.DataHoraDoSistema())
+                {
+                    manutencao = true;
+                }
+            }
+
+            if (!manutencao)
+            {
+                labelDatasManutencao.Text = "";
+            }
+            else
+            {
+                labelDatasManutencao.Text = "Datas de Manutenção: " + Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataInicioManutencao.ToString("dd/MM/yyyy") + " - " + Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataFimManutencao.ToString("dd/MM/yyyy");
+            }
         }
 
         public void atualizaDataGridView()
@@ -96,33 +126,10 @@ namespace Automobile.Forms
             }
             labelVeiculo.Text = "Veículo: " + Program.melresCar.ProcurarMatriculaVeiculo(_idVeiculo);
             labelPrecoDiario.Text = "Preço Diário: " + Program.melresCar.ProcuraPrecoVeiculo(_idVeiculo);
-            bool manutencao = false;
-            if (airCheckBox1 != null)
-            {
-                if (Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataInicioManutencao >= dateTimePicker1.Value || Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataFimManutencao >= dateTimePicker1.Value)
-                {
-                    manutencao = true;
-                }
-            }
-            else
-            {
-                if (Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataInicioManutencao >= Program.DataHoraDoSistema() || Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataFimManutencao >= Program.DataHoraDoSistema())
-                {
-                    manutencao = true;
-                }
-            }
 
-            if (!manutencao)
-            {
-                labelDatasManutencao.Text = "";
-            }
-            else
-            {
-                labelDatasManutencao.Text = "Datas de Manutenção: " + Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataInicioManutencao.ToString("dd/MM/yyyy") + " - " + Program.melresCar.Veiculos[Program.melresCar.ProcuraPosicaoVeiculoLista(_idVeiculo)].DataFimManutencao.ToString("dd/MM/yyyy");
-            }
-
-
+            atualizaManutencao();
         }
+
         private void buttonVerifica_Click(object sender, EventArgs e)
         {
             foreach (Cliente cliente in Program.melresCar.Clientes)
@@ -141,6 +148,7 @@ namespace Automobile.Forms
             _idVeiculo = posicao;
             atualizaDataGridView();
             precoTotal.Text = "Preço Total: " + Program.melresCar.ProcuraPrecoVeiculo(_idVeiculo);
+            dateTimePicker2.Value = dateTimePicker2.Value.AddHours(1);
         }
 
         private void buttonCancelar_Click_1(object sender, EventArgs e)
@@ -177,11 +185,13 @@ namespace Automobile.Forms
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             calculaPrecoTotal();
+            atualizaManutencao();
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             calculaPrecoTotal();
+            atualizaManutencao();
         }
 
         private void airCheckBox1_CheckedChanged(object sender)
@@ -209,6 +219,7 @@ namespace Automobile.Forms
             mgraphics.DrawRectangle(pen, area);
         }
 
+
         private void buttonAdicionarReserva_Click_1(object sender, EventArgs e)
         {
             if (dataGridViewClientes.SelectedRows.Count == 0)
@@ -220,7 +231,7 @@ namespace Automobile.Forms
 
             if (!_dataAtualCheckBox)
             {
-                if (Program.melresCar.ProcuraDataDisponibilidade(_idVeiculo, dateTimePicker1.Value, dateTimePicker2.Value))
+                if (!Program.melresCar.ProcuraDataDisponibilidade(_idVeiculo, dateTimePicker1.Value, dateTimePicker2.Value))
                 {
                     MessageBox.Show("Veículo em manutenção nas datas/horas inseridas!");
                     return;
@@ -231,7 +242,7 @@ namespace Automobile.Forms
                     return;
                 }
 
-                if (dateTimePicker2.Value < dateTimePicker1.Value)
+                if (dateTimePicker2.Value <= dateTimePicker1.Value)
                 {
                     MessageBox.Show("Data/Hora Final não pode ser inferior à Data/Hora Inicial!");
                     return;
@@ -248,7 +259,7 @@ namespace Automobile.Forms
             }
             else
             {
-                if (Program.melresCar.ProcuraDataDisponibilidade(_idVeiculo, Program.DataHoraDoSistema(), dateTimePicker2.Value))
+                if (!Program.melresCar.ProcuraDataDisponibilidade(_idVeiculo, Program.DataHoraDoSistema(), dateTimePicker2.Value))
                 {
                     MessageBox.Show("Veículo em manutenção nas datas/horas inseridas!");
                     return;

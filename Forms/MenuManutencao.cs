@@ -14,7 +14,7 @@ namespace Automobile.Forms
 {
     public partial class MenuManutencao : Form
     {
-        private int _idVeiculo;
+        private int _indexVeiculo;
         public MenuManutencao()
         {
             InitializeComponent();
@@ -36,6 +36,8 @@ namespace Automobile.Forms
 
             dataGridViewManutencoes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridViewManutencoes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewManutencoes.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
+            dataGridViewManutencoes.Columns[3].DefaultCellStyle.Format = "dd/MM/yyyy";
             dataGridViewManutencoes.MultiSelect = false;
 
             dataGridViewManutencoes.EnableHeadersVisualStyles = false;
@@ -48,45 +50,34 @@ namespace Automobile.Forms
             dataGridViewManutencoes.RowsDefaultCellStyle.ForeColor = Color.White;
 
             dateTimePicker2.Value = dateTimePicker2.Value.AddDays(1);
-            dateTimePicker1.Value = dateTimePicker1.Value.Date + new TimeSpan(0, 0, 0);
-            dateTimePicker2.Value = dateTimePicker2.Value.Date + new TimeSpan(23, 59, 59);
+            //dateTimePicker1.Value = dateTimePicker1.Value.Date + new TimeSpan(0, 0, 0);
+            //dateTimePicker2.Value = dateTimePicker2.Value.Date + new TimeSpan(23, 59, 59);
 
-            atualizaDataGridView();
         }
 
 
         public void atualizaDataGridView()
         {
-            labelVeiculo.Text = "Veículo: " + Program.melresCar.ProcurarMatriculaVeiculo(_idVeiculo);
             dataGridViewManutencoes.Rows.Clear();
             foreach (var veiculo in Program.melresCar.Veiculos)
             {
-                if (veiculo.DataInicioManutencao >= Program.DataHoraDoSistema() || veiculo.DataFimManutencao >= Program.DataHoraDoSistema())
+                if (veiculo.DataInicioManutencao.Date >= Program.DataHoraDoSistema().Date || veiculo.DataFimManutencao.Date >= Program.DataHoraDoSistema().Date)
                 {
-                    dataGridViewManutencoes.Rows.Add(veiculo.IdVeiculo, veiculo.Matricula, veiculo.DataInicioManutencao, veiculo.DataFimManutencao);
+                    dataGridViewManutencoes.Rows.Add(veiculo.IdVeiculo, veiculo.Matricula, veiculo.DataInicioManutencao.Date, veiculo.DataFimManutencao.Date);
                 }
+
             }
             
         }
 
         public void veiculoSelecionado(int posicao)
         {
-            _idVeiculo = posicao + 1;
+            _indexVeiculo = posicao;
+            labelVeiculo.Text = "Veiculo: " + Program.melresCar.Veiculos[_indexVeiculo].Matricula;
             atualizaDataGridView();
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-            menuPrincipalObject.Enabled = true;
-            this.Close();
-        }
 
-        private void buttonAgendarManutencao_Click(object sender, EventArgs e)
-        {
-            
-
-        }
 
         private void PaintAgendarManutencao(object sender, PaintEventArgs e)
         {
@@ -97,6 +88,33 @@ namespace Automobile.Forms
             LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(96, 155, 173), Color.FromArgb(245, 251, 251), LinearGradientMode.Vertical);
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
+        }
+
+        private void buttonAgendarManutencao_Click(object sender, EventArgs e)
+        {
+            if (dateTimePicker1.Value.Date > dateTimePicker2.Value.Date)
+            {
+                MessageBox.Show("Data de início não pode ser superior à data de fim", "Agendar Manutenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Program.melresCar.Veiculos[_indexVeiculo].DataInicioManutencao = dateTimePicker1.Value;
+                Program.melresCar.Veiculos[_indexVeiculo].DataFimManutencao = dateTimePicker2.Value;
+                Program.melresCar.EscreverFicheiroCSV("veiculos");
+                atualizaDataGridView();
+                MessageBox.Show("Manutenção agendada com sucesso.", "Agendar Manutenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                menuPrincipalObject.Enabled = true;
+                this.Close();
+            }
+
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+            menuPrincipalObject.Enabled = true;
+            this.Close();
         }
     }
 }
