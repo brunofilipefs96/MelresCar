@@ -92,20 +92,38 @@ namespace Automobile.Forms
 
         private void buttonAgendarManutencao_Click(object sender, EventArgs e)
         {
+
+
             if (dateTimePicker1.Value.Date > dateTimePicker2.Value.Date)
             {
                 MessageBox.Show("Data de início não pode ser superior à data de fim", "Agendar Manutenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                Program.melresCar.Veiculos[_indexVeiculo].DataInicioManutencao = dateTimePicker1.Value;
-                Program.melresCar.Veiculos[_indexVeiculo].DataFimManutencao = dateTimePicker2.Value;
-                Program.melresCar.EscreverFicheiroCSV("veiculos");
-                atualizaDataGridView();
-                MessageBox.Show("Manutenção agendada com sucesso.", "Agendar Manutenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
-                menuPrincipalObject.Enabled = true;
-                this.Close();
+                if (dateTimePicker1.Value < Program.DataHoraDoSistema())
+                {
+                    MessageBox.Show("Data/Hora Inicial não pode ser inferior à Data/Hora atual!");
+                    return;
+                }
+
+                if (Program.melresCar.VerificaReservasExistentesPorData(Program.melresCar.Veiculos[_indexVeiculo].IdVeiculo, dateTimePicker1.Value, dateTimePicker2.Value))
+                {
+                    MessageBox.Show("Já existem Reservas para esse Veículo nas Datas/Horas Inseridas!");
+                    return;
+                } 
+                else
+                {
+                    Program.melresCar.Veiculos[_indexVeiculo].DataInicioManutencao = dateTimePicker1.Value;
+                    Program.melresCar.Veiculos[_indexVeiculo].DataFimManutencao = dateTimePicker2.Value;
+                    Program.melresCar.EscreverFicheiroCSV("veiculos");
+                    atualizaDataGridView();
+                    MessageBox.Show("Manutenção agendada com sucesso.", "Agendar Manutenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                    menuPrincipalObject.Enabled = true;
+                    this.Close();
+                }
+
+                
             }
 
         }

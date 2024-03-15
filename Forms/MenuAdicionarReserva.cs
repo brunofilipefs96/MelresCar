@@ -233,7 +233,7 @@ namespace Automobile.Forms
             {
                 if (!Program.melresCar.ProcuraDataDisponibilidade(_idVeiculo, dateTimePicker1.Value, dateTimePicker2.Value))
                 {
-                    MessageBox.Show("Veículo em manutenção nas datas/horas inseridas!");
+                    MessageBox.Show("Veículo em manutenção/reservado nas datas/horas inseridas!");
                     return;
                 }
                 if (dateTimePicker1.Value < Program.DataHoraDoSistema())
@@ -248,11 +248,6 @@ namespace Automobile.Forms
                     return;
                 }
 
-                if (Program.melresCar.VerificaReservasExistentes(_idVeiculo, dateTimePicker1.Value, dateTimePicker2.Value))
-                {
-                    MessageBox.Show("Já existem Reservas para esse Veículo nas Datas/Horas Inseridas!");
-                    return;
-                }
                 Reserva novaReserva = new Reserva(dateTimePicker1.Value, dateTimePicker2.Value, _idVeiculo, _numCliente, _precoTotal);
                 Program.melresCar.InserirReserva(novaReserva);
 
@@ -261,17 +256,12 @@ namespace Automobile.Forms
             {
                 if (!Program.melresCar.ProcuraDataDisponibilidade(_idVeiculo, Program.DataHoraDoSistema(), dateTimePicker2.Value))
                 {
-                    MessageBox.Show("Veículo em manutenção nas datas/horas inseridas!");
+                    MessageBox.Show("Veículo em manutenção/reservado nas datas/horas inseridas!");
                     return;
                 }
                 if (dateTimePicker2.Value <= Program.DataHoraDoSistema())
                 {
                     MessageBox.Show("Data/Hora Final não pode ser inferior à Data/Hora atual!");
-                    return;
-                }
-                if (Program.melresCar.VerificaReservasExistentes(_idVeiculo, Program.DataHoraDoSistema(), dateTimePicker2.Value))
-                {
-                    MessageBox.Show("Já existem Reservas para esse Veículo nas Datas/Horas Inseridas!");
                     return;
                 }
 

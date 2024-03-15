@@ -67,7 +67,7 @@
             this.numericPesoMax.DecimalPlaces = 2;
             this.numericPesoMax.Location = new System.Drawing.Point(544, 123);
             this.numericPesoMax.Maximum = new decimal(new int[] {
-            999999,
+            24000,
             0,
             0,
             0});
@@ -416,7 +416,7 @@
             this.comboBoxCombustivel.ItemHeight = 20;
             this.comboBoxCombustivel.Items.AddRange(new object[] {
             "gasolina",
-            "diesel",
+            "gasoleo",
             "hibrido",
             "eletrico"});
             this.comboBoxCombustivel.Location = new System.Drawing.Point(194, 178);
@@ -451,7 +451,7 @@
             this.comboBoxEixos.Items.AddRange(new object[] {
             "2",
             "3"});
-            this.comboBoxEixos.Location = new System.Drawing.Point(536, 119);
+            this.comboBoxEixos.Location = new System.Drawing.Point(536, 121);
             this.comboBoxEixos.Name = "comboBoxEixos";
             this.comboBoxEixos.Size = new System.Drawing.Size(138, 26);
             this.comboBoxEixos.StartIndex = 0;
@@ -483,7 +483,7 @@
             this.comboBoxNumPortas.Items.AddRange(new object[] {
             "3",
             "5"});
-            this.comboBoxNumPortas.Location = new System.Drawing.Point(536, 118);
+            this.comboBoxNumPortas.Location = new System.Drawing.Point(536, 121);
             this.comboBoxNumPortas.Name = "comboBoxNumPortas";
             this.comboBoxNumPortas.Size = new System.Drawing.Size(138, 26);
             this.comboBoxNumPortas.StartIndex = 0;
@@ -516,7 +516,7 @@
             "50",
             "125",
             "300"});
-            this.comboBoxCilindrada.Location = new System.Drawing.Point(536, 119);
+            this.comboBoxCilindrada.Location = new System.Drawing.Point(536, 121);
             this.comboBoxCilindrada.Name = "comboBoxCilindrada";
             this.comboBoxCilindrada.Size = new System.Drawing.Size(138, 26);
             this.comboBoxCilindrada.StartIndex = 0;

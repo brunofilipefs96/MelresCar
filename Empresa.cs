@@ -10,6 +10,7 @@ using System.Runtime.Remoting;
 using System.Runtime.InteropServices;
 using System.Drawing.Drawing2D;
 using System.Drawing;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace Automobile
 {
@@ -196,17 +197,16 @@ namespace Automobile
             return false;
         }
 
-        public bool VerificaReservasExistentes(int idVeiculo, DateTime dataInicio, DateTime dataFim)
+        public bool VerificaReservasExistentesPorData(int idVeiculo, DateTime dataInicio, DateTime dataFim)
         {
             foreach (Reserva reserva in Reservas)
             {
+
                 if (reserva.IdVeiculo == idVeiculo)
                 {
-                    if (dataInicio >= reserva.DataInicio && dataInicio <= reserva.DataFim)
-                    {
-                        return true;
-                    }
-                    if (dataFim >= reserva.DataInicio && dataFim <= reserva.DataFim)
+                    if ((dataInicio.Date >= reserva.DataInicio.Date && dataInicio.Date <= reserva.DataFim.Date) || 
+                        (dataFim.Date >= reserva.DataInicio.Date && dataFim.Date <= reserva.DataFim.Date) ||
+                        (dataInicio.Date <= reserva.DataInicio.Date && dataFim.Date >= reserva.DataFim.Date))
                     {
                         return true;
                     }
@@ -217,7 +217,7 @@ namespace Automobile
 
         public decimal ProcuraPrecoVeiculo(int idVeiculo)
         {
-            foreach(var veiculo in Veiculos)
+            foreach (var veiculo in Veiculos)
             {
                 if (veiculo.IdVeiculo == idVeiculo)
                 {
@@ -263,6 +263,18 @@ namespace Automobile
             return -1;
         }
 
+        public int ProcuraPosicaoReservaLista(int idReserva)
+        {
+            foreach (Reserva reserva in Reservas)
+            {
+                if (reserva.IdReserva == idReserva)
+                {
+                    return Reservas.IndexOf(reserva);
+                }
+            }
+            return -1;
+        }
+
         public string ProcuraNifCliente(int numCliente)
         {
             foreach (Cliente cliente in Clientes)
@@ -274,32 +286,30 @@ namespace Automobile
             }
             return "Cliente não encontrado";
         }
-           
-        public bool ProcuraDataDisponibilidade(int idVeiculo, DateTime dataInicioReserva, DateTime dataFimReserva)
+
+        public bool ProcuraDataDisponibilidade(int idVeiculo, DateTime dataInicio, DateTime dataFim)
         {
             foreach (Reserva reserva in Reservas)
             {
                 if (reserva.IdVeiculo == idVeiculo)
                 {
-                    if (dataInicioReserva.Date >= reserva.DataInicio.Date && dataInicioReserva.Date <= reserva.DataFim.Date)
-                    {
-                        return false;
-                    }
-                    if (dataFimReserva.Date >= reserva.DataInicio.Date && dataFimReserva.Date <= reserva.DataFim.Date)
+                    if ((dataInicio.Date >= reserva.DataInicio.Date && dataInicio.Date <= reserva.DataFim.Date) || 
+                        (dataFim.Date >= reserva.DataInicio.Date && dataFim.Date <= reserva.DataFim.Date) ||
+                        (dataInicio.Date <= reserva.DataInicio.Date && dataFim.Date >= reserva.DataFim.Date))
                     {
                         return false;
                     }
                 }
             }
+
             foreach (Veiculo veiculo in Veiculos)
             {
                 if (veiculo.IdVeiculo == idVeiculo)
                 {
-                    if (dataInicioReserva.Date >= veiculo.DataInicioManutencao.Date && dataInicioReserva.Date <= veiculo.DataFimManutencao.Date)
-                    {
-                        return false;
-                    }
-                    if (dataFimReserva.Date >= veiculo.DataInicioManutencao.Date && dataFimReserva.Date <= veiculo.DataFimManutencao.Date)
+
+                    if ((dataInicio.Date >= veiculo.DataInicioManutencao.Date && dataInicio.Date <= veiculo.DataFimManutencao.Date) ||
+                        (dataFim.Date >= veiculo.DataInicioManutencao.Date && dataFim.Date <= veiculo.DataFimManutencao.Date) ||
+                        (dataInicio <= veiculo.DataInicioManutencao.Date && dataFim >= veiculo.DataFimManutencao.Date))
                     {
                         return false;
                     }
@@ -325,7 +335,8 @@ namespace Automobile
                     foreach (string line in lines)
                     {
                         string[] fields = line.Split(',');
-                        if (fields[1] == "carro"){
+                        if (fields[1] == "carro")
+                        {
                             Carro carroAux = new Carro();
                             carroAux.IdVeiculo = Convert.ToInt32(fields[0]);
                             carroAux.TipoVeiculo = fields[1];
@@ -402,8 +413,8 @@ namespace Automobile
                             camionetaAux.NumPassageiros = Convert.ToInt32(fields[13]);
                             Veiculos.Add(camionetaAux);
                         }
-                        
-                        
+
+
                     }
                 }
                 else if (nomeFicheiro == "reservas.csv")
@@ -472,7 +483,7 @@ namespace Automobile
                 Console.WriteLine($"Erro ao carregar ficheiro CSV: {ex.Message}");
             }
         }
-        
+
 
 
 
@@ -489,7 +500,7 @@ namespace Automobile
                         string line = string.Join(",", fields);
                         writer.WriteLine(line);
                     }
-                    
+
                     writer.Close();
                 }
                 else if (nomeFicheiro == "reservas")
@@ -634,7 +645,7 @@ namespace Automobile
                     }
                 }
             }
-            
+
             return id + 1;
         }
 
@@ -644,11 +655,11 @@ namespace Automobile
             DaysAdded++;
 
             List<string> veiculosManutencao = new List<string>();
-            List<string> veiculosDisponiveis= new List<string>();
+            List<string> veiculosDisponiveis = new List<string>();
             int contManutencao = 0;
             int contDisponiveis = 0;
 
-            foreach(var veiculo in Veiculos)
+            foreach (var veiculo in Veiculos)
             {
                 if (veiculo.DataFimManutencao < Program.DataHoraDoSistema() && veiculo.Estado == "manutencao")
                 {
@@ -656,8 +667,8 @@ namespace Automobile
                     contManutencao++;
                 }
             }
-            
-            foreach(var reserva in Reservas)
+
+            foreach (var reserva in Reservas)
             {
                 if (reserva.DataInicio <= Program.DataHoraDoSistema() && reserva.DataFim >= Program.DataHoraDoSistema())
                 {
@@ -669,7 +680,7 @@ namespace Automobile
             string listaManutencao = string.Join(", ", veiculosManutencao);
             string listaDisponiveis = string.Join(", ", veiculosDisponiveis);
 
-            if(contManutencao != 0)
+            if (contManutencao != 0)
             {
                 MessageBox.Show("Os Veículos com as matrículas (" + listaManutencao + ") já sairam de Manutenção!");
             }
@@ -677,7 +688,7 @@ namespace Automobile
             {
                 MessageBox.Show("Os Veículos com as matrículas (" + listaDisponiveis + ") encontram-se disponiveis para alugar hoje!");
             }
-            
+
         }
     }
 }

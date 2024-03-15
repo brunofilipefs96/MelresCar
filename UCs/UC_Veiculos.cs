@@ -55,51 +55,38 @@ namespace Automobile
             comboBoxTipoVeiculo.SelectedIndex = index;
             dataGridViewVeiculos.Columns.Clear();
             dataGridViewVeiculos.Rows.Clear();
+
+
+            dataGridViewVeiculos.Columns.Add("ID", "ID");
+            dataGridViewVeiculos.Columns.Add("Classe", "Classe");
+            dataGridViewVeiculos.Columns.Add("Matrícula", "Matrícula");
+            dataGridViewVeiculos.Columns.Add("Marca", "Marca");
+            dataGridViewVeiculos.Columns.Add("Modelo", "Modelo");
+            dataGridViewVeiculos.Columns.Add("Estado", "Estado");
+            dataGridViewVeiculos.Columns.Add("Combustível", "Combustível");
+
+
             if (comboBoxTipoVeiculo.SelectedIndex == 0)
             {
-                dataGridViewVeiculos.Columns.Add("ID", "ID");
-                dataGridViewVeiculos.Columns.Add("Matrícula", "Matrícula");
-                dataGridViewVeiculos.Columns.Add("Marca", "Marca");
-                dataGridViewVeiculos.Columns.Add("Modelo", "Modelo");
-                dataGridViewVeiculos.Columns.Add("Estado", "Estado");
-                dataGridViewVeiculos.Columns.Add("Combustível", "Combustível");
                 dataGridViewVeiculos.Columns.Add("NumPortas", "NumPortas");
                 dataGridViewVeiculos.Columns.Add("TipoCaixa", "TipoCaixa");
                 dataGridViewVeiculos.Columns.Add("PreçoDiário", "PreçoDiário");
             }
             else if (comboBoxTipoVeiculo.SelectedIndex == 1)
             {
-                dataGridViewVeiculos.Columns.Add("ID", "ID");
-                dataGridViewVeiculos.Columns.Add("Matrícula", "Matrícula");
-                dataGridViewVeiculos.Columns.Add("Marca", "Marca");
-                dataGridViewVeiculos.Columns.Add("Modelo", "Modelo");
-                dataGridViewVeiculos.Columns.Add("Estado", "Estado");
-                dataGridViewVeiculos.Columns.Add("Combustível", "Combustível");
                 dataGridViewVeiculos.Columns.Add("Cilindrada", "Cilindrada");
                 dataGridViewVeiculos.Columns.Add("PreçoDiário", "PreçoDiário");
             }
             else if (comboBoxTipoVeiculo.SelectedIndex == 2)
             {
-                dataGridViewVeiculos.Columns.Add("ID", "ID");
-                dataGridViewVeiculos.Columns.Add("Matrícula", "Matrícula");
-                dataGridViewVeiculos.Columns.Add("Marca", "Marca");
-                dataGridViewVeiculos.Columns.Add("Modelo", "Modelo");
-                dataGridViewVeiculos.Columns.Add("Estado", "Estado");
-                dataGridViewVeiculos.Columns.Add("Combustível", "Combustível");
                 dataGridViewVeiculos.Columns.Add("NumEixos", "NumEixos");
                 dataGridViewVeiculos.Columns.Add("NumPassageiros", "NumPassageiros");
                 dataGridViewVeiculos.Columns.Add("PreçoDiário", "PreçoDiário");
             }
             else if (comboBoxTipoVeiculo.SelectedIndex == 3)
             {
-                dataGridViewVeiculos.Columns.Add("ID", "ID");
-                dataGridViewVeiculos.Columns.Add("Matrícula", "Matrícula");
-                dataGridViewVeiculos.Columns.Add("Marca", "Marca");
-                dataGridViewVeiculos.Columns.Add("Modelo", "Modelo");
-                dataGridViewVeiculos.Columns.Add("Estado", "Estado");
-                dataGridViewVeiculos.Columns.Add("Combustível", "Combustível");
-                dataGridViewVeiculos.Columns.Add("PesoMáximo", "PesoMáximo");
-                dataGridViewVeiculos.Columns.Add("PreçoDiário", "PreçoDiário");
+               dataGridViewVeiculos.Columns.Add("PesoMáximo", "PesoMáximo");
+               dataGridViewVeiculos.Columns.Add("PreçoDiário", "PreçoDiário");
             }
             foreach (var veiculo in Program.melresCar.Veiculos)
             {
@@ -108,7 +95,7 @@ namespace Automobile
                     if (veiculo is Carro)
                     {
                         Carro carro = (Carro)veiculo;
-                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo, carro.Matricula, carro.Marca, carro.Modelo, carro.Estado, carro.Combustivel, carro.NumPortas, carro.TipoCaixa, carro.PrecoDiario);
+                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo,carro.ClasseVeiculo, carro.Matricula, carro.Marca, carro.Modelo, carro.Estado, carro.Combustivel, carro.NumPortas, carro.TipoCaixa, carro.PrecoDiario);
                     }
                 }
                 else if (comboBoxTipoVeiculo.SelectedIndex == 1)
@@ -116,7 +103,7 @@ namespace Automobile
                     if (veiculo is Mota)
                     {
                         Mota mota = (Mota)veiculo;
-                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo, mota.Matricula, mota.Marca, mota.Modelo, mota.Estado, mota.Combustivel, mota.Cilindrada, mota.PrecoDiario);
+                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo,mota.ClasseVeiculo, mota.Matricula, mota.Marca, mota.Modelo, mota.Estado, mota.Combustivel, mota.Cilindrada, mota.PrecoDiario);
                     }
                 }
                 else if (comboBoxTipoVeiculo.SelectedIndex == 2)
@@ -124,7 +111,7 @@ namespace Automobile
                     if (veiculo is Camioneta)
                     {
                         Camioneta camioneta = (Camioneta)veiculo;
-                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo, camioneta.Matricula, camioneta.Marca, camioneta.Modelo, camioneta.Estado, camioneta.Combustivel, camioneta.NumEixos, camioneta.NumPassageiros, camioneta.PrecoDiario);
+                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo,camioneta.ClasseVeiculo, camioneta.Matricula, camioneta.Marca, camioneta.Modelo, camioneta.Estado, camioneta.Combustivel, camioneta.NumEixos, camioneta.NumPassageiros, camioneta.PrecoDiario);
                     }
                 }
                 else if (comboBoxTipoVeiculo.SelectedIndex == 3)
@@ -132,7 +119,7 @@ namespace Automobile
                     if (veiculo is Camiao)
                     {
                         Camiao camiao = (Camiao)veiculo;
-                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo, camiao.Matricula, camiao.Marca, camiao.Modelo, camiao.Estado, camiao.Combustivel, camiao.PesoMaximo, camiao.PrecoDiario);
+                        dataGridViewVeiculos.Rows.Add(veiculo.IdVeiculo,camiao.ClasseVeiculo, camiao.Matricula, camiao.Marca, camiao.Modelo, camiao.Estado, camiao.Combustivel, camiao.PesoMaximo, camiao.PrecoDiario);
                     }
                 }
             }

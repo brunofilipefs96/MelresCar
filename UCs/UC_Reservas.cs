@@ -81,6 +81,30 @@ namespace Automobile
             mgraphics.DrawRectangle(pen, area);
         }
 
-        
+        private void buttonRemReserva_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewReservas.CurrentCell == null)
+            {
+                MessageBox.Show("Selecione uma reserva para remover");
+                return;
+            }
+            else
+            {
+                MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
+                menuPrincipalObject.Enabled = false;
+                DialogResult dialogResult = MessageBox.Show("Tem a certeza que pretende remover essa reserva?", "Remover Reserva", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.No)
+                {
+                    menuPrincipalObject.Enabled = true;
+                    return;
+                }
+                int posicaoListaReserva = Program.melresCar.ProcuraPosicaoReservaLista(Convert.ToInt32(dataGridViewReservas.Rows[dataGridViewReservas.CurrentRow.Index].Cells[0].Value));
+                Program.melresCar.Reservas.RemoveAt(posicaoListaReserva);
+                Program.melresCar.EscreverFicheiroCSV("reservas");
+                atualizaDataGridView();
+                MessageBox.Show("Reserva removida com sucesso");
+                menuPrincipalObject.Enabled = true;
+            }
+        }
     }
 }

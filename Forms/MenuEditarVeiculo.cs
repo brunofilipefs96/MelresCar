@@ -90,6 +90,7 @@ namespace Automobile
             }
             else
             {
+                string classeVeic = "";
                 Program.melresCar.Veiculos[_indexVeiculo].Marca = textBoxMarca.Text;
                 Program.melresCar.Veiculos[_indexVeiculo].Modelo = textBoxModelo.Text;
                 Program.melresCar.Veiculos[_indexVeiculo].Combustivel = comboBoxCombustivel.Text;
@@ -105,7 +106,48 @@ namespace Automobile
                         }
                         else
                         {
+                            if (comboBoxNumPortas.Text == "3" && comboBoxCombustivel.Text == "gasolina" && comboBoxCaixa.Text == "manual")
+                            {
+                                classeVeic = "A";    //3 Portas Manual a Gasolina
+                            }
+                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "hibrido" && comboBoxCaixa.Text == "automatico")
+                            {
+                                classeVeic = "B";    //5 Portas automático e Hibrido
+                            }
+                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina")
+                            {
+                                classeVeic = "C";    //Pequeno 5 Portas a Gasolina
+                            }
+                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
+                            {
+                                classeVeic = "D";    //Pequeno 5 Portas a Gasoleo   
+                            }
+                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina")
+                            {
+                                classeVeic = "F";    //Médio 5 Portas a Gasolina
+                            }
+                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
+                            {
+                                classeVeic = "G";    //Médio 5 Portas a Gasoleo
+                            }
+                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
+                            {
+                                classeVeic = "H";    //Station Wagon 5 Portas a Diesel
+                            }
+                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "eletrico")
+                            {
+                                classeVeic = "I";    //Médio Elétrico 5 Portas
+                            }
+                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina" || comboBoxCombustivel.Text == "gasoleo")
+                            {
+                                classeVeic = "J";    //SUV 5 Portas a Diesel/Gasolina
+                            }
+                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo" || comboBoxCombustivel.Text == "gasolina")
+                            {
+                                classeVeic = "L";   //Executivo/Desportivo Premium 5 Portas
+                            }
                             Carro carro = (Carro)Program.melresCar.Veiculos[_indexVeiculo];
+                            carro.ClasseVeiculo = classeVeic;
                             carro.NumPortas = Convert.ToInt32(comboBoxNumPortas.Text);
                             carro.TipoCaixa = comboBoxCaixa.Text;
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
@@ -123,7 +165,20 @@ namespace Automobile
                         }
                         else
                         {
+                            if (comboBoxCilindrada.SelectedIndex == 0)
+                            {
+                                classeVeic = "A";
+                            }
+                            else if (comboBoxCilindrada.SelectedIndex == 1)
+                            {
+                                classeVeic = "B";
+                            }
+                            else if (comboBoxCilindrada.SelectedIndex == 2)
+                            {
+                                classeVeic = "C";
+                            }
                             Mota mota = (Mota)Program.melresCar.Veiculos[_indexVeiculo];
+                            mota.ClasseVeiculo = classeVeic;
                             mota.Cilindrada = Convert.ToInt32(comboBoxCilindrada.Text);
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
                             MessageBox.Show("Mota adicionada com sucesso.");
@@ -140,7 +195,20 @@ namespace Automobile
                         }
                         else
                         {
+                            if (numericNumPassageiros.Value <= 8)
+                            {
+                                classeVeic = "A";
+                            }
+                            else if (numericNumPassageiros.Value <= 16)
+                            {
+                                classeVeic = "B";
+                            }
+                            else if (numericNumPassageiros.Value <= 64)
+                            {
+                                classeVeic = "C";
+                            }
                             Camioneta camioneta = (Camioneta)Program.melresCar.Veiculos[_indexVeiculo];
+                            camioneta.ClasseVeiculo = classeVeic;
                             camioneta.NumEixos = Convert.ToInt32(comboBoxEixos.Text);
                             camioneta.NumPassageiros = Convert.ToInt32(numericNumPassageiros.Text);
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
@@ -158,7 +226,20 @@ namespace Automobile
                         }
                         else
                         {
+                            if (numericPesoMax.Value <= 3500)
+                            {
+                                classeVeic = "A";
+                            }
+                            else if (numericPesoMax.Value <= 8000)
+                            {
+                                classeVeic = "B";
+                            }
+                            else if (numericPesoMax.Value <= 24000)
+                            {
+                                classeVeic = "C";
+                            }
                             Camiao camiao = (Camiao)Program.melresCar.Veiculos[_indexVeiculo];
+                            camiao.ClasseVeiculo = classeVeic;
                             camiao.PesoMaximo = Convert.ToDouble(numericPesoMax.Text);
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
                             MessageBox.Show("Camião adicionado com sucesso.");

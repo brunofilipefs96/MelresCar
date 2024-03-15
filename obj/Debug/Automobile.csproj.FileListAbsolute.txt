@@ -182,7 +182,6 @@ C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuAdi
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuEditarCliente.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuEditarFuncionario.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuEditarVeiculo.resources
-C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuRemoverFuncionario.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_ListarCamiao.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_ListarCamioneta.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_ListarCarro.resources
@@ -191,8 +190,6 @@ C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.ListaVe
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuLogin.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuPrincipal.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.Properties.Resources.resources
-C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuRemoverCliente.resources
-C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.MenuRemoverVeiculo.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_Clientes.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_Funcionarios.resources
 C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.UC_MenuPrincipal.resources
@@ -422,3 +419,8 @@ C:\Users\T0126211\Downloads\MelresCar-master\obj\Debug\Automobile.pdb
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\bin\Debug\Bunifu.Licensing.dll
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\bin\Debug\Bunifu.UI.WinForms.dll
 C:\Users\Bruno\Documents\Github Repositories\MelresCar\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\bin\Debug\Bunifu.Licensing.dll
+C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\bin\Debug\Bunifu.UI.WinForms.dll
+C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.LucroDatas.resources
+C:\Users\Nelson Ferreira\Documents\GitHub\MelresCar\obj\Debug\Automobile.Forms.MenuManutencao.resources

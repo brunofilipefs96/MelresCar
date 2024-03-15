@@ -432,7 +432,7 @@
             this.comboBoxCombustivel.ItemHeight = 20;
             this.comboBoxCombustivel.Items.AddRange(new object[] {
             "gasolina",
-            "diesel",
+            "gasoleo",
             "hibrido",
             "eletrico"});
             this.comboBoxCombustivel.Location = new System.Drawing.Point(174, 213);
@@ -532,7 +532,7 @@
             this.comboBoxEixos.Items.AddRange(new object[] {
             "2",
             "3"});
-            this.comboBoxEixos.Location = new System.Drawing.Point(526, 130);
+            this.comboBoxEixos.Location = new System.Drawing.Point(526, 129);
             this.comboBoxEixos.Name = "comboBoxEixos";
             this.comboBoxEixos.Size = new System.Drawing.Size(138, 26);
             this.comboBoxEixos.StartIndex = 0;
