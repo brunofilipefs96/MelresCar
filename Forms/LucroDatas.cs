@@ -17,7 +17,9 @@ namespace Automobile
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.AutoSize = false;  
+            this.AutoSize = false;
+            dataInicio.Date = Program.DataHoraDoSistema().Date;
+            dataFim.Date = Program.DataHoraDoSistema().Date;
         }
 
         private void buttonCancelar_Click_1(object sender, EventArgs e)
@@ -53,7 +55,7 @@ namespace Automobile
                     dataDias = dataDias.AddDays(1);
                 }
             }
-            labelLucro.Text = lucroTotal.ToString();
+            labelLucro.Text = string.Format("{0:#,0.00}", lucroTotal);
         }
 
         private void PaintLucroDatas(object sender, PaintEventArgs e)

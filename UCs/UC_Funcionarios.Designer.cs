@@ -78,7 +78,7 @@
             this.dataGridViewFuncionario.EnableHeadersVisualStyles = false;
             this.dataGridViewFuncionario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dataGridViewFuncionario.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dataGridViewFuncionario.Location = new System.Drawing.Point(134, 25);
+            this.dataGridViewFuncionario.Location = new System.Drawing.Point(23, 32);
             this.dataGridViewFuncionario.Name = "dataGridViewFuncionario";
             this.dataGridViewFuncionario.ReadOnly = true;
             this.dataGridViewFuncionario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -93,7 +93,7 @@
             this.dataGridViewFuncionario.RowHeadersWidth = 51;
             this.dataGridViewFuncionario.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewFuncionario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewFuncionario.Size = new System.Drawing.Size(600, 358);
+            this.dataGridViewFuncionario.Size = new System.Drawing.Size(834, 369);
             this.dataGridViewFuncionario.TabIndex = 12;
             // 
             // buttonAddFuncionario

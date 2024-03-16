@@ -100,7 +100,7 @@ namespace Automobile.Forms
             }
             else
             {
-                if (dateTimePicker1.Value < Program.DataHoraDoSistema())
+                if (dateTimePicker1.Value.Date < Program.DataHoraDoSistema().Date)
                 {
                     MessageBox.Show("Data/Hora Inicial não pode ser inferior à Data/Hora atual!");
                     return;

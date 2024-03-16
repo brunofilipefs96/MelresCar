@@ -68,8 +68,8 @@ namespace Automobile
 
             if (comboBoxTipoVeiculo.SelectedIndex == 0)
             {
-                dataGridViewVeiculos.Columns.Add("NumPortas", "NumPortas");
-                dataGridViewVeiculos.Columns.Add("TipoCaixa", "TipoCaixa");
+                dataGridViewVeiculos.Columns.Add("Portas", "Portas");
+                dataGridViewVeiculos.Columns.Add("Caixa", "Caixa");
                 dataGridViewVeiculos.Columns.Add("PreçoDiário", "PreçoDiário");
             }
             else if (comboBoxTipoVeiculo.SelectedIndex == 1)
@@ -79,8 +79,8 @@ namespace Automobile
             }
             else if (comboBoxTipoVeiculo.SelectedIndex == 2)
             {
-                dataGridViewVeiculos.Columns.Add("NumEixos", "NumEixos");
-                dataGridViewVeiculos.Columns.Add("NumPassageiros", "NumPassageiros");
+                dataGridViewVeiculos.Columns.Add("Eixos", "Eixos");
+                dataGridViewVeiculos.Columns.Add("Passageiros", "Passageiros");
                 dataGridViewVeiculos.Columns.Add("PreçoDiário", "PreçoDiário");
             }
             else if (comboBoxTipoVeiculo.SelectedIndex == 3)

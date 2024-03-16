@@ -440,6 +440,7 @@
             this.comboBoxCombustivel.Size = new System.Drawing.Size(138, 26);
             this.comboBoxCombustivel.StartIndex = 0;
             this.comboBoxCombustivel.TabIndex = 99;
+            this.comboBoxCombustivel.SelectedIndexChanged += new System.EventHandler(this.comboBoxCombustivel_SelectedIndexChanged_1);
             // 
             // comboBoxCilindrada
             // 
@@ -532,7 +533,7 @@
             this.comboBoxEixos.Items.AddRange(new object[] {
             "2",
             "3"});
-            this.comboBoxEixos.Location = new System.Drawing.Point(526, 129);
+            this.comboBoxEixos.Location = new System.Drawing.Point(526, 128);
             this.comboBoxEixos.Name = "comboBoxEixos";
             this.comboBoxEixos.Size = new System.Drawing.Size(138, 26);
             this.comboBoxEixos.StartIndex = 0;

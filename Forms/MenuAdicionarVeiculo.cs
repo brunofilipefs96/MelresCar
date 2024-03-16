@@ -92,48 +92,60 @@ namespace Automobile
                             if (comboBoxNumPortas.Text == "" || comboBoxCaixa.Text == "")
                             {
                                 MessageBox.Show("Por favor preencha todos os campos", "Adicionar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            }
+                            }  
                             else
                             {
-                                if (comboBoxNumPortas.Text == "3" && comboBoxCombustivel.Text == "gasolina" && comboBoxCaixa.Text == "manual")
+                                if (comboBoxCombustivel.Text == "gasolina")
                                 {
-                                    classeVeic = "A";    //3 Portas Manual a Gasolina
+                                    if (comboBoxNumPortas.Text == "3")
+                                    {
+                                        classeVeic = "A";
+                                    }
+                                    else if (comboBoxNumPortas.Text == "5")
+                                    {
+                                        if (numericPrecoDia.Value <= 20)
+                                        {
+                                            classeVeic = "C";
+                                        }
+                                        else if (numericPrecoDia.Value > 20 && numericPrecoDia.Value <= 70)
+                                        {
+                                            classeVeic = "F";
+                                        }
+                                        else if (numericPrecoDia.Value > 70)
+                                        {
+                                            classeVeic = "L";
+                                        }
+                                    }
                                 }
-                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "hibrido" && comboBoxCaixa.Text == "automatico")
+                                else if (comboBoxCombustivel.Text == "gasoleo")
                                 {
-                                    classeVeic = "B";    //5 Portas automático e Hibrido
+                                    if (comboBoxNumPortas.Text == "3")
+                                    {
+                                        classeVeic = "D";
+                                    }
+                                    else if (comboBoxNumPortas.Text == "5")
+                                    {
+                                        if (numericPrecoDia.Value <= 40)
+                                        {
+                                            classeVeic = "G";
+                                        }
+                                        else if (numericPrecoDia.Value > 40 && numericPrecoDia.Value <= 60)
+                                        {
+                                            classeVeic = "H";
+                                        }
+                                        else if (numericPrecoDia.Value > 60)
+                                        {
+                                            classeVeic = "J";
+                                        }
+                                    }
                                 }
-                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina")
+                                else if (comboBoxCombustivel.Text == "hibrido")
                                 {
-                                    classeVeic = "C";    //Pequeno 5 Portas a Gasolina
+                                    classeVeic = "B";
                                 }
-                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
+                                else if (comboBoxCombustivel.Text == "eletrico")
                                 {
-                                    classeVeic = "D";    //Pequeno 5 Portas a Gasoleo   
-                                }
-                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina")
-                                {
-                                    classeVeic = "F";    //Médio 5 Portas a Gasolina
-                                }
-                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
-                                {
-                                    classeVeic = "G";    //Médio 5 Portas a Gasoleo
-                                }
-                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
-                                {
-                                    classeVeic = "H";    //Station Wagon 5 Portas a Diesel
-                                }
-                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "eletrico")
-                                {
-                                    classeVeic = "I";    //Médio Elétrico 5 Portas
-                                }
-                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina" || comboBoxCombustivel.Text == "gasoleo")
-                                {
-                                    classeVeic = "J";    //SUV 5 Portas a Diesel/Gasolina
-                                }
-                                else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo" || comboBoxCombustivel.Text == "gasolina")
-                                {
-                                    classeVeic = "L";   //Executivo/Desportivo Premium 5 Portas
+                                    classeVeic = "I";
                                 }
 
                                 Carro carro = new Carro("carro", classeVeic, textBoxMarca.Text, textBoxModelo.Text, textBoxMatricula.Text, comboBoxCombustivel.Text, Convert.ToInt32(numericAno.Text), Convert.ToDecimal(numericPrecoDia.Text), Convert.ToInt32(comboBoxNumPortas.Text), comboBoxCaixa.Text);
@@ -299,6 +311,25 @@ namespace Automobile
             LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(96, 155, 173), Color.FromArgb(245, 251, 251), LinearGradientMode.Vertical);
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
+        }
+
+        private void comboBoxCombustivel_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (comboBoxCombustivel.Text == "eletrico")
+            {
+                comboBoxCaixa.SelectedIndex = 1;
+                comboBoxCaixa.Enabled = false;
+            }
+            else if (comboBoxCombustivel.Text == "hibrido")
+            {
+                comboBoxCaixa.SelectedIndex = 1;
+                comboBoxCaixa.Enabled = false;
+            }
+            else
+            {
+                comboBoxCaixa.Enabled = true;
+            }
+
         }
     }
 }

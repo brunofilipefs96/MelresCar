@@ -56,11 +56,11 @@
             this.LabelCarroL.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroL.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroL.Location = new System.Drawing.Point(1136, 440);
+            this.LabelCarroL.Location = new System.Drawing.Point(1136, 417);
             this.LabelCarroL.Name = "LabelCarroL";
             this.LabelCarroL.Size = new System.Drawing.Size(100, 151);
             this.LabelCarroL.TabIndex = 81;
-            this.LabelCarroL.Text = "Executivo /Desportivo Premium 5 Portas Automático Diesel/ gasolina";
+            this.LabelCarroL.Text = "Gasolina 5 Portas superior a 70€";
             this.LabelCarroL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelCarroJ
@@ -68,11 +68,11 @@
             this.LabelCarroJ.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroJ.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroJ.Location = new System.Drawing.Point(873, 440);
+            this.LabelCarroJ.Location = new System.Drawing.Point(873, 449);
             this.LabelCarroJ.Name = "LabelCarroJ";
             this.LabelCarroJ.Size = new System.Drawing.Size(96, 87);
             this.LabelCarroJ.TabIndex = 80;
-            this.LabelCarroJ.Text = "SUV 5 Portas a Diesel / Gasolina";
+            this.LabelCarroJ.Text = "Gasóleo 5 Portas superior a 60€";
             this.LabelCarroJ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelCarroI
@@ -80,11 +80,11 @@
             this.LabelCarroI.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroI.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroI.Location = new System.Drawing.Point(612, 440);
+            this.LabelCarroI.Location = new System.Drawing.Point(612, 419);
             this.LabelCarroI.Name = "LabelCarroI";
             this.LabelCarroI.Size = new System.Drawing.Size(96, 87);
             this.LabelCarroI.TabIndex = 77;
-            this.LabelCarroI.Text = "Médio Elétrico 5 Portas";
+            this.LabelCarroI.Text = "Elétrico";
             this.LabelCarroI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelCarroH
@@ -92,11 +92,11 @@
             this.LabelCarroH.BackColor = System.Drawing.Color.Transparent;
             this.LabelCarroH.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.LabelCarroH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.LabelCarroH.Location = new System.Drawing.Point(346, 441);
+            this.LabelCarroH.Location = new System.Drawing.Point(346, 434);
             this.LabelCarroH.Name = "LabelCarroH";
             this.LabelCarroH.Size = new System.Drawing.Size(96, 87);
             this.LabelCarroH.TabIndex = 75;
-            this.LabelCarroH.Text = "Station Wagon 5 Portas a Diesel";
+            this.LabelCarroH.Text = "Gasóleo 5 Portas entre 40-60€";
             this.LabelCarroH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelCarroG
@@ -108,7 +108,7 @@
             this.LabelCarroG.Name = "LabelCarroG";
             this.LabelCarroG.Size = new System.Drawing.Size(96, 72);
             this.LabelCarroG.TabIndex = 73;
-            this.LabelCarroG.Text = "Médio 5 Portas a Diesel";
+            this.LabelCarroG.Text = "Gasóleo 5 Portas até 40€";
             this.LabelCarroG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelCarroF
@@ -118,9 +118,9 @@
             this.LabelCarroF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
             this.LabelCarroF.Location = new System.Drawing.Point(1136, 208);
             this.LabelCarroF.Name = "LabelCarroF";
-            this.LabelCarroF.Size = new System.Drawing.Size(96, 72);
+            this.LabelCarroF.Size = new System.Drawing.Size(96, 91);
             this.LabelCarroF.TabIndex = 71;
-            this.LabelCarroF.Text = "Médio 5 Portas a Gasolina";
+            this.LabelCarroF.Text = "Gasolina 5 Portas entre 20-70€";
             this.LabelCarroF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelCarroD
@@ -132,7 +132,7 @@
             this.LabelCarroD.Name = "LabelCarroD";
             this.LabelCarroD.Size = new System.Drawing.Size(96, 72);
             this.LabelCarroD.TabIndex = 70;
-            this.LabelCarroD.Text = "Pequeno 5 Portas a Diesel";
+            this.LabelCarroD.Text = "Gasóleo 3 Portas";
             this.LabelCarroD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelCarroC
@@ -144,7 +144,7 @@
             this.LabelCarroC.Name = "LabelCarroC";
             this.LabelCarroC.Size = new System.Drawing.Size(96, 72);
             this.LabelCarroC.TabIndex = 69;
-            this.LabelCarroC.Text = "Pequeno de 5 Portas a Gasolina";
+            this.LabelCarroC.Text = "Gasolina 5 Portas até 20€";
             this.LabelCarroC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelCarroB
@@ -156,7 +156,7 @@
             this.LabelCarroB.Name = "LabelCarroB";
             this.LabelCarroB.Size = new System.Drawing.Size(96, 72);
             this.LabelCarroB.TabIndex = 68;
-            this.LabelCarroB.Text = "5 Portas Automático e Hibrido";
+            this.LabelCarroB.Text = "Híbrido";
             this.LabelCarroB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelCarroA
@@ -168,7 +168,7 @@
             this.LabelCarroA.Name = "LabelCarroA";
             this.LabelCarroA.Size = new System.Drawing.Size(82, 72);
             this.LabelCarroA.TabIndex = 67;
-            this.LabelCarroA.Text = "3 Portas Manual a Gasolina";
+            this.LabelCarroA.Text = "Gasolina 3 Portas";
             this.LabelCarroA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1

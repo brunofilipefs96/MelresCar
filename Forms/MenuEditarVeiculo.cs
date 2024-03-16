@@ -86,7 +86,7 @@ namespace Automobile
         {
             if (textBoxMarca.Text == "" || textBoxModelo.Text == "" || comboBoxCombustivel.Text == "" || numericAno.Text == "" || numericPrecoDia.Text == "" || comboBoxEstado.Text == "")
             {
-                MessageBox.Show("Por favor preencha todos os campos", "Adicionar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor preencha todos os campos", "Editar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -102,56 +102,57 @@ namespace Automobile
                     case "carro":
                         if (comboBoxNumPortas.Text == "" || comboBoxCaixa.Text == "")
                         {
-                            MessageBox.Show("Por favor preencha todos os campos", "Adicionar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Por favor preencha todos os campos", "Editar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         else
                         {
-                            if (comboBoxNumPortas.Text == "3" && comboBoxCombustivel.Text == "gasolina" && comboBoxCaixa.Text == "manual")
+                            if (numericPrecoDia.Value <= 10)
                             {
-                                classeVeic = "A";    //3 Portas Manual a Gasolina
+                                classeVeic = "A";
                             }
-                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "hibrido" && comboBoxCaixa.Text == "automatico")
+                            else if (numericPrecoDia.Value <= 20)
                             {
-                                classeVeic = "B";    //5 Portas automático e Hibrido
+                                classeVeic = "C";
                             }
-                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina")
+                            else if (numericPrecoDia.Value <= 25)
                             {
-                                classeVeic = "C";    //Pequeno 5 Portas a Gasolina
+                                classeVeic = "D";
                             }
-                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
+                            else if (numericPrecoDia.Value <= 30)
                             {
-                                classeVeic = "D";    //Pequeno 5 Portas a Gasoleo   
+                                classeVeic = "B";
                             }
-                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina")
+                            else if (numericPrecoDia.Value <= 35)
                             {
-                                classeVeic = "F";    //Médio 5 Portas a Gasolina
+                                classeVeic = "F";
                             }
-                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
+                            else if (numericPrecoDia.Value <= 40)
                             {
-                                classeVeic = "G";    //Médio 5 Portas a Gasoleo
+                                classeVeic = "G";
                             }
-                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo")
+                            else if (numericPrecoDia.Value <= 50)
                             {
-                                classeVeic = "H";    //Station Wagon 5 Portas a Diesel
+                                classeVeic = "H";
                             }
-                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "eletrico")
+                            else if (numericPrecoDia.Value <= 55)
                             {
-                                classeVeic = "I";    //Médio Elétrico 5 Portas
+                                classeVeic = "I";
                             }
-                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasolina" || comboBoxCombustivel.Text == "gasoleo")
+                            else if (numericPrecoDia.Value <= 60)
                             {
-                                classeVeic = "J";    //SUV 5 Portas a Diesel/Gasolina
+                                classeVeic = "J";
                             }
-                            else if (comboBoxNumPortas.Text == "5" && comboBoxCombustivel.Text == "gasoleo" || comboBoxCombustivel.Text == "gasolina")
+                            else if (numericPrecoDia.Value > 60)
                             {
-                                classeVeic = "L";   //Executivo/Desportivo Premium 5 Portas
+                                classeVeic = "L";
                             }
+
                             Carro carro = (Carro)Program.melresCar.Veiculos[_indexVeiculo];
                             carro.ClasseVeiculo = classeVeic;
                             carro.NumPortas = Convert.ToInt32(comboBoxNumPortas.Text);
                             carro.TipoCaixa = comboBoxCaixa.Text;
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
-                            MessageBox.Show("Carro adicionado com sucesso.");
+                            MessageBox.Show("Carro alterado com sucesso.");
                             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
                             menuPrincipalObject.ucVeiculo.atualizaDataGridView(0);
                             menuPrincipalObject.Enabled = true;
@@ -161,7 +162,7 @@ namespace Automobile
                     case "mota":
                         if (comboBoxCilindrada.Text == "")
                         {
-                            MessageBox.Show("Por favor preencha todos os campos", "Adicionar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Por favor preencha todos os campos", "Editar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         else
                         {
@@ -181,7 +182,7 @@ namespace Automobile
                             mota.ClasseVeiculo = classeVeic;
                             mota.Cilindrada = Convert.ToInt32(comboBoxCilindrada.Text);
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
-                            MessageBox.Show("Mota adicionada com sucesso.");
+                            MessageBox.Show("Mota alterada com sucesso.");
                             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
                             menuPrincipalObject.ucVeiculo.atualizaDataGridView(1);
                             menuPrincipalObject.Enabled = true;
@@ -191,7 +192,7 @@ namespace Automobile
                     case "camioneta":
                         if (comboBoxEixos.Text == "" || numericNumPassageiros.Text == "")
                         {
-                            MessageBox.Show("Por favor preencha todos os campos", "Adicionar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Por favor preencha todos os campos", "Editar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         else
                         {
@@ -212,7 +213,7 @@ namespace Automobile
                             camioneta.NumEixos = Convert.ToInt32(comboBoxEixos.Text);
                             camioneta.NumPassageiros = Convert.ToInt32(numericNumPassageiros.Text);
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
-                            MessageBox.Show("Camioneta adicionada com sucesso.");
+                            MessageBox.Show("Camioneta alterado com sucesso.");
                             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
                             menuPrincipalObject.ucVeiculo.atualizaDataGridView(2);
                             menuPrincipalObject.Enabled = true;
@@ -222,7 +223,7 @@ namespace Automobile
                     case "camiao":
                         if (numericPesoMax.Text == "")
                         {
-                            MessageBox.Show("Por favor preencha todos os campos", "Adicionar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Por favor preencha todos os campos", "Editar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         else
                         {
@@ -242,7 +243,7 @@ namespace Automobile
                             camiao.ClasseVeiculo = classeVeic;
                             camiao.PesoMaximo = Convert.ToDouble(numericPesoMax.Text);
                             Program.melresCar.EscreverFicheiroCSV("veiculos");
-                            MessageBox.Show("Camião adicionado com sucesso.");
+                            MessageBox.Show("Camião alterado com sucesso.");
                             MenuPrincipal menuPrincipalObject = (MenuPrincipal)Application.OpenForms["menuPrincipal"];
                             menuPrincipalObject.ucVeiculo.atualizaDataGridView(3);
                             menuPrincipalObject.Enabled = true;

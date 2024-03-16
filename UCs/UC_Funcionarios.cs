@@ -27,7 +27,10 @@ namespace Automobile
             dataGridViewFuncionario.Columns.Add("Morada", "Morada");
             dataGridViewFuncionario.Columns.Add("Email", "Email");
             dataGridViewFuncionario.Columns.Add("Telemovel", "Telemovel");
-            atualizaDataGridView();
+
+            dataGridViewFuncionario.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridViewFuncionario.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewFuncionario.MultiSelect = false;
 
             dataGridViewFuncionario.BackgroundColor = Color.FromArgb(235, 241, 241);
             dataGridViewFuncionario.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
@@ -40,6 +43,8 @@ namespace Automobile
             dataGridViewFuncionario.GridColor = Color.FromArgb(96, 155, 173);
             dataGridViewFuncionario.BorderStyle = BorderStyle.None;
             dataGridViewFuncionario.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+
+            atualizaDataGridView();
 
             if (Program.melresCar.LoggedAccount == "admin")
             {

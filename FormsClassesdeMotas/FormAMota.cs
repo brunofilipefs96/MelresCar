@@ -97,6 +97,14 @@ namespace Automobile
             }
             else
             {
+                if (Convert.ToDecimal(gridMotaA.Rows[gridMotaA.CurrentRow.Index].Cells[7].Value) == 0)
+                {
+                    DialogResult dialogResult = MessageBox.Show("O preço diário deste veículo é 0€, deseja continuar?", "Confirmação", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.No)
+                    {
+                        return;
+                    }
+                }
                 MenuAdicionarReserva menuAdicionarReserva = new MenuAdicionarReserva();
 
                 menuAdicionarReserva.veiculoSelecionado(Convert.ToInt32(gridMotaA.Rows[gridMotaA.CurrentRow.Index].Cells[0].Value));

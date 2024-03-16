@@ -661,7 +661,7 @@ namespace Automobile
 
             foreach (var veiculo in Veiculos)
             {
-                if (veiculo.DataFimManutencao < Program.DataHoraDoSistema() && veiculo.Estado == "manutencao")
+                if (veiculo.DataFimManutencao.Date == Program.DataHoraDoSistema().AddDays(-1).Date)
                 {
                     veiculosManutencao.Add(veiculo.Matricula);
                     contManutencao++;
