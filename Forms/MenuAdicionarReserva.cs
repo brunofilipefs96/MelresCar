@@ -28,26 +28,29 @@ namespace Automobile.Forms
             dateTimePicker2.CustomFormat = "dd/MM/yyyy HH:mm";
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
-            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Dock = DockStyle.Fill;
+
             dataGridViewClientes.AllowUserToAddRows = false;
             dataGridViewClientes.RowCount = 0;
             dataGridViewClientes.Columns.Add("NumCliente", "NumCliente");
             dataGridViewClientes.Columns.Add("Nome", "Nome");
             dataGridViewClientes.Columns.Add("Nif", "NIF");
 
-            dataGridViewClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridViewClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewClientes.MultiSelect = false;
-
-            dataGridViewClientes.EnableHeadersVisualStyles = false;
-            dataGridViewClientes.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            dataGridViewClientes.BackgroundColor = Color.FromArgb(235, 241, 241);
             dataGridViewClientes.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewClientes.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            dataGridViewClientes.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewClientes.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewClientes.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewClientes.RowsDefaultCellStyle.ForeColor = Color.White;
+            dataGridViewClientes.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            dataGridViewClientes.ColumnHeadersDefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
+            dataGridViewClientes.RowHeadersVisible = false;
+            dataGridViewClientes.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 8);
+            dataGridViewClientes.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            dataGridViewClientes.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewClientes.GridColor = Color.FromArgb(96, 155, 173);
+            dataGridViewClientes.BorderStyle = BorderStyle.None;
+            dataGridViewClientes.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewClientes.ScrollBars = ScrollBars.Both;
+            dataGridViewClientes.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewClientes.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
 
             Dock = DockStyle.Fill;
@@ -58,18 +61,21 @@ namespace Automobile.Forms
             dataGridViewReservas.Columns.Add("Data Final", "Data Final");
 
 
-            dataGridViewReservas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridViewReservas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewReservas.MultiSelect = false;
-
-            dataGridViewReservas.EnableHeadersVisualStyles = false;
-            dataGridViewReservas.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            dataGridViewReservas.BackgroundColor = Color.FromArgb(235, 241, 241);
             dataGridViewReservas.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewReservas.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            dataGridViewReservas.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewReservas.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewReservas.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewReservas.RowsDefaultCellStyle.ForeColor = Color.White;
+            dataGridViewReservas.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            dataGridViewReservas.ColumnHeadersDefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
+            dataGridViewReservas.RowHeadersVisible = false;
+            dataGridViewReservas.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 8);
+            dataGridViewReservas.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            dataGridViewReservas.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewReservas.GridColor = Color.FromArgb(96, 155, 173);
+            dataGridViewReservas.BorderStyle = BorderStyle.None;
+            dataGridViewReservas.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewReservas.ScrollBars = ScrollBars.Both;
+            dataGridViewReservas.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewReservas.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewReservas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             calculaPrecoTotal();
 

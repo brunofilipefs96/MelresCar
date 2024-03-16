@@ -25,7 +25,6 @@ namespace Automobile.Forms
 
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoSize = true;
-            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             Dock = DockStyle.Fill;
             dataGridViewManutencoes.AllowUserToAddRows = false;
             dataGridViewManutencoes.RowCount = 0;
@@ -34,20 +33,21 @@ namespace Automobile.Forms
             dataGridViewManutencoes.Columns.Add("Data Inicio", "Data Inicio");
             dataGridViewManutencoes.Columns.Add("Data Fim", "Data Fim");
 
-            dataGridViewManutencoes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridViewManutencoes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewManutencoes.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
-            dataGridViewManutencoes.Columns[3].DefaultCellStyle.Format = "dd/MM/yyyy";
-            dataGridViewManutencoes.MultiSelect = false;
-
-            dataGridViewManutencoes.EnableHeadersVisualStyles = false;
-            dataGridViewManutencoes.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
+            dataGridViewManutencoes.BackgroundColor = Color.FromArgb(235, 241, 241);
             dataGridViewManutencoes.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewManutencoes.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10F, FontStyle.Bold);
-            dataGridViewManutencoes.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewManutencoes.RowHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridViewManutencoes.RowsDefaultCellStyle.BackColor = Color.FromArgb(171, 171, 171);
-            dataGridViewManutencoes.RowsDefaultCellStyle.ForeColor = Color.White;
+            dataGridViewManutencoes.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(34, 92, 186);
+            dataGridViewManutencoes.ColumnHeadersDefaultCellStyle.Font = new Font("Franklin Gothic Medium", 10);
+            dataGridViewManutencoes.RowHeadersVisible = false;
+            dataGridViewManutencoes.DefaultCellStyle.Font = new Font("Franklin Gothic Medium", 8);
+            dataGridViewManutencoes.RowsDefaultCellStyle.BackColor = Color.FromArgb(245, 251, 251);
+            dataGridViewManutencoes.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewManutencoes.GridColor = Color.FromArgb(96, 155, 173);
+            dataGridViewManutencoes.BorderStyle = BorderStyle.None;
+            dataGridViewManutencoes.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewManutencoes.ScrollBars = ScrollBars.Both;
+            dataGridViewManutencoes.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewManutencoes.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewManutencoes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             dateTimePicker2.Value = dateTimePicker2.Value.AddDays(1);
             //dateTimePicker1.Value = dateTimePicker1.Value.Date + new TimeSpan(0, 0, 0);
