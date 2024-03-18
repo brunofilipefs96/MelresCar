@@ -48,7 +48,7 @@ namespace Automobile
                     {
                         if (reserva.DataInicio.Date <= dataDias && reserva.DataFim.Date >= dataDias)
                         {
-                            lucroTotal += reserva.PrecoTotal;
+                            lucroTotal += Program.melresCar.ProcuraPrecoVeiculo(reserva.IdVeiculo);
                         }
                     }
 

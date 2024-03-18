@@ -30,7 +30,6 @@ namespace Automobile
             textBoxModelo.Text = Program.melresCar.Veiculos[_indexVeiculo].Modelo;
             numericAno.Text = Convert.ToString(Program.melresCar.Veiculos[_indexVeiculo].Ano);
             numericPrecoDia.Text = Convert.ToString(Program.melresCar.Veiculos[_indexVeiculo].PrecoDiario);
-            comboBoxEstado.Text = Program.melresCar.Veiculos[_indexVeiculo].Estado;
             comboBoxCombustivel.Text = Program.melresCar.Veiculos[_indexVeiculo].Combustivel;
             if (Program.melresCar.Veiculos[_indexVeiculo] is Carro)
             {
@@ -84,7 +83,7 @@ namespace Automobile
         }
         private void buttonEditarVeiculo_Click_1(object sender, EventArgs e)
         {
-            if (textBoxMarca.Text == "" || textBoxModelo.Text == "" || comboBoxCombustivel.Text == "" || numericAno.Text == "" || numericPrecoDia.Text == "" || comboBoxEstado.Text == "")
+            if (textBoxMarca.Text == "" || textBoxModelo.Text == "" || comboBoxCombustivel.Text == "" || numericAno.Text == "" || numericPrecoDia.Text == "")
             {
                 MessageBox.Show("Por favor preencha todos os campos", "Editar Veículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -96,7 +95,6 @@ namespace Automobile
                 Program.melresCar.Veiculos[_indexVeiculo].Combustivel = comboBoxCombustivel.Text;
                 Program.melresCar.Veiculos[_indexVeiculo].Ano = Convert.ToInt32(numericAno.Text);
                 Program.melresCar.Veiculos[_indexVeiculo].PrecoDiario = Convert.ToDecimal(numericPrecoDia.Text);
-                Program.melresCar.Veiculos[_indexVeiculo].Estado = comboBoxEstado.Text;
                 switch (Program.melresCar.Veiculos[_indexVeiculo].TipoVeiculo)
                 {
                     case "carro":

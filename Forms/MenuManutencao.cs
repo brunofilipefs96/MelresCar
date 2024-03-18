@@ -122,10 +122,7 @@ namespace Automobile.Forms
                     menuPrincipalObject.Enabled = true;
                     this.Close();
                 }
-
-                
             }
-
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)

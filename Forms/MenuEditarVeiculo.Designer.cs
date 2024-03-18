@@ -32,7 +32,6 @@
             this.numericNumPassageiros = new ReaLTaiizor.Controls.CrownNumeric();
             this.numericAno = new ReaLTaiizor.Controls.CrownNumeric();
             this.numericPrecoDia = new ReaLTaiizor.Controls.CrownNumeric();
-            this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.textBoxModelo = new ReaLTaiizor.Controls.CrownTextBox();
             this.labelPesoMax = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.labelMarca = new ReaLTaiizor.Controls.DungeonHeaderLabel();
@@ -50,7 +49,6 @@
             this.labelVeiculo = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.buttonCancelar = new ReaLTaiizor.Controls.Button();
             this.buttonEditarVeiculo = new ReaLTaiizor.Controls.Button();
-            this.comboBoxEstado = new ReaLTaiizor.Controls.DungeonComboBox();
             this.comboBoxCombustivel = new ReaLTaiizor.Controls.DungeonComboBox();
             this.comboBoxEixos = new ReaLTaiizor.Controls.DungeonComboBox();
             this.comboBoxNumPortas = new ReaLTaiizor.Controls.DungeonComboBox();
@@ -126,18 +124,6 @@
             this.numericPrecoDia.Name = "numericPrecoDia";
             this.numericPrecoDia.Size = new System.Drawing.Size(73, 20);
             this.numericPrecoDia.TabIndex = 94;
-            // 
-            // dungeonHeaderLabel1
-            // 
-            this.dungeonHeaderLabel1.AutoSize = true;
-            this.dungeonHeaderLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.dungeonHeaderLabel1.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F);
-            this.dungeonHeaderLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.dungeonHeaderLabel1.Location = new System.Drawing.Point(126, 264);
-            this.dungeonHeaderLabel1.Name = "dungeonHeaderLabel1";
-            this.dungeonHeaderLabel1.Size = new System.Drawing.Size(61, 21);
-            this.dungeonHeaderLabel1.TabIndex = 109;
-            this.dungeonHeaderLabel1.Text = "Estado:";
             // 
             // textBoxModelo
             // 
@@ -357,40 +343,6 @@
             this.buttonEditarVeiculo.TextAlignment = System.Drawing.StringAlignment.Center;
             this.buttonEditarVeiculo.Click += new System.EventHandler(this.buttonEditarVeiculo_Click_1);
             // 
-            // comboBoxEstado
-            // 
-            this.comboBoxEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(155)))), ((int)(((byte)(173)))));
-            this.comboBoxEstado.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.comboBoxEstado.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.comboBoxEstado.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.comboBoxEstado.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.comboBoxEstado.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.comboBoxEstado.ColorF = System.Drawing.Color.White;
-            this.comboBoxEstado.ColorG = System.Drawing.Color.White;
-            this.comboBoxEstado.ColorH = System.Drawing.Color.White;
-            this.comboBoxEstado.ColorI = System.Drawing.Color.White;
-            this.comboBoxEstado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxEstado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxEstado.DropDownHeight = 100;
-            this.comboBoxEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxEstado.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F);
-            this.comboBoxEstado.ForeColor = System.Drawing.Color.White;
-            this.comboBoxEstado.FormattingEnabled = true;
-            this.comboBoxEstado.HoverSelectionColor = System.Drawing.SystemColors.ActiveCaption;
-            this.comboBoxEstado.IntegralHeight = false;
-            this.comboBoxEstado.ItemHeight = 20;
-            this.comboBoxEstado.Items.AddRange(new object[] {
-            "disponivel",
-            "manutencao",
-            "reservado",
-            "alugado"});
-            this.comboBoxEstado.Location = new System.Drawing.Point(193, 264);
-            this.comboBoxEstado.Name = "comboBoxEstado";
-            this.comboBoxEstado.Size = new System.Drawing.Size(138, 26);
-            this.comboBoxEstado.StartIndex = 0;
-            this.comboBoxEstado.TabIndex = 120;
-            // 
             // comboBoxCombustivel
             // 
             this.comboBoxCombustivel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(155)))), ((int)(((byte)(173)))));
@@ -566,7 +518,6 @@
             this.Controls.Add(this.comboBoxNumPortas);
             this.Controls.Add(this.comboBoxEixos);
             this.Controls.Add(this.comboBoxCombustivel);
-            this.Controls.Add(this.comboBoxEstado);
             this.Controls.Add(this.buttonEditarVeiculo);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.labelVeiculo);
@@ -575,7 +526,6 @@
             this.Controls.Add(this.numericNumPassageiros);
             this.Controls.Add(this.numericAno);
             this.Controls.Add(this.numericPrecoDia);
-            this.Controls.Add(this.dungeonHeaderLabel1);
             this.Controls.Add(this.textBoxModelo);
             this.Controls.Add(this.labelPesoMax);
             this.Controls.Add(this.labelMarca);
@@ -607,7 +557,6 @@
         private ReaLTaiizor.Controls.CrownNumeric numericNumPassageiros;
         private ReaLTaiizor.Controls.CrownNumeric numericAno;
         private ReaLTaiizor.Controls.CrownNumeric numericPrecoDia;
-        private ReaLTaiizor.Controls.DungeonHeaderLabel dungeonHeaderLabel1;
         private ReaLTaiizor.Controls.CrownTextBox textBoxModelo;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelPesoMax;
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelMarca;
@@ -625,7 +574,6 @@
         private ReaLTaiizor.Controls.DungeonHeaderLabel labelVeiculo;
         private ReaLTaiizor.Controls.Button buttonCancelar;
         private ReaLTaiizor.Controls.Button buttonEditarVeiculo;
-        private ReaLTaiizor.Controls.DungeonComboBox comboBoxEstado;
         private ReaLTaiizor.Controls.DungeonComboBox comboBoxCombustivel;
         private ReaLTaiizor.Controls.DungeonComboBox comboBoxEixos;
         private ReaLTaiizor.Controls.DungeonComboBox comboBoxNumPortas;

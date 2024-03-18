@@ -70,7 +70,6 @@ namespace Automobile
                                 MessageBox.Show("Cliente adicionado com sucesso");
                                 this.Close();
                             }
-
                         }
                         else
                         {
