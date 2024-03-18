@@ -106,45 +106,57 @@ namespace Automobile
                         }
                         else
                         {
-                            if (numericPrecoDia.Value <= 10)
+                            if (comboBoxCombustivel.Text == "gasolina")
                             {
-                                classeVeic = "A";
+                                if (comboBoxNumPortas.Text == "3")
+                                {
+                                    classeVeic = "A";
+                                }
+                                else if (comboBoxNumPortas.Text == "5")
+                                {
+                                    if (numericPrecoDia.Value <= 20)
+                                    {
+                                        classeVeic = "C";
+                                    }
+                                    else if (numericPrecoDia.Value > 20 && numericPrecoDia.Value <= 70)
+                                    {
+                                        classeVeic = "F";
+                                    }
+                                    else if (numericPrecoDia.Value > 70)
+                                    {
+                                        classeVeic = "L";
+                                    }
+                                }
                             }
-                            else if (numericPrecoDia.Value <= 20)
+                            else if (comboBoxCombustivel.Text == "gasoleo")
                             {
-                                classeVeic = "C";
+                                if (comboBoxNumPortas.Text == "3")
+                                {
+                                    classeVeic = "D";
+                                }
+                                else if (comboBoxNumPortas.Text == "5")
+                                {
+                                    if (numericPrecoDia.Value <= 40)
+                                    {
+                                        classeVeic = "G";
+                                    }
+                                    else if (numericPrecoDia.Value > 40 && numericPrecoDia.Value <= 60)
+                                    {
+                                        classeVeic = "H";
+                                    }
+                                    else if (numericPrecoDia.Value > 60)
+                                    {
+                                        classeVeic = "J";
+                                    }
+                                }
                             }
-                            else if (numericPrecoDia.Value <= 25)
-                            {
-                                classeVeic = "D";
-                            }
-                            else if (numericPrecoDia.Value <= 30)
+                            else if (comboBoxCombustivel.Text == "hibrido")
                             {
                                 classeVeic = "B";
                             }
-                            else if (numericPrecoDia.Value <= 35)
-                            {
-                                classeVeic = "F";
-                            }
-                            else if (numericPrecoDia.Value <= 40)
-                            {
-                                classeVeic = "G";
-                            }
-                            else if (numericPrecoDia.Value <= 50)
-                            {
-                                classeVeic = "H";
-                            }
-                            else if (numericPrecoDia.Value <= 55)
+                            else if (comboBoxCombustivel.Text == "eletrico")
                             {
                                 classeVeic = "I";
-                            }
-                            else if (numericPrecoDia.Value <= 60)
-                            {
-                                classeVeic = "J";
-                            }
-                            else if (numericPrecoDia.Value > 60)
-                            {
-                                classeVeic = "L";
                             }
 
                             Carro carro = (Carro)Program.melresCar.Veiculos[_indexVeiculo];
