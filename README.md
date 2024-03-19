@@ -1,4 +1,5 @@
 # MELRESCAR - Rental Management System (C#)
+![Screenshot 1](https://brunofilipefs96.github.io/Assets/Images/project5.png)
 
 **MELRESCAR** is a C# Windows Forms application that streamlines rental management for companies offering cars, trucks, vans, and motorbikes.
 
@@ -15,13 +16,9 @@ It was built with two colleagues to efficiently handle client and employee infor
 
 MELRESCAR includes a date simulator feature that provides notifications when vehicles are ready to use. This feature utilizes a scheduler or timer mechanism to track scheduled rentals and maintenance tasks. When a vehicle becomes available for rental or maintenance is completed, the system sends a notification to alert the user.
 
-## Screenshots:
-
-![Screenshot 1](https://brunofilipefs96.github.io/Assets/Images/project5.png)
-*Login Screen.*
+## Main Menu:
 
 ![Screenshot 2](https://brunofilipefs96.github.io/Assets/Images/project5-hover.png)
-*Main Menu Screen.*
 
 ## Technologies Used
 
