@@ -581,26 +581,6 @@ namespace Automobile
             ContaReservas--;
         }
 
-        public void ListarVeiculosDisponiveis()
-        {
-            foreach (Veiculo veiculo in Veiculos)
-            {
-                if (veiculo.Estado == "disponivel")
-                {
-                    Console.WriteLine(veiculo);
-                }
-            }
-        }
-        public void ListarVeiculosManutencao()
-        {
-            foreach (Veiculo veiculo in Veiculos)
-            {
-                if (veiculo.Estado == "em manutencao")
-                {
-                    Console.WriteLine(veiculo);
-                }
-            }
-        }
 
         public int gerarId(string tipo)
         {
